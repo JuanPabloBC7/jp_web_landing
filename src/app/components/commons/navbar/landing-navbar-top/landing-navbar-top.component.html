@@ -1,0 +1,60 @@
+<header class="bg-white shadow-sm border-bottom sticky-top z-50">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center h-100 py-2">
+      <a routerLink="/" class="d-flex align-items-center text-decoration-none">
+        <div class="bg-primary p-2 rounded">
+          <i class="text-white fs-4">73</i>
+        </div>
+        <span class="fs-4 fw-bold text-dark ms-2">Jpbalan</span>
+      </a>
+
+      <nav class="d-none d-md-flex align-items-center gap-4">
+        <ng-container *ngFor="let item of navigation">
+          <a
+            [routerLink]="item.href"
+            class="text-secondary text-decoration-none fw-medium"
+            [ngClass]="{'text-primary fw-bold': isActive(item.href)}"
+          >
+            {{ item.name }}
+          </a>
+        </ng-container>
+      </nav>
+
+      <!-- Botón hamburguesa para móviles -->
+      <button
+        class="btn btn-outline-secondary d-md-none"
+        type="button"
+        (click)="isOpen = !isOpen"
+        aria-label="Toggle navigation"
+      >
+        <i class="bi" [ngClass]="isOpen ? 'bi-x-lg' : 'bi-list'"></i>
+      </button>
+    </div>
+
+    <!-- Menú colapsable para móviles -->
+    <div *ngIf="isOpen" class="d-md-none">
+      <div class="bg-white border-top px-3 py-2">
+        <ng-container *ngFor="let item of navigation">
+          <a
+            [routerLink]="item.href"
+            class="d-block px-2 py-2 rounded text-decoration-none fw-medium mb-1"
+            [ngClass]="{
+              'text-primary bg-primary bg-opacity-10 fw-bold': isActive(item.href),
+              'text-secondary': !isActive(item.href)
+            }"
+            (click)="isOpen = false"
+          >
+            {{ item.name }}
+          </a>
+        </ng-container>
+        <a
+          routerLink="/contact"
+          class="btn btn-primary w-100 mt-2"
+          (click)="isOpen = false"
+        >
+          Get Started
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
