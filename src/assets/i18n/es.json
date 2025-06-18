@@ -1,0 +1,46 @@
+{
+  "configuration": {
+    "icon": "73",
+    "name": "Jpbalan",
+    "description": "Desarrollador web y móvil con experiencia en Angular, React y Node.js.",
+    "country": "Guatemala",
+    "city": "Ciudad de Guatemala",
+    "language": {
+      "title": "Idioma",
+      "options": {
+        "english": "Inglés",
+        "spanish": "Español"
+      }
+    },
+    "social": {
+      "title": "Redes sociales",
+      "description": "Conéctate conmigo en mis redes sociales",
+      "links": {
+        "mail": "juanpablobc7@gmail.com",
+        "cell": "(+502) 5115-0443",
+        "facebook": "https://facebook.com/jpbalan",
+        "instagram": "https://instagram.com/jpbalan",
+        "twitter": "https://twitter.com/jpbalan",
+        "github": "https://twitter.com/jpbalan",
+        "linkedin": "https://linkedin.com/in/jpbalan",
+        "coverLetter": "https://jpbalan.com/cover-letter.pdf"
+      }
+    },
+    "navbar": {
+      "title": "Enlaces rápidos",
+      "links": {
+        "home": "Inicio",
+        "about": "Sobre mí",
+        "contact": "Contacto"
+      }
+    },
+    "footer": {
+      "simpleFooter": {
+        "copyright": "© 2025 JPBalan. Todos los derechos reservados."
+      },
+      "informativeFooter": {
+        "description": "Creador de productos excepcionales que combinan innovación, diseño y funcionalidad para mejorar tu vida diaria."
+      }
+    }
+  }
+}

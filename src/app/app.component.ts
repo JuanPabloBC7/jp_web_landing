@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { ConfigurationService } from './shared/services/configuration-services/configuration.service';
 
 @Component({
   selector: 'app-root',
@@ -8,4 +9,8 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent { }
+export class AppComponent { 
+  constructor(private configurationServices: ConfigurationService) {
+    this.configurationServices.configureLanguage();
+  }
+}
