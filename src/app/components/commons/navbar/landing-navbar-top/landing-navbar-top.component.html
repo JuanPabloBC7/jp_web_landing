@@ -16,7 +16,8 @@
           </a>
         </ng-container>
         <div ngbDropdown class="d-inline-block">
-          <button class="btn btn-outline-primary w-100 dropdown-toggle" id="languageDropdown" ngbDropdownToggle>{{ 'configuration.language.title' | translate }}</button>
+          <!-- <button class="btn btn-outline-primary w-100 dropdown-toggle" id="languageDropdown" ngbDropdownToggle>{{ 'configuration.language.title' | translate }}</button> -->
+          <button class="btn btn-outline-primary w-100 dropdown-toggle" id="languageDropdown" ngbDropdownToggle><i class="fa-solid fa-language"></i></button>
           <div ngbDropdownMenu aria-labelledby="languageDropdown">
             <button class="dropdown-item" (click)="setLanguage('es')" ngbDropdownItem>{{ 'configuration.language.options.spanish' | translate }}</button>
             <button class="dropdown-item" (click)="setLanguage('en')" ngbDropdownItem>{{ 'configuration.language.options.english' | translate }}</button>
@@ -25,9 +26,17 @@
         <!-- <a routerLink="/contact" class="btn btn-primary w-100" (click)="isOpen = false">Get Started</a> -->
       </nav>
 
+      <div ngbDropdown class="d-inline-block d-md-none ms-auto me-2">
+        <!-- <button class="btn btn-outline-primary w-100 dropdown-toggle" id="languageDropdown" ngbDropdownToggle>{{ 'configuration.language.title' | translate }}</button> -->
+        <button class="btn btn-outline-primary w-100 dropdown-toggle" id="languageDropdown" ngbDropdownToggle><i class="fa-solid fa-language"></i></button>
+        <div ngbDropdownMenu aria-labelledby="languageDropdown">
+          <button class="dropdown-item" (click)="setLanguage('es')" ngbDropdownItem>{{ 'configuration.language.options.spanish' | translate }}</button>
+          <button class="dropdown-item" (click)="setLanguage('en')" ngbDropdownItem>{{ 'configuration.language.options.english' | translate }}</button>
+        </div>
+      </div>
       <!-- Botón hamburguesa para móviles -->
       <button class="btn btn-outline-secondary d-md-none" type="button" (click)="isOpen = !isOpen" aria-label="Toggle navigation">
-        <i class="bi" [ngClass]="isOpen ? 'bi-x-lg' : 'bi-list'"></i>
+        <i class="fa-solid" [ngClass]="isOpen ? 'fa-x' : 'fa-bars'"></i>
       </button>
     </div>
 
