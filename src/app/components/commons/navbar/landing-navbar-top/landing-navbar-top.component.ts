@@ -1,7 +1,7 @@
 import { CommonModule, NgClass } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef, Renderer2 } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
-import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbDropdownModule, NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { ConfigurationService } from '../../../../shared/services/configuration-services/configuration.service';
 
@@ -14,22 +14,28 @@ import { ConfigurationService } from '../../../../shared/services/configuration-
     CommonModule,
     TranslateModule,
     NgbDropdownModule,
+    NgbTooltipModule,
   ],
   templateUrl: './landing-navbar-top.component.html',
   styleUrls: ['./landing-navbar-top.component.scss']
 })
 export class LandingNavbarTopComponent implements OnInit {
   isOpen = false;
+  isDark = false;
+  appearance: string = '';
   navigation: any = [];
-  translate: any = {};
+  translateNavbar: any = {};
+  translateAppearance: any = {};
 
   constructor(
     private router: Router,
     private translateServices: TranslateService,
     private configurationServices: ConfigurationService,
+    private el: ElementRef,
+    private renderer: Renderer2
   ) { 
     this.translateServices.stream('configuration.navbar').subscribe(res => {
-      this.translate = res;
+      this.translateNavbar = res;
       this.navigation = [];
       for (const key in res.links) {
         if (key === 'home') {
@@ -39,6 +45,13 @@ export class LandingNavbarTopComponent implements OnInit {
         }
       }
     });
+    this.translateServices.stream('configuration.appearance').subscribe(res => { 
+      this.translateAppearance = res;
+
+      localStorage.getItem('theme') === 'dark' ? this.appearance = this.translateAppearance.options.light : this.appearance = this.translateAppearance.options.dark;
+    });
+
+    localStorage.getItem('theme') === 'dark' ? this.isDark = false : this.isDark = true;
   }
 
   ngOnInit(): void {
@@ -50,5 +63,14 @@ export class LandingNavbarTopComponent implements OnInit {
 
   setLanguage(language: string) {
     this.configurationServices.setLanguage(language);
+  }
+
+  toggleTheme() {
+    const current = localStorage.getItem('theme') || document.body.getAttribute('data-bs-theme') || 'light';
+    document.body.setAttribute('data-bs-theme', current === 'dark' ? 'light' : 'dark');
+    localStorage.setItem('theme', current === 'dark' ? 'light' : 'dark');
+
+    current === 'dark' ? this.isDark = true : this.isDark = false;
+    current === 'dark' ? this.appearance = this.translateAppearance.options.dark : this.appearance = this.translateAppearance.options.light;
   }
 }

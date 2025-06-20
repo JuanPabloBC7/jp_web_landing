@@ -1,12 +1,18 @@
 {
   "configuration": {
-    "icon": "73",
+    "icon": "Jp",
     "name": "Jpbalan",
     "description": "Desarrollador web y móvil con experiencia en Angular, React y Node.js.",
     "country": "Guatemala",
     "city": "Ciudad de Guatemala",
+    "appearance": {
+      "options": {
+        "light": "Claro",
+        "dark": "Oscuro"
+      }
+    },
     "language": {
-      "title": "Idioma",
+      "title": "Lenguaje",
       "options": {
         "english": "Inglés",
         "spanish": "Español"
@@ -29,7 +35,7 @@
       }
     },
     "navbar": {
-      "title": "Enlaces rápidos",
+      "title": "Menú",
       "links": {
         "home": "Inicio",
         "about": "Sobre mí",

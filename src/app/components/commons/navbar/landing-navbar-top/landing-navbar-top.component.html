@@ -1,23 +1,25 @@
-<header class="bg-white shadow-sm border-bottom sticky-top z-50">
+<header class="shadow-sm border-bottom position-fixed w-100 z-1">
   <div class="container">
     <div class="d-flex justify-content-between align-items-center h-100 py-2">
       <a routerLink="/" class="d-flex align-items-center text-decoration-none">
         <div class="bg-primary p-2 rounded">
           <i class="text-white fs-4">{{ 'configuration.icon' | translate }}</i>
         </div>
-        <span class="fs-4 fw-bold text-dark ms-2">{{ 'configuration.name' | translate }}</span>
+        <span class="fs-4 fw-bold ms-2">{{ 'configuration.name' | translate }}</span>
       </a>
 
       <!-- Menú de navegación para pantallas grandes -->
       <nav class="d-none d-md-flex align-items-center gap-4">
         <ng-container *ngFor="let item of navigation">
-          <a [routerLink]="item.href" class="text-secondary text-decoration-none fw-medium" [ngClass]="{'text-primary fw-bold': isActive(item.href)}">
+          <a [routerLink]="item.href" class="text-secondary-emphasis text-decoration-none fw-medium" [ngClass]="{'text-primary fw-bold': isActive(item.href)}">
             {{ item.value }}
           </a>
         </ng-container>
+        <button (click)="toggleTheme()" class="btn">
+          <i class="fa-solid fs-5" [ngClass]="isDark ? 'fa-moon' : 'fa-sun'" [ngbTooltip]="appearance"></i>
+        </button>
         <div ngbDropdown class="d-inline-block">
-          <!-- <button class="btn btn-outline-primary w-100 dropdown-toggle" id="languageDropdown" ngbDropdownToggle>{{ 'configuration.language.title' | translate }}</button> -->
-          <button class="btn btn-outline-primary w-100 dropdown-toggle" id="languageDropdown" ngbDropdownToggle><i class="fa-solid fa-language"></i></button>
+          <button class="btn w-100 dropdown-toggle" id="languageDropdown" ngbDropdownToggle><i class="fa-solid fa-language" [ngbTooltip]="'configuration.language.title' | translate"></i></button>
           <div ngbDropdownMenu aria-labelledby="languageDropdown">
             <button class="dropdown-item" (click)="setLanguage('es')" ngbDropdownItem>{{ 'configuration.language.options.spanish' | translate }}</button>
             <button class="dropdown-item" (click)="setLanguage('en')" ngbDropdownItem>{{ 'configuration.language.options.english' | translate }}</button>
@@ -26,23 +28,25 @@
         <!-- <a routerLink="/contact" class="btn btn-primary w-100" (click)="isOpen = false">Get Started</a> -->
       </nav>
 
-      <div ngbDropdown class="d-inline-block d-md-none ms-auto me-2">
-        <!-- <button class="btn btn-outline-primary w-100 dropdown-toggle" id="languageDropdown" ngbDropdownToggle>{{ 'configuration.language.title' | translate }}</button> -->
-        <button class="btn btn-outline-primary w-100 dropdown-toggle" id="languageDropdown" ngbDropdownToggle><i class="fa-solid fa-language"></i></button>
+      <button (click)="toggleTheme()" class="btn d-inline-block d-md-none ms-auto me">
+        <i class="fa-solid fs-5" [ngClass]="isDark ? 'fa-moon' : 'fa-sun'" [ngbTooltip]="appearance"></i>
+      </button>
+      <div ngbDropdown class="d-inline-block d-md-none me">
+        <button class="btn w-100 dropdown-toggle" id="languageDropdown" ngbDropdownToggle><i class="fa-solid fa-language" [ngbTooltip]="'configuration.language.title' | translate"></i></button>
         <div ngbDropdownMenu aria-labelledby="languageDropdown">
           <button class="dropdown-item" (click)="setLanguage('es')" ngbDropdownItem>{{ 'configuration.language.options.spanish' | translate }}</button>
           <button class="dropdown-item" (click)="setLanguage('en')" ngbDropdownItem>{{ 'configuration.language.options.english' | translate }}</button>
         </div>
       </div>
       <!-- Botón hamburguesa para móviles -->
-      <button class="btn btn-outline-secondary d-md-none" type="button" (click)="isOpen = !isOpen" aria-label="Toggle navigation">
-        <i class="fa-solid" [ngClass]="isOpen ? 'fa-x' : 'fa-bars'"></i>
+      <button type="button" class="btn d-md-none" (click)="isOpen = !isOpen" aria-label="Toggle navigation">
+        <i class="fa-solid" [ngClass]="isOpen ? 'fa-bars-staggered' : 'fa-bars'" [ngbTooltip]="'configuration.navbar.title' | translate"></i>
       </button>
     </div>
 
     <!-- Menú colapsable para móviles -->
     <div *ngIf="isOpen" class="d-md-none">
-      <div class="bg-white border-top px-3 py-2">
+      <div class="border-top px-3 py-2">
         <ng-container *ngFor="let item of navigation">
           <a [routerLink]="item.href" class="d-block px-2 py-2 rounded text-decoration-none fw-medium mb-1" [ngClass]="{'text-primary bg-primary bg-opacity-10 fw-bold': isActive(item.href), 'text-secondary': !isActive(item.href)}" (click)="isOpen = false">
             {{ item.value }}

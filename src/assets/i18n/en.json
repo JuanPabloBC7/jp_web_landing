@@ -1,10 +1,16 @@
 {
   "configuration": {
-    "icon": "73",
+    "icon": "Jp",
     "name": "Jpbalan",
     "description": "Web and mobile developer with experience in Angular, React, and Node.js.",
     "country": "Guatemala",
     "city": "Guatemala City",
+    "appearance": {
+      "options": {
+        "light": "light",
+        "dark": "dark"
+      }
+    },
     "language": {
       "title": "Language",
       "options": {
@@ -27,7 +33,7 @@
       }
     },
     "navbar": {
-      "title": "Quick Links",
+      "title": "Menu",
       "links": {
         "home": "Home",
         "about": "About Me",
