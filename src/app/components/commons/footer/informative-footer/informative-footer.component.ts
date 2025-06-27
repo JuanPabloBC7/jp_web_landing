@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
@@ -6,6 +7,7 @@ import { TranslateModule } from '@ngx-translate/core';
   standalone: true,
   imports: [
     TranslateModule,
+    NgbTooltipModule,
   ],
   templateUrl: './informative-footer.component.html',
   styleUrls: ['./informative-footer.component.scss']

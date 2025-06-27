@@ -1,5 +1,5 @@
 import { CommonModule, NgClass } from '@angular/common';
-import { Component, OnInit, ElementRef, Renderer2 } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
 import { NgbDropdownModule, NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
@@ -31,11 +31,10 @@ export class LandingNavbarTopComponent implements OnInit {
     private router: Router,
     private translateServices: TranslateService,
     private configurationServices: ConfigurationService,
-    private el: ElementRef,
-    private renderer: Renderer2
   ) { 
-    this.translateServices.stream('configuration.navbar').subscribe(res => {
-      this.translateNavbar = res;
+    this.translateServices.stream(['configuration.navbar', 'configuration.appearance']).subscribe(res => {
+      this.translateNavbar = res['configuration.navbar'];
+      this.translateAppearance = res['configuration.appearance'];
       this.navigation = [];
       for (const key in res.links) {
         if (key === 'home') {
@@ -44,9 +43,6 @@ export class LandingNavbarTopComponent implements OnInit {
           this.navigation.push({name: key, value: res.links[key], href: `/${key}`});
         }
       }
-    });
-    this.translateServices.stream('configuration.appearance').subscribe(res => { 
-      this.translateAppearance = res;
 
       localStorage.getItem('theme') === 'dark' ? this.appearance = this.translateAppearance.options.light : this.appearance = this.translateAppearance.options.dark;
     });

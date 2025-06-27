@@ -1,0 +1,292 @@
+html, body {
+  background-color: var(--bs-body-bg, #222C32) !important;
+  font-family: 'Open Sans', sans-serif !important;
+  box-sizing: border-box;
+}
+
+.cd-container {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 0 2rem 0;
+  position: relative;
+}
+
+#cd-timeline {
+  position: relative;
+  padding: 2em 0;
+}
+
+#cd-timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 32px;
+  height: 100%;
+  width: 4px;
+  background: var(--bs-primary-bg-subtle, #7E57C2);
+  border-radius: 2px;
+  z-index: 0;
+}
+
+@media (min-width: 1170px) {
+  #cd-timeline::before {
+    left: 50%;
+    margin-left: -2px;
+  }
+}
+
+.cd-timeline-block {
+  position: relative;
+  margin: 2.5em 0;
+  min-height: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 1170px) {
+  .cd-timeline-block {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 4em 0;
+  }
+}
+
+.cd-timeline-img {
+  position: absolute;
+  top: 16px;
+  left: 13px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--bs-body-bg);
+  border: 3px solid var(--bs-primary, #7E57C2);
+  box-shadow: 0 2px 8px rgba(126,87,194,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  font-size: 1.5rem;
+  color: var(--bs-primary, #7E57C2);
+}
+
+@media (min-width: 1170px) {
+  .cd-timeline-img {
+    left: 50%;
+    margin-left: -20px;
+    top: 24px;
+  }
+}
+
+.cd-timeline-content {
+  position: relative;
+  background: var(--bs-secondary-bg, #333C42);
+  border-radius: 8px;
+  padding: 1.5em 2em;
+  margin-left: 72px;
+  margin-right: 16px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.12);
+  border: 1px solid var(--bs-border-color, #3e4650);
+  z-index: 1;
+  transition: box-shadow 0.2s;
+}
+
+.cd-timeline-content:hover {
+  box-shadow: 0 4px 32px rgba(126,87,194,0.18);
+}
+
+.cd-timeline-content h2 {
+  color: var(--bs-body-color, #fff);
+  font-size: 1.3rem;
+  margin-bottom: 0.5em;
+  font-weight: 700;
+}
+
+.cd-timeline-content p,
+.cd-timeline-content .cd-date {
+  color: var(--bs-secondary-color, #bdbdbd);
+  font-size: 1rem;
+  margin-bottom: 0.5em;
+}
+
+.cd-timeline-content .cd-date {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--bs-primary, #b39ddb);
+}
+
+.cd-timeline-content::before {
+  content: '';
+  position: absolute;
+  top: 24px;
+  right: 100%;
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent var(--bs-secondary-bg, #333C42) transparent transparent;
+}
+
+@media (min-width: 1170px) {
+  .cd-timeline-content {
+    width: 40%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .cd-timeline-block:nth-child(odd) .cd-timeline-content {
+    float: left;
+    margin-left: 0;
+    margin-right: 56%;
+    text-align: right;
+  }
+  .cd-timeline-block:nth-child(even) .cd-timeline-content {
+    float: right;
+    margin-right: 0;
+    margin-left: 56%;
+    text-align: left;
+  }
+  .cd-timeline-block:nth-child(odd) .cd-timeline-content::before {
+    left: 100%;
+    right: auto;
+    border-color: transparent transparent transparent var(--bs-secondary-bg, #333C42);
+  }
+  .cd-timeline-block:nth-child(even) .cd-timeline-content::before {
+    right: 100%;
+    left: auto;
+    border-color: transparent var(--bs-secondary-bg, #333C42) transparent transparent;
+  }
+}
+
+@media (max-width: 1169px) {
+  .cd-timeline-content {
+    margin-left: 72px;
+    margin-right: 16px;
+    width: auto;
+    text-align: left;
+  }
+  .cd-timeline-content::before {
+    right: 100%;
+    left: auto;
+    border-color: transparent var(--bs-secondary-bg, #333C42) transparent transparent;
+  }
+}
+
+@media (max-width: 767px) {
+  #cd-timeline::before {
+    left: 20px;
+  }
+  .cd-timeline-img {
+    left: 0;
+    width: 32px;
+    height: 32px;
+    font-size: 1.1rem;
+  }
+  .cd-timeline-content {
+    margin-left: 48px;
+    padding: 1em 1.2em;
+  }
+}
+
+.timeline-content-info {
+  background: var(--bs-tertiary-bg, #2B343A);
+  padding: 6px 12px;
+  color: var(--bs-secondary-color, #bdbdbd);
+  font-size: 0.95rem;
+  border-radius: 4px;
+  margin-bottom: 0.5em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  align-items: center;
+}
+
+.timeline-content-info-title,
+.timeline-content-info-date {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.content-skills {
+  font-size: 0.95rem;
+  padding: 0;
+  margin-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  list-style: none;
+}
+.content-skills li {
+  background: var(--bs-tertiary-bg, #40484D);
+  padding: 2px 10px;
+  color: var(--bs-secondary-color, #bdbdbd);
+  text-align: center;
+  flex-grow: 1;
+}
+
+.bg-angular {
+  color: #ffffff !important;
+  background: linear-gradient(
+    to right,
+    #d60330 0%,
+    #d60330 50%,
+    #bd032d 50%,
+    #bd032d 100%
+  ) !important;
+}
+.bg-html {
+  color: #ffffff !important;
+  background: linear-gradient(
+    to right,
+    #dc4a24 0%,
+    #dc4a24 50%,
+    #f16529 50%,
+    #f16529 100%
+  ) !important;
+}
+.bg-css3 {
+  color: #ffffff !important;
+  background: linear-gradient(
+    to right,
+    #1479b8 0%,
+    #1479b8 50%,
+    #38add8 50%,
+    #38add8 100%
+  ) !important;
+}
+.bg-typescript {
+  color: rgb(255, 255, 255) !important;
+  background-color: rgba(47, 116, 192, 1) !important;
+}
+.bg-aws {
+  color: rgb(0, 0, 0) !important;
+  background-color: rgba(248, 148, 0, 1) !important;
+}
+.bg-azure {
+  color: rgb(255, 255, 255) !important;
+  background-color: rgba(4, 133, 207, 1) !important;
+}
+.bg-aspnet {
+  color: rgb(255, 255, 255) !important;
+  background-color: rgba(95, 52, 146, 1) !important;
+}
+.bg-sqlserver {
+  color: rgb(255, 255, 255) !important;
+  background-color: rgba(178, 27, 27, 1) !important;
+}
+.bg-javascript {
+  color: rgb(0, 0, 0) !important;
+  background-color: rgba(239, 216, 30, 1) !important;
+}
+.bg-jquery {
+  color: rgb(0, 0, 0) !important;
+  background-color: rgba(117, 201, 238, 1) !important;
+}
+.bg-git {
+  color: rgb(255, 255, 255) !important;
+  background-color: rgba(0, 0, 0, 1) !important;
+}
+.bg-git {
+  color: rgb(255, 255, 255) !important;
+  background-color: rgba(0, 0, 0, 1) !important;
+}

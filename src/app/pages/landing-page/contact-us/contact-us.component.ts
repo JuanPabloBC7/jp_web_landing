@@ -42,7 +42,6 @@ export class ContactUsComponent {
     }
 
     this.loading = true;
-    // Simula envío
     setTimeout(() => {
       this.loading = false;
       this.success = true;

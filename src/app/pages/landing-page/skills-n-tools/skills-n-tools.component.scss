@@ -1,0 +1,174 @@
+img {
+  width: 6em;
+  height: 6em;
+  object-fit: cover;
+  object-position: center;
+}
+
+.bg-html {
+  background: linear-gradient(
+    to right,
+    #dc4a24 0%,
+    #dc4a24 50%,
+    #f16529 50%,
+    #f16529 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.bg-css3 {
+  background: linear-gradient(
+    to right,
+    #1479b8 0%,
+    #1479b8 50%,
+    #38add8 50%,
+    #38add8 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.bg-sass {
+  color: #c76494;
+}
+.bg-angular {
+  background: linear-gradient(
+    to right,
+    #d60330 0%,
+    #d60330 50%,
+    #bd032d 50%,
+    #bd032d 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.bg-react {
+  color: #0ad2f7;
+}
+.bg-aspnet {
+  color: #5f3492;
+}
+.bg-javascript {
+  color: #efd81e;
+  background-color: #000000;
+}
+.bg-typescript {
+  color: #2f74c0;
+}
+.bg-python {
+  background: linear-gradient(
+    to bottom right,
+    #33648a 0%,
+    #33648a 50%,
+    #eab530 50%,
+    #eab530 100%
+  );  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.bg-php {
+  color: #7b7fb5;
+}
+.bg-java {
+  background: linear-gradient(
+    to bottom,
+    #dd3f1b 0%,
+    #dd3f1b 54%,
+    #78a4fb 54%,
+    #78a4fb 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.bg-csharp {
+  color: #6d297eff;
+}
+.bg-visualbasic {
+  background: linear-gradient(
+    to top right,
+    #25659a 0%,
+    #25659a 50%,
+    #0e548f 50%,
+    #0e548f 100%
+  );  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.bg-sqlserver {
+  color: #b21b1b;
+}
+.bg-mysql {
+  color: #147993;
+}
+.bg-oracle {
+  color: #ef1715;
+}
+.bg-mongodb {
+  background: linear-gradient(
+    to right,
+    #51aa43 0%,
+    #51aa43 50%,
+    #47983b 50%,
+    #47983b 100%
+  );  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.bg-mariadb {
+  color: #0a3b4b;
+}
+.bg-postgresql {
+  color: #3a6c94;
+}
+.bg-firebase {
+  color: #f6862a;
+}
+.bg-jquery {
+  color: rgba(117, 201, 238, 1);
+}
+.bg-git {
+  color: #000000;
+}
+.bg-bootstrap {
+  color: #8f13fe;
+  color: #6a10f2;
+  background: linear-gradient(
+    to bottom right,
+    #8f13fe 0%,
+    #6a10f2 100%
+  );  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.bg-aws {
+  background: linear-gradient(
+    to bottom,
+    #f89400 0%,
+    #f89400 55%,
+    #000000 55%,
+    #000000 100%
+  );  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.bg-azure {
+  color: #0485cf;
+}
+.bg-devops {
+  color: #0976d7;
+}
