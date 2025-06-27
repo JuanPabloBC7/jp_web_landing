@@ -22,16 +22,16 @@
       "title": "Social Networks",
       "description": "Connect with me on my social networks",
       "links": {
-        "email": "juanpablobc7@gmail.com",
-        "cell": "+502 5115-0443",
-        "facebook": "https://www.facebook.com/juanpablo.balancontreras.1?mibextid=LQQJ4d",
-        "instagram": "https://instagram.com/juanpablobc7?igshid=OGQ5ZDc2ODk2ZA==",
-        "whatsapp": "https://wa.me/50251150443",
-        "telegram": "https://t.me/jpbalan",
-        "twitter": "https://twitter.com/jpbalan7",
-        "github": "https://github.com/JuanPabloBC7",
-        "linkedin": "https://www.linkedin.com/in/juan-pablo-balan-contreras-5095091bb?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BoLj9WPBfTYCuwwkD%2Fvtz9A%3D%3D",
-        "coverLetter": "https://www.canva.com/design/DAEUnl-dn40/YEzded9TQo20tqhzKrDyEw/view?utm_content=DAEUnl-dn40&utm_campaign=designshare&utm_medium=link&utm_source=editor"
+        "email": { "name": "Email", "icon": "fa-solid fa-envelope", "link": "juanpablobc7@gmail.com" },
+        "cell": { "name": "Phone", "icon": "fa-solid fa-phone", "link": "+502 5115-0443" },
+        "facebook": { "name": "Facebook", "icon": "fa-brands fa-facebook", "link": "https://www.facebook.com/juanpablo.balancontreras.1?mibextid=LQQJ4d" },
+        "instagram": { "name": "Instagram", "icon": "fa-brands fa-instagram", "link": "https://instagram.com/juanpablobc7?igshid=OGQ5ZDc2ODk2ZA==" },
+        "whatsapp": { "name": "Whatsapp", "icon": "fa-brands fa-whatsapp", "link": "https://wa.me/50251150443" },
+        "telegram": { "name": "Telegram", "icon": "fa-solid fa-paper-plane", "link": "https://t.me/jpbalan" },
+        "twitter": { "name": "Twitter", "icon": "fa-brands fa-x-twitter", "link": "https://twitter.com/jpbalan7" },
+        "github": { "name": "Github", "icon": "fa-brands fa-github", "link": "https://github.com/JuanPabloBC7" },
+        "linkedin": { "name": "Linkedin", "icon": "fa-brands fa-linkedin", "link": "https://www.linkedin.com/in/juan-pablo-balan-contreras-5095091bb?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BoLj9WPBfTYCuwwkD%2Fvtz9A%3D%3D" },
+        "coverLetter": { "name": "Cover Letter", "icon": "fa-solid fa-file-lines", "link": "https://www.canva.com/design/DAEUnl-dn40/YEzded9TQo20tqhzKrDyEw/view?utm_content=DAEUnl-dn40&utm_campaign=designshare&utm_medium=link&utm_source=editor" }
       }
     },
     "navbar": {
@@ -92,114 +92,34 @@
       "description": "I have experience in a wide range of technologies and tools that allow me to create efficient and scalable solutions. Here are some of the skills I possess:",
       "descriptionbottom": "I specialize in a variety of programming languages, frameworks, and tools that allow me to deliver efficient and scalable solutions. I'm always willing to learn new technologies and improve my skills to stay up-to-date with the latest trends in web development.",
       "skills": {
-        "html": {
-          "title": "HTML",
-          "icon": "fa-brands fa-html5"
-        },
-        "css3": {
-          "title": "CSS3",
-          "icon": "fa-brands fa-css3-alt"
-        },
-        "sass": {
-          "title": "Sass",
-          "icon": "fa-brands fa-sass"
-        },
-        "angular": {
-          "title": "Angular",
-          "icon": "fa-brands fa-angular"
-        },
-        "react": {
-          "title": "React",
-          "icon": "fa-brands fa-react"
-        },
-        "aspnet": {
-          "title": "ASP.NET",
-          "icon": "fa-brands fa-microsoft"
-        },
-        "javascript": {
-          "title": "JavaScript",
-          "icon": "fa-brands fa-js"
-        },
-        "typescript": {
-          "title": "TypeScript",
-          "icon": "fa-brands fa-js-square"
-        },
-        "nodejs": {
-          "title": "Node.js",
-          "icon": "fa-brands fa-node-js"
-        },
-        "python": {
-          "title": "Python",
-          "icon": "fa-brands fa-python"
-        },
-        "php": {
-          "title": "PHP",
-          "icon": "fa-brands fa-php"
-        },
-        "java": {
-          "title": "Java",
-          "icon": "fa-brands fa-java"
-        },
-        "csharp": {
-          "title": "C#",
-          "icon": "fa-brands fa-csharp"
-        },
-        "visualbasic": {
-          "title": "Visual Basic",
-          "icon": "fa-brands fa-windows"
-        },
-        "sqlserver": {
-          "title": "SQL Server",
-          "icon": "fa-solid fa-database"
-        },
-        "myslq": {
-          "title": "MySQL",
-          "icon": "fa-solid fa-database"
-        },
-        "oracle": {
-          "title": "Oracle",
-          "icon": "fa-solid fa-database"
-        },
-        "mongodb": {
-          "title": "MongoDB",
-          "icon": "fa-solid fa-database"
-        },
-        "mariadb": {
-          "title": "MariaDB",
-          "icon": "fa-solid fa-database"
-        },
-        "postgresql": {
-          "title": "PostgreSQL",
-          "icon": "fa-solid fa-database"
-        },
-        "firebase": {
-          "title": "Firebase",
-          "icon": "fa-brands fa-firebase"
-        },
-        "jquery": {
-          "title": "jQuery",
-          "icon": "fa-brands fa-square-js"
-        },
-        "git": {
-          "title": "Git",
-          "icon": "fa-brands fa-git-alt"
-        },
-        "boostrap": {
-          "title": "Bootstrap",
-          "icon": "fa-brands fa-bootstrap"
-        },
-        "aws": {
-          "title": "AWS",
-          "icon": "fa-brands fa-aws"
-        },
-        "azure": {
-          "title": "Azure",
-          "icon": "fa-brands fa-microsoft"
-        },
-        "devops": {
-          "title": "DevOps",
-          "icon": "fa-solid fa-rocket"
-        }
+        "html": { "name": "HTML", "icon": "devicon-html5-plain bg-html" },
+        "css3": { "name": "CSS3", "icon": "devicon-css3-plain bg-css3" },
+        "sass": { "name": "Sass", "icon": "devicon-sass-original bg-sass" },
+        "angular": { "name": "Angular", "icon": "devicon-angularjs-plain bg-angular" },
+        "react": { "name": "React", "icon": "devicon-react-original bg-react" },
+        "aspnet": { "name": "ASP.NET", "icon": "devicon-visualstudio-plain bg-aspnet" },
+        "javascript": { "name": "JavaScript", "icon": "devicon-javascript-plain bg-javascript" },
+        "typescript": { "name": "TypeScript", "icon": "devicon-typescript-plain bg-typescript" },
+        "nodejs": { "name": "Node.js", "icon": "devicon-nodejs-plain bg-node" },
+        "python": { "name": "Python", "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" },
+        "php": { "name": "PHP", "icon": "devicon-php-plain bg-php" },
+        "java": { "name": "Java", "icon": "devicon-java-plain bg-java" },
+        "csharp": { "name": "C#", "icon": "devicon-csharp-plain bg-csharp" },
+        "visualbasic": { "name": "Visual Basic", "icon": "devicon-visualbasic-plain bg-visualbasi" },
+        "sqlserver": { "name": "SQL Server", "prefix": "Microsoft", "icon": "devicon-microsoftsqlserver-plain bg-sqlserver" },
+        "myslq": { "name": "MySQL", "icon": "devicon-mysql-original bg-mysql" },
+        "oracle": { "name": "Oracle", "icon": "devicon-oracle-original bg-oracle" },
+        "mongodb": { "name": "MongoDB", "icon": "devicon-mongodb-plain bg-mongodb" },
+        "mariadb": { "name": "MariaDB", "icon": "devicon-mariadb-original bg-mariadb" },
+        "postgresql": { "name": "PostgreSQL", "icon": "devicon-postgresql-plain bg-postgresql" },
+        "firebase": { "name": "Firebase", "icon": "devicon-firebase-plain bg-firebase" },
+        "npm": { "name": "npm", "icon": "devicon-npm-original-wordmark bg-npm" },
+        "jquery": { "name": "jQuery", "icon": "devicon-jquery-plain bg-jquery" },
+        "git": { "name": "Git", "icon": "devicon-git-plain bg-git" },
+        "boostrap": { "name": "Bootstrap", "icon": "devicon-bootstrap-plain bg-bootstrap" },
+        "aws": { "name": "AWS", "icon": "devicon-amazonwebservices-plain-wordmark bg-aws" },
+        "azure": { "name": "Azure", "icon": "devicon-azure-plain bg-azure" },
+        "devops": { "name": "DevOps", "icon": "devicon-azuredevops-plain bg-devops" }
       }
     },
     "work": {
@@ -207,56 +127,74 @@
       "experiences": {
         "bam": {
           "title": "Banco Agromercantil (Bam)",
-          "subtitleOne": "Frontend Developer",
-          "subtitleTwo": "June 2024 - Present",
+          "subtitleOne": {
+            "name": "Frontend Developer",
+            "icon": "fa fa-certificate"
+          },
+          "subtitleTwo": {
+            "name": "June 2024 - Present",
+            "icon": "fa fa-calendar-o"
+          },
           "duration": "",
           "description": "Development of web solutions for corporate banking.",
-          "skills": {
-            "html": { "title": "HTML5", "bgColor": "bg-html" },
-            "css3": { "title": "CSS3", "bgColor": "bg-css3" },
-            "angular": { "title": "Angular", "bgColor": "bg-angular" },
-            "typescript": { "title": "TypeScript", "bgColor": "bg-typescript" },
-            "lambdas": { "title": "Lambdas", "bgColor": "" },
-            "aws": { "title": "aws", "bgColor": "bg-aws" },
-            "azure": { "title": "Azure", "bgColor": "bg-azure" }
-          }
+          "skills": [
+            { "name": "HTML5", "color": "bg-html" },
+            { "name": "CSS3", "color": "bg-css3" },
+            { "name": "Angular", "color": "bg-angular" },
+            { "name": "TypeScript", "color": "bg-typescript" },
+            { "name": "Lambdas", "color": "" },
+            { "name": "aws", "color": "bg-aws" },
+            { "name": "Azure", "color": "bg-azure" }
+          ]
         },
         "mides": {
           "title": "Ministerio de Desarrollo Social (MIDES)",
-          "subtitleOne": "Fullstack Developer",
-          "subtitleTwo": "",
+          "subtitleOne": {
+            "name": "Fullstack Developer",
+            "icon": "fa fa-certificate"
+          },
+          "subtitleTwo": {
+            "name": "",
+            "icon": ""
+          },
           "duration": "Jun 15, 2021 - Jan 31, 2024",
           "description": "• Project Creation. • Bug maintenance. • Database script creation. • IIS application publishing.",
-          "skills": {
-            "html": { "title": "HTML5", "bgColor": "bg-html" },
-            "css3": { "title": "CSS3", "bgColor": "bg-css3" },
-            "aspnet": { "title": "ASP.NET", "bgColor": "bg-aspnet" },
-            "csharp": { "title": "C#", "bgColor": "bg-typescript" },
-            "javascript": { "title": "JavaScript", "bgColor": "bg-javascript" },
-            "jquery": { "title": "jQuery", "bgColor": "bg-jquery" },
-            "sqlserver": { "title": "SQL Server", "bgColor": "bg-sqlserver" },
-            "git": { "title": "Git", "bgColor": "bg-git" },
-            "reports": { "title": "Reports", "bgColor": "" }
-          }
+          "skills": [
+            { "name": "HTML5", "color": "bg-html" },
+            { "name": "CSS3", "color": "bg-css3" },
+            { "name": "ASP.NET", "color": "bg-aspnet" },
+            { "name": "C#", "color": "bg-typescript" },
+            { "name": "JavaScript", "color": "bg-javascript" },
+            { "name": "jQuery", "color": "bg-jquery" },
+            { "name": "SQL Server", "color": "bg-sqlserver" },
+            { "name": "Git", "color": "bg-git" },
+            { "name": "Reports", "color": "" }
+          ]
         },
         "url": {
           "title": "Universidad Rafael Landívar (URL)",
-          "subtitleOne": "Fullstack Developer",
-          "subtitleTwo": "",
+          "subtitleOne": {
+            "name": "Fullstack Developer",
+            "icon": "fa fa-certificate"
+          },
+          "subtitleTwo": {
+            "name": "",
+            "icon": ""
+          },
           "duration": "May 15, 2019 - Jun 03, 2021",
           "description": "• Project Creation. • Bug maintenance. • Database script creation. • Management of financial and administrative systems.",
-          "skills": {
-            "html": { "title": "HTML5", "bgColor": "bg-html" },
-            "css3": { "title": "CSS3", "bgColor": "bg-css3" },
-            "aspnet": { "title": "ASP.NET", "bgColor": "bg-aspnet" },
-            "csharp": { "title": "C#", "bgColor": "bg-typescript" },
-            "javascript": { "title": "JavaScript", "bgColor": "bg-javascript" },
-            "powerBuilder": { "title": "Power Builder", "bgColor": "bg-typescript" },
-            "jquery": { "title": "jQuery", "bgColor": "bg-jquery" },
-            "sqlserver": { "title": "SQL Server", "bgColor": "bg-sqlserver" },
-            "git": { "title": "Git", "bgColor": "bg-git" },
-            "azure": { "title": "Azure", "bgColor": "bg-azure" }
-          }
+          "skills": [
+            { "name": "HTML5", "color": "bg-html" },
+            { "name": "CSS3", "color": "bg-css3" },
+            { "name": "ASP.NET", "color": "bg-aspnet" },
+            { "name": "C#", "color": "bg-typescript" },
+            { "name": "JavaScript", "color": "bg-javascript" },
+            { "name": "Power Builder", "color": "bg-typescript" },
+            { "name": "jQuery", "color": "bg-jquery" },
+            { "name": "SQL Server", "color": "bg-sqlserver" },
+            { "name": "Git", "color": "bg-git" },
+            { "name": "Azure", "color": "bg-azure" }
+          ]
         }
       }
     },

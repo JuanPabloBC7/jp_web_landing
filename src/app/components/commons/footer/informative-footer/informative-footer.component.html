@@ -12,39 +12,32 @@
           {{ 'configuration.footer.informativeFooter.description' | translate }}
         </p>
         <ul class="list-unstyled text-secondary mb-0">
-          <li><i class="fa-solid fa-envelope me-2"></i>{{ 'configuration.social.links.email' | translate }}</li>
-          <li><i class="fa-solid fa-phone me-2"></i>{{ 'configuration.social.links.cell' | translate }}</li>
+          <li><i class="fa-solid fa-envelope me-2"></i>{{ 'configuration.social.links.email.link' | translate }}</li>
+          <li><i class="fa-solid fa-phone me-2"></i>{{ 'configuration.social.links.cell.link' | translate }}</li>
           <li><i class="fa-solid fa-location-dot me-2"></i>{{ 'configuration.country' | translate }}, {{ 'configuration.city' | translate }}</li>
         </ul>
       </div>
       <div class="col-6 col-md-2">
         <h6 class="fw-semibold mb-3">{{ 'configuration.footer.informativeFooter.quickLinks' | translate }}</h6>
         <ul class="list-unstyled">
-          <li><a href="#home" class="text-secondary text-decoration-none">Inicio</a></li>
-          <li><a href="#about-us" class="text-secondary text-decoration-none">Acerca de</a></li>
-          <li><a href="#skills-&-tools" class="text-secondary text-decoration-none">Habilidades y Herramientas</a></li>
-          <li><a href="#work" class="text-secondary text-decoration-none">Timeline Work</a></li>
-          <li><a href="#contact-us" class="text-secondary text-decoration-none">Contáctanos</a></li>
+          <ng-container *ngFor="let item of navigation">
+            <li><a [attr.href]="item.href" class="text-secondary text-decoration-none">{{ item.value }}</a></li>
+          </ng-container>
         </ul>
       </div>
       <div class="col-6 col-md-2">
         <h6 class="fw-semibold mb-3">{{ 'configuration.footer.informativeFooter.other' | translate }}</h6>
-        <ul class="list-unstyled">
+        <!-- <ul class="list-unstyled">
           <li><a href="#" class="text-secondary text-decoration-none">Mi experiencia (texto y ejemplos)</a></li>
           <li><a href="#" class="text-secondary text-decoration-none">Trabajos</a></li>
-        </ul>
+        </ul> -->
       </div>
       <div class="col-md-3">
         <h6 class="fw-semibold mb-3">{{ 'configuration.social.title' | translate }}</h6>
         <div class="mt-4 text-center">
-          <a href="#" class="text-secondary me-4"><i class="fa-brands fa-facebook fs-3 mt-2" [ngbTooltip]="'configuration.language.title' | translate"></i></a>
-          <a href="#" class="text-secondary me-4"><i class="fa-brands fa-instagram fs-3 mt-2" [ngbTooltip]="'configuration.language.title' | translate"></i></a>
-          <a href="#" class="text-secondary me-4"><i class="fa-brands fa-whatsapp fs-3 mt-2" [ngbTooltip]="'configuration.language.title' | translate"></i></a>
-          <a href="#" class="text-secondary me-4"><i class="fa-solid fa-paper-plane fs-3 mt-2" [ngbTooltip]="'configuration.language.title' | translate"></i></a>
-          <a href="#" class="text-secondary me-4"><i class="fa-brands fa-x-twitter fs-3 mt-2" [ngbTooltip]="'configuration.language.title' | translate"></i></a>
-          <a href="#" class="text-secondary me-4"><i class="fa-brands fa-github fs-3 mt-2" [ngbTooltip]="'configuration.language.title' | translate"></i></a>
-          <a href="#" class="text-secondary me-4"><i class="fa-brands fa-linkedin fs-3 mt-2" [ngbTooltip]="'configuration.language.title' | translate"></i></a>
-          <a href="#" class="text-secondary me-4"><i class="fa-solid fa-envelope fs-3 mt-2" [ngbTooltip]="'configuration.language.title' | translate"></i></a>
+          <ng-container *ngFor="let item of socialMedia">
+            <a [attr.href]="item.href" class="text-secondary me-4"><i [class]="item.icon + ' fs-3 mt-2'" [ngbTooltip]="item.name"></i></a>
+          </ng-container>
         </div>
       </div>
     </div>
