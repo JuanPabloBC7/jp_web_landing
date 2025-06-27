@@ -36,11 +36,11 @@ export class LandingNavbarTopComponent implements OnInit {
       this.translateNavbar = res['configuration.navbar'];
       this.translateAppearance = res['configuration.appearance'];
       this.navigation = [];
-      for (const key in res.links) {
+      for (const key in this.translateNavbar.links) {
         if (key === 'home') {
-          this.navigation.push({name: key, value: res.links[key], href: `/`});
+          this.navigation.push({name: key, value: this.translateNavbar.links[key], href: `/#${key}`});
         } else {
-          this.navigation.push({name: key, value: res.links[key], href: `/${key}`});
+          this.navigation.push({name: key, value: this.translateNavbar.links[key], href: `/#${key}`});
         }
       }
 

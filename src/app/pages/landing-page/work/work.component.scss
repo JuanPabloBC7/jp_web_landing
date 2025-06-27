@@ -187,26 +187,6 @@ html, body {
   }
 }
 
-.timeline-content-info {
-  background: var(--bs-tertiary-bg, #2B343A);
-  padding: 6px 12px;
-  color: var(--bs-secondary-color, #bdbdbd);
-  font-size: 0.95rem;
-  border-radius: 4px;
-  margin-bottom: 0.5em;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1em;
-  align-items: center;
-}
-
-.timeline-content-info-title,
-.timeline-content-info-date {
-  display: flex;
-  align-items: center;
-  gap: 0.5em;
-}
-
 .content-skills {
   font-size: 0.95rem;
   padding: 0;

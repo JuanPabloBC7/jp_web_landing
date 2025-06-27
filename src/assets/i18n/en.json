@@ -24,20 +24,24 @@
       "links": {
         "email": "juanpablobc7@gmail.com",
         "cell": "+502 5115-0443",
-        "facebook": "https://facebook.com/jpbalan",
-        "instagram": "https://instagram.com/jpbalan",
-        "twitter": "https://twitter.com/jpbalan",
-        "github": "https://twitter.com/jpbalan",
-        "linkedin": "https://linkedin.com/in/jpbalan",
-        "coverLetter": "https://jpbalan.com/cover-letter.pdf"
+        "facebook": "https://www.facebook.com/juanpablo.balancontreras.1?mibextid=LQQJ4d",
+        "instagram": "https://instagram.com/juanpablobc7?igshid=OGQ5ZDc2ODk2ZA==",
+        "whatsapp": "https://wa.me/50251150443",
+        "telegram": "https://t.me/jpbalan",
+        "twitter": "https://twitter.com/jpbalan7",
+        "github": "https://github.com/JuanPabloBC7",
+        "linkedin": "https://www.linkedin.com/in/juan-pablo-balan-contreras-5095091bb?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BoLj9WPBfTYCuwwkD%2Fvtz9A%3D%3D",
+        "coverLetter": "https://www.canva.com/design/DAEUnl-dn40/YEzded9TQo20tqhzKrDyEw/view?utm_content=DAEUnl-dn40&utm_campaign=designshare&utm_medium=link&utm_source=editor"
       }
     },
     "navbar": {
       "title": "Menu",
       "links": {
         "home": "Home",
-        "about": "About Me",
-        "contact": "Contact"
+        "about-us": "About Me",
+        "skills-&-tools": "Skills & Tools",
+        "work": "Work",
+        "contact-us": "Contact"
       }
     },
     "footer": {
@@ -45,7 +49,242 @@
         "copyright": "© 2025 JPBalan. All rights reserved."
       },
       "informativeFooter": {
-        "description": "Creator of exceptional products that combine innovation, design, and functionality to enhance your daily life."
+        "description": "Creator of exceptional products that combine innovation, design, and functionality to enhance your daily life.",
+        "quickLinks": "Quick Links",
+        "other": "Other"
+      }
+    }
+  },
+  "pages": {
+    "introduction": {
+      "title": "Hello, my name is Juan Pablo Balan Contreras",
+      "subtitle": "I build web pages.",
+      "description": "Throughout my professional career, I have developed various solutions for different companies using various technologies."
+    },
+    "aboutUs": {
+      "title": "About Me",
+      "description": "I am a person passionate about technology and innovation. With more than 10 years of experience in web development, I specialize in creating digital solutions that help people and businesses grow and achieve their goals.",
+      "skills": {
+        "skillOne": {
+          "title": "Teamwork",
+          "description": "I enjoy collaborating with others to achieve common goals. I believe that teamwork is essential for success in any project.",
+          "icon": "fa-solid fa-users"
+        },
+        "skillTwo": {
+          "title": "Innovation and creativity",
+          "description": "I love creating innovative solutions that solve real problems. I am always looking for new ways to improve processes and products.",
+          "icon": "fa-solid fa-lightbulb"
+        },
+        "skillThree": {
+          "title": "Problem-solving",
+          "description": "I am skilled at analyzing problems and finding effective solutions. I approach challenges with a positive attitude and a determination to succeed.",
+          "icon": "fa-solid fa-gear"
+        },
+        "skillFour": {
+          "title": "Integrity and commitment",
+          "description": "I believe in doing the right thing, even when no one is watching. I am committed to delivering high-quality work and meeting deadlines.",
+          "icon": "fa-solid fa-heart"
+        }
+      }
+    },
+    "skillsNTools": {
+      "title": "Skills and Tools",
+      "description": "I have experience in a wide range of technologies and tools that allow me to create efficient and scalable solutions. Here are some of the skills I possess:",
+      "descriptionbottom": "I specialize in a variety of programming languages, frameworks, and tools that allow me to deliver efficient and scalable solutions. I'm always willing to learn new technologies and improve my skills to stay up-to-date with the latest trends in web development.",
+      "skills": {
+        "html": {
+          "title": "HTML",
+          "icon": "fa-brands fa-html5"
+        },
+        "css3": {
+          "title": "CSS3",
+          "icon": "fa-brands fa-css3-alt"
+        },
+        "sass": {
+          "title": "Sass",
+          "icon": "fa-brands fa-sass"
+        },
+        "angular": {
+          "title": "Angular",
+          "icon": "fa-brands fa-angular"
+        },
+        "react": {
+          "title": "React",
+          "icon": "fa-brands fa-react"
+        },
+        "aspnet": {
+          "title": "ASP.NET",
+          "icon": "fa-brands fa-microsoft"
+        },
+        "javascript": {
+          "title": "JavaScript",
+          "icon": "fa-brands fa-js"
+        },
+        "typescript": {
+          "title": "TypeScript",
+          "icon": "fa-brands fa-js-square"
+        },
+        "nodejs": {
+          "title": "Node.js",
+          "icon": "fa-brands fa-node-js"
+        },
+        "python": {
+          "title": "Python",
+          "icon": "fa-brands fa-python"
+        },
+        "php": {
+          "title": "PHP",
+          "icon": "fa-brands fa-php"
+        },
+        "java": {
+          "title": "Java",
+          "icon": "fa-brands fa-java"
+        },
+        "csharp": {
+          "title": "C#",
+          "icon": "fa-brands fa-csharp"
+        },
+        "visualbasic": {
+          "title": "Visual Basic",
+          "icon": "fa-brands fa-windows"
+        },
+        "sqlserver": {
+          "title": "SQL Server",
+          "icon": "fa-solid fa-database"
+        },
+        "myslq": {
+          "title": "MySQL",
+          "icon": "fa-solid fa-database"
+        },
+        "oracle": {
+          "title": "Oracle",
+          "icon": "fa-solid fa-database"
+        },
+        "mongodb": {
+          "title": "MongoDB",
+          "icon": "fa-solid fa-database"
+        },
+        "mariadb": {
+          "title": "MariaDB",
+          "icon": "fa-solid fa-database"
+        },
+        "postgresql": {
+          "title": "PostgreSQL",
+          "icon": "fa-solid fa-database"
+        },
+        "firebase": {
+          "title": "Firebase",
+          "icon": "fa-brands fa-firebase"
+        },
+        "jquery": {
+          "title": "jQuery",
+          "icon": "fa-brands fa-square-js"
+        },
+        "git": {
+          "title": "Git",
+          "icon": "fa-brands fa-git-alt"
+        },
+        "boostrap": {
+          "title": "Bootstrap",
+          "icon": "fa-brands fa-bootstrap"
+        },
+        "aws": {
+          "title": "AWS",
+          "icon": "fa-brands fa-aws"
+        },
+        "azure": {
+          "title": "Azure",
+          "icon": "fa-brands fa-microsoft"
+        },
+        "devops": {
+          "title": "DevOps",
+          "icon": "fa-solid fa-rocket"
+        }
+      }
+    },
+    "work": {
+      "title": "Timeline Work",
+      "experiences": {
+        "bam": {
+          "title": "Banco Agromercantil (Bam)",
+          "subtitleOne": "Frontend Developer",
+          "subtitleTwo": "June 2024 - Present",
+          "duration": "",
+          "description": "Development of web solutions for corporate banking.",
+          "skills": {
+            "html": { "title": "HTML5", "bgColor": "bg-html" },
+            "css3": { "title": "CSS3", "bgColor": "bg-css3" },
+            "angular": { "title": "Angular", "bgColor": "bg-angular" },
+            "typescript": { "title": "TypeScript", "bgColor": "bg-typescript" },
+            "lambdas": { "title": "Lambdas", "bgColor": "" },
+            "aws": { "title": "aws", "bgColor": "bg-aws" },
+            "azure": { "title": "Azure", "bgColor": "bg-azure" }
+          }
+        },
+        "mides": {
+          "title": "Ministerio de Desarrollo Social (MIDES)",
+          "subtitleOne": "Fullstack Developer",
+          "subtitleTwo": "",
+          "duration": "Jun 15, 2021 - Jan 31, 2024",
+          "description": "• Project Creation. • Bug maintenance. • Database script creation. • IIS application publishing.",
+          "skills": {
+            "html": { "title": "HTML5", "bgColor": "bg-html" },
+            "css3": { "title": "CSS3", "bgColor": "bg-css3" },
+            "aspnet": { "title": "ASP.NET", "bgColor": "bg-aspnet" },
+            "csharp": { "title": "C#", "bgColor": "bg-typescript" },
+            "javascript": { "title": "JavaScript", "bgColor": "bg-javascript" },
+            "jquery": { "title": "jQuery", "bgColor": "bg-jquery" },
+            "sqlserver": { "title": "SQL Server", "bgColor": "bg-sqlserver" },
+            "git": { "title": "Git", "bgColor": "bg-git" },
+            "reports": { "title": "Reports", "bgColor": "" }
+          }
+        },
+        "url": {
+          "title": "Universidad Rafael Landívar (URL)",
+          "subtitleOne": "Fullstack Developer",
+          "subtitleTwo": "",
+          "duration": "May 15, 2019 - Jun 03, 2021",
+          "description": "• Project Creation. • Bug maintenance. • Database script creation. • Management of financial and administrative systems.",
+          "skills": {
+            "html": { "title": "HTML5", "bgColor": "bg-html" },
+            "css3": { "title": "CSS3", "bgColor": "bg-css3" },
+            "aspnet": { "title": "ASP.NET", "bgColor": "bg-aspnet" },
+            "csharp": { "title": "C#", "bgColor": "bg-typescript" },
+            "javascript": { "title": "JavaScript", "bgColor": "bg-javascript" },
+            "powerBuilder": { "title": "Power Builder", "bgColor": "bg-typescript" },
+            "jquery": { "title": "jQuery", "bgColor": "bg-jquery" },
+            "sqlserver": { "title": "SQL Server", "bgColor": "bg-sqlserver" },
+            "git": { "title": "Git", "bgColor": "bg-git" },
+            "azure": { "title": "Azure", "bgColor": "bg-azure" }
+          }
+        }
+      }
+    },
+    "contact": {
+      "title": "Contact Me",
+      "description": "If you have any questions or want to work together, feel free to contact me. I will be happy to help you.",
+      "form": {
+        "name": {
+          "title": "Name",
+          "placeholder": "Enter your name"
+        },
+        "email": {
+          "title": "Email",
+          "placeholder": "you@email.com"
+        },
+        "message": {
+          "title": "Message",
+          "placeholder": "Enter your message"
+        },
+        "required": "This field is required.",
+        "invalid": "Please enter a valid field.",
+        "minlength": "This field must be at least 10 characters long.",
+        "maxlength": "This field cannot exceed 500 characters.",
+        "submit": "Send Message"
+      },
+      "notifications": {
+        "errorMessage": "There was an error sending the message. Please try again later.",
+        "successMessage": "Your message has been sent successfully. I will contact you as soon as possible."
       }
     }
   }

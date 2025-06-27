@@ -11,7 +11,7 @@
       <!-- Menú de navegación para pantallas grandes -->
       <nav class="d-none d-md-flex align-items-center gap-4">
         <ng-container *ngFor="let item of navigation">
-          <a [routerLink]="item.href" class="text-secondary-emphasis text-decoration-none fw-medium" [ngClass]="{'text-primary fw-bold': isActive(item.href)}">
+          <a [attr.href]="item.href" class="text-secondary-emphasis text-decoration-none fw-medium" [ngClass]="{'text-primary fw-bold': isActive(item.href)}">
             {{ item.value }}
           </a>
         </ng-container>

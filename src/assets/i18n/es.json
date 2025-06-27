@@ -38,8 +38,10 @@
       "title": "Menú",
       "links": {
         "home": "Inicio",
-        "about": "Sobre mí",
-        "contact": "Contacto"
+        "about-us": "Sobre mí",
+        "skills-&-tools": "Habilidades y herramientas",
+        "work": "Trabajo",
+        "contact-us": "Contacto"
       }
     },
     "footer": {
@@ -47,7 +49,242 @@
         "copyright": "© 2025 Jpbalan. Todos los derechos reservados."
       },
       "informativeFooter": {
-        "description": "Creador de productos excepcionales que combinan innovación, diseño y funcionalidad para mejorar tu vida diaria."
+        "description": "Creador de productos excepcionales que combinan innovación, diseño y funcionalidad para mejorar tu vida diaria.",
+        "quickLinks": "Enlaces rápidos",
+        "other": "Otros"
+      }
+    }
+  },
+  "pages": {
+    "introduction": {
+      "title": "Hola, mi nombre es Juan Pablo Balan Contreras",
+      "subtitle": "Hago paginas web.",
+      "description": "A lo largo de mi carrera profesional, he desarrollado diferentes soluciones para distintas companias, en diferentes tecnologias."
+    },
+    "aboutUs": {
+      "title": "Sobre mi",
+      "description": "Soy una persona apasionada por la tecnología y la innovación. Con más de 10 años de experiencia en el desarrollo web, me especializo en crear soluciones digitales que ayudan a las personas y empresas a crecer y alcanzar sus objetivos.",
+      "skills": {
+        "skillOne": {
+          "title": "Trabajo en equipo",
+          "description": "Creo firmemente que el trabajo en equipo es fundamental para el éxito de cualquier proyecto. Me encanta colaborar con otros profesionales y aprender de sus experiencias.",
+          "icon": "fa-solid fa-users"
+        },
+        "skillTwo": {
+          "title": "Aporte a nuevas ideas",
+          "description": "Siempre estoy buscando nuevas formas de mejorar y optimizar los procesos. Me gusta aportar ideas frescas y creativas que puedan llevar los proyectos al siguiente nivel.",
+          "icon": "fa-solid fa-lightbulb"
+        },
+        "skillThree": {
+          "title": "Resolución de problemas",
+          "description": "Me encanta enfrentar desafíos y encontrar soluciones efectivas. Tengo una mentalidad analítica y disfruto descomponer problemas complejos en partes manejables.",
+          "icon": "fa-solid fa-gear"
+        },
+        "skillFour": {
+          "title": "Integridad y compromiso",
+          "description": "Valoro la integridad y el compromiso en todo lo que hago. Siempre cumplo con mis responsabilidades y me esfuerzo por superar las expectativas.",
+          "icon": "fa-solid fa-heart"
+        }
+      }
+    },
+    "skillsNTools": {
+      "title": "Habilidades y Herramientas",
+      "description": "A lo largo de mi carrera, he adquirido una amplia gama de habilidades y herramientas que me permiten desarrollar soluciones efectivas y eficientes.",
+      "descriptionbottom": "Me especializo en una variedad de lenguajes de programación, frameworks y herramientas que me permiten entregar soluciones eficientes y escalables. Siempre estoy dispuesto a aprender nuevas tecnologías y mejorar mis habilidades para mantenerme al día con las últimas tendencias en desarrollo web.",
+      "skills": {
+        "html": {
+          "title": "HTML",
+          "icon": "fa-brands fa-html5"
+        },
+        "css3": {
+          "title": "CSS3",
+          "icon": "fa-brands fa-css3-alt"
+        },
+        "sass": {
+          "title": "Sass",
+          "icon": "fa-brands fa-sass"
+        },
+        "angular": {
+          "title": "Angular",
+          "icon": "fa-brands fa-angular"
+        },
+        "react": {
+          "title": "React",
+          "icon": "fa-brands fa-react"
+        },
+        "aspnet": {
+          "title": "ASP.NET",
+          "icon": "fa-brands fa-microsoft"
+        },
+        "javascript": {
+          "title": "JavaScript",
+          "icon": "fa-brands fa-js"
+        },
+        "typescript": {
+          "title": "TypeScript",
+          "icon": "fa-brands fa-js-square"
+        },
+        "nodejs": {
+          "title": "Node.js",
+          "icon": "fa-brands fa-node-js"
+        },
+        "python": {
+          "title": "Python",
+          "icon": "fa-brands fa-python"
+        },
+        "php": {
+          "title": "PHP",
+          "icon": "fa-brands fa-php"
+        },
+        "java": {
+          "title": "Java",
+          "icon": "fa-brands fa-java"
+        },
+        "csharp": {
+          "title": "C#",
+          "icon": "fa-brands fa-csharp"
+        },
+        "visualbasic": {
+          "title": "Visual Basic",
+          "icon": "fa-brands fa-windows"
+        },
+        "sqlserver": {
+          "title": "SQL Server",
+          "icon": "fa-solid fa-database"
+        },
+        "myslq": {
+          "title": "MySQL",
+          "icon": "fa-solid fa-database"
+        },
+        "oracle": {
+          "title": "Oracle",
+          "icon": "fa-solid fa-database"
+        },
+        "mongodb": {
+          "title": "MongoDB",
+          "icon": "fa-solid fa-database"
+        },
+        "mariadb": {
+          "title": "MariaDB",
+          "icon": "fa-solid fa-database"
+        },
+        "postgresql": {
+          "title": "PostgreSQL",
+          "icon": "fa-solid fa-database"
+        },
+        "firebase": {
+          "title": "Firebase",
+          "icon": "fa-brands fa-firebase"
+        },
+        "jquery": {
+          "title": "jQuery",
+          "icon": "fa-brands fa-square-js"
+        },
+        "git": {
+          "title": "Git",
+          "icon": "fa-brands fa-git-alt"
+        },
+        "boostrap": {
+          "title": "Bootstrap",
+          "icon": "fa-brands fa-bootstrap"
+        },
+        "aws": {
+          "title": "AWS",
+          "icon": "fa-brands fa-aws"
+        },
+        "azure": {
+          "title": "Azure",
+          "icon": "fa-brands fa-microsoft"
+        },
+        "devops": {
+          "title": "DevOps",
+          "icon": "fa-solid fa-rocket"
+        }
+      }
+    },
+    "work": {
+      "title": "Línea de trabajo",
+      "experiences": {
+        "bam": {
+          "title": "Banco Agromercantil (Bam)",
+          "subtitleOne": "Desarrollador Frontend",
+          "subtitleTwo": "Junio 2024 - Presente",
+          "duration": "",
+          "description": "Desarrollo de soluciones web para banca empresas",
+          "skills": {
+            "html": { "title": "HTML5", "bgColor": "bg-html" },
+            "css3": { "title": "CSS3", "bgColor": "bg-css3" },
+            "angular": { "title": "Angular", "bgColor": "bg-angular" },
+            "typescript": { "title": "TypeScript", "bgColor": "bg-typescript" },
+            "lambdas": { "title": "Lambdas", "bgColor": "" },
+            "aws": { "title": "aws", "bgColor": "bg-aws" },
+            "azure": { "title": "Azure", "bgColor": "bg-azure" }
+          }
+        },
+        "mides": {
+          "title": "Ministerio de Desarrollo Social (MIDES)",
+          "subtitleOne": "Desarrollador Fullstack",
+          "subtitleTwo": "",
+          "duration": "Jun 15, 2021 - Ene 31, 2024",
+          "description": "• Creación de proyectos. • Mantenimiento de bugs. • Creación de scripts para base de datos. • Publicación de aplicaciones IIS.",
+          "skills": {
+            "html": { "title": "HTML5", "bgColor": "bg-html" },
+            "css3": { "title": "CSS3", "bgColor": "bg-css3" },
+            "aspnet": { "title": "ASP.NET", "bgColor": "bg-aspnet" },
+            "csharp": { "title": "C#", "bgColor": "bg-typescript" },
+            "javascript": { "title": "JavaScript", "bgColor": "bg-javascript" },
+            "jquery": { "title": "jQuery", "bgColor": "bg-jquery" },
+            "sqlserver": { "title": "SQL Server", "bgColor": "bg-sqlserver" },
+            "git": { "title": "Git", "bgColor": "bg-git" },
+            "reports": { "title": "Reports", "bgColor": "" }
+          }
+        },
+        "url": {
+          "title": "Universidad Rafael Landívar (URL)",
+          "subtitleOne": "Desarrollador Fullstack",
+          "subtitleTwo": "",
+          "duration": "May 15, 2019 - Jun 03, 2021",
+          "description": "• Creación de proyectos. • Mantenimiento de bugs. • Creación de scripts para base de datos. • Manejo de sistemas financieros y administrativos.",
+          "skills": {
+            "html": { "title": "HTML5", "bgColor": "bg-html" },
+            "css3": { "title": "CSS3", "bgColor": "bg-css3" },
+            "aspnet": { "title": "ASP.NET", "bgColor": "bg-aspnet" },
+            "csharp": { "title": "C#", "bgColor": "bg-typescript" },
+            "javascript": { "title": "JavaScript", "bgColor": "bg-javascript" },
+            "powerBuilder": { "title": "Power Builder", "bgColor": "bg-typescript" },
+            "jquery": { "title": "jQuery", "bgColor": "bg-jquery" },
+            "sqlserver": { "title": "SQL Server", "bgColor": "bg-sqlserver" },
+            "git": { "title": "Git", "bgColor": "bg-git" },
+            "azure": { "title": "Azure", "bgColor": "bg-azure" }
+          }
+        }
+      }
+    },
+    "contact": {
+      "title": "Contáctame",
+      "description": "Si deseas contactarme, puedes hacerlo a través de mis redes sociales o enviándome un correo electrónico.",
+      "form": {
+        "name": {
+          "title": "Nombre",
+          "placeholder": "Ingresa tu nombre"
+        },
+        "email": {
+          "title": "Correo electrónico",
+          "placeholder": "tu@email.com"
+        },
+        "message": {
+          "title": "Mensaje",
+          "placeholder": "¿En qué podemos ayudarte?"
+        },
+        "required": "Este campo es obligatorio.",
+        "invalid": "Este campo no es válido.",
+        "minlength": "Este campo debe tener al menos 10 caracteres.",
+        "maxlength": "Este campo no puede tener más de 500 caracteres.",
+        "submit": "Enviar mensaje"
+      },
+      "notifications": {
+        "errorMessage": "¡Error al enviar el mensaje!",
+        "successMessage": "¡Mensaje enviado correctamente!"
       }
     }
   }
