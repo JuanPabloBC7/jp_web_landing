@@ -1,0 +1,45 @@
+.section {
+  position: relative;
+  overflow: hidden;
+}
+
+.section-introduction::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: -1px; height: 60px;
+  background: var(--bs-dark-bg-subtle);
+  clip-path: polygon(0 0, 100% 100%, 0 100%);
+  z-index: 0;
+}
+.section-about-us::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: -1px; height: 60px;
+  background: var(--bs-secondary-bg-subtle);
+  clip-path: polygon(0 0, 100% 100%, 0 100%);
+  z-index: 0;
+}
+.section-skills-n-tools::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: -1px; height: 60px;
+  background: var(--bs-tertiary-bg);
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+  z-index: 0;
+}
+.section-work::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: -1px; height: 60px;
+  background: var(--bs-body-bg);
+  clip-path: polygon(0 0, 100% 100%, 0 100%);
+  z-index: 0;
+}
+.section-contac-us::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: -1px; height: 60px;
+  background: var(--bs-black);
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+  z-index: 0;
+}

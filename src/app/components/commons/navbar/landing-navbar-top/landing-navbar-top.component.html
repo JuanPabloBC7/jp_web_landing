@@ -2,14 +2,14 @@
   <div class="container">
     <div class="d-flex justify-content-between align-items-center h-100 py-2">
       <a routerLink="/" class="d-flex align-items-center text-decoration-none">
-        <div class="bg-primary p-2 rounded">
+        <div class="bg-danger p-2 rounded">
           <i class="text-white fs-4">{{ 'configuration.icon' | translate }}</i>
         </div>
-        <span class="fs-4 fw-bold ms-2">{{ 'configuration.name' | translate }}</span>
+        <span class="text-danger fs-4 fw-bold ms-2">{{ 'configuration.name' | translate }}</span>
       </a>
 
       <!-- Menú de navegación para pantallas grandes -->
-      <nav class="d-none d-md-flex align-items-center gap-4">
+      <nav class="d-none d-lg-flex align-items-center gap-4">
         <ng-container *ngFor="let item of navigation">
           <a [attr.href]="item.href" class="text-secondary-emphasis text-decoration-none fw-medium" [ngClass]="{'text-primary fw-bold': isActive(item.href)}">
             {{ item.value }}
@@ -28,10 +28,10 @@
         <!-- <a routerLink="/contact" class="btn btn-primary w-100" (click)="isOpen = false">Get Started</a> -->
       </nav>
 
-      <button (click)="toggleTheme()" class="btn d-inline-block d-md-none ms-auto me">
+      <button (click)="toggleTheme()" class="btn d-inline-block d-lg-none ms-auto me">
         <i class="fa-solid fs-5" [ngClass]="isDark ? 'fa-moon' : 'fa-sun'" [ngbTooltip]="appearance"></i>
       </button>
-      <div ngbDropdown class="d-inline-block d-md-none me">
+      <div ngbDropdown class="d-inline-block d-lg-none me">
         <button class="btn w-100 dropdown-toggle" id="languageDropdown" ngbDropdownToggle><i class="fa-solid fa-language" [ngbTooltip]="'configuration.language.title' | translate"></i></button>
         <div ngbDropdownMenu aria-labelledby="languageDropdown">
           <button class="dropdown-item" (click)="setLanguage('es')" ngbDropdownItem>{{ 'configuration.language.options.spanish' | translate }}</button>
@@ -39,16 +39,16 @@
         </div>
       </div>
       <!-- Botón hamburguesa para móviles -->
-      <button type="button" class="btn d-md-none" (click)="isOpen = !isOpen" aria-label="Toggle navigation">
+      <button type="button" class="btn d-lg-none" (click)="isOpen = !isOpen" aria-label="Toggle navigation">
         <i class="fa-solid" [ngClass]="isOpen ? 'fa-bars-staggered' : 'fa-bars'" [ngbTooltip]="'configuration.navbar.title' | translate"></i>
       </button>
     </div>
 
     <!-- Menú colapsable para móviles -->
-    <div *ngIf="isOpen" class="d-md-none">
+    <div *ngIf="isOpen" class="d-lg-none">
       <div class="border-top px-3 py-2">
         <ng-container *ngFor="let item of navigation">
-          <a [routerLink]="item.href" class="d-block px-2 py-2 rounded text-decoration-none fw-medium mb-1" [ngClass]="{'text-primary bg-primary bg-opacity-10 fw-bold': isActive(item.href), 'text-secondary': !isActive(item.href)}" (click)="isOpen = false">
+          <a [attr.href]="item.href" class="d-block px-2 py-2 rounded text-decoration-none fw-medium mb-1" [ngClass]="{'text-primary bg-primary bg-opacity-10 fw-bold': isActive(item.href), 'text-secondary': !isActive(item.href)}" (click)="isOpen = false">
             {{ item.value }}
           </a>
         </ng-container>

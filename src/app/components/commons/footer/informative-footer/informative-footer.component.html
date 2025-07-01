@@ -1,12 +1,12 @@
-<footer id="contact" class="pt-5 pb-3" style="background-color: var(--bs-tertiary-bg);">
+<footer id="contact" class="pt-5 pb-3 bg-black">
   <div class="container">
     <div class="row gy-4">
       <div class="col-md-5">
         <div class="d-flex align-items-center mb-3">
-          <div class="bg-primary rounded-3 d-flex align-items-center justify-content-center" style="width: 48px; height: 48px;">
+          <div class="bg-danger rounded-3 d-flex align-items-center justify-content-center" style="width: 48px; height: 48px;">
             <span class="fw-bold fs-4 text-white">{{ 'configuration.icon' | translate }}</span>
           </div>
-          <span class="fs-4 fw-semibold ms-3">{{ 'configuration.name' | translate }}</span>
+          <span class="fs-4 fw-semibold ms-3 text-white">{{ 'configuration.name' | translate }}</span>
         </div>
         <p class="text-secondary mb-3 text-break">
           {{ 'configuration.footer.informativeFooter.description' | translate }}
@@ -18,7 +18,7 @@
         </ul>
       </div>
       <div class="col-6 col-md-2">
-        <h6 class="fw-semibold mb-3">{{ 'configuration.footer.informativeFooter.quickLinks' | translate }}</h6>
+        <h6 class="fw-semibold mb-3 text-white">{{ 'configuration.footer.informativeFooter.quickLinks' | translate }}</h6>
         <ul class="list-unstyled">
           <ng-container *ngFor="let item of navigation">
             <li><a [attr.href]="item.href" class="text-secondary text-decoration-none">{{ item.value }}</a></li>
@@ -26,14 +26,14 @@
         </ul>
       </div>
       <div class="col-6 col-md-2">
-        <h6 class="fw-semibold mb-3">{{ 'configuration.footer.informativeFooter.other' | translate }}</h6>
+        <h6 class="fw-semibold mb-3 text-white">{{ 'configuration.footer.informativeFooter.other' | translate }}</h6>
         <!-- <ul class="list-unstyled">
           <li><a href="#" class="text-secondary text-decoration-none">Mi experiencia (texto y ejemplos)</a></li>
           <li><a href="#" class="text-secondary text-decoration-none">Trabajos</a></li>
         </ul> -->
       </div>
       <div class="col-md-3">
-        <h6 class="fw-semibold mb-3">{{ 'configuration.social.title' | translate }}</h6>
+        <h6 class="fw-semibold mb-3 text-white">{{ 'configuration.social.title' | translate }}</h6>
         <div class="mt-4 text-center">
           <ng-container *ngFor="let item of socialMedia">
             <a [attr.href]="item.href" class="text-secondary me-4"><i [class]="item.icon + ' fs-3 mt-2'" [ngbTooltip]="item.name"></i></a>
