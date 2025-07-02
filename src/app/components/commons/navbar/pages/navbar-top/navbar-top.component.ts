@@ -3,10 +3,10 @@ import { Component, OnInit } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
 import { NgbDropdownModule, NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
-import { ConfigurationService } from '../../../../shared/services/configuration-services/configuration.service';
+import { ConfigurationService } from '../../../../../shared/services/configuration-services/configuration.service';
 
 @Component({
-  selector: 'app-landing-navbar-top',
+  selector: 'app-navbar-top',
   standalone: true,
   imports: [
     RouterLink,
@@ -16,10 +16,10 @@ import { ConfigurationService } from '../../../../shared/services/configuration-
     NgbDropdownModule,
     NgbTooltipModule,
   ],
-  templateUrl: './landing-navbar-top.component.html',
-  styleUrls: ['./landing-navbar-top.component.scss']
+  templateUrl: './navbar-top.component.html',
+  styleUrl: './navbar-top.component.scss'
 })
-export class LandingNavbarTopComponent implements OnInit {
+export class NavbarTopComponent {
   isOpen = false;
   isDark = false;
   appearance: string = '';

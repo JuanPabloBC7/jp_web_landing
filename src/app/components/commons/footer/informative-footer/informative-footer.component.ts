@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
@@ -7,6 +8,7 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   selector: 'app-informative-footer',
   standalone: true,
   imports: [
+    RouterLink,
     CommonModule,
     TranslateModule,
     NgbTooltipModule,
@@ -18,6 +20,7 @@ export class InformativeFooterComponent implements OnInit {
   translateNavbar: any = {};
   translateSocial: any = {};
   navigation: any = [];
+  otherNavigation: any = [];
   socialMedia: any = [];
   
   constructor(
@@ -27,10 +30,20 @@ export class InformativeFooterComponent implements OnInit {
       this.translateNavbar = res['configuration.navbar'];
       this.translateSocial = res['configuration.social'];
       this.navigation = [];
+      this.otherNavigation = [];
       this.socialMedia = [];
 
       for (const key in this.translateNavbar.links) {
-        this.navigation.push({name: key, value: this.translateNavbar.links[key], href: `/#${key}`});
+        if (key === 'home') {
+          this.navigation.push({name: key, value: this.translateNavbar.links[key], href: `/`});
+        } else {
+          this.navigation.push({name: key, value: this.translateNavbar.links[key], href: `/#${key}`});
+        }
+      }
+      for (const key in this.translateNavbar.others) {
+        if (key === 'projects') {
+          this.otherNavigation.push({name: key, value: this.translateNavbar.others[key], routerLink: `/${key}`});
+        }
       }
 
       for (const key in this.translateSocial.links) {

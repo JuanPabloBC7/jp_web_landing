@@ -3,25 +3,22 @@
 /* Importing Bootstrap SCSS file. */
 @use 'bootstrap/scss/bootstrap' as *;
 
-header {
+/* Estilos claros */
+header,
+nav,
+.dropdown-menu {
   background: rgba(240, 239, 239, 0.6) !important;
   backdrop-filter: blur(3px);
   transition: background 0.3s;
+  -webkit-backdrop-filter: blur(3px);
 }
 
-body[data-bs-theme="dark"] header {
-  background: rgba(30, 30, 30, 0.7) !important;
-  color: #fff;
-}
-
-.dropdown-menu {
-  background-color: rgba(240, 239, 239, 0.6) !important;
-  backdrop-filter: blur(3px) !important;
-  -webkit-backdrop-filter: blur(3px) !important;
-  transition: background 0.3s;
-}
-
-body[data-bs-theme="dark"] .dropdown-menu {
-  background: rgba(30, 30, 30, 0.7) !important;
-  color: #fff !important;
+/* Estilos oscuros */
+body[data-bs-theme="dark"] {
+  header,
+  nav,
+  .dropdown-menu {
+    background: rgba(30, 30, 30, 0.7) !important;
+    color: #fff !important;
+  }
 }

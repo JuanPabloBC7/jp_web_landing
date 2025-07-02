@@ -42,6 +42,9 @@
         "skills-&-tools": "Skills & Tools",
         "work": "Work",
         "contact-us": "Contact"
+      },
+      "others": {
+        "projects": "Projects"
       }
     },
     "footer": {

@@ -42,6 +42,9 @@
         "skills-&-tools": "Habilidades y herramientas",
         "work": "Trabajo",
         "contact-us": "Contacto"
+      },
+      "others": {
+        "projects": "Proyectos"
       }
     },
     "footer": {
@@ -197,6 +200,9 @@
           ]
         }
       }
+    },
+    "prjects": {
+
     },
     "contact": {
       "title": "Contáctame",
