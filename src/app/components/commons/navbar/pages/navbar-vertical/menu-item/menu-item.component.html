@@ -7,13 +7,13 @@
 </div>
 
 <!-- Simple link -->
-<a *ngIf="item.type === 'link'" class="nav-link" [routerLink]="item.path" routerLinkActive="active" (click)="item.events.click ? executeFunction(item.events.click) : null">
+<a *ngIf="item.type === 'link'" class="nav-link py-1" [routerLink]="item.path" routerLinkActive="active" (click)="item.events.click ? executeFunction(item.events.click) : null">
   <div class="d-flex align-items-center text-secondary-emphasis">
     <span *ngIf="item.icon" class="nav-link-icon">
       <span [class]="'me-2 ' + item.icon"></span>
     </span>
-    <span class="nav-link-text ps-1">{{ item.label }}</span>
-    <span *ngIf="item.newLabel" [class]="'badge rounded-pill ms-2 ms-auto ' + item.newStyle">{{ item.newLabel }}</span>
+    <span class="nav-link-text ps-1"><small>{{ item.label }}</small></span>
+    <span *ngIf="item.newLabel" [class]="'badge rounded-pill ms-2 ms-auto ' + item.newStyle"><small>{{ item.newLabel }}</small></span>
   </div>
 </a>
 
@@ -23,8 +23,8 @@
     <span *ngIf="item.icon" class="nav-link-icon">
       <span [class]="'me-2 ' + item.icon"></span>
     </span>
-    <span class="nav-link-text ps-1">{{ item.label }}</span>
-    <span *ngIf="item.newLabel" [class]="'badge rounded-pill ms-2 ms-auto ' + item.newStyle">{{ item.newLabel }}</span>
+    <span class="nav-link-text ps-1"><small>{{ item.label }}</small></span>
+    <span *ngIf="item.newLabel" [class]="'badge rounded-pill ms-2 ms-auto ' + item.newStyle"><small>{{ item.newLabel }}</small></span>
     <span [class]="item.expanded ? 'ms-auto fa-solid float-end fa-chevron-up' : 'ms-auto fa-solid float-end fa-chevron-down'"></span>
   </div>
 </a>

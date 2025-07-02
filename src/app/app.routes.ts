@@ -3,6 +3,9 @@ import { LandingLayoutComponent } from './components/layouts/landing-layout/land
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 import { PagesLayoutComponent } from './components/layouts/pages-layout/pages-layout.component';
 import { HomeComponent } from './pages/pages/home/home.component';
+import { SkillsNToolsComponent } from './pages/landing-page/skills-n-tools/skills-n-tools.component';
+import { WorkComponent } from './pages/landing-page/work/work.component';
+import { ContactUsComponent } from './pages/landing-page/contact-us/contact-us.component';
 
 export const routes: Routes = [
   {
@@ -22,6 +25,18 @@ export const routes: Routes = [
       {
         path: '',
         component: HomeComponent
+      },
+      {
+        path: 'skills-&-tools',
+        component: SkillsNToolsComponent
+      },
+      {
+        path: 'works',
+        component: WorkComponent
+      },
+      {
+        path: 'contact-us',
+        component: ContactUsComponent
       }
     ]
   },
