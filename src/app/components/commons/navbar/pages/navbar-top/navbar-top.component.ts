@@ -39,13 +39,6 @@ export class NavbarTopComponent {
       for (const key in this.translateNavbar.links) {
         if (key === 'home') {
           this.navigation.push({name: key, value: this.translateNavbar.links[key], href: `/`});
-        } else {
-          this.navigation.push({name: key, value: this.translateNavbar.links[key], href: `/#${key}`});
-        }
-      }
-      for (const key in this.translateNavbar.others) {
-        if (key === 'projects') {
-          this.navigation.push({name: key, value: this.translateNavbar.others[key], routerLink: `/${key}`});
         }
       }
 
