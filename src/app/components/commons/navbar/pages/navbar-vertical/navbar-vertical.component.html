@@ -1,64 +1,7 @@
 <nav class="d-flex flex-column flex-shrink-0 vh-100 p-3 mt-3" style="width: 280px;">
   <ul class="nav nav-pills flex-column mb-auto flex-grow-1">
-    <li class="nav-item">
-      <a href="#" class="nav-link active" aria-current="page">
-        <i class="fa-solid fa-house me-2"></i>
-        Home
-      </a>
-    </li>
-    <!-- Submenú tipo accordion -->
-    <li class="nav-item">
-      <a class="nav-link text-secondary-emphasis" data-bs-toggle="collapse" href="#dashboardSubmenu" role="button" aria-expanded="true" aria-controls="dashboardSubmenu">
-        <i class="fa-solid fa-chart-line me-2"></i>
-        Dashboard
-        <i class="fa-solid fa-chevron-up float-end"></i>
-      </a>
-      <ul class="collapse show nav flex-column ms-3" id="dashboardSubmenu">
-        <li class="nav-item">
-          <a class="nav-link text-secondary-emphasis" href="#">Analytics</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-secondary-emphasis" href="#">Reports</a>
-        </li>
-      </ul>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link text-secondary-emphasis" data-bs-toggle="collapse" href="#ordersSubmenu" role="button" aria-expanded="false" aria-controls="ordersSubmenu">
-        <i class="fa-regular fa-folder me-2"></i>
-        Orders
-        <i class="fa-solid fa-chevron-down float-end"></i>
-      </a>
-      <ul class="collapse nav flex-column ms-3" id="ordersSubmenu">
-        <li class="nav-item">
-          <a class="nav-link text-secondary-emphasis" href="#">Pending</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-secondary-emphasis" data-bs-toggle="collapse" href="#completedSubmenu" role="button" aria-expanded="false" aria-controls="completedSubmenu">
-            Completed
-            <i class="fa-solid fa-chevron-down float-end"></i>
-          </a>
-          <ul class="collapse nav flex-column ms-3" id="completedSubmenu">
-            <li class="nav-item">
-              <a class="nav-link text-secondary-emphasis" href="#">Success</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-secondary-emphasis" href="#">With error</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <li>
-      <a href="#" class="nav-link text-secondary-emphasis">
-        <i class="fa-solid fa-boxes-stacked me-2"></i>
-        Products
-      </a>
-    </li>
-    <li>
-      <a href="#" class="nav-link text-secondary-emphasis">
-        <i class="fa-solid fa-users me-2"></i>
-        Customers
-      </a>
+    <li class="nav-item" *ngFor="let m of menu">
+      <app-menu-item [item]="m"></app-menu-item>
     </li>
   </ul>
   <hr>

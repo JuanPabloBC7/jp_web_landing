@@ -1,0 +1,37 @@
+<!-- Divider -->
+<div *ngIf="item.divider" class="row navbar-vertical-label-wrapper mt-3 mb-2">
+  <div class="col-auto navbar-vertical-label">{{ item.dividername }}</div>
+  <div class="col ps-0">
+    <hr class="mb-0 navbar-vertical-divider" />
+  </div>
+</div>
+
+<!-- Simple link -->
+<a *ngIf="item.type === 'link'" class="nav-link" [routerLink]="item.path" routerLinkActive="active" (click)="item.events.click ? executeFunction(item.events.click) : null">
+  <div class="d-flex align-items-center text-secondary-emphasis">
+    <span *ngIf="item.icon" class="nav-link-icon">
+      <span [class]="'me-2 ' + item.icon"></span>
+    </span>
+    <span class="nav-link-text ps-1">{{ item.label }}</span>
+    <span *ngIf="item.newLabel" [class]="'badge rounded-pill ms-2 ms-auto ' + item.newStyle">{{ item.newLabel }}</span>
+  </div>
+</a>
+
+<!-- Submenu -->
+<a *ngIf="item.children?.length" class="nav-link dropdown-indicator" role="button" data-bs-toggle="collapse" [attr.aria-expanded]="item.expanded" (click)="item.expanded = !item.expanded; item.events.click ? executeFunction(item.events.click) : null">
+  <div class="d-flex align-items-center text-secondary-emphasis">
+    <span *ngIf="item.icon" class="nav-link-icon">
+      <span [class]="'me-2 ' + item.icon"></span>
+    </span>
+    <span class="nav-link-text ps-1">{{ item.label }}</span>
+    <span *ngIf="item.newLabel" [class]="'badge rounded-pill ms-2 ms-auto ' + item.newStyle">{{ item.newLabel }}</span>
+    <span [class]="item.expanded ? 'ms-auto fa-solid float-end fa-chevron-up' : 'ms-auto fa-solid float-end fa-chevron-down'"></span>
+  </div>
+</a>
+
+<!-- Renders the children -->
+<ul [class]="item.expanded ? 'nav collapse flex-column ms-3 show' : 'nav collapse flex-column ms-3'">
+  <li class="nav-item" *ngFor="let child of item.children">
+    <app-menu-item [item]="child"></app-menu-item>
+  </li>
+</ul>
