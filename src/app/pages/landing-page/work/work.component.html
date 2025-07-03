@@ -1,6 +1,6 @@
-<div id="work" class="pt-5 bg-body-tertiary">
+<section class="py-5">
   <h2 class="fw-bold mb-3 text-center">{{ 'pages.work.title' | translate }}</h2>
-  <section id="cd-timeline" class="container">
+  <div id="cd-timeline">
     <ng-container *ngFor="let item of works">
       <div class="cd-timeline-block z-0">
       <div class="cd-timeline-img"></div>
@@ -25,6 +25,5 @@
       </div>
     </div>
     </ng-container>
-  </section>
-</div>
-
+  </div>
+</section>

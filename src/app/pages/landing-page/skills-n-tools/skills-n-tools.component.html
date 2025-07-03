@@ -1,32 +1,30 @@
 
 <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-          
-<div id="skills-&-tools" class="py-5 bg-secondary-subtle">
-  <div class="container">
-    <div class="row mb-5">
-      <div class="col-12">
-        <h2 class="fw-bold mb-3">{{ 'pages.skillsNTools.title' | translate }}</h2>
-        <p class="lead text-secondary">{{ 'pages.skillsNTools.description' | translate }}</p>
-      </div>
-    </div>
-  
-    <div class="row text-center">
-      <ng-container *ngFor="let item of skills">
-        <div class="col-4 col-sm-3 col-md-2 mb-3">
-          <p class="mb-0">
-            <i *ngIf="item.icon" [class]="item.icon" style="font-size: 6em;"></i>
-            <img *ngIf="item.img" [src]="item.img"/>
-          </p>
-          <p class="mb-0" *ngIf="item.prefix"><small class="text-secondary">{{ item.prefix }}</small></p>
-          <small class="text-secondary">{{ item.name }}</small>
-        </div>
-      </ng-container>
-    </div>
 
-    <div class="row mt-5">
-      <div class="col-12">
-        <p class="lead text-center text-secondary">{{ 'pages.skillsNTools.descriptionbottom' | translate }}</p>
-      </div>
+<section class="py-5">
+  <div class="row mb-5">
+    <div class="col-12">
+      <h2 class="fw-bold mb-3">{{ 'pages.skillsNTools.title' | translate }}</h2>
+      <p class="lead text-secondary">{{ 'pages.skillsNTools.description' | translate }}</p>
     </div>
   </div>
-</div>
+  
+  <div class="row text-center">
+    <ng-container *ngFor="let item of skills">
+      <div class="col-4 col-sm-3 col-md-2 mb-3">
+        <p class="mb-0">
+          <i *ngIf="item.icon" [class]="item.icon" style="font-size: 6em;"></i>
+          <img *ngIf="item.img" [src]="item.img"/>
+        </p>
+        <p class="mb-0" *ngIf="item.prefix"><small class="text-secondary">{{ item.prefix }}</small></p>
+        <small class="text-secondary">{{ item.name }}</small>
+      </div>
+    </ng-container>
+  </div>
+  
+  <div class="row mt-5">
+    <div class="col-12">
+      <p class="lead text-center text-secondary">{{ 'pages.skillsNTools.descriptionbottom' | translate }}</p>
+    </div>
+  </div>
+</section>

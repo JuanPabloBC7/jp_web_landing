@@ -36,6 +36,12 @@ export class NavbarVerticalComponent {
       "dividername": "Inicio", 
     }, 
     { 
+      "path": "about-us", 
+      "label": "Sobre mi", 
+      "type": "link", 
+      "icon": "fa-solid fa-user", 
+    },
+    { 
       "path": "skills-&-tools", 
       "label": "Habilidades y Herramientas", 
       "type": "link", 
@@ -46,13 +52,7 @@ export class NavbarVerticalComponent {
       "label": "Trabajos", 
       "type": "link", 
       "icon": "fa-solid fa-clock-rotate-left", 
-    }, 
-    { 
-      "path": "contact-us", 
-      "label": "Contactame", 
-      "type": "link", 
-      "icon": "fa-solid fa-envelope", 
-    }, 
+    },  
     { 
       "path": "notes", 
       "label": "Notas", 

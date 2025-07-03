@@ -27,6 +27,10 @@ export const routes: Routes = [
         component: HomeComponent
       },
       {
+        path: 'about-us',
+        component: HomeComponent
+      },
+      {
         path: 'skills-&-tools',
         component: SkillsNToolsComponent
       },

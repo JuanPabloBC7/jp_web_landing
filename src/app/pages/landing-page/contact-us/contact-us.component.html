@@ -1,51 +1,49 @@
-<div id="contact-us" class="py-5 bg-body">
-  <div class="container">
-    <div class="row justify-content-center mb-3">
-      <div class="col-lg-7">
-        <h2 class="mb-4 text-center">{{ 'pages.contact.title' | translate }}</h2>
-        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" novalidate>
-          <div class="mb-3">
-            <label for="name" class="form-label">{{ 'pages.contact.form.name.title' | translate }}</label>
-            <input 
-              type="text" 
-              id="name" 
-              formControlName="name" 
-              class="form-control" 
-              [ngClass]="{ 'is-invalid': contactForm.get('name')?.invalid && (submitted || contactForm.get('name')?.touched || contactForm.get('name')?.dirty), 
-                'is-valid': contactForm.get('name')?.valid && (submitted || contactForm.get('name')?.touched || contactForm.get('name')?.dirty) }" 
-              placeholder="{{ 'pages.contact.form.name.placeholder' | translate }}" />
-            <div class="invalid-feedback" *ngIf="contactForm.get('name')?.invalid && (submitted || contactForm.get('name')?.touched || contactForm.get('name')?.dirty)">{{ 'pages.contact.form.required' | translate }}</div>
-          </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">{{ 'pages.contact.form.email.title' | translate }}</label>
-            <input 
-              type="email" 
-              id="email" 
-              formControlName="email" 
-              class="form-control" 
-              [ngClass]="{ 'is-invalid': contactForm.get('email')?.invalid && (submitted || contactForm.get('email')?.touched || contactForm.get('email')?.dirty), 
-                'is-valid': contactForm.get('email')?.valid && (submitted || contactForm.get('email')?.touched || contactForm.get('email')?.dirty) }" 
-              placeholder="{{ 'pages.contact.form.email.placeholder' | translate }}" />
-            <div class="invalid-feedback" *ngIf="contactForm.get('email')?.invalid && (submitted || contactForm.get('email')?.touched || contactForm.get('email')?.dirty)">{{ 'pages.contact.form.required' | translate }}</div>
-          </div>
-          <div class="mb-3">
-            <label for="message" class="form-label">{{ 'pages.contact.form.message.title' | translate }}</label>
-            <textarea 
-              id="message" 
-              formControlName="message" 
-              class="form-control" 
-              rows="5" 
-              [ngClass]="{ 'is-invalid': contactForm.get('message')?.invalid && (submitted || contactForm.get('message')?.touched || contactForm.get('message')?.dirty), 
-                'is-valid': contactForm.get('message')?.valid && (submitted || contactForm.get('message')?.touched || contactForm.get('message')?.dirty) }" 
-              placeholder="{{ 'pages.contact.form.message.placeholder' | translate }}"></textarea>
-            <div class="invalid-feedback" *ngIf="contactForm.get('message')?.invalid && (submitted || contactForm.get('message')?.touched || contactForm.get('message')?.dirty)">{{ 'pages.contact.form.required' | translate }}</div>
-          </div>
-          <button type="submit" class="btn btn-primary w-100" [disabled]="loading">
-            <span *ngIf="loading" class="spinner-border spinner-border-sm me-2"></span>{{ 'pages.contact.form.submit' | translate }}
-          </button>
-          <div *ngIf="showMessage" [class]="success ? 'alert alert-success mt-3' : 'alert alert-danger mt-3'">{{ success ? notification.successMessage : notification.errorMessage }}</div>
-        </form>
-      </div>
+<section class="py-5">
+  <div class="row justify-content-center mb-3">
+    <div class="col-12 col-sm-12 col-md-10 col-lg-7">
+      <h2 class="mb-4 text-center">{{ 'pages.contact.title' | translate }}</h2>
+      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" novalidate>
+        <div class="mb-3">
+          <label for="name" class="form-label">{{ 'pages.contact.form.name.title' | translate }}</label>
+          <input 
+            type="text" 
+            id="name" 
+            formControlName="name" 
+            class="form-control" 
+            [ngClass]="{ 'is-invalid': contactForm.get('name')?.invalid && (submitted || contactForm.get('name')?.touched || contactForm.get('name')?.dirty), 
+              'is-valid': contactForm.get('name')?.valid && (submitted || contactForm.get('name')?.touched || contactForm.get('name')?.dirty) }" 
+            placeholder="{{ 'pages.contact.form.name.placeholder' | translate }}" />
+          <div class="invalid-feedback" *ngIf="contactForm.get('name')?.invalid && (submitted || contactForm.get('name')?.touched || contactForm.get('name')?.dirty)">{{ 'pages.contact.form.required' | translate }}</div>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">{{ 'pages.contact.form.email.title' | translate }}</label>
+          <input 
+            type="email" 
+            id="email" 
+            formControlName="email" 
+            class="form-control" 
+            [ngClass]="{ 'is-invalid': contactForm.get('email')?.invalid && (submitted || contactForm.get('email')?.touched || contactForm.get('email')?.dirty), 
+              'is-valid': contactForm.get('email')?.valid && (submitted || contactForm.get('email')?.touched || contactForm.get('email')?.dirty) }" 
+            placeholder="{{ 'pages.contact.form.email.placeholder' | translate }}" />
+          <div class="invalid-feedback" *ngIf="contactForm.get('email')?.invalid && (submitted || contactForm.get('email')?.touched || contactForm.get('email')?.dirty)">{{ 'pages.contact.form.required' | translate }}</div>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">{{ 'pages.contact.form.message.title' | translate }}</label>
+          <textarea 
+            id="message" 
+            formControlName="message" 
+            class="form-control" 
+            rows="5" 
+            [ngClass]="{ 'is-invalid': contactForm.get('message')?.invalid && (submitted || contactForm.get('message')?.touched || contactForm.get('message')?.dirty), 
+              'is-valid': contactForm.get('message')?.valid && (submitted || contactForm.get('message')?.touched || contactForm.get('message')?.dirty) }" 
+            placeholder="{{ 'pages.contact.form.message.placeholder' | translate }}"></textarea>
+          <div class="invalid-feedback" *ngIf="contactForm.get('message')?.invalid && (submitted || contactForm.get('message')?.touched || contactForm.get('message')?.dirty)">{{ 'pages.contact.form.required' | translate }}</div>
+        </div>
+        <button type="submit" class="btn btn-primary w-100" [disabled]="loading">
+          <span *ngIf="loading" class="spinner-border spinner-border-sm me-2"></span>{{ 'pages.contact.form.submit' | translate }}
+        </button>
+        <div *ngIf="showMessage" [class]="success ? 'alert alert-success mt-3' : 'alert alert-danger mt-3'">{{ success ? notification.successMessage : notification.errorMessage }}</div>
+      </form>
     </div>
   </div>
-</div>
+</section>
