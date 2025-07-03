@@ -19,18 +19,18 @@
       }
     },
     "social": {
-      "title": "Redes sociales",
+      "title": "Redes Sociales",
       "description": "Conéctate conmigo en mis redes sociales",
       "links": {
         "email": { "name": "Correo electrónico", "icon": "fa-solid fa-envelope", "link": "juanpablobc7@gmail.com" },
         "cell": { "name": "Teléfono", "icon": "fa-solid fa-phone", "link": "+502 5115-0443" },
         "facebook": { "name": "Facebook", "icon": "fa-brands fa-facebook", "link": "https://www.facebook.com/juanpablo.balancontreras.1?mibextid=LQQJ4d" },
         "instagram": { "name": "Instagram", "icon": "fa-brands fa-instagram", "link": "https://instagram.com/juanpablobc7?igshid=OGQ5ZDc2ODk2ZA==" },
-        "whatsapp": { "name": "Whatsapp", "icon": "fa-brands fa-whatsapp", "link": "https://wa.me/50251150443" },
+        "whatsapp": { "name": "WhatsApp", "icon": "fa-brands fa-whatsapp", "link": "https://wa.me/50251150443" },
         "telegram": { "name": "Telegram", "icon": "fa-solid fa-paper-plane", "link": "https://t.me/jpbalan" },
         "twitter": { "name": "Twitter", "icon": "fa-brands fa-x-twitter", "link": "https://twitter.com/jpbalan7" },
-        "github": { "name": "Github", "icon": "fa-brands fa-github", "link": "https://github.com/JuanPabloBC7" },
-        "linkedin": { "name": "Linkedin", "icon": "fa-brands fa-linkedin", "link": "https://www.linkedin.com/in/juan-pablo-balan-contreras-5095091bb?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BoLj9WPBfTYCuwwkD%2Fvtz9A%3D%3D" },
+        "github": { "name": "GitHub", "icon": "fa-brands fa-github", "link": "https://github.com/JuanPabloBC7" },
+        "linkedin": { "name": "LinkedIn", "icon": "fa-brands fa-linkedin", "link": "https://www.linkedin.com/in/juan-pablo-balan-contreras-5095091bb?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BoLj9WPBfTYCuwwkD%2Fvtz9A%3D%3D" },
         "coverLetter": { "name": "CV", "icon": "fa-solid fa-file-lines", "link": "https://www.canva.com/design/DAEUnl-dn40/YEzded9TQo20tqhzKrDyEw/view?utm_content=DAEUnl-dn40&utm_campaign=designshare&utm_medium=link&utm_source=editor" }
       }
     },
@@ -61,11 +61,11 @@
   "pages": {
     "introduction": {
       "title": "Hola, mi nombre es Juan Pablo",
-      "subtitle": "Hago paginas web.",
-      "description": "A lo largo de mi carrera profesional, he desarrollado diferentes soluciones para distintas companias, en diferentes tecnologias."
+      "subtitle": "Hago páginas web.",
+      "description": "A lo largo de mi carrera profesional, he desarrollado diferentes soluciones para distintas compañías, en diferentes tecnologías."
     },
     "aboutUs": {
-      "title": "Sobre mi",
+      "title": "Sobre mí",
       "description": "Soy una persona apasionada por la tecnología y la innovación. Con más de 10 años de experiencia en el desarrollo web, me especializo en crear soluciones digitales que ayudan a las personas y empresas a crecer y alcanzar sus objetivos.",
       "skills": {
         "skillOne": {
@@ -87,6 +87,13 @@
           "title": "Integridad y compromiso",
           "description": "Valoro la integridad y el compromiso en todo lo que hago. Siempre cumplo con mis responsabilidades y me esfuerzo por superar las expectativas.",
           "icon": "fa-solid fa-heart"
+        }
+      },
+      "more": {
+        "community": "Me gusta estar activamente en la comunidad de desarrolladores, compartir conocimientos y aportar en proyectos open source. Estoy en constante aprendizaje, por lo que trato de aprender nuevas tecnologías constantemente.",
+        "personal": {
+          "title": "Offline",
+          "description": "Me gusta hacer ejercicio, así que voy al gimnasio. Veo deportes, realmente me gusta cualquier tipo de deporte, desde fútbol, fútbol americano, baloncesto, béisbol, tenis, etc. Me gusta ver películas y salir con mis amigos, disfruto de una buena compañía."
         }
       }
     },
@@ -110,7 +117,7 @@
         "csharp": { "name": "C#", "icon": "devicon-csharp-plain bg-csharp" },
         "visualbasic": { "name": "Visual Basic", "icon": "devicon-visualbasic-plain bg-visualbasic" },
         "sqlserver": { "name": "SQL Server", "prefix": "Microsoft", "icon": "devicon-microsoftsqlserver-plain bg-sqlserver" },
-        "myslq": { "name": "MySQL", "icon": "devicon-mysql-original bg-mysql" },
+        "mysql": { "name": "MySQL", "icon": "devicon-mysql-original bg-mysql" },
         "oracle": { "name": "Oracle", "icon": "devicon-oracle-original bg-oracle" },
         "mongodb": { "name": "MongoDB", "icon": "devicon-mongodb-plain bg-mongodb" },
         "mariadb": { "name": "MariaDB", "icon": "devicon-mariadb-original bg-mariadb" },
@@ -119,7 +126,7 @@
         "npm": { "name": "npm", "icon": "devicon-npm-original-wordmark bg-npm" },
         "jquery": { "name": "jQuery", "icon": "devicon-jquery-plain bg-jquery" },
         "git": { "name": "Git", "icon": "devicon-git-plain bg-git" },
-        "boostrap": { "name": "Bootstrap", "icon": "devicon-bootstrap-plain bg-bootstrap" },
+        "bootstrap": { "name": "Bootstrap", "icon": "devicon-bootstrap-plain bg-bootstrap" },
         "aws": { "name": "AWS", "icon": "devicon-amazonwebservices-plain-wordmark bg-aws" },
         "azure": { "name": "Azure", "icon": "devicon-azure-plain bg-azure" },
         "devops": { "name": "DevOps", "icon": "devicon-azuredevops-plain bg-devops" }
@@ -214,7 +221,7 @@
         },
         "email": {
           "title": "Correo electrónico",
-          "placeholder": "tu@email.com"
+          "placeholder": "correo@email.com"
         },
         "message": {
           "title": "Mensaje",
@@ -231,5 +238,59 @@
         "successMessage": "¡Mensaje enviado correctamente!"
       }
     }
-  }
+  },
+  "menu": [
+    {
+      "path": "",
+      "label": "Inicio",
+      "type": "link",
+      "icon": "fa-solid fa-house",
+      "divider": "true",
+      "dividername": "Inicio"
+    },
+    {
+      "path": "about-us",
+      "label": "Sobre mí",
+      "type": "link",
+      "icon": "fa-solid fa-user"
+    },
+    {
+      "path": "skills-&-tools",
+      "label": "Habilidades y Herramientas",
+      "type": "link",
+      "icon": "fa-solid fa-bolt-lightning"
+    },
+    {
+      "path": "works",
+      "label": "Trabajos",
+      "type": "link",
+      "icon": "fa-solid fa-clock-rotate-left"
+    }, 
+    {
+      "path": "notes",
+      "label": "Notas",
+      "type": "link",
+      "icon": "fa-solid fa-book",
+      "newLabel": "yo",
+      "newStyle": "text-primary-emphasis bg-primary-subtle border border-primary-subtle"
+    },
+    {
+      "path": "experience",
+      "label": "Experiencia",
+      "type": "link",
+      "icon": "fa-solid fa-medal",
+      "divider": "true",
+      "dividername": "Experiencia",
+      "newLabel": "importante",
+      "newStyle": "text-warning-emphasis bg-warning-subtle border border-warning-subtle"
+    },
+    {
+      "path": "plugins-n-tools",
+      "label": "Plugins y herramientas",
+      "type": "link",
+      "icon": "fa-solid fa-screwdriver-wrench",
+      "newLabel": "nuevo",
+      "newStyle": "text-success-emphasis bg-success-subtle border border-success-subtle"
+    }
+  ]
 }
