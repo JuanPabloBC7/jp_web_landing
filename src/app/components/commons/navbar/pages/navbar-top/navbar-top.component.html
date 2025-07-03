@@ -7,6 +7,10 @@
         </div>
         <span class="text-danger fs-4 fw-bold ms-2">{{ 'configuration.name' | translate }}</span>
       </a>
+      <!-- Botón hamburguesa para móviles -->
+      <button type="button" class="btn d-flex align-items-center d-lg-none me-auto" (click)="isOpen = !isOpen" aria-label="Toggle navigation">
+        <i class="fa-solid" [ngClass]="isOpen ? 'fa-bars-staggered' : 'fa-bars'" [ngbTooltip]="'configuration.navbar.title' | translate"></i>
+      </button>
 
       <!-- Menú de navegación para pantallas grandes -->
       <div class="d-none d-lg-flex align-items-center gap-4">
@@ -31,33 +35,32 @@
         <!-- <a routerLink="/contact" class="btn btn-primary w-100" (click)="isOpen = false">Get Started</a> -->
       </div>
 
-      <button (click)="toggleTheme()" class="btn d-inline-block d-lg-none ms-auto me">
-        <i class="fa-solid fs-5" [ngClass]="isDark ? 'fa-moon' : 'fa-sun'" [ngbTooltip]="appearance"></i>
-      </button>
-      <div ngbDropdown class="d-inline-block d-lg-none me">
-        <button class="btn w-100 dropdown-toggle" id="languageDropdown" ngbDropdownToggle><i class="fa-solid fa-language" [ngbTooltip]="'configuration.language.title' | translate"></i></button>
-        <div ngbDropdownMenu aria-labelledby="languageDropdown">
-          <button class="dropdown-item" (click)="setLanguage('es')" ngbDropdownItem>{{ 'configuration.language.options.spanish' | translate }}</button>
-          <button class="dropdown-item" (click)="setLanguage('en')" ngbDropdownItem>{{ 'configuration.language.options.english' | translate }}</button>
+      <!-- Menú de navegación para pantallas móviles -->
+      <div class="d-lg-none align-items-center gap-4">
+        <a [routerLink]="'/'" class="btn d-inline-block ms-auto">
+          <i class="fa-solid fa-house fs-5" [ngbTooltip]="'configuration.navbar.links.home' | translate"></i>
+        </a>
+        <button (click)="toggleTheme()" class="btn d-inline-block ms-auto">
+          <i class="fa-solid fs-5" [ngClass]="isDark ? 'fa-moon' : 'fa-sun'" [ngbTooltip]="appearance"></i>
+        </button>
+        <div ngbDropdown class="d-inline-block">
+          <button class="btn w-100 dropdown-toggle" id="languageDropdown" ngbDropdownToggle><i class="fa-solid fa-language" [ngbTooltip]="'configuration.language.title' | translate"></i></button>
+          <div ngbDropdownMenu aria-labelledby="languageDropdown">
+            <button class="dropdown-item" (click)="setLanguage('es')" ngbDropdownItem>{{ 'configuration.language.options.spanish' | translate }}</button>
+            <button class="dropdown-item" (click)="setLanguage('en')" ngbDropdownItem>{{ 'configuration.language.options.english' | translate }}</button>
+          </div>
         </div>
       </div>
-      <!-- Botón hamburguesa para móviles -->
-      <button type="button" class="btn d-lg-none" (click)="isOpen = !isOpen" aria-label="Toggle navigation">
-        <i class="fa-solid" [ngClass]="isOpen ? 'fa-bars-staggered' : 'fa-bars'" [ngbTooltip]="'configuration.navbar.title' | translate"></i>
-      </button>
     </div>
 
     <!-- Menú colapsable para móviles -->
     <div *ngIf="isOpen" class="d-lg-none">
       <div class="border-top px-3 py-2">
-        <ng-container *ngFor="let item of navigation">
-          <a *ngIf="item.href" [attr.href]="item.href" class="d-block px-2 py-2 rounded text-decoration-none fw-medium mb-1" [ngClass]="{'text-primary bg-primary bg-opacity-10 fw-bold': isActive(item.href), 'text-secondary': !isActive(item.href)}" (click)="isOpen = false">
-            {{ item.value }}
-          </a>
-          <a *ngIf="item.routerLink" [routerLink]="item.routerLink" class="d-block px-2 py-2 rounded text-decoration-none fw-medium mb-1" [ngClass]="{'text-primary bg-primary bg-opacity-10 fw-bold': isActive(item.href), 'text-secondary': !isActive(item.href)}" (click)="isOpen = false">
-            {{ item.value }}
-          </a>
-        </ng-container>
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li class="nav-item" *ngFor="let m of menu" (click)="isOpen = false">
+            <app-menu-item [item]="m"></app-menu-item>
+          </li>
+        </ul>
         <!-- <a routerLink="/contact" class="btn btn-primary w-100 mt-2" (click)="isOpen = false">Get Started</a> -->
       </div>
     </div>

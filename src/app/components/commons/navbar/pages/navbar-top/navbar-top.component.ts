@@ -4,6 +4,7 @@ import { Router, RouterLink } from '@angular/router';
 import { NgbDropdownModule, NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { ConfigurationService } from '../../../../../shared/services/configuration-services/configuration.service';
+import { MenuItemComponent } from '../navbar-vertical/menu-item/menu-item.component';
 
 @Component({
   selector: 'app-navbar-top',
@@ -15,6 +16,7 @@ import { ConfigurationService } from '../../../../../shared/services/configurati
     TranslateModule,
     NgbDropdownModule,
     NgbTooltipModule,
+    MenuItemComponent
   ],
   templateUrl: './navbar-top.component.html',
   styleUrl: './navbar-top.component.scss'
@@ -23,6 +25,7 @@ export class NavbarTopComponent {
   isOpen = false;
   isDark = false;
   appearance: string = '';
+  menu: any = [];
   navigation: any = [];
   translateNavbar: any = {};
   translateAppearance: any = {};
@@ -32,7 +35,8 @@ export class NavbarTopComponent {
     private translateServices: TranslateService,
     private configurationServices: ConfigurationService,
   ) { 
-    this.translateServices.stream(['configuration.navbar', 'configuration.appearance']).subscribe(res => {
+    this.translateServices.stream(['menu', 'configuration.navbar', 'configuration.appearance']).subscribe(res => {
+      this.menu = res['menu'];
       this.translateNavbar = res['configuration.navbar'];
       this.translateAppearance = res['configuration.appearance'];
       this.navigation = [];

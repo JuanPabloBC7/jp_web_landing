@@ -31,20 +31,23 @@
         <!-- <a routerLink="/contact" class="btn btn-primary w-100" (click)="isOpen = false">Get Started</a> -->
       </div>
 
-      <button (click)="toggleTheme()" class="btn d-inline-block d-lg-none ms-auto me">
-        <i class="fa-solid fs-5" [ngClass]="isDark ? 'fa-moon' : 'fa-sun'" [ngbTooltip]="appearance"></i>
-      </button>
-      <div ngbDropdown class="d-inline-block d-lg-none me">
-        <button class="btn w-100 dropdown-toggle" id="languageDropdown" ngbDropdownToggle><i class="fa-solid fa-language" [ngbTooltip]="'configuration.language.title' | translate"></i></button>
-        <div ngbDropdownMenu aria-labelledby="languageDropdown">
-          <button class="dropdown-item" (click)="setLanguage('es')" ngbDropdownItem>{{ 'configuration.language.options.spanish' | translate }}</button>
-          <button class="dropdown-item" (click)="setLanguage('en')" ngbDropdownItem>{{ 'configuration.language.options.english' | translate }}</button>
+      <!-- Menú de navegación para pantallas móviles -->
+      <div class="d-lg-none align-items-center gap-4">
+        <button (click)="toggleTheme()" class="btn d-inline-block ms-auto me">
+          <i class="fa-solid fs-5" [ngClass]="isDark ? 'fa-moon' : 'fa-sun'" [ngbTooltip]="appearance"></i>
+        </button>
+        <div ngbDropdown class="d-inline-block me">
+          <button class="btn w-100 dropdown-toggle" id="languageDropdown" ngbDropdownToggle><i class="fa-solid fa-language" [ngbTooltip]="'configuration.language.title' | translate"></i></button>
+          <div ngbDropdownMenu aria-labelledby="languageDropdown">
+            <button class="dropdown-item" (click)="setLanguage('es')" ngbDropdownItem>{{ 'configuration.language.options.spanish' | translate }}</button>
+            <button class="dropdown-item" (click)="setLanguage('en')" ngbDropdownItem>{{ 'configuration.language.options.english' | translate }}</button>
+          </div>
         </div>
+        <!-- Botón hamburguesa para móviles -->
+        <button type="button" class="btn" (click)="isOpen = !isOpen" aria-label="Toggle navigation">
+          <i class="fa-solid" [ngClass]="isOpen ? 'fa-bars-staggered' : 'fa-bars'" [ngbTooltip]="'configuration.navbar.title' | translate"></i>
+        </button>
       </div>
-      <!-- Botón hamburguesa para móviles -->
-      <button type="button" class="btn d-lg-none" (click)="isOpen = !isOpen" aria-label="Toggle navigation">
-        <i class="fa-solid" [ngClass]="isOpen ? 'fa-bars-staggered' : 'fa-bars'" [ngbTooltip]="'configuration.navbar.title' | translate"></i>
-      </button>
     </div>
 
     <!-- Menú colapsable para móviles -->
