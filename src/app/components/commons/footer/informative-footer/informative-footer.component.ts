@@ -42,7 +42,7 @@ export class InformativeFooterComponent implements OnInit {
       }
       for (const key in this.translateNavbar.others) {
         if (key === 'projects') {
-          this.otherNavigation.push({name: key, value: this.translateNavbar.others[key], routerLink: `/${key}`});
+          this.otherNavigation.push({name: key, value: this.translateNavbar.others[key], routerLink: `/${key}/about-us`});
         }
       }
 

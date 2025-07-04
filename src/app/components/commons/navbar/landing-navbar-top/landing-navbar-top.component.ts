@@ -45,7 +45,7 @@ export class LandingNavbarTopComponent implements OnInit {
       }
       for (const key in this.translateNavbar.others) {
         if (key === 'projects') {
-          this.navigation.push({name: key, value: this.translateNavbar.others[key], routerLink: `/${key}`});
+          this.navigation.push({name: key, value: this.translateNavbar.others[key], routerLink: `/${key}/about-us`});
         }
       }
 

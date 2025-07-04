@@ -54,7 +54,7 @@
     <div *ngIf="isOpen" class="d-lg-none">
       <div class="border-top px-3 py-2">
         <ng-container *ngFor="let item of navigation">
-          <a *ngIf="item.href" [attr.href]="item.href" class="d-block px-2 py-2 rounded text-decoration-none fw-medium mb-1" [ngClass]="{'text-primary bg-primary bg-opacity-10 fw-bold': isActive(item.href), 'text-secondary': !isActive(item.href)}" (click)="isOpen = false">
+          <a *ngIf="item.href && item.href === '/'" [attr.href]="item.href" class="d-block px-2 py-2 rounded text-decoration-none fw-medium mb-1" [ngClass]="{'text-primary bg-primary bg-opacity-10 fw-bold': isActive(item.href), 'text-secondary': !isActive(item.href)}" (click)="isOpen = false">
             {{ item.value }}
           </a>
           <a *ngIf="item.routerLink" [routerLink]="item.routerLink" class="d-block px-2 py-2 rounded text-decoration-none fw-medium mb-1" [ngClass]="{'text-primary bg-primary bg-opacity-10 fw-bold': isActive(item.href), 'text-secondary': !isActive(item.href)}" (click)="isOpen = false">

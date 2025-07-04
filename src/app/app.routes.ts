@@ -26,10 +26,6 @@ export const routes: Routes = [
     component: PagesLayoutComponent,
     children: [
       {
-        path: '',
-        component: HomeComponent
-      },
-      {
         path: 'about-us',
         component: HomeComponent
       },
