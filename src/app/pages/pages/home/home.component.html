@@ -1,38 +1,38 @@
 <section class="d-flex justify-content-center">
   <div class="nft mt-5 mb-3">
-    <div class='main'>
+    <div class="main">
       <div class="row">
-        <div class="col-12 col-sm-5 col-md-4">
-          <img class='tokenImage' src="../../../../../../assets/img/me/jpbalan_square.jpg" alt="JP Balan" />
+        <div class="col-12 col-sm-5 col-md-4 text-center">
+          <img class="tokenImage" src="../../../../../../assets/img/me/jpbalan_square.jpg" alt="JP Balan" />
         </div>
         <div class="col-12 col-sm-7 col-md-8 mt-3">
           <h2>{{ 'pages.aboutUs.title' | translate }}</h2>
-          <p class='description'>{{ 'pages.aboutUs.description' | translate }}</p>
+          <p class="description">{{ 'pages.aboutUs.description' | translate }}</p>
           <hr />
-          <p class='description'>{{ 'pages.aboutUs.more.community' | translate }}</p>
+          <p class="description">{{ 'pages.aboutUs.more.community' | translate }}</p>
         </div>
       </div>
     </div>
   </div>
 </section>
-<section class="d-flex justify-content-center mx-5">
+<section class="d-flex justify-content-center mx-2 mx-md-5">
   <div class="row mt-5 mb-3">
     <div class="col-12 col-sm-12 col-md-12">
       <h2>{{ 'pages.aboutUs.more.personal.title' | translate }}</h2>
-      <p class='description'>{{ 'pages.aboutUs.more.personal.description' | translate }}</p>
+      <p class="description">{{ 'pages.aboutUs.more.personal.description' | translate }}</p>
     </div>
   </div>
 </section>
-<section class="d-flex justify-content-center mx-5">
+<section class="d-flex justify-content-center mx-0 mx-md-5">
   <div style="width:100%; max-width:1040px;">
     <app-contact-us></app-contact-us>
   </div>
 </section>
-<section class="d-flex justify-content-center mx-5">
+<section class="d-flex justify-content-center mx-2 mx-md-5">
   <div class="mb-5" style="width:100%; max-width:1040px;">
-    <div class="mt-4 text-center">
+    <div class="mt-2 text-center">
       <ng-container *ngFor="let item of socialMedia">
-        <a [attr.href]="item.href" class="text-secondary me-4"><i [class]="item.icon + ' fs-2 mt-1'" [ngbTooltip]="item.name"></i></a>
+        <a [attr.href]="item.href" class="text-secondary"><i [class]="item.icon + ' fs-2 me-4 mb-4'" [ngbTooltip]="item.name"></i></a>
       </ng-container>
     </div>
   </div>

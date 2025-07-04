@@ -7,11 +7,11 @@
   
       <div class="cd-timeline-content bg-secondary-subtle">
         <h2>{{ item.title }}</h2>
-        <div class="bg-light-subtle d-flex align-items-center rounded-3 mb-3 px-2 py-1">
-          <small class="me-auto">
+        <div class="row bg-light-subtle rounded-3 mb-3 mx-1 py-1">
+          <small class="col-12 col-md-6">
             <i [class]="item.subtitleOne.icon + ' me-2'"></i>{{ item.subtitleOne.name }}
           </small>
-          <small class="ms-auto">
+          <small *ngIf="item.subtitleTwo.name" class="col-12 col-md-6 text-md-end">
             <i [class]="item.subtitleTwo.icon + ' me-2'"></i>{{ item.subtitleTwo.name }}
           </small>
         </div>
