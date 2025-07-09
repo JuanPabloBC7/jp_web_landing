@@ -1,1 +1,77 @@
-<p>notes works!</p>
+<div class="mt-5 row">
+  <section class="col-12 col-sm-12 col-md-6 col-lg-4">
+    <div class="row">
+      <ng-container *ngFor="let item of columnOne">
+        <div class="col-12 col-sm-6 col-md-12 col-lg-12">
+          <div class="card rounded-5 mb-2">
+            <div class="card-header d-flex align-items-center rounded-bottom rounded-5">
+              <span class="text-dark-emphasis">
+                <img class="rounded-circle figure-img img-fluid me-2 mt-0 mb-0" src="../../../../../../assets/img/me/jpbalan_square.jpg" alt="JP Balan" width="35" height="345"/>
+                {{ item.title }}
+              </span>
+              <span class="text-warning-emphasis ms-auto" style="font-size: 10px;">{{ item.date }}</span>
+            </div>
+            <div class="card-body">
+              <p class="card-text mb-3">{{ item.note }}</p>
+              <ng-container *ngFor="let t of item.tags">
+                  <span class="badge border rounded-pill ms-2" [ngClass]="t.badgeClass">
+                    <small>{{ t.value }}</small>
+                  </span>
+                </ng-container>
+            </div>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </section>
+  <section class="col-12 col-sm-12 col-md-6 col-lg-4">
+    <div class="row">
+      <ng-container *ngFor="let item of columnTwo">
+        <div class="col-12 col-sm-6 col-md-12 col-lg-12">
+          <div class="card rounded-5 mb-2">
+            <div class="card-header d-flex align-items-center rounded-bottom rounded-5">
+              <span class="text-dark-emphasis">
+                <img class="rounded-circle figure-img img-fluid me-2 mt-0 mb-0" src="../../../../../../assets/img/me/jpbalan_square.jpg" alt="JP Balan" width="35" height="345"/>
+                {{ item.title }}
+              </span>
+              <span class="text-warning-emphasis ms-auto" style="font-size: 10px;">{{ item.date }}</span>
+            </div>
+            <div class="card-body">
+              <p class="card-text mb-3">{{ item.note }}</p>
+              <ng-container *ngFor="let t of item.tags">
+                  <span class="badge border rounded-pill ms-2" [ngClass]="t.badgeClass">
+                    <small>{{ t.value }}</small>
+                  </span>
+                </ng-container>
+            </div>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </section>
+  <section class="col-12 col-sm-12 col-md-12 col-lg-4">
+    <div class="row">
+      <ng-container *ngFor="let item of columnThree">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-12">
+          <div class="card rounded-5 mb-2">
+            <div class="card-header d-flex align-items-center rounded-bottom rounded-5">
+              <span class="text-dark-emphasis">
+                <img class="rounded-circle figure-img img-fluid me-2 mt-0 mb-0" src="../../../../../../assets/img/me/jpbalan_square.jpg" alt="JP Balan" width="35" height="345"/>
+                {{ item.title }}
+              </span>
+              <span class="text-warning-emphasis ms-auto" style="font-size: 10px;">{{ item.date }}</span>
+            </div>
+            <div class="card-body">
+              <p class="card-text mb-3">{{ item.note }}</p>
+              <ng-container *ngFor="let t of item.tags">
+                  <span class="badge border rounded-pill ms-2" [ngClass]="t.badgeClass">
+                    <small>{{ t.value }}</small>
+                  </span>
+                </ng-container>
+            </div>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </section>
+</div>

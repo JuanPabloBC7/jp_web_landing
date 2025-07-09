@@ -234,6 +234,11 @@
         "errorMessage": "There was an error sending the message. Please try again later.",
         "successMessage": "Your message has been sent successfully. I will contact you as soon as possible."
       }
+    },
+    "notes": {
+      "columnOne": [ ],
+        "columnTwo": [ ],
+        "columnThree": [ ]
     }
   },
   "global": {

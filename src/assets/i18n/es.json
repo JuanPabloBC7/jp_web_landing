@@ -234,6 +234,11 @@
         "errorMessage": "¡Error al enviar el mensaje!",
         "successMessage": "¡Mensaje enviado correctamente!"
       }
+    },
+    "notes": {
+      "columnOne": [ ],
+      "columnTwo": [ ],
+      "columnThree": [ ]
     }
   },
   "global": {
