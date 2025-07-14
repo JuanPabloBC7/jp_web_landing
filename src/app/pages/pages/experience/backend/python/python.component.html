@@ -1,4 +1,4 @@
-<section class="my-3 mx-5">
+<section class="my-3 mx-md-5">
   <div class="row">
     <div class="col-12">
       <h3 class="text-decoration-underline mb-3">{{ 'pages.experience.backend.python.title' | translate }}</h3>
@@ -12,79 +12,20 @@
     <div class="col-12">
       <h5 class="mb-3">{{ 'pages.experience.backend.python.subtitle' | translate }}</h5>
     </div>
-    <div class="col-12 text-center mb-3">
-      <span *ngFor="let t of tools">
-        <i *ngIf="t.class" [ngbTooltip]="t.name" [class]="t.class" style="font-size: 2em;"></i>
-        <img *ngIf="t.link" [ngbTooltip]="t.name" class="align-top mx-2" [src]="t.link"/>
-      </span>
+    <div class="col-12">
+      <div class="row d-flex justify-content-center text-center mb-3">
+        <span *ngFor="let t of tools" class="col-3 col-sm-2 col-md-1 col-lg-1 mb-3">
+          <i *ngIf="t.class" [ngbTooltip]="t.name" [class]="t.class" style="font-size: 2em;"></i>
+          <img *ngIf="t.link" [ngbTooltip]="t.name" class="align-top mx-2" [src]="t.link"/>
+        </span>
+      </div>
     </div>
     <div class="col-12 col-sm-12 col-md-12 col-lg-12">
       <ul class="row">
-        <li *ngFor="let p of plugins" class="col-12 col-sm-6 col-md-4 col-lg-4">
+        <li *ngFor="let p of plugins" class="col-6 col-sm-4 col-md-4 col-lg-4">
           <a [href]="p.link">{{ p.name }}</a>
         </li>
       </ul>
     </div>
   </div>
-  <!-- <div class="row">
-    <div class="col-12">
-      <h3 class="text-decoration-underline mb-3">Python</h3>
-    </div>
-    <div class="col-12">
-      <ul>
-        <li>
-            <strong>Desarrollo de scripts y automatización:</strong>
-            Experiencia escribiendo scripts en <code>Python</code> para automatizar tareas, procesar archivos, 
-            transformar datos y ejecutar tareas programadas.
-        </li>
-        <li>
-            <strong>Consumo de APIs y manejo de solicitudes HTTP:</strong>
-            Integración con servicios externos mediante la librería <code>requests</code>, manejo de peticiones 
-            <code>GET/POST/UPDATE/DELETE/PATCH</code>, autenticaciones y procesamiento de respuestas en formato 
-            <code>JSON</code> mediante JWT o <code>XML</code>.
-        </li>
-        <li>
-            <strong>Buenas prácticas y legibilidad:</strong>
-            Aplicación de principios como <code>PEP8</code>, uso de estructuras de datos eficientes y programación 
-            modular orientada a funciones y clases para mejorar la claridad del código.
-        </li>
-      </ul>
-    </div>
-    <div class="col-12">
-      <p>
-        Tengo poca experiencia en <code>pyton</code>, sin embargo, he podido aprender y desarrollar diferentes metodos 
-        de solución a diferentes retos, me gustaría poder aprender más cosas como el manejo de volumenes de datos de 
-        una manera más perfecta y aprender a manipularlos de distintas formas.
-      </p>
-    </div>
-    <div class="col-12">
-      <h5 class="mb-3">Herramientas y dependencias utilizadas:</h5>
-    </div>
-    <div class="col-12 text-center mb-3">
-      <img ngbTooltip="Python" class="align-top mx-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"/>
-      <i ngbTooltip="MySQL" class="devicon-mysql-original bg-mysql mx-2" style="font-size: 2em;"></i>
-      <i ngbTooltip="MongoDB" class="devicon-mongodb-plain bg-mongodb mx-2" style="font-size: 2em;"></i>
-      <i ngbTooltip="PostgreSQL" class="devicon-postgresql-plain bg-postgresql mx-2" style="font-size: 2em;"></i>
-    </div>
-    <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-      <ul>
-        <li><a href="https://fastapi.tiangolo.com">fastapi</a></li>
-        <li><a href="https://www.uvicorn.org">uvicorn</a></li>
-        <li><a href="https://docs.pydantic.dev/latest/">pydantic</a></li>
-      </ul>
-    </div>
-    <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-      <ul>
-        <li><a href="https://pypi.org/project/psycopg2-binary/">psycopg2-binary</a></li>
-        <li><a href="https://entrenamiento-frameworks-web-python.readthedocs.io/es/latest/leccion2/sqlalchemy.html">SQLAlchemy</a></li>
-        <li><a href="https://pyjwt.readthedocs.io/en/stable/">PyJWT</a></li>
-      </ul>
-    </div>
-    <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-      <ul>
-        <li><a href="https://pypi.org/project/passlib/">passlib</a></li>
-        <li><a href="https://pypi.org/project/bcrypt/">bcrypt</a></li>
-      </ul>
-    </div>
-  </div> -->
 </section>
