@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ExperienceComponent } from './experience.component';
+import { AspNetComponent } from './asp-net.component';
 
-describe('ExperienceComponent', () => {
-  let component: ExperienceComponent;
-  let fixture: ComponentFixture<ExperienceComponent>;
+describe('AspNetComponent', () => {
+  let component: AspNetComponent;
+  let fixture: ComponentFixture<AspNetComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ExperienceComponent]
+      imports: [AspNetComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ExperienceComponent);
+    fixture = TestBed.createComponent(AspNetComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -235,10 +235,201 @@
         "successMessage": "Your message has been sent successfully. I will contact you as soon as possible."
       }
     },
+    "experience": {
+      "frontend": {
+        "title": "Welcome to my experience as a frontend developer",
+        "description": "Here you'll find some of the things I can do and have learned from my various front-end development skills.",
+        "html": {
+          "title": "HTML",
+          "subtitle": "",
+          "description": "",
+          "skills": [
+            "<strong>Semantic layout:</strong> I use HTML5 tags like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code> and <code>&lt;footer&gt;</code> to create accessible web structures optimized for Search Engine Optimization (SEO).",
+            "<strong>Professional styling:</strong> I have used <code>CSS3</code>, <code>sass</code> and the framework <code>Bootstrap</code> to create modern, responsive and attractive interfaces."
+          ],
+          "tools": [ ],
+          "plugins": [ ]
+        },
+        "angular": {
+          "title": "Angular",
+          "subtitle": "Tools and dependencies used:",
+          "description": "I have a medium-high experience using <code>angular</code> for a few years (2021 - present), I have had the opportunity to build applications from scratch and maintain them. With different technologies and dependencies that help me provide tailored solutions for the different clients and companies I've worked for.",
+          "skills": [
+            "<strong>Application development:</strong> I have experience building single-page applications and microservices using Angular, I have had the opportunity to use the component system (<code>NgModule</code> and <code>Standalone</code>), services and routing.",
+            "<strong>Data linking and directives:</strong> Efficient use of bidirectional data links, structural directives (<code>*ngIf</code>, <code>*ngFor</code>) and custom directives to create dynamic and reusable interfaces.",
+            "<strong>APIs and services:</strong> Integration of HTTP services to use <code>APIs REST</code>, using observables and state management with RxJS."
+          ],
+          "tools": [
+            { "name": "Angular", "class": "devicon-angularjs-plain bg-angular mx-2" },
+            { "name": "HTML5", "class": "devicon-html5-plain bg-html mx-2" },
+            { "name": "CSS3", "class": "devicon-css3-plain bg-css3 mx-2" },
+            { "name": "Sass", "class": "devicon-sass-original bg-sass" },
+            { "name": "TypeScript", "class": "devicon-typescript-plain bg-typescript mx-2" },
+            { "name": "JavaScript", "class": "devicon-javascript-plain bg-javascript mx-2" },
+            { "name": "NodeJs", "class": "devicon-nodejs-plain bg-node mx-2" },
+            { "name": "MySQL", "class": "devicon-mysql-original bg-mysql mx-2" },
+            { "name": "MongoDB", "class": "devicon-mongodb-plain bg-mongodb mx-2" },
+            { "name": "PostgreSQL", "class": "devicon-postgresql-plain bg-postgresql mx-2" }
+          ],
+          "plugins": [
+            { "name": "JQuery", "link": "https://jquery.com/" },
+            { "name": "DataTables", "link": "https://datatables.net/" },
+            { "name": "SweetAlert2", "link": "https://sweetalert2.github.io/" },
+            { "name": "Single-SPA", "link": "https://single-spa.js.org/docs/getting-started-overview" },
+            { "name": "Ng Bootstrap", "link": "https://ng-bootstrap.github.io/#/getting-started" },
+            { "name": "Ngx Translate", "link": "https://ngx-translate.org" },
+            { "name": "pdfMake", "link": "https://pdfmake.github.io/docs/0.1/" },
+            { "name": "PDF.js", "link": "https://mozilla.github.io/pdf.js/getting_started/" },
+            { "name": "FontAwesome Icon", "link": "https://fontawesome.com/v5/search?o=r&m=free" },
+            { "name": "LocalStorage", "link": "https://developer.mozilla.org/es/docs/Web/API/Window/localStorage" },
+            { "name": "SessionStorage", "link": "https://developer.mozilla.org/es/docs/Web/API/Window/sessionStorage" },
+            { "name": "Cookies", "link": "https://learn.microsoft.com/es-es/aspnet/web-api/overview/advanced/http-cookies" }
+          ]
+        },
+        "aspnet": {
+          "title": "ASP.NET",
+          "subtitle": "Tools and dependencies used:",
+          "description": "I have a high experience in <code>ASP.NET</code> creating web applications since 2017, Using different technologies and dependencies that make my job easier to offer high-quality applications. I have had a lot of challenges throughout my professional career.",
+          "skills": [
+            "<strong>Development with ASP.NET C# and Visual Basic:</strong> Building modern web applications using <code>ASP.NET</code> with <code>C#</code> and <code>Visual Basic</code>, applying the MVC pattern to separate responsibilities and facilitate maintenance.",
+            "<strong>WebServer:</strong> WebServer implementation, including controllers, routes, responses in <code>JSON</code> and <code>XML</code> format, and input validations.",
+            "<strong>Authentication and authorization:</strong> Identity integration to manage users, roles and access policies in secure applications.",
+            "<strong>Deployment and configuration:</strong> Publishing applications to IIS, using files, dependency injection and configuration environment.",
+            "<strong>Template implementation:</strong> Integration of templates to facilitate the use of <code>Bootstrap</code> framework design and management."
+          ],
+          "tools": [
+            { "name": "HTML5", "class": "devicon-html5-plain bg-html mx-2" },
+            { "name": "CSS3", "class": "devicon-css3-plain bg-css3 mx-2" },
+            { "name": "JavaScript", "class": "devicon-javascript-plain bg-javascript mx-2" },
+            { "name": "ASP.NET", "class": "devicon-visualstudio-plain bg-aspnet mx-2" },
+            { "name": "C#", "class": "devicon-csharp-plain bg-csharp mx-2" },
+            { "name": "SQL Server", "class": "devicon-microsoftsqlserver-plain bg-sqlserver mx-2" }
+          ],
+          "plugins": [
+            { "name": "JQuery", "link": "https://jquery.com/" },
+            { "name": "DataTables", "link": "https://datatables.net/" },
+            { "name": "InputMask", "link": "https://plugins.jquery.com/jquery.inputmask/" },
+            { "name": "SweetAlert2", "link": "https://sweetalert2.github.io/" },
+            { "name": "FontAwesome", "link": "https://fontawesome.com/v5/search?o=r&m=free" },
+            { "name": "MaxLength", "link": "http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" },
+            { "name": "MaxLength2", "link": "https://htmldom.dev/count-the-number-of-characters-of-a-textarea/" },
+            { "name": "JavaScript", "link": "https://developer.mozilla.org/es/docs/Web/JavaScript" },
+            { "name": "LocalStorage", "link": "https://developer.mozilla.org/es/docs/Web/API/Window/localStorage" },
+            { "name": "SessionStorage", "link": "https://developer.mozilla.org/es/docs/Web/API/Window/sessionStorage" },
+            { "name": "Cookies", "link": "https://learn.microsoft.com/es-es/aspnet/web-api/overview/advanced/http-cookies" }
+          ]
+        }
+      },
+      "backend": {
+        "title": "Welcome to my experience as a backend developer",
+        "description": "Here you'll find some of the things I can do and have learned from my various back-end development skills.",
+        "javascript": {
+          "title": "JavaScript",
+          "subtitle": "Tools and dependencies used:",
+          "description": "I have extensive experience in this language developing functions and methods since 2022. I have learned different things throughout my professional career, however, I know that I still have much more to learn and perfect.",
+          "skills": [
+            "<strong>Development of dynamic web applications:</strong> Experience developing interactive applications using pure <code>JavaScript</code> (vanilla JS), manipulating the <code>DOM</code> directly to create reusable and functional components.",
+            "<strong>Event-oriented programming:</strong> Using native browser events to handle user interactions, forms, validations and dynamic navigation without reloading the page.",
+            "<strong>APIs:</strong> Integration with <code>APIs REST</code> using <code>fetch</code> and <code>XMLHttpRequest</code>, Promise handling and <code>JSON</code> response processing to update the <code>UI</code> in real time.",
+            "<strong>Modularization and good practices:</strong> Code organization with pure functions, <code>ES6 modules</code> (<code>import/export</code>), and separation of logic to improve code maintainability."
+          ],
+          "tools": [
+            { "name": "JavaScript", "class": "devicon-javascript-plain bg-javascript mx-2" },
+            { "name": "NodeJs", "class": "devicon-nodejs-plain bg-node mx-2" },
+            { "name": "npm", "class": "devicon-npm-original-wordmark bg-npm mx-2" },
+            { "name": "MySQL", "class": "devicon-mysql-original bg-mysql mx-2" },
+            { "name": "MongoDB", "class": "devicon-mongodb-plain bg-mongodb mx-2" },
+            { "name": "PostgreSQL", "class": "devicon-postgresql-plain bg-postgresql mx-2" }
+          ],
+          "plugins": [
+            { "name": "nodemon", "link": "https://www.npmjs.com/package/nodemon" },
+            { "name": "body-parser", "link": "https://www.npmjs.com/package/body-parser" },
+            { "name": "express", "link": "https://expressjs-com.translate.goog/?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc" },
+            { "name": "mysql", "link": "https://dev.mysql.com/doc/dev/connector-nodejs/latest/" },
+            { "name": "promise-mysql", "link": "https://www.npmjs.com/package/promise-mysql" },
+            { "name": "cors", "link": "https://www.npmjs.com/package/cors" },
+            { "name": "typescript", "link": "https://www.typescriptlang.org" }
+          ]
+        },
+        "python": {
+          "title": "JavaScript",
+          "subtitle": "Tools and dependencies used:",
+          "description": "I have little experience in <code>pyton</code>, however, I have been able to learn and develop different methods for solving different challenges. I would like to be able to learn more things such as managing data volumes in a more perfect way and learning how to manipulate them in different ways.",
+          "skills": [
+            "<strong>Script development and automation:</strong> Experience writing scripts in <code>python</code> to automate tasks, process files, transform data and run scheduled tasks.",
+            "<strong>Consuming APIs and handling HTTP requests:</strong> Integration with external services through the <code>requests</code> library, handling of <code>GET/POST/UPDATE/DELETE/PATCH</code> requests, authentications, and processing of responses in <code>JSON</code> format using <code>JWT</code> or <code>XML</code>.",
+            "<strong>Good practices and readability:</strong> Application of principles such as <code>PEP8</code>, use of efficient data structures, and modular programming oriented toward functions and classes to improve code clarity."
+          ],
+          "tools": [
+            { "name": "Python", "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" },
+            { "name": "MySQL", "class": "devicon-mysql-original bg-mysql mx-2" },
+            { "name": "MongoDB", "class": "devicon-mongodb-plain bg-mongodb mx-2" },
+            { "name": "PostgreSQL", "class": "devicon-postgresql-plain bg-postgresql mx-2" }
+          ],
+          "plugins": [
+            { "name": "fastapi", "link": "https://fastapi.tiangolo.com" },
+            { "name": "uvicorn", "link": "https://www.uvicorn.org" },
+            { "name": "pydantic", "link": "https://docs.pydantic.dev/latest/" },
+            { "name": "psycopg2-binary", "link": "https://pypi.org/project/psycopg2-binary/" },
+            { "name": "SQLAlchemy", "link": "https://entrenamiento-frameworks-web-python.readthedocs.io/es/latest/leccion2/sqlalchemy.html" },
+            { "name": "PyJWT", "link": "https://pyjwt.readthedocs.io/en/stable/" },
+            { "name": "passlib", "link": "https://pypi.org/project/passlib/" },
+            { "name": "bcrypt", "link": "https://pypi.org/project/bcrypt/" }
+          ]
+        },
+        "csharp": {
+          "title": "C#",
+          "subtitle": "Tools and dependencies used:",
+          "description": "I have extensive experience developing with <code>C#</code> and have been creating applications since 2014, having been self-taught since I graduated from high school. I've faced challenges that I've overcome, albeit with some difficulties, but the university where I developed this language helped me learn a lot.",
+          "skills": [
+            "<strong>Web application development:</strong> Experience building enterprise web applications using <code>C#</code> and <code>ASP.NET</code> (<code>Web Forms</code> and <code>MVC</code>) as web services, structuring projects with logical separation between presentation, business logic and data access.",
+            "<strong>Lifecycle management and server controls:</strong> Efficient use of the page lifecycle <code>ASP.NET</code>, as well as server controls, events and client and server-side validations to create interactive interfaces.",
+            "<strong>Database integration:</strong> Connecting and manipulating data using <code>ADO.NET</code> and <code>Entity Framework</code>, making inquiries <code>SQL</code>, stored procedures and operations <code>CRUD</code> in relational environments such as <code>SQL Server</code>.",
+            "<strong>Services and communication between layers:</strong> Implementation of web services (<code>ASMX</code> or <code>WCF</code>), session management, cookies, and layered architecture to ensure system modularity and maintainability."
+          ],
+          "tools": [
+            { "name": "ASP.NET", "class": "devicon-visualstudio-plain bg-aspnet mx-2" },
+            { "name": "C#", "class": "devicon-csharp-plain bg-csharp mx-2" },
+            { "name": "Visual Basic", "class": "devicon-visualbasic-plain bg-visualbasic mx-2" },
+            { "name": "SQL Server", "class": "devicon-microsoftsqlserver-plain bg-sqlserver mx-2" }
+          ],
+          "plugins": [
+            { "name": "DataSet", "link": "https://learn.microsoft.com/es-es/dotnet/api/system.data.dataset?view=net-8.0" },
+            { "name": "SqlClient", "link": "https://learn.microsoft.com/es-es/dotnet/api/system.data.sqlclient.sqlconnection?view=netframework-4.8.1" },
+            { "name": "JSON", "link": "https://learn.microsoft.com/es-es/dotnet/standard/serialization/system-text-json/how-to" }
+          ]
+        }
+      },
+      "database": {
+        "title": "Welcome to my experience as a database developer",
+        "description": "Here you'll find some of the things I can do and have learned from my various database development skills."
+      }
+    },
     "notes": {
-      "columnOne": [ ],
-        "columnTwo": [ ],
-        "columnThree": [ ]
+      "columnOne": [
+        {
+          "title": "Single SPA",
+          "date": "07/08/2024",
+          "note": "I had a requirement with this library, what happened is that when I click on an option for the first time in the menu (root) it shows the contents of the micro, but the second click on the second option that belongs to the same micro, fails, I had to read the documentation to understand the problem and it is a bad initial configuration. 😩",
+          "tags": ["angular", "micro-frontend", "single-spa", "dependencies"]
+        }
+      ],
+      "columnTwo": [
+        {
+          "title": "New project",
+          "date": "02/07/2025",
+          "note": "I have created a new project, as a micro-frontend in Angular and I have configured to be able to integrate it into the main root repository. 💪",
+          "tags": ["angular", "micro-frontend", "single-spa", "new-project"]
+        }
+      ],
+      "columnThree": [
+        {
+          "title": "Ngx-translate integration",
+          "date": "16/06/2025",
+          "note": "I integrated ngx-translate for language translation in Angular applications, a fact I'm using it in this one. 😅",
+          "tags": ["angular", "ngx-translate", "dependencies"]
+        }
+      ]
     }
   },
   "global": {
@@ -255,12 +446,29 @@
       "dividername": "Home"
     },
     {
-      "path": "experience",
+      "path": "",
       "label": "Experience",
-      "type": "link",
+      "type": "sub",
       "icon": "fa-solid fa-medal",
       "divider": "true",
       "dividername": "Experience",
+      "children": [
+        {
+          "path": "experience/frontend",
+          "label": "Frontend",
+          "type": "link"
+        },
+        {
+          "path": "experience/backend",
+          "label": "Backend",
+          "type": "link"
+        },
+        {
+          "path": "experience/database",
+          "label": "Database",
+          "type": "link"
+        }
+      ],
       "newLabel": "important",
       "newStyle": "text-danger-emphasis bg-danger-subtle border border-danger-subtle"
     },

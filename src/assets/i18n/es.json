@@ -235,10 +235,201 @@
         "successMessage": "¡Mensaje enviado correctamente!"
       }
     },
+    "experience": {
+      "frontend": {
+        "title": "Bienvenidos a mi experiencia como desarrollador frontend",
+        "description": "Aquí encontrarás algunas de las cosas que yo puedo hacer y he aprendido, de mis diferentes habilidades para el desarrollo frontend.",
+        "html": {
+          "title": "HTML",
+          "subtitle": "",
+          "description": "",
+          "skills": [
+            "<strong>Maquetación semántica:</strong> Utilizo etiquetas HTML5 como <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code> y <code>&lt;footer&gt;</code> para crear estructuras web accesibles y optimizadas para Optimización para Motores de Búsqueda (SEO).",
+            "<strong>Estilizado profesional:</strong> He utilizado <code>CSS3</code>, <code>sass</code> y el framework <code>Bootstrap</code> para crear interfaces modernas, responsivas y visualmente atractivas."
+          ],
+          "tools": [ ],
+          "plugins": [ ]
+        },
+        "angular": {
+          "title": "Angular",
+          "subtitle": "Herramientas y dependencias utilizadas:",
+          "description": "Tengo una experiencia media-alta utilizando <code>angular</code> desde hace unos años (2021 - a la actualidad), he tenido la oportunidad de crear aplicaciones desde cero y darles mantenimiento. Con diferentes tecnologias y dependencias que me ayudan a otorgar soluciones hechas a la medida para los diferentes clientes y compañías para las que he trabajado.",
+          "skills": [
+            "<strong>Desarrollo de aplicaciones:</strong> Tengo experiencia creando aplicaciones de una sola página y micro-servicios utilizando Angular, he tenido la oportunidad de utilizar el sistema de componentes (<code>NgModule</code> y <code>Standalone</code>), servicios y enrutamiento.",
+            "<strong>Enlace de datos y directivas:</strong> Uso eficiente de enlaces de datos bidireccional, directivas estructurales (<code>*ngIf</code>, <code>*ngFor</code>) y directivas personalizadas para crear interfaces dinámicas y reutilizables.",
+            "<strong>Consumo de APIs y servicios:</strong> Integración de servicios HTTP para consumir <code>APIs REST</code>, manejo de Observables y gestión de estados con RxJS."
+          ],
+          "tools": [
+            { "name": "Angular", "class": "devicon-angularjs-plain bg-angular mx-2" },
+            { "name": "HTML5", "class": "devicon-html5-plain bg-html mx-2" },
+            { "name": "CSS3", "class": "devicon-css3-plain bg-css3 mx-2" },
+            { "name": "Sass", "class": "devicon-sass-original bg-sass" },
+            { "name": "TypeScript", "class": "devicon-typescript-plain bg-typescript mx-2" },
+            { "name": "JavaScript", "class": "devicon-javascript-plain bg-javascript mx-2" },
+            { "name": "NodeJs", "class": "devicon-nodejs-plain bg-node mx-2" },
+            { "name": "MySQL", "class": "devicon-mysql-original bg-mysql mx-2" },
+            { "name": "MongoDB", "class": "devicon-mongodb-plain bg-mongodb mx-2" },
+            { "name": "PostgreSQL", "class": "devicon-postgresql-plain bg-postgresql mx-2" }
+          ],
+          "plugins": [
+            { "name": "JQuery", "link": "https://jquery.com/" },
+            { "name": "DataTables", "link": "https://datatables.net/" },
+            { "name": "SweetAlert2", "link": "https://sweetalert2.github.io/" },
+            { "name": "Single-SPA", "link": "https://single-spa.js.org/docs/getting-started-overview" },
+            { "name": "Ng Bootstrap", "link": "https://ng-bootstrap.github.io/#/getting-started" },
+            { "name": "Ngx Translate", "link": "https://ngx-translate.org" },
+            { "name": "pdfMake", "link": "https://pdfmake.github.io/docs/0.1/" },
+            { "name": "PDF.js", "link": "https://mozilla.github.io/pdf.js/getting_started/" },
+            { "name": "FontAwesome Icon", "link": "https://fontawesome.com/v5/search?o=r&m=free" },
+            { "name": "LocalStorage", "link": "https://developer.mozilla.org/es/docs/Web/API/Window/localStorage" },
+            { "name": "SessionStorage", "link": "https://developer.mozilla.org/es/docs/Web/API/Window/sessionStorage" },
+            { "name": "Cookies", "link": "https://learn.microsoft.com/es-es/aspnet/web-api/overview/advanced/http-cookies" }
+          ]
+        },
+        "aspnet": {
+          "title": "ASP.NET",
+          "subtitle": "Herramientas y dependencias utilizadas:",
+          "description": "Tengo una gran experiencia en <code>ASP.NET</code> desde 2017 creando aplicaciones web, utilizando diferentes tecnologias y dependencias que me facilitan el trabajo para ofrecer aplicaciones de alta calidad. He tenido una gran cantidad de retos a lo largo de mi carrera profecional.",
+          "skills": [
+            "<strong>Desarrollo con ASP.NET C# y Visual Basic:</strong> Creación de aplicaciones web modernas utilizando <code>ASP.NET</code> con <code>C#</code> y <code>Visual Basic</code>, aplicando el patrón MVC para separar responsabilidades y facilitar el mantenimiento.",
+            "<strong>WebServer:</strong> Implementación de servicios WebServer, incluyendo controladores, rutas, respuestas en formato <code>JSON</code> y <code>XML</code>, y validaciones de entrada.",
+            "<strong>Autenticación y autorización:</strong> Integración de Identity para gestionar usuarios, roles y políticas de acceso en aplicaciones seguras.",
+            "<strong>Despliegue y configuración:</strong> Publicación de aplicaciones en IIS, utilizando archivos, inyección de dependencias y entorno de configuración.",
+            "<strong>Implementación de templates:</strong> Integración de templates para facilitar el uso del diseño, y manejo de framework <code>Bootstrap</code>."
+          ],
+          "tools": [
+            { "name": "HTML5", "class": "devicon-html5-plain bg-html mx-2" },
+            { "name": "CSS3", "class": "devicon-css3-plain bg-css3 mx-2" },
+            { "name": "JavaScript", "class": "devicon-javascript-plain bg-javascript mx-2" },
+            { "name": "ASP.NET", "class": "devicon-visualstudio-plain bg-aspnet mx-2" },
+            { "name": "C#", "class": "devicon-csharp-plain bg-csharp mx-2" },
+            { "name": "SQL Server", "class": "devicon-microsoftsqlserver-plain bg-sqlserver mx-2" }
+          ],
+          "plugins": [
+            { "name": "JQuery", "link": "https://jquery.com/" },
+            { "name": "DataTables", "link": "https://datatables.net/" },
+            { "name": "InputMask", "link": "https://plugins.jquery.com/jquery.inputmask/" },
+            { "name": "SweetAlert2", "link": "https://sweetalert2.github.io/" },
+            { "name": "FontAwesome", "link": "https://fontawesome.com/v5/search?o=r&m=free" },
+            { "name": "MaxLength", "link": "http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" },
+            { "name": "MaxLength2", "link": "https://htmldom.dev/count-the-number-of-characters-of-a-textarea/" },
+            { "name": "JavaScript", "link": "https://developer.mozilla.org/es/docs/Web/JavaScript" },
+            { "name": "LocalStorage", "link": "https://developer.mozilla.org/es/docs/Web/API/Window/localStorage" },
+            { "name": "SessionStorage", "link": "https://developer.mozilla.org/es/docs/Web/API/Window/sessionStorage" },
+            { "name": "Cookies", "link": "https://learn.microsoft.com/es-es/aspnet/web-api/overview/advanced/http-cookies" }
+          ]
+        }
+      },
+      "backend": {
+        "title": "Bienvenidos a mi experiencia como desarrollador backend",
+        "description": "Aquí encontrarás algunas de las cosas que yo puedo hacer y he aprendido, de mis diferentes habilidades para el desarrollo backend.",
+        "javascript": {
+          "title": "JavaScript",
+          "subtitle": "Herramientas y dependencias utilizadas:",
+          "description": "Tengo una experiencia amplia en este lenguaje desarrollando funciones y metodos desde el 2022 he aprendido diferentes cosas a lo largo de mi carrera profecional, sin embargo, se que aun me queda mucho mas que aprender y perfeccionar.",
+          "skills": [
+            "<strong>Desarrollo de aplicaciones web dinámicas:</strong> Experiencia desarrollando aplicaciones interactivas utilizando <code>JavaScript</code> puro (vanilla JS), manipulando el <code>DOM</code> directamente para crear componentes reutilizables y funcionales.",
+            "<strong>Programación orientada a eventos:</strong> Uso de eventos nativos del navegador para gestionar interacciones del usuario, formularios, validaciones y navegación dinámica sin recargar la página.",
+            "<strong>Consumo de APIs:</strong> Integración con <code>APIs REST</code> utilizando <code>fetch</code> y <code>XMLHttpRequest</code>, manejo de promesas y procesamiento de respuestas <code>JSON</code> para actualizar la interfaz de usuario en tiempo real.",
+            "<strong>Modularización y buenas prácticas:</strong> Organización del código con funciones puras, <code>módulos ES6</code> (<code>import/export</code>), y separación de lógica para mejorar la mantenibilidad del código."
+          ],
+          "tools": [
+            { "name": "JavaScript", "class": "devicon-javascript-plain bg-javascript mx-2" },
+            { "name": "NodeJs", "class": "devicon-nodejs-plain bg-node mx-2" },
+            { "name": "npm", "class": "devicon-npm-original-wordmark bg-npm mx-2" },
+            { "name": "MySQL", "class": "devicon-mysql-original bg-mysql mx-2" },
+            { "name": "MongoDB", "class": "devicon-mongodb-plain bg-mongodb mx-2" },
+            { "name": "PostgreSQL", "class": "devicon-postgresql-plain bg-postgresql mx-2" }
+          ],
+          "plugins": [
+            { "name": "nodemon", "link": "https://www.npmjs.com/package/nodemon" },
+            { "name": "body-parser", "link": "https://www.npmjs.com/package/body-parser" },
+            { "name": "express", "link": "https://expressjs-com.translate.goog/?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc" },
+            { "name": "mysql", "link": "https://dev.mysql.com/doc/dev/connector-nodejs/latest/" },
+            { "name": "promise-mysql", "link": "https://www.npmjs.com/package/promise-mysql" },
+            { "name": "cors", "link": "https://www.npmjs.com/package/cors" },
+            { "name": "typescript", "link": "https://www.typescriptlang.org" }
+          ]
+        },
+        "python": {
+          "title": "JavaScript",
+          "subtitle": "Herramientas y dependencias utilizadas:",
+          "description": "Tengo poca experiencia en <code>pyton</code>, sin embargo, he podido aprender y desarrollar diferentes metodos de solución a diferentes retos, me gustaría poder aprender más cosas como el manejo de volumenes de datos de una manera más perfecta y aprender a manipularlos de distintas formas.",
+          "skills": [
+            "<strong>Desarrollo de scripts y automatización:</strong> Experiencia escribiendo scripts en <code>python</code> para automatizar tareas, procesar archivos, transformar datos y ejecutar tareas programadas.",
+            "<strong>Consumo de APIs y manejo de solicitudes HTTP:</strong> Integración con servicios externos mediante la librería <code>requests</code>, manejo de peticiones <code>GET/POST/UPDATE/DELETE/PATCH</code>, autenticaciones y procesamiento de respuestas en formato <code>JSON</code> mediante <code>JWT</code> o <code>XML</code>.",
+            "<strong>Buenas prácticas y legibilidad:</strong> Aplicación de principios como <code>PEP8</code>, uso de estructuras de datos eficientes y programación modular orientada a funciones y clases para mejorar la claridad del código."
+          ],
+          "tools": [
+            { "name": "Python", "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" },
+            { "name": "MySQL", "class": "devicon-mysql-original bg-mysql mx-2" },
+            { "name": "MongoDB", "class": "devicon-mongodb-plain bg-mongodb mx-2" },
+            { "name": "PostgreSQL", "class": "devicon-postgresql-plain bg-postgresql mx-2" }
+          ],
+          "plugins": [
+            { "name": "fastapi", "link": "https://fastapi.tiangolo.com" },
+            { "name": "uvicorn", "link": "https://www.uvicorn.org" },
+            { "name": "pydantic", "link": "https://docs.pydantic.dev/latest/" },
+            { "name": "psycopg2-binary", "link": "https://pypi.org/project/psycopg2-binary/" },
+            { "name": "SQLAlchemy", "link": "https://entrenamiento-frameworks-web-python.readthedocs.io/es/latest/leccion2/sqlalchemy.html" },
+            { "name": "PyJWT", "link": "https://pyjwt.readthedocs.io/en/stable/" },
+            { "name": "passlib", "link": "https://pypi.org/project/passlib/" },
+            { "name": "bcrypt", "link": "https://pypi.org/project/bcrypt/" }
+          ]
+        },
+        "csharp": {
+          "title": "C#",
+          "subtitle": "Herramientas y dependencias utilizadas:",
+          "description": "Tengo una alta experiencia en desarrollo con <code>C#</code> y he creado aplicaiciones desde 2014 porque he sido autodidacta desde la escuela en donde estudie. He tenido retos que he podido sobrepasar con ciertas dificultades pero la Universidad en donde lleve durante mi carrera el desarrollo de este lenguaje me ayudo a aprender bastante.",
+          "skills": [
+            "<strong>Desarrollo de aplicaciones web:</strong> Experiencia creando aplicaciones web empresariales utilizando <code>C#</code> y <code>ASP.NET</code> (<code>Web Forms</code> y <code>MVC</code>) como servicios web, estructurando proyectos con separación lógica entre presentación, lógica de negocio y acceso a datos.",
+            "<strong>Manejo del ciclo de vida y controles de servidor:</strong> Uso eficiente del ciclo de vida de páginas <code>ASP.NET</code>, así como controles de servidor, eventos, y validaciones del lado cliente y servidor para crear interfaces interactivas.",
+            "<strong>Integración con bases de datos:</strong> Conexión y manipulación de datos mediante <code>ADO.NET</code> y <code>Entity Framework</code>, realizando consultas <code>SQL</code>, procedimientos almacenados y operaciones <code>CRUD</code> en entornos relacionales como <code>SQL Server</code>.",
+            "<strong>Servicios y comunicación entre capas:</strong> Implementación de servicios web (<code>ASMX</code> o <code>WCF</code>), manejo de sesiones, cookies y arquitectura en capas para asegurar modularidad y mantenibilidad del sistema."
+          ],
+          "tools": [
+            { "name": "ASP.NET", "class": "devicon-visualstudio-plain bg-aspnet mx-2" },
+            { "name": "C#", "class": "devicon-csharp-plain bg-csharp mx-2" },
+            { "name": "Visual Basic", "class": "devicon-visualbasic-plain bg-visualbasic mx-2" },
+            { "name": "SQL Server", "class": "devicon-microsoftsqlserver-plain bg-sqlserver mx-2" }
+          ],
+          "plugins": [
+            { "name": "DataSet", "link": "https://learn.microsoft.com/es-es/dotnet/api/system.data.dataset?view=net-8.0" },
+            { "name": "SqlClient", "link": "https://learn.microsoft.com/es-es/dotnet/api/system.data.sqlclient.sqlconnection?view=netframework-4.8.1" },
+            { "name": "JSON", "link": "https://learn.microsoft.com/es-es/dotnet/standard/serialization/system-text-json/how-to" }
+          ]
+        }
+      },
+      "database": {
+        "title": "Bienvenidos a mi experiencia como desarrollador base de datos",
+        "description": "Aquí encontrarás algunas de las cosas que yo puedo hacer y he aprendido, de mis diferentes habilidades para el desarrollo base de datos."
+      }
+    },
     "notes": {
-      "columnOne": [ ],
-      "columnTwo": [ ],
-      "columnThree": [ ]
+      "columnOne": [
+        {
+          "title": "Single SPA",
+          "date": "07/08/2024",
+          "note": "He tenido un requerimiento con esta librería, la cual probocaba que cuando le doy un click a una opción por primera vez en el menu (root) muestra el contenido del micro, pero el segundo click de la segunda opción que pertenece al mismo micro, falla, he tenido que leer la documentación para entender el problema y es una mala configuración inicial. 😩",
+          "tags": ["angular", "micro-frontend", "single-spa", "dependencias"]
+        }
+      ],
+      "columnTwo": [
+        {
+          "title": "Nuevo proyecto",
+          "date": "02/07/2025",
+          "note": "He creado un nuevo proyecto, como micro-frontend en angular y he realizado las configuraciones iniciales para poder integrarlo a repositorio principal root. 💪",
+          "tags": ["angular", "micro-frontend", "single-spa", "new-project"]
+        }
+      ],
+      "columnThree": [
+        {
+          "title": "Integracición de ngx-translate",
+          "date": "16/06/2025",
+          "note": "Integre ngx-translate para traducción de idiomas en aplicaciones de angular, de hecho la estoy utilizando en esta. 😅",
+          "tags": ["angular", "ngx-translate", "dependencias"]
+        }
+      ]
     }
   },
   "global": {
@@ -255,12 +446,30 @@
       "dividername": "Inicio"
     },
     {
-      "path": "experience",
+      "path": "",
       "label": "Experiencia",
-      "type": "link",
+      "type": "sub",
       "icon": "fa-solid fa-medal",
       "divider": "true",
       "dividername": "Experiencia",
+      "expanded": false,
+      "children": [
+        {
+          "path": "experience/frontend",
+          "label": "Frontend",
+          "type": "link"
+        },
+        {
+          "path": "experience/backend",
+          "label": "Backend",
+          "type": "link"
+        },
+        {
+          "path": "experience/database",
+          "label": "Base de datos",
+          "type": "link"
+        }
+      ],
       "newLabel": "importante",
       "newStyle": "text-danger-emphasis bg-danger-subtle border border-danger-subtle"
     },

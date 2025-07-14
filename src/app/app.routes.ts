@@ -7,8 +7,10 @@ import { SkillsNToolsComponent } from './pages/landing-page/skills-n-tools/skill
 import { WorkComponent } from './pages/landing-page/work/work.component';
 import { ContactUsComponent } from './pages/landing-page/contact-us/contact-us.component';
 import { NotesComponent } from './pages/pages/notes/notes.component';
-import { ExperienceComponent } from './pages/pages/experience/experience.component';
 import { PluginsNToolsComponent } from './pages/pages/plugins-n-tools/plugins-n-tools.component';
+import { FrontendComponent } from './pages/pages/experience/frontend/frontend.component';
+import { BackendComponent } from './pages/pages/experience/backend/backend.component';
+import { DatabaseComponent } from './pages/pages/experience/database/database.component';
 
 export const routes: Routes = [
   {
@@ -46,13 +48,25 @@ export const routes: Routes = [
         component: NotesComponent
       },
       {
-        path: 'experience',
-        component: ExperienceComponent
+        path: 'experience/frontend',
+        component: FrontendComponent
+      },
+      {
+        path: 'experience/backend',
+        component: BackendComponent
+      },
+      {
+        path: 'experience/database',
+        component: DatabaseComponent
       },
       {
         path: 'plugins-n-tools',
         component: PluginsNToolsComponent
-      }
+      },
+      {
+        path: '**',
+        component: HomeComponent
+      },
     ]
   },
   { 

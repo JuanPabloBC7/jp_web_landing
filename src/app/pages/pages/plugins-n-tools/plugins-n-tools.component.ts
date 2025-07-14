@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-plugins-n-tools',
+  standalone: true,
   imports: [],
   templateUrl: './plugins-n-tools.component.html',
   styleUrl: './plugins-n-tools.component.scss'

@@ -1,0 +1,29 @@
+<section class="my-3 mx-5">
+  <div class="row">
+    <div class="col-12">
+      <h3 class="text-decoration-underline mb-3">{{ 'pages.experience.frontend.aspnet.title' | translate }}</h3>
+    </div>
+    <div class="col-12">
+      <ul><li *ngFor="let s of skills" [innerHTML]="s"></li></ul>
+    </div>
+    <div class="col-12">
+      <p [innerHTML]="'pages.experience.frontend.aspnet.description' | translate"></p>
+    </div>
+    <div class="col-12">
+      <h5 class="mb-3">{{ 'pages.experience.frontend.aspnet.subtitle' | translate }}</h5>
+    </div>
+    <div class="col-12 text-center mb-3">
+      <span *ngFor="let t of tools">
+        <i *ngIf="t.class" [ngbTooltip]="t.name" [class]="t.class" style="font-size: 2em;"></i>
+        <img *ngIf="t.link" [ngbTooltip]="t.name" class="align-top mx-2" [src]="t.link"/>
+      </span>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <ul class="row">
+        <li *ngFor="let p of plugins" class="col-12 col-sm-6 col-md-4 col-lg-4">
+          <a [href]="p.link">{{ p.name }}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

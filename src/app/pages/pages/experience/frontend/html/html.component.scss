@@ -1,0 +1,35 @@
+:root {
+  --base08: #d72638;
+  --base05: #333333;
+  --base0C: #084198;
+  --base0E: #aa2969;
+}
+
+// @media (prefers-color-scheme: dark) {
+//   :root {
+//     --base08: #6edff6;
+//     --base05: #abb2bf;
+//     --base0C: #79dfc1;
+//     --base0E: #c19ef9;
+//   }
+// }
+
+body[data-bs-theme="dark"] { 
+  --base08: #6edff6;
+  --base05: #abb2bf;
+  --base0C: #79dfc1;
+  --base0E: #c19ef9;
+}
+
+.token.tag {
+  color: var(--base08);
+}
+.token.punctuation {
+color: var(--base05);
+}
+.token.attr-name, .token.string, .token.char, .token.builtin, .token.inserted {
+color: var(--base0C);
+}
+.token.atrule, .token.attr-value, .token.keyword {
+color: var(--base0E);
+}
