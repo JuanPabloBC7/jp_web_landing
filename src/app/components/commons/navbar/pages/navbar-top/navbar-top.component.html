@@ -54,7 +54,7 @@
     </div>
 
     <!-- Menú colapsable para móviles -->
-    <div *ngIf="isOpen" class="d-lg-none">
+    <div *ngIf="isOpen" class="d-lg-none" style="flex-grow:1; overflow-y:auto; max-height: calc(100vh - 120px);">
       <div class="border-top px-3 py-2">
         <ul class="nav nav-pills flex-column mb-auto">
           <li class="nav-item" *ngFor="let m of menu">
