@@ -1,4 +1,8 @@
 {
+  "general": {
+    "readMore": "Leer más",
+    "seeMyExperience": "Ver mi experiencia"
+  },
   "configuration": {
     "icon": "Jp",
     "name": "Jpbalan",
@@ -410,7 +414,7 @@
         {
           "title": "Single SPA",
           "date": "07/08/2024",
-          "note": "He tenido un requerimiento con esta librería, la cual probocaba que cuando le doy un click a una opción por primera vez en el menu (root) muestra el contenido del micro, pero el segundo click de la segunda opción que pertenece al mismo micro, falla, he tenido que leer la documentación para entender el problema y es una mala configuración inicial. 😩",
+          "note": "He tenido un requerimiento con esta librería, la cual probocaba que cuando le doy un click a una opción por primera vez en el menu (<code>root</code>) muestra el contenido del micro, pero el segundo click de la segunda opción que pertenece al mismo micro, falla, he tenido que leer la documentación para entender el problema y es una mala configuración inicial. 😩",
           "tags": ["angular", "micro-frontend", "single-spa", "dependencias"]
         }
       ],
@@ -418,23 +422,31 @@
         {
           "title": "Nuevo proyecto",
           "date": "02/07/2025",
-          "note": "He creado un nuevo proyecto, como micro-frontend en angular y he realizado las configuraciones iniciales para poder integrarlo a repositorio principal root. 💪",
+          "note": "He creado un nuevo proyecto, como <code>micro-frontend</code> en <code>angular</code> y he realizado las configuraciones iniciales para poder integrarlo a repositorio principal <code>root</code>. 💪",
           "tags": ["angular", "micro-frontend", "single-spa", "new-project"]
+        },
+        {
+          "title": "🍪 Cookies",
+          "date": "13/10/2022",
+          "note": "Utilice <code>cookies</code> para el manejo de sesión entre sitios empresariales, para que el usuario no tenga que volver a identificarse en cada página. 🍪",
+          "tags": ["ASP.NET", "cookies", "login", "project-integration"]
         }
       ],
       "columnThree": [
         {
-          "title": "Integracición de ngx-translate",
+          "title": "Integración de ngx-translate",
           "date": "16/06/2025",
-          "note": "Integre ngx-translate para traducción de idiomas en aplicaciones de angular, de hecho la estoy utilizando en esta. 😅",
+          "note": "Integre <code>ngx-translate</code> para traducción de idiomas en aplicaciones de <code>angular</code>, de hecho la estoy utilizando en esta. 😅",
           "tags": ["angular", "ngx-translate", "dependencias"]
+        },
+        {
+          "title": "Session y local storage",
+          "date": "17/05/2020",
+          "note": "Manejo de variables con <code>session storage</code> y <code>local storage</code>, para mantener dentro del navegador o durante la sesion del usuario, según sea necesario. 💻",
+          "tags": ["session-storage", "local-storage", "variables"]
         }
       ]
     }
-  },
-  "global": {
-    "readMore": "Leer más",
-    "seeMyExperience": "Ver mi experiencia"
   },
   "menu": [
     {

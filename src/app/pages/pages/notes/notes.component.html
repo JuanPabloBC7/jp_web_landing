@@ -12,7 +12,7 @@
               <span class="text-warning-emphasis ms-auto" style="font-size: 10px;">{{ item.date }}</span>
             </div>
             <div class="card-body">
-              <p class="card-text mb-3">{{ item.note }}</p>
+              <p class="card-text mb-3" [innerHTML]="item.note"></p>
               <ng-container *ngFor="let t of item.tags">
                   <span class="badge border rounded-pill ms-2" [ngClass]="t.badgeClass">
                     <small>{{ t.value }}</small>
@@ -37,7 +37,7 @@
               <span class="text-warning-emphasis ms-auto" style="font-size: 10px;">{{ item.date }}</span>
             </div>
             <div class="card-body">
-              <p class="card-text mb-3">{{ item.note }}</p>
+              <p class="card-text mb-3" [innerHTML]="item.note"></p>
               <ng-container *ngFor="let t of item.tags">
                   <span class="badge border rounded-pill ms-2" [ngClass]="t.badgeClass">
                     <small>{{ t.value }}</small>
@@ -62,7 +62,7 @@
               <span class="text-warning-emphasis ms-auto" style="font-size: 10px;">{{ item.date }}</span>
             </div>
             <div class="card-body">
-              <p class="card-text mb-3">{{ item.note }}</p>
+              <p class="card-text mb-3" [innerHTML]="item.note"></p>
               <ng-container *ngFor="let t of item.tags">
                   <span class="badge border rounded-pill ms-2" [ngClass]="t.badgeClass">
                     <small>{{ t.value }}</small>
