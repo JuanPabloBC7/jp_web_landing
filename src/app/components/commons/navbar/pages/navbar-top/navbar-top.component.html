@@ -57,8 +57,8 @@
     <div *ngIf="isOpen" class="d-lg-none">
       <div class="border-top px-3 py-2">
         <ul class="nav nav-pills flex-column mb-auto">
-          <li class="nav-item" *ngFor="let m of menu" (click)="isOpen = false">
-            <app-menu-item [item]="m"></app-menu-item>
+          <li class="nav-item" *ngFor="let m of menu">
+            <app-menu-item [item]="m" (isOpen)="showMenu($event)"></app-menu-item>
           </li>
         </ul>
         <!-- <a routerLink="/contact" class="btn btn-primary w-100 mt-2" (click)="isOpen = false">Get Started</a> -->

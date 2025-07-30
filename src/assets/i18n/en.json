@@ -455,7 +455,8 @@
       "type": "link",
       "icon": "fa-solid fa-house",
       "divider": "true",
-      "dividername": "Home"
+      "dividername": "Home",
+      "events": { "click": "null" }
     },
     {
       "path": "",
@@ -468,17 +469,20 @@
         {
           "path": "experience/frontend",
           "label": "Frontend",
-          "type": "link"
+          "type": "link",
+          "events": { "click": "null" }
         },
         {
           "path": "experience/backend",
           "label": "Backend",
-          "type": "link"
+          "type": "link",
+          "events": { "click": "null" }
         },
         {
           "path": "experience/database",
           "label": "Database",
-          "type": "link"
+          "type": "link",
+          "events": { "click": "null" }
         }
       ],
       "newLabel": "important",
@@ -490,7 +494,8 @@
       "type": "link",
       "icon": "fa-solid fa-book",
       "newLabel": "me",
-      "newStyle": "text-primary-emphasis bg-primary-subtle border border-primary-subtle"
+      "newStyle": "text-primary-emphasis bg-primary-subtle border border-primary-subtle",
+      "events": { "click": "null" }
     },
     {
       "path": "about-us",
@@ -498,19 +503,22 @@
       "type": "link",
       "icon": "fa-solid fa-user",
       "divider": "true",
-      "dividername": "Information"
+      "dividername": "Information",
+      "events": { "click": "null" }
     },
     {
       "path": "skills-&-tools",
       "label": "Skills and tools",
       "type": "link",
-      "icon": "fa-solid fa-bolt-lightning"
+      "icon": "fa-solid fa-bolt-lightning",
+      "events": { "click": "null" }
     },
     {
       "path": "works",
       "label": "Linetime works",
       "type": "link",
-      "icon": "fa-solid fa-clock-rotate-left"
+      "icon": "fa-solid fa-clock-rotate-left",
+      "events": { "click": "null" }
     }
   ]
 }

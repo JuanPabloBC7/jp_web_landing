@@ -55,6 +55,10 @@ export class NavbarTopComponent {
   ngOnInit(): void {
   }
 
+  showMenu(event: boolean): void {
+    this.isOpen = event;
+  }
+
   isActive(href: string): boolean {
     return this.router.url === href;
   }

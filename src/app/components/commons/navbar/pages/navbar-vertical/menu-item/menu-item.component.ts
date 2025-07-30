@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Router, RouterLink, RouterModule } from '@angular/router';
 
 @Component({
@@ -15,10 +15,16 @@ import { Router, RouterLink, RouterModule } from '@angular/router';
 })
 export class MenuItemComponent {
   @Input() item: any;
+  @Output() isOpen = new EventEmitter<boolean>();
+  showMenu: boolean = true;
 
   constructor(
     private router: Router,
   ) { }
+
+  hideMenu(isOpen: boolean): void {
+    this.isOpen.emit(isOpen);
+  }
 
   executeFunction(name: string | undefined): void {
     if (name === 'logout') {
