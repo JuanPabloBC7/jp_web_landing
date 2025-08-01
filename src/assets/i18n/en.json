@@ -252,7 +252,7 @@
             "<strong>Professional styling:</strong> I have used <code>CSS3</code>, <code>sass</code> and the framework <code>Bootstrap</code> to create modern, responsive and attractive interfaces."
           ],
           "tools": [ ],
-          "plugins": [ ]
+          "dependencies": [ ]
         },
         "angular": {
           "title": "Angular",
@@ -275,18 +275,22 @@
             { "name": "MongoDB", "class": "devicon-mongodb-plain bg-mongodb mx-2" },
             { "name": "PostgreSQL", "class": "devicon-postgresql-plain bg-postgresql mx-2" }
           ],
-          "plugins": [
+          "dependencies": [
             { "name": "JQuery", "link": "https://jquery.com/" },
-            { "name": "DataTables", "link": "https://datatables.net/" },
-            { "name": "SweetAlert2", "link": "https://sweetalert2.github.io/" },
-            { "name": "Single-SPA", "link": "https://single-spa.js.org/docs/getting-started-overview" },
-            { "name": "Ng Bootstrap", "link": "https://ng-bootstrap.github.io/#/getting-started" },
-            { "name": "Ngx Translate", "link": "https://ngx-translate.org" },
-            { "name": "pdfMake", "link": "https://pdfmake.github.io/docs/0.1/" },
-            { "name": "PDF.js", "link": "https://mozilla.github.io/pdf.js/getting_started/" },
+            { "name": "Angular Material", "link": "https://material.angular.dev" },
             { "name": "FontAwesome Icon", "link": "https://fontawesome.com/v5/search?o=r&m=free" },
+            { "name": "Single-SPA", "link": "https://single-spa.js.org/docs/getting-started-overview" },
+            { "name": "PrimeNG", "link": "https://primeng.org" },
+            { "name": "Devicon", "link": "https://devicon.dev" },
+            { "name": "Ngx Translate", "link": "https://ngx-translate.org" },
+            { "name": "Bootstrap", "link": "https://getbootstrap.com" },
+            { "name": "DataTables", "link": "https://datatables.net/" },
             { "name": "LocalStorage", "link": "https://developer.mozilla.org/es/docs/Web/API/Window/localStorage" },
+            { "name": "Ng Bootstrap", "link": "https://ng-bootstrap.github.io/#/getting-started" },
+            { "name": "pdfMake", "link": "https://pdfmake.github.io/docs/0.1/" },
             { "name": "SessionStorage", "link": "https://developer.mozilla.org/es/docs/Web/API/Window/sessionStorage" },
+            { "name": "SweetAlert2", "link": "https://sweetalert2.github.io/" },
+            { "name": "PDF.js", "link": "https://mozilla.github.io/pdf.js/getting_started/" },
             { "name": "Cookies", "link": "https://learn.microsoft.com/es-es/aspnet/web-api/overview/advanced/http-cookies" }
           ]
         },
@@ -309,17 +313,19 @@
             { "name": "C#", "class": "devicon-csharp-plain bg-csharp mx-2" },
             { "name": "SQL Server", "class": "devicon-microsoftsqlserver-plain bg-sqlserver mx-2" }
           ],
-          "plugins": [
+          "dependencies": [
             { "name": "JQuery", "link": "https://jquery.com/" },
+            { "name": "Bootstrap", "link": "https://getbootstrap.com" },
             { "name": "DataTables", "link": "https://datatables.net/" },
-            { "name": "InputMask", "link": "https://plugins.jquery.com/jquery.inputmask/" },
-            { "name": "SweetAlert2", "link": "https://sweetalert2.github.io/" },
-            { "name": "FontAwesome", "link": "https://fontawesome.com/v5/search?o=r&m=free" },
-            { "name": "MaxLength", "link": "http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" },
-            { "name": "MaxLength2", "link": "https://htmldom.dev/count-the-number-of-characters-of-a-textarea/" },
             { "name": "JavaScript", "link": "https://developer.mozilla.org/es/docs/Web/JavaScript" },
+            { "name": "Bootstrap Themes", "link": "https://themes.getbootstrap.com" },
+            { "name": "InputMask", "link": "https://plugins.jquery.com/jquery.inputmask/" },
             { "name": "LocalStorage", "link": "https://developer.mozilla.org/es/docs/Web/API/Window/localStorage" },
+            { "name": "SweetAlert2", "link": "https://sweetalert2.github.io/" },
+            { "name": "MaxLength", "link": "http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" },
             { "name": "SessionStorage", "link": "https://developer.mozilla.org/es/docs/Web/API/Window/sessionStorage" },
+            { "name": "FontAwesome", "link": "https://fontawesome.com/v5/search?o=r&m=free" },
+            { "name": "MaxLength2", "link": "https://htmldom.dev/count-the-number-of-characters-of-a-textarea/" },
             { "name": "Cookies", "link": "https://learn.microsoft.com/es-es/aspnet/web-api/overview/advanced/http-cookies" }
           ]
         }
@@ -345,14 +351,14 @@
             { "name": "MongoDB", "class": "devicon-mongodb-plain bg-mongodb mx-2" },
             { "name": "PostgreSQL", "class": "devicon-postgresql-plain bg-postgresql mx-2" }
           ],
-          "plugins": [
+          "dependencies": [
             { "name": "nodemon", "link": "https://www.npmjs.com/package/nodemon" },
-            { "name": "body-parser", "link": "https://www.npmjs.com/package/body-parser" },
-            { "name": "express", "link": "https://expressjs-com.translate.goog/?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc" },
+            { "name": "typescript", "link": "https://www.typescriptlang.org" },
             { "name": "mysql", "link": "https://dev.mysql.com/doc/dev/connector-nodejs/latest/" },
+            { "name": "express", "link": "https://expressjs-com.translate.goog/?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc" },
+            { "name": "body-parser", "link": "https://www.npmjs.com/package/body-parser" },
             { "name": "promise-mysql", "link": "https://www.npmjs.com/package/promise-mysql" },
-            { "name": "cors", "link": "https://www.npmjs.com/package/cors" },
-            { "name": "typescript", "link": "https://www.typescriptlang.org" }
+            { "name": "cors", "link": "https://www.npmjs.com/package/cors" }
           ]
         },
         "python": {
@@ -370,7 +376,7 @@
             { "name": "MongoDB", "class": "devicon-mongodb-plain bg-mongodb mx-2" },
             { "name": "PostgreSQL", "class": "devicon-postgresql-plain bg-postgresql mx-2" }
           ],
-          "plugins": [
+          "dependencies": [
             { "name": "fastapi", "link": "https://fastapi.tiangolo.com" },
             { "name": "uvicorn", "link": "https://www.uvicorn.org" },
             { "name": "pydantic", "link": "https://docs.pydantic.dev/latest/" },
@@ -397,7 +403,7 @@
             { "name": "Visual Basic", "class": "devicon-visualbasic-plain bg-visualbasic mx-2" },
             { "name": "SQL Server", "class": "devicon-microsoftsqlserver-plain bg-sqlserver mx-2" }
           ],
-          "plugins": [
+          "dependencies": [
             { "name": "DataSet", "link": "https://learn.microsoft.com/es-es/dotnet/api/system.data.dataset?view=net-8.0" },
             { "name": "SqlClient", "link": "https://learn.microsoft.com/es-es/dotnet/api/system.data.sqlclient.sqlconnection?view=netframework-4.8.1" },
             { "name": "JSON", "link": "https://learn.microsoft.com/es-es/dotnet/standard/serialization/system-text-json/how-to" }
@@ -485,7 +491,7 @@
           "events": { "click": "null" }
         }
       ],
-      "newLabel": "important",
+      "newLabel": "imp",
       "newStyle": "text-danger-emphasis bg-danger-subtle border border-danger-subtle"
     },
     {

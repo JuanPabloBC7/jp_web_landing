@@ -17,7 +17,7 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 export class CSharpComponent {
   skills: any = [];
   tools: any = [];
-  plugins: any = [];
+  dependencies: any = [];
   
   constructor(
     private translateServices: TranslateService,
@@ -25,7 +25,7 @@ export class CSharpComponent {
     this.translateServices.stream('pages.experience.backend.csharp').subscribe(res => {
       this.skills = res['skills'];
       this.tools = res['tools'];
-      this.plugins = res['plugins'];
+      this.dependencies = res['dependencies'];
     });
   }
 }

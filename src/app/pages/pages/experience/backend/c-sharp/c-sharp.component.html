@@ -22,8 +22,8 @@
     </div>
     <div class="col-12 col-sm-12 col-md-12 col-lg-12">
       <ul class="row">
-        <li *ngFor="let p of plugins" class="col-6 col-sm-4 col-md-4 col-lg-4">
-          <a [href]="p.link">{{ p.name }}</a>
+        <li *ngFor="let d of dependencies" class="col-6 col-sm-4 col-md-4 col-lg-4">
+          <a [href]="d.link">{{ d.name }}</a>
         </li>
       </ul>
     </div>
