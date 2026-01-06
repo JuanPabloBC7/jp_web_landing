@@ -495,6 +495,15 @@
       "newStyle": "text-danger-emphasis bg-danger-subtle border border-danger-subtle"
     },
     {
+      "path": "plugins-n-tools",
+      "label": "Plugins and tools",
+      "type": "link",
+      "icon": "fa-solid fa-screwdriver-wrench",
+      "newLabel": "new",
+      "newStyle": "text-success-emphasis bg-success-subtle border border-success-subtle",
+      "events": { "click": "null" }
+    },
+    {
       "path": "notes",
       "label": "Notes",
       "type": "link",
