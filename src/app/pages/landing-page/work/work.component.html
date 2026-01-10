@@ -1,29 +1,7 @@
-<section class="py-5">
-  <h2 class="fw-bold mb-3 text-center">{{ 'pages.work.title' | translate }}</h2>
-  <div id="cd-timeline">
-    <ng-container *ngFor="let item of works">
-      <div class="cd-timeline-block z-0">
-      <div class="cd-timeline-img"></div>
-  
-      <div class="cd-timeline-content bg-secondary-subtle">
-        <h2>{{ item.title }}</h2>
-        <div class="row bg-light-subtle rounded-3 mb-3 mx-1 py-1">
-          <small class="col-12 col-md-6">
-            <i [class]="item.subtitleOne.icon + ' me-2'"></i>{{ item.subtitleOne.name }}
-          </small>
-          <small *ngIf="item.subtitleTwo.name" class="col-12 col-md-6 text-md-end">
-            <i [class]="item.subtitleTwo.icon + ' me-2'"></i>{{ item.subtitleTwo.name }}
-          </small>
-        </div>
-        <p>{{ item.description }}</p>
-        <ul class="content-skills">
-          <ng-container *ngFor="let skill of item.skills">
-            <li [class]="'rounded-3 ' + skill.color">{{ skill.name }}</li>
-          </ng-container>
-        </ul>
-        <span class="cd-date mt-3">{{ item.duration }}</span>
-      </div>
-    </div>
-    </ng-container>
+<div class="row mt-5">
+  <div class="col-12 text-end d-flex justify-content-end pe-5">
+    <a><i [class]="'fa-solid fs-5'" [ngClass]="showCarousel ? 'fa-timeline' : 'fa-grip'" [ngbTooltip]="showCarousel ? ('pages.work.timeline.title' | translate) : ('pages.work.carousel.title' | translate)" [placement]="'left'" (click)="showCarousel = !showCarousel" [style]="'cursor: pointer;'"></i></a>
   </div>
-</section>
+</div>
+<app-timeline *ngIf="!showCarousel"></app-timeline>
+<app-carousel *ngIf="showCarousel"></app-carousel>

@@ -1,0 +1,185 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.slider {
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+.slides {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+.slides::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+.slides::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+.slides::-webkit-scrollbar-track {
+  background: transparent;
+}
+.slides > div {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 500px;
+  height: 330px;
+  margin-right: 20px;
+  border-radius: 10px;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* From Uiverse.io by mymiamo */
+.card {
+  width: 500px;
+  padding: 20px;
+  border: 1px solid #0d1117;
+  border-radius: 10px;
+  background-color: #000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+  position: relative;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.mac-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+.mac-header span {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.mac-header .red {
+  background-color: #ff5f57;
+}
+.mac-header .yellow {
+  background-color: #ffbd2e;
+}
+.mac-header .green {
+  background-color: #28c941;
+}
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 10px;
+  color: #e6e6ef;
+}
+.card-description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+.card .card-tag {
+  font-size: 0.65rem;
+  padding: 0;
+  margin-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  list-style: none;
+}
+.card .card-tag li {
+  background: #0d1117;
+  padding: 2px 10px;
+  color: #dcdcdc;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.bg-angular {
+  color: #ffffff !important;
+  background: linear-gradient(
+    to right,
+    #d60330 0%,
+    #d60330 50%,
+    #bd032d 50%,
+    #bd032d 100%
+  ) !important;
+}
+.bg-html {
+  color: #ffffff !important;
+  background: linear-gradient(
+    to right,
+    #dc4a24 0%,
+    #dc4a24 50%,
+    #f16529 50%,
+    #f16529 100%
+  ) !important;
+}
+.bg-css3 {
+  color: #ffffff !important;
+  background: linear-gradient(
+    to right,
+    #1479b8 0%,
+    #1479b8 50%,
+    #38add8 50%,
+    #38add8 100%
+  ) !important;
+}
+.bg-typescript {
+  color: rgb(255, 255, 255) !important;
+  background-color: rgba(47, 116, 192, 1) !important;
+}
+.bg-aws {
+  color: rgb(0, 0, 0) !important;
+  background-color: rgba(248, 148, 0, 1) !important;
+}
+.bg-azure {
+  color: rgb(255, 255, 255) !important;
+  background-color: rgba(4, 133, 207, 1) !important;
+}
+.bg-aspnet {
+  color: rgb(255, 255, 255) !important;
+  background-color: rgba(95, 52, 146, 1) !important;
+}
+.bg-sqlserver {
+  color: rgb(255, 255, 255) !important;
+  background-color: rgba(178, 27, 27, 1) !important;
+}
+.bg-javascript {
+  color: rgb(0, 0, 0) !important;
+  background-color: rgba(239, 216, 30, 1) !important;
+}
+.bg-jquery {
+  color: rgb(0, 0, 0) !important;
+  background-color: rgba(117, 201, 238, 1) !important;
+}
+.bg-git {
+  color: rgb(255, 255, 255) !important;
+  background-color: rgba(0, 0, 0, 1) !important;
+}

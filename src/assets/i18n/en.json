@@ -137,7 +137,12 @@
       }
     },
     "work": {
-      "title": "Timeline Work",
+      "timeline": {
+        "title": "Timeline Work"
+      },
+      "carousel": {
+        "title": "Featured Work"
+      },
       "experiences": {
         "bam": {
           "title": "Banco Agromercantil (Bam)",

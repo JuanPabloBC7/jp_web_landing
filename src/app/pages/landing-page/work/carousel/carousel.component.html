@@ -1,0 +1,36 @@
+<section class="py-5">
+  <h2 class="fw-bold mb-3 text-center">{{ 'pages.work.carousel.title' | translate }}</h2>
+  <div id="cd-timeline">
+    <div class="slider">
+      <div class="slides">
+        <ng-container *ngFor="let item of works; let i = index">
+          <div [id]="'slide' + i">
+            <div class="card">
+              <div class="mac-header">
+                <span class="red"></span>
+                <span class="yellow"></span>
+                <span class="green"></span>
+              </div>
+              <span class="card-title">{{ item.title }}</span>
+              <div class="row bg-black text-white rounded-3 mb-3 mx-1 py-1">
+                <small class="col-6 col-md-6 text-start">
+                  <i [class]="item.subtitleOne.icon + ' me-2'"></i>{{ item.subtitleOne.name }}
+                </small>
+                <small *ngIf="item.subtitleTwo.name" class="col-6 col-md-6 text-end">
+                  <i [class]="item.subtitleTwo.icon + ' me-2'"></i>{{ item.subtitleTwo.name }}
+                </small>
+              </div>
+              <p class="card-description text-start">{{ item.description }}</p>
+              <ul class="card-tag">
+                <ng-container *ngFor="let skill of item.skills">
+                  <li [class]="'rounded-3 ' + skill.color">{{ skill.name }}</li>
+                </ng-container>
+              </ul>
+              <p class="card-description mt-3 mb-0 text-end">{{ item.duration }}</p>
+            </div>
+          </div>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+</section>
