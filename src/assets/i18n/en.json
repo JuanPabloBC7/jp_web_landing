@@ -71,28 +71,36 @@
     "aboutUs": {
       "title": "About me",
       "description": "I am a person passionate about technology and innovation. With more than 10 years of experience in web development, I specialize in creating digital solutions that help people and businesses grow and achieve their goals.",
-      "skills": {
-        "skillOne": {
+      "skills": [
+        {
           "title": "Teamwork",
           "description": "I enjoy collaborating with others to achieve common goals. I believe that teamwork is essential for success in any project.",
-          "icon": "fa-solid fa-users"
+          "bgClass": "bg-primary-subtle",
+          "icon": "fa-solid fa-users fs-1 text-primary",
+          "show": "true"
         },
-        "skillTwo": {
+        {
           "title": "Innovation and creativity",
           "description": "I love creating innovative solutions that solve real problems. I am always looking for new ways to improve processes and products.",
-          "icon": "fa-solid fa-lightbulb"
+          "bgClass": "bg-warning-subtle",
+          "icon": "fa-solid fa-lightbulb fs-1 text-warning",
+          "show": "true"
         },
-        "skillThree": {
+        {
           "title": "Problem-solving",
           "description": "I am skilled at analyzing problems and finding effective solutions. I approach challenges with a positive attitude and a determination to succeed.",
-          "icon": "fa-solid fa-gear"
+          "bgClass": "bg-secundary-subtle",
+          "icon": "fa-solid fa-gear fs-1 text-secundary",
+          "show": "false"
         },
-        "skillFour": {
+        {
           "title": "Integrity and commitment",
           "description": "I believe in doing the right thing, even when no one is watching. I am committed to delivering high-quality work and meeting deadlines.",
-          "icon": "fa-solid fa-heart"
+          "bgClass": "bg-danger-subtle",
+          "icon": "fa-solid fa-heart fs-1 text-danger",
+          "show": "true"
         }
-      },
+      ],
       "more": {
         "community": "I'm an active member in the developer community, sharing knowledge, and contributing to open source projects. I am constantly learning, so I try to learn new technologies all the time.",
         "personal": {
@@ -105,36 +113,36 @@
       "title": "Skills and Tools",
       "description": "I have experience in a wide range of technologies and tools that allow me to create efficient and scalable solutions. Here are some of the skills I possess:",
       "descriptionbottom": "I specialize in a variety of programming languages, frameworks, and tools that allow me to deliver efficient and scalable solutions. I'm always willing to learn new technologies and improve my skills to stay up-to-date with the latest trends in web development.",
-      "skills": {
-        "html": { "name": "HTML", "icon": "devicon-html5-plain bg-html" },
-        "css3": { "name": "CSS3", "icon": "devicon-css3-plain bg-css3" },
-        "sass": { "name": "Sass", "icon": "devicon-sass-original bg-sass" },
-        "angular": { "name": "Angular", "icon": "devicon-angularjs-plain bg-angular" },
-        "react": { "name": "React", "icon": "devicon-react-original bg-react" },
-        "aspnet": { "name": "ASP.NET", "icon": "devicon-visualstudio-plain bg-aspnet" },
-        "javascript": { "name": "JavaScript", "icon": "devicon-javascript-plain bg-javascript" },
-        "typescript": { "name": "TypeScript", "icon": "devicon-typescript-plain bg-typescript" },
-        "nodejs": { "name": "Node.js", "icon": "devicon-nodejs-plain bg-node" },
-        "python": { "name": "Python", "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" },
-        "php": { "name": "PHP", "icon": "devicon-php-plain bg-php" },
-        "java": { "name": "Java", "icon": "devicon-java-plain bg-java" },
-        "csharp": { "name": "C#", "icon": "devicon-csharp-plain bg-csharp" },
-        "visualbasic": { "name": "Visual Basic", "icon": "devicon-visualbasic-plain bg-visualbasic" },
-        "sqlserver": { "name": "SQL Server", "prefix": "Microsoft", "icon": "devicon-microsoftsqlserver-plain bg-sqlserver" },
-        "mysql": { "name": "MySQL", "icon": "devicon-mysql-original bg-mysql" },
-        "oracle": { "name": "Oracle", "icon": "devicon-oracle-original bg-oracle" },
-        "mongodb": { "name": "MongoDB", "icon": "devicon-mongodb-plain bg-mongodb" },
-        "mariadb": { "name": "MariaDB", "icon": "devicon-mariadb-original bg-mariadb" },
-        "postgresql": { "name": "PostgreSQL", "icon": "devicon-postgresql-plain bg-postgresql" },
-        "firebase": { "name": "Firebase", "icon": "devicon-firebase-plain bg-firebase" },
-        "npm": { "name": "npm", "icon": "devicon-npm-original-wordmark bg-npm" },
-        "jquery": { "name": "jQuery", "icon": "devicon-jquery-plain bg-jquery" },
-        "git": { "name": "Git", "icon": "devicon-git-plain bg-git" },
-        "bootstrap": { "name": "Bootstrap", "icon": "devicon-bootstrap-plain bg-bootstrap" },
-        "aws": { "name": "AWS", "icon": "devicon-amazonwebservices-plain-wordmark bg-aws" },
-        "azure": { "name": "Azure", "icon": "devicon-azure-plain bg-azure" },
-        "devops": { "name": "DevOps", "icon": "devicon-azuredevops-plain bg-devops" }
-      }
+      "skills": [
+        { "id":"html", "name": "HTML", "icon": "devicon-html5-plain bg-html" },
+        { "id":"css3", "name": "CSS3", "icon": "devicon-css3-plain bg-css3" },
+        { "id":"sass", "name": "Sass", "icon": "devicon-sass-original bg-sass" },
+        { "id":"angular", "name": "Angular", "icon": "devicon-angularjs-plain bg-angular" },
+        { "id":"react", "name": "React", "icon": "devicon-react-original bg-react" },
+        { "id":"aspnet", "name": "ASP.NET", "icon": "devicon-visualstudio-plain bg-aspnet" },
+        { "id":"javascript", "name": "JavaScript", "icon": "devicon-javascript-plain bg-javascript" },
+        { "id":"typescript", "name": "TypeScript", "icon": "devicon-typescript-plain bg-typescript" },
+        { "id":"nodejs", "name": "Node.js", "icon": "devicon-nodejs-plain bg-node" },
+        { "id":"python", "name": "Python", "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" },
+        { "id":"php", "name": "PHP", "icon": "devicon-php-plain bg-php" },
+        { "id":"java", "name": "Java", "icon": "devicon-java-plain bg-java" },
+        { "id":"csharp", "name": "C#", "icon": "devicon-csharp-plain bg-csharp" },
+        { "id":"visualbasic", "name": "Visual Basic", "icon": "devicon-visualbasic-plain bg-visualbasic" },
+        { "id":"sqlserver", "name": "SQL Server", "prefix": "Microsoft", "icon": "devicon-microsoftsqlserver-plain bg-sqlserver" },
+        { "id":"mysql", "name": "MySQL", "icon": "devicon-mysql-original bg-mysql" },
+        { "id":"oracle", "name": "Oracle", "icon": "devicon-oracle-original bg-oracle" },
+        { "id":"mongodb", "name": "MongoDB", "icon": "devicon-mongodb-plain bg-mongodb" },
+        { "id":"mariadb", "name": "MariaDB", "icon": "devicon-mariadb-original bg-mariadb" },
+        { "id":"postgresql", "name": "PostgreSQL", "icon": "devicon-postgresql-plain bg-postgresql" },
+        { "id":"firebase", "name": "Firebase", "icon": "devicon-firebase-plain bg-firebase" },
+        { "id":"npm", "name": "npm", "icon": "devicon-npm-original-wordmark bg-npm" },
+        { "id":"jquery", "name": "jQuery", "icon": "devicon-jquery-plain bg-jquery" },
+        { "id":"git", "name": "Git", "icon": "devicon-git-plain bg-git" },
+        { "id":"bootstrap", "name": "Bootstrap", "icon": "devicon-bootstrap-plain bg-bootstrap" },
+        { "id":"aws", "name": "AWS", "icon": "devicon-amazonwebservices-plain-wordmark bg-aws" },
+        { "id":"azure", "name": "Azure", "icon": "devicon-azure-plain bg-azure" },
+        { "id":"devops", "name": "DevOps", "icon": "devicon-azuredevops-plain bg-devops" }
+      ]
     },
     "work": {
       "timeline": {
@@ -143,8 +151,9 @@
       "carousel": {
         "title": "Featured Work"
       },
-      "experiences": {
-        "bam": {
+      "experiences": [
+        {
+          "id": "bam",
           "title": "Banco Agromercantil (Bam)",
           "subtitleOne": {
             "name": "Frontend Developer",
@@ -166,7 +175,8 @@
             { "name": "Azure", "color": "bg-azure" }
           ]
         },
-        "mides": {
+        {
+          "id": "mides",
           "title": "Ministerio de Desarrollo Social (MIDES)",
           "subtitleOne": {
             "name": "Fullstack Developer",
@@ -190,7 +200,8 @@
             { "name": "Reports", "color": "" }
           ]
         },
-        "url": {
+        {
+          "id": "url",
           "title": "Universidad Rafael Landívar (URL)",
           "subtitleOne": {
             "name": "Fullstack Developer",
@@ -215,7 +226,7 @@
             { "name": "Azure", "color": "bg-azure" }
           ]
         }
-      }
+      ]
     },
     "contact": {
       "title": "Contact me",

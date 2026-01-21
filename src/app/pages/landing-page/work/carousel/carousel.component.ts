@@ -13,26 +13,13 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   styleUrl: './carousel.component.scss'
 })
 export class CarouselComponent {
-  translateWork: any = {};
-  works: any = [];
+  translateWork: any = [];
 
   constructor(
     private translateServices: TranslateService,
   ) { 
     this.translateServices.stream('pages.work.experiences').subscribe(res => {
       this.translateWork = res;
-      this.works = [];
-
-      for (const key in this.translateWork) {
-        this.works.push({
-          title: this.translateWork[key].title, 
-          subtitleOne: this.translateWork[key].subtitleOne, 
-          subtitleTwo: this.translateWork[key].subtitleTwo, 
-          duration: this.translateWork[key].duration, 
-          description: this.translateWork[key].description, 
-          skills: this.translateWork[key].skills 
-        });
-      }
     });
   }
 }
