@@ -137,9 +137,25 @@
       }
     },
     "skillsNTools": {
+      "eyebrow": "Stack tecnológico",
       "title": "Habilidades y Herramientas",
-      "description": "A lo largo de mi carrera, he adquirido una amplia gama de habilidades y herramientas que me permiten desarrollar soluciones efectivas y eficientes.",
-      "descriptionbottom": "Me especializo en una variedad de lenguajes de programación, frameworks y herramientas que me permiten entregar soluciones eficientes y escalables. Siempre estoy dispuesto a aprender nuevas tecnologías y mejorar mis habilidades para mantenerme al día con las últimas tendencias en desarrollo web.",
+      "description": "Tecnologías que he utilizado para construir interfaces, sistemas empresariales, productos con IA e infraestructura lista para producción.",
+      "summary": "tecnologías y herramientas",
+      "descriptionbottom": "Mi stack continúa evolucionando según las necesidades de cada producto: desde arquitectura frontend y datos hasta automatización, inteligencia artificial y despliegue.",
+      "groups": {
+        "frontend": {
+          "title": "Frontend y aplicaciones",
+          "description": "Interfaces web y experiencias multiplataforma."
+        },
+        "backend": {
+          "title": "Backend y datos",
+          "description": "Servicios, lógica empresarial y persistencia."
+        },
+        "cloud": {
+          "title": "Cloud, automatización e IA",
+          "description": "Entrega, integración y operación de productos."
+        }
+      },
       "skills": [
         { "id":"html", "name": "HTML", "icon": "devicon-html5-plain bg-html" },
         { "id":"css3", "name": "CSS3", "icon": "devicon-css3-plain bg-css3" },
@@ -163,13 +179,18 @@
         { "id":"mariadb", "name": "MariaDB", "icon": "devicon-mariadb-original bg-mariadb" },
         { "id":"postgresql", "name": "PostgreSQL", "icon": "devicon-postgresql-plain bg-postgresql" },
         { "id":"firebase", "name": "Firebase", "icon": "devicon-firebase-plain bg-firebase" },
+        { "id":"supabase", "name": "Supabase", "icon": "devicon-supabase-plain bg-supabase" },
         { "id":"npm", "name": "npm", "icon": "devicon-npm-original-wordmark bg-npm" },
         { "id":"jquery", "name": "jQuery", "icon": "devicon-jquery-plain bg-jquery" },
         { "id":"git", "name": "Git", "icon": "devicon-git-plain bg-git" },
         { "id":"bootstrap", "name": "Bootstrap", "icon": "devicon-bootstrap-plain bg-bootstrap" },
         { "id":"aws", "name": "AWS", "icon": "devicon-amazonwebservices-plain-wordmark bg-aws" },
         { "id":"azure", "name": "Azure", "icon": "devicon-azure-plain bg-azure" },
-        { "id":"devops", "name": "DevOps", "icon": "devicon-azuredevops-plain bg-devops" }
+        { "id":"devops", "name": "DevOps", "icon": "devicon-azuredevops-plain bg-devops" },
+        { "id":"n8n", "name": "n8n", "mark": "n8n", "markClass": "bg-n8n" },
+        { "id":"elevenlabs", "name": "ElevenLabs", "icon": "fa-solid fa-wave-square bg-elevenlabs" },
+        { "id":"vercel", "name": "Vercel", "icon": "devicon-vercel-original bg-vercel" },
+        { "id":"render", "name": "Render", "mark": "R", "markClass": "bg-render" }
       ]
     },
     "careerEvolution": {
@@ -388,7 +409,7 @@
           "accentClass": "accent-primary",
           "featured": true,
           "status": "Proyecto desarrollado",
-          "tags": ["IA", "ChatGPT", "WhatsApp", "Instagram", "Web"],
+          "tags": ["IA", "ChatGPT", "Supabase", "ElevenLabs", "n8n", "Vercel", "Render", "WhatsApp", "Instagram"],
           "challenge": "Facilitar la recepción de pedidos de productos, citas y solicitudes de servicios sin obligar al cliente a completar procesos rígidos o formularios extensos.",
           "constraints": [
             "Los clientes pueden escribir de manera libre y omitir información necesaria.",
@@ -398,14 +419,18 @@
           "role": "Diseñé y desarrollé el asistente virtual, la experiencia web y el flujo que transforma una conversación en una solicitud comprensible para el responsable del negocio.",
           "decisions": [
             "Utilizar IA conversacional para recopilar la información faltante mediante preguntas naturales.",
+            "Orquestar automatizaciones con n8n y conservar la información estructurada en Supabase.",
+            "Integrar ElevenLabs para extender la experiencia del asistente a interacciones por voz.",
             "Mantener la aprobación y ejecución final en manos del usuario responsable.",
-            "Preparar el flujo para canales como WhatsApp, Instagram, redes sociales y una página web propia."
+            "Separar el despliegue de la experiencia web en Vercel y los servicios de soporte en Render."
           ],
           "implementation": [
             "Integración de modelos de IA como ChatGPT para interpretar conversaciones.",
+            "Persistencia de clientes, solicitudes y estados operativos mediante Supabase.",
+            "Automatización de flujos con n8n e integración de voz con ElevenLabs.",
             "Creación de flujos para pedidos, citas y solicitudes de servicios.",
             "Organización de los datos recopilados para que el negocio pueda revisar lo solicitado.",
-            "Desarrollo de una página web con acceso directo al asistente virtual."
+            "Despliegue de la página del asistente y sus servicios utilizando Vercel y Render."
           ],
           "results": [
             "Una experiencia conversacional capaz de guiar al cliente y recopilar los datos necesarios.",

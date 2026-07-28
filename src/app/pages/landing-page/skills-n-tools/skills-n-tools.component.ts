@@ -14,7 +14,24 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 })
 export class SkillsNToolsComponent implements OnInit {
   translateSkills: any = [];
-  
+  readonly groups = [
+    {
+      id: 'frontend',
+      icon: 'fa-solid fa-code',
+      skillIds: ['html', 'css3', 'sass', 'angular', 'react', 'javascript', 'typescript', 'flutter', 'bootstrap', 'jquery']
+    },
+    {
+      id: 'backend',
+      icon: 'fa-solid fa-database',
+      skillIds: ['aspnet', 'nodejs', 'python', 'php', 'java', 'csharp', 'visualbasic', 'sqlserver', 'mysql', 'oracle', 'mongodb', 'mariadb', 'postgresql', 'firebase', 'supabase']
+    },
+    {
+      id: 'cloud',
+      icon: 'fa-solid fa-cloud',
+      skillIds: ['aws', 'azure', 'devops', 'git', 'npm', 'n8n', 'elevenlabs', 'vercel', 'render']
+    }
+  ];
+
   constructor(
     private translateServices: TranslateService,
   ) { 
@@ -26,4 +43,9 @@ export class SkillsNToolsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  skillsFor(skillIds: string[]): any[] {
+    return skillIds
+      .map(id => this.translateSkills.find((skill: any) => skill.id === id))
+      .filter(Boolean);
+  }
 }

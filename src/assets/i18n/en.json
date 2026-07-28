@@ -137,9 +137,25 @@
       }
     },
     "skillsNTools": {
+      "eyebrow": "Technology stack",
       "title": "Skills and Tools",
-      "description": "I have experience in a wide range of technologies and tools that allow me to create efficient and scalable solutions. Here are some of the skills I possess:",
-      "descriptionbottom": "I specialize in a variety of programming languages, frameworks, and tools that allow me to deliver efficient and scalable solutions. I'm always willing to learn new technologies and improve my skills to stay up-to-date with the latest trends in web development.",
+      "description": "Technologies I have used to build interfaces, enterprise systems, AI-powered products, and production-ready infrastructure.",
+      "summary": "technologies and tools",
+      "descriptionbottom": "My stack continues to evolve with each product's needs—from frontend architecture and data to automation, artificial intelligence, and deployment.",
+      "groups": {
+        "frontend": {
+          "title": "Frontend and applications",
+          "description": "Web interfaces and cross-platform experiences."
+        },
+        "backend": {
+          "title": "Backend and data",
+          "description": "Services, business logic, and persistence."
+        },
+        "cloud": {
+          "title": "Cloud, automation, and AI",
+          "description": "Product delivery, integration, and operation."
+        }
+      },
       "skills": [
         { "id":"html", "name": "HTML", "icon": "devicon-html5-plain bg-html" },
         { "id":"css3", "name": "CSS3", "icon": "devicon-css3-plain bg-css3" },
@@ -163,13 +179,18 @@
         { "id":"mariadb", "name": "MariaDB", "icon": "devicon-mariadb-original bg-mariadb" },
         { "id":"postgresql", "name": "PostgreSQL", "icon": "devicon-postgresql-plain bg-postgresql" },
         { "id":"firebase", "name": "Firebase", "icon": "devicon-firebase-plain bg-firebase" },
+        { "id":"supabase", "name": "Supabase", "icon": "devicon-supabase-plain bg-supabase" },
         { "id":"npm", "name": "npm", "icon": "devicon-npm-original-wordmark bg-npm" },
         { "id":"jquery", "name": "jQuery", "icon": "devicon-jquery-plain bg-jquery" },
         { "id":"git", "name": "Git", "icon": "devicon-git-plain bg-git" },
         { "id":"bootstrap", "name": "Bootstrap", "icon": "devicon-bootstrap-plain bg-bootstrap" },
         { "id":"aws", "name": "AWS", "icon": "devicon-amazonwebservices-plain-wordmark bg-aws" },
         { "id":"azure", "name": "Azure", "icon": "devicon-azure-plain bg-azure" },
-        { "id":"devops", "name": "DevOps", "icon": "devicon-azuredevops-plain bg-devops" }
+        { "id":"devops", "name": "DevOps", "icon": "devicon-azuredevops-plain bg-devops" },
+        { "id":"n8n", "name": "n8n", "mark": "n8n", "markClass": "bg-n8n" },
+        { "id":"elevenlabs", "name": "ElevenLabs", "icon": "fa-solid fa-wave-square bg-elevenlabs" },
+        { "id":"vercel", "name": "Vercel", "icon": "devicon-vercel-original bg-vercel" },
+        { "id":"render", "name": "Render", "mark": "R", "markClass": "bg-render" }
       ]
     },
     "careerEvolution": {
@@ -389,7 +410,7 @@
           "accentClass": "accent-primary",
           "featured": true,
           "status": "Developed project",
-          "tags": ["AI", "ChatGPT", "WhatsApp", "Instagram", "Web"],
+          "tags": ["AI", "ChatGPT", "Supabase", "ElevenLabs", "n8n", "Vercel", "Render", "WhatsApp", "Instagram"],
           "challenge": "Make it easier to receive product orders, appointments, and service requests without forcing customers through rigid processes or lengthy forms.",
           "constraints": [
             "Customers may write freely and omit required information.",
@@ -399,14 +420,18 @@
           "role": "I designed and developed the virtual assistant, the web experience, and the workflow that transforms a conversation into a request the business owner can understand.",
           "decisions": [
             "Use conversational AI to collect missing information through natural questions.",
+            "Orchestrate automations with n8n and store structured information in Supabase.",
+            "Integrate ElevenLabs to extend the assistant experience to voice interactions.",
             "Keep final approval and execution in the hands of the responsible user.",
-            "Prepare the workflow for WhatsApp, Instagram, social networks, and a dedicated website."
+            "Deploy the web experience on Vercel and its supporting services on Render."
           ],
           "implementation": [
             "Integrated AI models such as ChatGPT to interpret conversations.",
+            "Persisted customers, requests, and operational statuses with Supabase.",
+            "Automated workflows with n8n and integrated voice capabilities through ElevenLabs.",
             "Created workflows for orders, appointments, and service requests.",
             "Structured the collected data so the business can review each request.",
-            "Developed a website with direct access to the virtual assistant."
+            "Deployed the assistant website and its services using Vercel and Render."
           ],
           "results": [
             "A conversational experience capable of guiding customers and collecting the required details.",

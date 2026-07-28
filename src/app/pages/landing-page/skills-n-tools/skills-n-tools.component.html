@@ -1,27 +1,49 @@
-<section class="py-5">
-  <div class="row mb-5">
-    <div class="col-12">
-      <h2 class="fw-bold mb-3">{{ 'pages.skillsNTools.title' | translate }}</h2>
-      <p class="lead text-secondary">{{ 'pages.skillsNTools.description' | translate }}</p>
+<section class="skills-section py-5">
+  <div class="section-glow" aria-hidden="true"></div>
+
+  <header class="skills-header">
+    <div>
+      <span class="section-eyebrow">
+        <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+        {{ 'pages.skillsNTools.eyebrow' | translate }}
+      </span>
+      <h2>{{ 'pages.skillsNTools.title' | translate }}</h2>
+      <p>{{ 'pages.skillsNTools.description' | translate }}</p>
     </div>
-  </div>
-  
-  <div class="row text-center">
-    <ng-container *ngFor="let item of translateSkills">
-      <div class="col-4 col-sm-3 col-md-2 mb-3">
-        <p class="mb-0">
-          <i *ngIf="item.icon" [class]="item.icon" style="font-size: 6em;"></i>
-          <img *ngIf="item.img" [src]="item.img"/>
-        </p>
-        <p class="mb-0" *ngIf="item.prefix"><small class="text-secondary">{{ item.prefix }}</small></p>
-        <small class="text-secondary">{{ item.name }}</small>
+    <div class="skills-summary">
+      <strong>{{ translateSkills.length }}</strong>
+      <span>{{ 'pages.skillsNTools.summary' | translate }}</span>
+    </div>
+  </header>
+
+  <div class="skill-groups">
+    <article class="skill-group" *ngFor="let group of groups">
+      <div class="group-heading">
+        <span class="group-icon"><i [class]="group.icon" aria-hidden="true"></i></span>
+        <div>
+          <h3>{{ 'pages.skillsNTools.groups.' + group.id + '.title' | translate }}</h3>
+          <p>{{ 'pages.skillsNTools.groups.' + group.id + '.description' | translate }}</p>
+        </div>
       </div>
-    </ng-container>
+
+      <div class="skills-grid">
+        <div class="skill-card" *ngFor="let item of skillsFor(group.skillIds)">
+          <span class="skill-icon">
+            <i *ngIf="item.icon" [class]="item.icon" aria-hidden="true"></i>
+            <img *ngIf="item.img" [src]="item.img" alt="" />
+            <span *ngIf="item.mark" [class]="item.markClass">{{ item.mark }}</span>
+          </span>
+          <span class="skill-copy">
+            <small *ngIf="item.prefix">{{ item.prefix }}</small>
+            <strong>{{ item.name }}</strong>
+          </span>
+        </div>
+      </div>
+    </article>
   </div>
-  
-  <div class="row mt-5">
-    <div class="col-12">
-      <p class="lead text-center text-secondary">{{ 'pages.skillsNTools.descriptionbottom' | translate }}</p>
-    </div>
+
+  <div class="skills-footer">
+    <i class="fa-solid fa-arrow-trend-up" aria-hidden="true"></i>
+    <p>{{ 'pages.skillsNTools.descriptionbottom' | translate }}</p>
   </div>
 </section>

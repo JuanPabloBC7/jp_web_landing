@@ -1,183 +1,273 @@
-img {
-  width: 6em;
-  height: 6em;
-  object-fit: cover;
-  object-position: center;
+.skills-section {
+  position: relative;
+  overflow: hidden;
 }
 
-.bg-html {
-  background: linear-gradient(
-    to right,
-    #dc4a24 0%,
-    #dc4a24 50%,
-    #f16529 50%,
-    #f16529 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
+.section-glow {
+  position: absolute;
+  top: 5rem;
+  right: -10rem;
+  width: 22rem;
+  height: 22rem;
+  border-radius: 50%;
+  background: var(--bs-primary);
+  filter: blur(110px);
+  opacity: 0.1;
+  pointer-events: none;
 }
-.bg-css3 {
-  background: linear-gradient(
-    to right,
-    #1479b8 0%,
-    #1479b8 50%,
-    #38add8 50%,
-    #38add8 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
+
+.skills-header {
+  position: relative;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
 }
-.bg-sass {
-  color: #c76494;
+
+.section-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--bs-primary);
+  font-size: 0.75rem;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
-.bg-angular {
-  background: linear-gradient(
-    to right,
-    #d60330 0%,
-    #d60330 50%,
-    #bd032d 50%,
-    #bd032d 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
+
+.skills-header h2 {
+  margin: 0.7rem 0 0.8rem;
+  color: var(--bs-body-color);
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
 }
-.bg-react {
-  color: #0ad2f7;
+
+.skills-header p {
+  max-width: 720px;
+  margin: 0;
+  color: var(--bs-secondary-color);
+  font-size: 1.05rem;
+  line-height: 1.7;
 }
-.bg-aspnet {
-  color: #5f3492;
+
+.skills-summary {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.9rem 1.1rem;
+  border: 1px solid var(--bs-border-color);
+  border-radius: 16px;
+  background: rgba(var(--bs-body-bg-rgb), 0.65);
+  backdrop-filter: blur(12px);
 }
-.bg-javascript {
-  color: #efd81e;
-  background-color: #000000;
+
+.skills-summary strong {
+  color: var(--bs-primary);
+  font-size: 1.8rem;
+  line-height: 1;
 }
-.bg-typescript {
-  color: #2f74c0;
+
+.skills-summary span {
+  max-width: 95px;
+  color: var(--bs-secondary-color);
+  font-size: 0.72rem;
+  line-height: 1.2;
 }
-.bg-node {
-  color: #23a266;
+
+.skill-groups {
+  position: relative;
+  display: grid;
+  gap: 1.25rem;
 }
-.bg-python {
-  background: linear-gradient(
-    to bottom right,
-    #33648a 0%,
-    #33648a 50%,
-    #eab530 50%,
-    #eab530 100%
-  );  
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
+
+.skill-group {
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border: 1px solid var(--bs-border-color);
+  border-radius: 24px;
+  background: rgba(var(--bs-body-bg-rgb), 0.72);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(12px);
 }
-.bg-php {
-  color: #7b7fb5;
+
+.group-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
 }
-.bg-java {
-  background: linear-gradient(
-    to bottom,
-    #dd3f1b 0%,
-    #dd3f1b 54%,
-    #78a4fb 54%,
-    #78a4fb 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
+
+.group-icon {
+  display: grid;
+  flex: 0 0 42px;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  color: var(--bs-primary);
+  background: var(--bs-primary-bg-subtle);
 }
-.bg-flutter {
-  color: color(srgb 0.3592 0.778 0.9764);
+
+.group-heading h3 {
+  margin: 0;
+  color: var(--bs-body-color);
+  font-size: 1.15rem;
+  font-weight: 750;
 }
-.bg-csharp {
-  color: #6d297eff;
+
+.group-heading p {
+  margin: 0.25rem 0 0;
+  color: var(--bs-secondary-color);
+  font-size: 0.82rem;
 }
-.bg-visualbasic {
-  background: linear-gradient(
-    to top right,
-    #25659a 0%,
-    #25659a 50%,
-    #0e548f 50%,
-    #0e548f 100%
-  );  
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.75rem;
 }
-.bg-sqlserver {
-  color: #b21b1b;
+
+.skill-card {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  gap: 0.7rem;
+  padding: 0.75rem;
+  border: 1px solid transparent;
+  border-radius: 14px;
+  background: var(--bs-tertiary-bg);
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
 }
-.bg-mysql {
-  color: #147993;
+
+.skill-card:hover {
+  border-color: var(--bs-primary-border-subtle);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+  transform: translateY(-3px);
 }
-.bg-oracle {
-  color: #ef1715;
+
+.skill-icon {
+  display: grid;
+  flex: 0 0 34px;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  font-size: 1.75rem;
 }
-.bg-mongodb {
-  background: linear-gradient(
-    to right,
-    #51aa43 0%,
-    #51aa43 50%,
-    #47983b 50%,
-    #47983b 100%
-  );  
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
+
+.skill-icon img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
 }
-.bg-mariadb {
-  color: #0a3b4b;
+
+.skill-icon > span {
+  font-size: 0.8rem;
+  font-weight: 850;
+  letter-spacing: -0.04em;
 }
-.bg-postgresql {
-  color: #3a6c94;
+
+.skill-copy {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
 }
-.bg-firebase {
-  color: #f6862a;
+
+.skill-copy small {
+  color: var(--bs-secondary-color);
+  font-size: 0.58rem;
 }
-.bg-npm {
-  color: #c43636;
+
+.skill-copy strong {
+  overflow: hidden;
+  color: var(--bs-body-color);
+  font-size: 0.78rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
-.bg-jquery {
-  color: #75c9ee;
+
+.skills-footer {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  max-width: 850px;
+  margin: 2rem auto 0;
+  color: var(--bs-secondary-color);
+  text-align: center;
 }
-.bg-git {
-  color: #000000;
+
+.skills-footer i {
+  margin-top: 0.35rem;
+  color: var(--bs-success);
 }
-.bg-bootstrap {
-  color: #8f13fe;
-  color: #6a10f2;
-  background: linear-gradient(
-    to bottom right,
-    #8f13fe 0%,
-    #6a10f2 100%
-  );  
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+
+.skills-footer p {
+  margin: 0;
+  line-height: 1.65;
 }
-.bg-aws {
-  background: linear-gradient(
-    to bottom,
-    #f89400 0%,
-    #f89400 55%,
-    #000000 55%,
-    #000000 100%
-  );  
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+
+.bg-html { color: #e34f26; }
+.bg-css3 { color: #1572b6; }
+.bg-sass { color: #cc6699; }
+.bg-angular { color: #dd0031; }
+.bg-react { color: #087ea4; }
+.bg-aspnet { color: #512bd4; }
+.bg-javascript { color: #f7df1e; }
+.bg-typescript { color: #3178c6; }
+.bg-node { color: #339933; }
+.bg-php { color: #777bb4; }
+.bg-java { color: #ed8b00; }
+.bg-flutter { color: #54c5f8; }
+.bg-csharp { color: #68217a; }
+.bg-visualbasic { color: #512bd4; }
+.bg-sqlserver { color: #cc2927; }
+.bg-mysql { color: #4479a1; }
+.bg-oracle { color: #f80000; }
+.bg-mongodb { color: #47a248; }
+.bg-mariadb { color: #003545; }
+.bg-postgresql { color: #4169e1; }
+.bg-firebase { color: #ffca28; }
+.bg-supabase { color: #3ecf8e; }
+.bg-npm { color: #cb3837; }
+.bg-jquery { color: #0769ad; }
+.bg-git { color: #f05032; }
+.bg-bootstrap { color: #7952b3; }
+.bg-aws { color: #ff9900; }
+.bg-azure { color: #0078d4; }
+.bg-devops { color: #0078d7; }
+.bg-n8n { color: #ea4b71; }
+.bg-elevenlabs { color: var(--bs-body-color); }
+.bg-vercel { color: var(--bs-body-color); }
+.bg-render { color: #46e3b7; }
+
+@media (max-width: 1199px) {
+  .skills-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
 }
-.bg-azure {
-  color: #0485cf;
+
+@media (max-width: 991px) {
+  .skills-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
-.bg-devops {
-  color: #0976d7;
+
+@media (max-width: 575px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .skill-card {
+    padding: 0.65rem;
+  }
+
+  .skills-footer {
+    text-align: left;
+  }
 }
