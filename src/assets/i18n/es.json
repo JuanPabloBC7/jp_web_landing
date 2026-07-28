@@ -463,6 +463,12 @@
     "notes": {
       "columnOne": [
         {
+          "title": "Mitigación de vulnerabilidades",
+          "date": "27/06/2026",
+          "note": "Del lado de frontend, he mitigado vulnerabilidades de seguridad en la aplicación, implementando medidas como la validación de entradas, el uso de <code>Content Security Policy (CSP)</code> y la protección contra ataques de <code>Cross-Site Scripting (XSS)</code>. Esto ayuda a proteger la aplicación y los datos del usuario. 🔒",
+          "tags": ["angular", "micro-frontend", "APIs"]
+        },
+        {
           "title": "Lazy loading",
           "date": "17/08/2024",
           "note": "Del lado de frontend, he implementado el <code>lazy loading</code> para cargar módulos de manera diferida, lo cual mejora el rendimiento de la aplicación al cargar solo lo necesario en cada momento. Esto es especialmente útil en aplicaciones grandes con múltiples rutas y componentes. 🛠️",
@@ -479,9 +485,7 @@
           "date": "15/05/2024",
           "note": "He migrado los proyecto de Angular 11 a Angular 18, lo cual ha sido un proceso desafiante pero gratificante 🚀. He tenido que actualizar dependencias, revisar el código para asegurar la compatibilidad y aprovechar las nuevas características que ofrece esta versión. Hay mejoras en rendimiento y las nuevas funcionalidades que puedo implementar ahora.",
           "tags": ["angular", "micro-frontend", "dependencias"]
-        }
-      ],
-      "columnTwo": [
+        },
         {
           "title": "Nuevo proyecto",
           "date": "02/07/2025",
@@ -493,9 +497,7 @@
           "date": "13/10/2022",
           "note": "Utilice <code>cookies</code> para el manejo de sesión entre sitios empresariales, para que el usuario no tenga que volver a identificarse en cada página. 🍪",
           "tags": ["ASP.NET", "cookies", "login", "project-integration"]
-        }
-      ],
-      "columnThree": [
+        },
         {
           "title": "Integración de ngx-translate",
           "date": "16/06/2025",

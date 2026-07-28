@@ -463,6 +463,12 @@
     "notes": {
       "columnOne": [
         {
+          "title": "Vulnerabilities",
+          "date": "27/06/2026",
+          "note": "On the frontend side, I have mitigated security vulnerabilities in the application by implementing measures such as input validation, using <code>Content Security Policy (CSP)</code>, and protecting against <code>Cross-Site Scripting (XSS)</code> attacks. These measures help safeguard both the application and user data. 🔒",
+          "tags": ["angular", "micro-frontend", "APIs"]
+        },
+        {
           "title": "Lazy loading",
           "date": "17/08/2024",
           "note": "I was implement <code>lazy loading</code> on forntend, this is a technique that allows you to load modules or components only when they are needed, rather than loading everything at once when the application starts. This can significantly improve the performance of your application, especially if it has a large number of routes and components. By using lazy loading, you can reduce the initial load time and improve the user experience by loading only the necessary resources when they are required. 🛠️",
@@ -479,9 +485,7 @@
           "date": "15/05/2024",
           "note": "I was migrating projects from Angular 11 to Angular 18, which has been a challenging but rewarding process 🚀. I had to update dependencies, review the code to ensure compatibility, and take advantage of the new features offered by this version. There are performance improvements and new functionalities that I can implement now.",
           "tags": ["angular", "micro-frontend", "dependencias"]
-        }
-      ],
-      "columnTwo": [
+        },
         {
           "title": "New project",
           "date": "02/07/2025",
@@ -493,9 +497,7 @@
           "date": "13/10/2022",
           "note": "I used <code>cookies</code> to session managment between company's sites, for didn't need to login again in the diferent web pages. 🍪",
           "tags": ["ASP.NET", "cookies", "login", "project-integration"]
-        }
-      ],
-      "columnThree": [
+        },
         {
           "title": "Ngx-translate integration",
           "date": "16/06/2025",

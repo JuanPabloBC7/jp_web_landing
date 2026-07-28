@@ -13,8 +13,6 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class NotesComponent {
   columnOne: any = [];
-  columnTwo: any = [];
-  columnThree: any = [];
   badgeColor: any = [
     'text-primary-emphasis bg-primary-subtle border-primary-subtle',
     'text-secondary-emphasis bg-secondary-subtle border-secondary-subtle',
@@ -29,24 +27,8 @@ export class NotesComponent {
   constructor(
     private translateServices: TranslateService,
   ) { 
-    this.translateServices.stream(['pages.notes.columnOne', 'pages.notes.columnTwo', 'pages.notes.columnThree']).subscribe(res => {
+    this.translateServices.stream(['pages.notes.columnOne']).subscribe(res => {
       this.columnOne = res['pages.notes.columnOne'].map((item: any) => ({
-        ...item,
-        tags: item.tags.map((tag: string) => ({
-          value: tag,
-          badgeClass: this.getRandomBadgeColor()
-        }))
-      }));
-
-      this.columnTwo = res['pages.notes.columnTwo'].map((item: any) => ({
-        ...item,
-        tags: item.tags.map((tag: string) => ({
-          value: tag,
-          badgeClass: this.getRandomBadgeColor()
-        }))
-      }));
-
-      this.columnThree = res['pages.notes.columnThree'].map((item: any) => ({
         ...item,
         tags: item.tags.map((tag: string) => ({
           value: tag,
