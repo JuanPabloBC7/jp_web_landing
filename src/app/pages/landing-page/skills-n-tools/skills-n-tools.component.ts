@@ -21,17 +21,17 @@ export class SkillsNToolsComponent implements OnInit {
     {
       id: 'frontend',
       icon: 'fa-solid fa-code',
-      skillIds: ['html', 'css3', 'sass', 'angular', 'react', 'javascript', 'typescript', 'flutter', 'bootstrap', 'jquery']
+      skillIds: ['html', 'css3', 'sass', 'tailwind', 'angular', 'react', 'reactbits', 'javascript', 'typescript', 'flutter', 'bootstrap', 'primeng', 'jquery']
     },
     {
       id: 'backend',
       icon: 'fa-solid fa-database',
-      skillIds: ['aspnet', 'nodejs', 'python', 'php', 'java', 'csharp', 'visualbasic', 'sqlserver', 'mysql', 'oracle', 'mongodb', 'mariadb', 'postgresql', 'firebase', 'supabase']
+      skillIds: ['aspnet', 'nodejs', 'python', 'php', 'java', 'csharp', 'visualbasic', 'powerbuilder', 'sqlserver', 'mysql', 'oracle', 'mongodb', 'mariadb', 'postgresql', 'firebase', 'supabase']
     },
     {
       id: 'cloud',
       icon: 'fa-solid fa-cloud',
-      skillIds: ['aws', 'azure', 'devops', 'git', 'npm', 'n8n', 'elevenlabs', 'vercel', 'render']
+      skillIds: ['aws', 'azure', 'devops', 'git', 'npm', 'tailscale', 'n8n', 'elevenlabs', 'vercel', 'render']
     }
   ];
 

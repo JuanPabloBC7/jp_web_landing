@@ -196,8 +196,10 @@
         { "id":"html", "name": "HTML", "icon": "devicon-html5-plain bg-html" },
         { "id":"css3", "name": "CSS3", "icon": "devicon-css3-plain bg-css3" },
         { "id":"sass", "name": "Sass", "icon": "devicon-sass-original bg-sass" },
+        { "id":"tailwind", "name": "Tailwind CSS", "icon": "devicon-tailwindcss-original bg-tailwind" },
         { "id":"angular", "name": "Angular", "icon": "devicon-angularjs-plain bg-angular" },
         { "id":"react", "name": "React", "icon": "devicon-react-original bg-react" },
+        { "id":"reactbits", "name": "React Bits", "mark": "RB", "markClass": "bg-reactbits" },
         { "id":"aspnet", "name": "ASP.NET", "icon": "devicon-visualstudio-plain bg-aspnet" },
         { "id":"javascript", "name": "JavaScript", "icon": "devicon-javascript-plain bg-javascript" },
         { "id":"typescript", "name": "TypeScript", "icon": "devicon-typescript-plain bg-typescript" },
@@ -208,6 +210,7 @@
         { "id":"flutter", "name": "Flutter", "icon": "devicon-flutter-plain bg-flutter" },
         { "id":"csharp", "name": "C#", "icon": "devicon-csharp-plain bg-csharp" },
         { "id":"visualbasic", "name": "Visual Basic", "icon": "devicon-visualbasic-plain bg-visualbasic" },
+        { "id":"powerbuilder", "name": "PowerBuilder", "mark": "PB", "markClass": "bg-powerbuilder" },
         { "id":"sqlserver", "name": "SQL Server", "prefix": "Microsoft", "icon": "devicon-microsoftsqlserver-plain bg-sqlserver" },
         { "id":"mysql", "name": "MySQL", "icon": "devicon-mysql-original bg-mysql" },
         { "id":"oracle", "name": "Oracle", "icon": "devicon-oracle-original bg-oracle" },
@@ -220,9 +223,11 @@
         { "id":"jquery", "name": "jQuery", "icon": "devicon-jquery-plain bg-jquery" },
         { "id":"git", "name": "Git", "icon": "devicon-git-plain bg-git" },
         { "id":"bootstrap", "name": "Bootstrap", "icon": "devicon-bootstrap-plain bg-bootstrap" },
+        { "id":"primeng", "name": "PrimeNG", "mark": "P", "markClass": "bg-primeng" },
         { "id":"aws", "name": "AWS", "icon": "devicon-amazonwebservices-plain-wordmark bg-aws" },
         { "id":"azure", "name": "Azure", "icon": "devicon-azure-plain bg-azure" },
         { "id":"devops", "name": "DevOps", "icon": "devicon-azuredevops-plain bg-devops" },
+        { "id":"tailscale", "name": "Tailscale", "mark": "TS", "markClass": "bg-tailscale" },
         { "id":"n8n", "name": "n8n", "mark": "n8n", "markClass": "bg-n8n" },
         { "id":"elevenlabs", "name": "ElevenLabs", "icon": "fa-solid fa-wave-square bg-elevenlabs" },
         { "id":"vercel", "name": "Vercel", "icon": "devicon-vercel-original bg-vercel" },
@@ -1166,12 +1171,10 @@
       "newStyle": "text-danger-emphasis bg-danger-subtle border border-danger-subtle"
     },
     {
-      "path": "plugins-n-tools",
-      "label": "Plugins and tools",
+      "path": "skills-&-tools",
+      "label": "Skills and tools",
       "type": "link",
-      "icon": "fa-solid fa-screwdriver-wrench",
-      "newLabel": "new",
-      "newStyle": "text-success-emphasis bg-success-subtle border border-success-subtle",
+      "icon": "fa-solid fa-bolt-lightning",
       "events": { "click": "null" }
     },
     {
@@ -1190,13 +1193,6 @@
       "icon": "fa-solid fa-user",
       "divider": "true",
       "dividername": "Information",
-      "events": { "click": "null" }
-    },
-    {
-      "path": "skills-&-tools",
-      "label": "Skills and tools",
-      "type": "link",
-      "icon": "fa-solid fa-bolt-lightning",
       "events": { "click": "null" }
     },
     {

@@ -284,8 +284,10 @@
 .bg-html { color: #e34f26; }
 .bg-css3 { color: #1572b6; }
 .bg-sass { color: #cc6699; }
+.bg-tailwind { color: #06b6d4; }
 .bg-angular { color: #dd0031; }
 .bg-react { color: #087ea4; }
+.bg-reactbits { color: #8b5cf6; }
 .bg-aspnet { color: #512bd4; }
 .bg-javascript { color: #f7df1e; }
 .bg-typescript { color: #3178c6; }
@@ -295,6 +297,7 @@
 .bg-flutter { color: #54c5f8; }
 .bg-csharp { color: #68217a; }
 .bg-visualbasic { color: #512bd4; }
+.bg-powerbuilder { color: #f59e0b; }
 .bg-sqlserver { color: #cc2927; }
 .bg-mysql { color: #4479a1; }
 .bg-oracle { color: #f80000; }
@@ -310,6 +313,8 @@
 .bg-aws { color: #ff9900; }
 .bg-azure { color: #0078d4; }
 .bg-devops { color: #0078d7; }
+.bg-tailscale { color: var(--bs-body-color); }
+.bg-primeng { color: #2563eb; }
 .bg-n8n { color: #ea4b71; }
 .bg-elevenlabs { color: var(--bs-body-color); }
 .bg-vercel { color: var(--bs-body-color); }
