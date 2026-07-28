@@ -90,7 +90,7 @@
   clip-path: polygon(0 0, 100% 100%, 0 100%);
   z-index: 0;
 }
-.section-about-us::after {
+.section-about-me::after {
   content: "";
   position: absolute;
   left: 0; right: 0; bottom: -1px; height: 60px;
@@ -130,7 +130,7 @@
   clip-path: polygon(100% 0, 100% 100%, 0 100%);
   z-index: 0;
 }
-.section-contac-us::after {
+.section-contact-me::after {
   content: "";
   position: absolute;
   left: 0; right: 0; bottom: -1px; height: 60px;

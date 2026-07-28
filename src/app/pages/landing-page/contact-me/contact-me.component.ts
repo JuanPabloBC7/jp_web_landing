@@ -5,7 +5,7 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import emailjs from 'emailjs-com';
 
 @Component({
-  selector: 'app-contact-us',
+  selector: 'app-contact-me',
   standalone: true,
   imports: [
     CommonModule,
@@ -13,10 +13,10 @@ import emailjs from 'emailjs-com';
     ReactiveFormsModule,
     TranslateModule,
   ],
-  templateUrl: './contact-us.component.html',
-  styleUrls: ['./contact-us.component.scss']
+  templateUrl: './contact-me.component.html',
+  styleUrls: ['./contact-me.component.scss']
 })
-export class ContactUsComponent {
+export class ContactMeComponent {
   contactForm: FormGroup;
   submitted = false;
   loading = false;

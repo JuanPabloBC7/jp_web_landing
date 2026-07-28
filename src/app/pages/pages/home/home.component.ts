@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
-import { ContactUsComponent } from '../../landing-page/contact-us/contact-us.component';
+import { ContactMeComponent } from '../../landing-page/contact-me/contact-me.component';
 import { NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
@@ -10,7 +10,7 @@ import { NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
   imports: [
     CommonModule,
     TranslateModule,
-    ContactUsComponent,
+    ContactMeComponent,
     NgbTooltipModule,
   ],
   templateUrl: './home.component.html',

@@ -5,7 +5,7 @@ import { PagesLayoutComponent } from './components/layouts/pages-layout/pages-la
 import { HomeComponent } from './pages/pages/home/home.component';
 import { SkillsNToolsComponent } from './pages/landing-page/skills-n-tools/skills-n-tools.component';
 import { WorkComponent } from './pages/landing-page/work/work.component';
-import { ContactUsComponent } from './pages/landing-page/contact-us/contact-us.component';
+import { ContactMeComponent } from './pages/landing-page/contact-me/contact-me.component';
 import { NotesComponent } from './pages/pages/notes/notes.component';
 import { FrontendComponent } from './pages/pages/experience/frontend/frontend.component';
 import { BackendComponent } from './pages/pages/experience/backend/backend.component';
@@ -50,7 +50,7 @@ export const routes: Routes = [
       },
       {
         path: 'contact-us',
-        component: ContactUsComponent
+        component: ContactMeComponent
       },
       {
         path: 'notes',

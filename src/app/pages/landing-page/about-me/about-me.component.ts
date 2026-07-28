@@ -3,16 +3,16 @@ import { Component, OnInit } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
-  selector: 'app-about-us',
+  selector: 'app-about-me',
   standalone: true,
   imports: [
     TranslateModule,
     CommonModule
 ],
-  templateUrl: './about-us.component.html',
-  styleUrls: ['./about-us.component.scss']
+  templateUrl: './about-me.component.html',
+  styleUrls: ['./about-me.component.scss']
 })
-export class AboutUsComponent implements OnInit {
+export class AboutMeComponent implements OnInit {
   translateAboutUs: any = [];
   
   constructor(
