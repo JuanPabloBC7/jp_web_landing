@@ -34,8 +34,8 @@
         "telegram": { "name": "Telegram", "icon": "fa-solid fa-paper-plane", "link": "https://t.me/jpbalan" },
         "twitter": { "name": "Twitter", "icon": "fa-brands fa-x-twitter", "link": "https://twitter.com/jpbalan7" },
         "github": { "name": "GitHub", "icon": "fa-brands fa-github", "link": "https://github.com/JuanPabloBC7" },
-        "linkedin": { "name": "LinkedIn", "icon": "fa-brands fa-linkedin", "link": "https://www.linkedin.com/in/juan-pablo-balan-contreras-5095091bb?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BoLj9WPBfTYCuwwkD%2Fvtz9A%3D%3D" },
-        "coverLetter": { "name": "Resume", "icon": "fa-solid fa-file-lines", "link": "https://www.canva.com/design/DAEUnl-dn40/YEzded9TQo20tqhzKrDyEw/view?utm_content=DAEUnl-dn40&utm_campaign=designshare&utm_medium=link&utm_source=editor" }
+        "linkedin": { "name": "LinkedIn", "icon": "fa-brands fa-linkedin", "link": "https://www.linkedin.com/in/juan-pablo-balan-5095091bb/" },
+        "coverLetter": { "name": "Resume", "icon": "fa-solid fa-file-lines", "link": "https://canva.link/wp26z6u0wskhbxd" }
       }
     },
     "navbar": {
@@ -92,6 +92,31 @@
         "projects": {
           "value": "3",
           "label": "featured projects"
+        }
+      }
+    },
+    "trustSignals": {
+      "eyebrow": "Verifiable evidence",
+      "title": "Experience backed by real work",
+      "description": "Each signal connects to experience, projects, or profiles you can review inside and outside this portfolio.",
+      "availability": "Available to connect",
+      "verify": "Profiles and documents",
+      "items": {
+        "experience": {
+          "value": "10+ years",
+          "label": "Developing and maintaining software."
+        },
+        "industries": {
+          "value": "3 industries",
+          "label": "Banking, government, and education."
+        },
+        "delivery": {
+          "value": "Idea to production",
+          "label": "Web, mobile, and infrastructure products."
+        },
+        "security": {
+          "value": "Applied security",
+          "label": "Vulnerabilities, encryption, and sensitive data."
         }
       }
     },

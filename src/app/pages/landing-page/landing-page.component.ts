@@ -9,6 +9,7 @@ import { CaseStudiesComponent } from './case-studies/case-studies.component';
 import { CareerEvolutionComponent } from './career-evolution/career-evolution.component';
 import { RouterLink } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
+import { TrustSignalsComponent } from './trust-signals/trust-signals.component';
 
 @Component({
   selector: 'app-landing-page',
@@ -18,6 +19,7 @@ import { TranslateModule } from '@ngx-translate/core';
     RouterLink,
     TranslateModule,
     IntroductionComponent,
+    TrustSignalsComponent,
     AboutUsComponent,
     SkillsNToolsComponent,
     CareerEvolutionComponent,
