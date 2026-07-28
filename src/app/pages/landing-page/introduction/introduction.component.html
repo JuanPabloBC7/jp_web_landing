@@ -1,24 +1,81 @@
-<section class="pt-5">
-  <div class="row">
-    <div class="col-12 col-md-4 order-1 order-md-2">
-      <div class="row">
-        <div class="col-12 mb-4 mb-md-0">
-          <div class="profile-img-wrapper mx-auto mb-4 mb-md-0">
-            <img src="../../../../assets/img/me/jpbalan_square.jpg" alt="jpbalan" />
+<section class="hero">
+  <div class="hero-glow hero-glow-primary" aria-hidden="true"></div>
+  <div class="hero-glow hero-glow-secondary" aria-hidden="true"></div>
+
+  <div class="row align-items-center gy-5">
+    <div class="col-12 col-lg-7 order-2 order-lg-1">
+      <div class="hero-copy">
+        <span class="hero-eyebrow">
+          <span class="status-dot" aria-hidden="true"></span>
+          {{ 'pages.introduction.eyebrow' | translate }}
+        </span>
+
+        <p class="hero-greeting">{{ 'pages.introduction.greeting' | translate }}</p>
+        <h1>
+          {{ 'pages.introduction.title' | translate }}
+          <span>{{ 'pages.introduction.titleAccent' | translate }}</span>
+        </h1>
+        <p class="hero-description">{{ 'pages.introduction.description' | translate }}</p>
+
+        <div class="hero-actions">
+          <a routerLink="/projects/case-studies" class="btn btn-primary btn-lg rounded-pill px-4">
+            {{ 'pages.introduction.actions.projects' | translate }}
+            <i class="fa-solid fa-arrow-right ms-2" aria-hidden="true"></i>
+          </a>
+          <a routerLink="/" fragment="career-evolution" class="btn btn-outline-secondary btn-lg rounded-pill px-4">
+            {{ 'pages.introduction.actions.evolution' | translate }}
+          </a>
+          <a
+            [attr.href]="'configuration.social.links.coverLetter.link' | translate"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-link btn-lg text-decoration-none">
+            <i class="fa-regular fa-file-lines me-2" aria-hidden="true"></i>
+            {{ 'pages.introduction.actions.resume' | translate }}
+          </a>
+        </div>
+
+        <div class="hero-stats" [attr.aria-label]="'pages.introduction.stats.label' | translate">
+          <div class="stat">
+            <strong>{{ 'pages.introduction.stats.experience.value' | translate }}</strong>
+            <span>{{ 'pages.introduction.stats.experience.label' | translate }}</span>
+          </div>
+          <div class="stat">
+            <strong>{{ 'pages.introduction.stats.angular.value' | translate }}</strong>
+            <span>{{ 'pages.introduction.stats.angular.label' | translate }}</span>
+          </div>
+          <div class="stat">
+            <strong>{{ 'pages.introduction.stats.projects.value' | translate }}</strong>
+            <span>{{ 'pages.introduction.stats.projects.label' | translate }}</span>
           </div>
         </div>
       </div>
     </div>
-    <div class="col-12 col-md-8 order-2 order-md-1">
-      <div class="row align-items-center mb-5">
-        <div class="col-12">
-          <h4 class="text-danger-emphasis">{{ 'pages.introduction.title' | translate }}</h4>
+
+    <div class="col-12 col-lg-5 order-1 order-lg-2">
+      <div class="portrait-stage mx-auto">
+        <div class="portrait-frame">
+          <img
+            src="../../../../assets/img/me/jpbalan_square.jpg"
+            [attr.alt]="'pages.introduction.photoAlt' | translate" />
         </div>
-        <div class="col-10 ms-md-5">
-          <h1 class="display-1">{{ 'pages.introduction.subtitle' | translate }}</h1>
+
+        <div class="tech-chip chip-angular">
+          <i class="fa-brands fa-angular" aria-hidden="true"></i>
+          Angular
         </div>
-        <div class="col-12">
-          <h3>{{ 'pages.introduction.description' | translate }}</h3>
+        <div class="tech-chip chip-typescript">
+          <span aria-hidden="true">TS</span>
+          TypeScript
+        </div>
+        <div class="tech-chip chip-ai">
+          <i class="fa-solid fa-robot" aria-hidden="true"></i>
+          AI
+        </div>
+
+        <div class="portrait-caption">
+          <span>{{ 'pages.introduction.location' | translate }}</span>
+          <strong>{{ 'pages.introduction.role' | translate }}</strong>
         </div>
       </div>
     </div>

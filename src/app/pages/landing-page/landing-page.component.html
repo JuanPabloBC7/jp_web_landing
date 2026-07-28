@@ -1,14 +1,7 @@
 <div class="section section-introduction">
-  <div id="home" class="py-5">
-    <div class="container pb-5">
+  <div id="home">
+    <div class="container">
       <app-introduction></app-introduction>
-      <div class="row">
-        <div class="col-12 text-center">
-          <h3 tabindex="0" (mouseenter)="focusIn = true" (mouseleave)="focusIn = false" [ngClass]="{ 'fa-beat': focusIn }">
-            <a [routerLink]="'projects/about-us'">{{ 'general.readMore' | translate }}<i class="fa-solid fa-arrow-right ms-2"></i></a>
-          </h3>
-        </div>
-      </div>
     </div>
   </div>
 </div>

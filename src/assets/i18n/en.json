@@ -66,9 +66,34 @@
   },
   "pages": {
     "introduction": {
-      "title": "Hello, my name is Juan Pablo",
-      "subtitle": "I build web pages.",
-      "description": "Throughout my professional career, I have developed various solutions for different companies using various technologies."
+      "eyebrow": "Software developer · Full Stack",
+      "greeting": "Hi, I’m Juan Pablo Balan.",
+      "title": "I build digital solutions",
+      "titleAccent": "that solve real problems.",
+      "description": "I develop and modernize enterprise applications, microfrontend architectures, and complete products spanning web, mobile, artificial intelligence, and infrastructure.",
+      "location": "Guatemala City, Guatemala",
+      "role": "Software developer",
+      "photoAlt": "Juan Pablo Balan, software developer",
+      "actions": {
+        "projects": "View featured projects",
+        "evolution": "Explore my evolution",
+        "resume": "View résumé"
+      },
+      "stats": {
+        "label": "Professional highlights",
+        "experience": {
+          "value": "10+",
+          "label": "years building software"
+        },
+        "angular": {
+          "value": "11 → 21",
+          "label": "Angular versions migrated"
+        },
+        "projects": {
+          "value": "3",
+          "label": "featured projects"
+        }
+      }
     },
     "aboutUs": {
       "title": "About me",
