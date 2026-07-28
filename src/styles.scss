@@ -3,6 +3,29 @@
 /* Importing Bootstrap SCSS file. */
 @use 'bootstrap/scss/bootstrap' as *;
 
+:root {
+  --portfolio-gradient: linear-gradient(100deg, var(--bs-primary), var(--bs-info), var(--bs-danger));
+}
+
+::selection {
+  color: var(--bs-body-color);
+  background: rgba(var(--bs-primary-rgb), 0.22);
+}
+
+.section-heading {
+  position: relative;
+}
+
+.section-heading::after {
+  content: "";
+  display: block;
+  width: 58px;
+  height: 3px;
+  margin: 1.15rem auto 0;
+  border-radius: 999px;
+  background: var(--portfolio-gradient);
+}
+
 /* Estilos claros */
 app-landing-navbar-top > header,
 app-navbar-top > header,

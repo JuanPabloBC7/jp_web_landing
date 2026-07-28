@@ -67,6 +67,18 @@
   font-weight: 750;
 }
 
+.hero-code {
+  display: block;
+  width: fit-content;
+  margin-top: 1.35rem;
+  color: var(--bs-secondary-color);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  opacity: 0.75;
+}
+
 .hero h1 {
   max-width: 820px;
   margin-bottom: 1.25rem;
@@ -234,6 +246,11 @@
 
   .hero-description,
   .hero-stats {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .hero-code {
     margin-right: auto;
     margin-left: auto;
   }

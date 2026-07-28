@@ -37,6 +37,8 @@
 }
 
 .value-card {
+  position: relative;
+  overflow: hidden;
   padding: 1.5rem;
   border: 1px solid var(--bs-border-color);
   border-radius: 20px;
@@ -45,9 +47,34 @@
   transition: transform 180ms ease, box-shadow 180ms ease;
 }
 
+.value-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--bs-primary), var(--bs-info));
+  transform: scaleX(0.35);
+  transform-origin: left;
+  transition: transform 180ms ease;
+}
+
+.value-card:nth-child(2)::before {
+  background: linear-gradient(90deg, var(--bs-warning), var(--bs-danger));
+}
+
+.value-card:nth-child(3)::before {
+  background: linear-gradient(90deg, var(--bs-danger), var(--bs-primary));
+}
+
 .value-card:hover {
   box-shadow: 0 20px 42px rgba(0, 0, 0, 0.1);
   transform: translateY(-4px);
+}
+
+.value-card:hover::before {
+  transform: scaleX(1);
 }
 
 .value-icon {
@@ -81,4 +108,37 @@
   .about-grid {
     grid-template-columns: 1fr;
   }
+}
+.about-section {
+  position: relative;
+}
+
+.personal-signature {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 1rem;
+  color: var(--bs-secondary-color);
+}
+
+.personal-signature span {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 13px;
+  color: #fff;
+  background: linear-gradient(135deg, var(--bs-primary), var(--bs-info), var(--bs-danger));
+  box-shadow: 0 10px 25px rgba(var(--bs-primary-rgb), 0.25);
+  font-size: 0.82rem;
+  font-weight: 850;
+  letter-spacing: -0.04em;
+  transform: rotate(-4deg);
+}
+
+.personal-signature small {
+  font-size: 0.65rem;
+  font-weight: 750;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }

@@ -3,6 +3,46 @@
   overflow: hidden;
 }
 
+.section > div {
+  position: relative;
+  z-index: 1;
+}
+
+.section:not(.section-introduction)::before {
+  content: attr(data-section);
+  position: absolute;
+  top: clamp(2rem, 7vw, 5rem);
+  right: max(1rem, calc((100vw - 1320px) / 2));
+  z-index: 0;
+  color: transparent;
+  font-size: clamp(5rem, 13vw, 10rem);
+  font-weight: 850;
+  letter-spacing: -0.08em;
+  line-height: 0.8;
+  -webkit-text-stroke: 1px rgba(var(--bs-body-color-rgb), 0.07);
+  pointer-events: none;
+  user-select: none;
+}
+
+.section:not(.section-introduction) > div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: min(1320px, calc(100% - 2rem));
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(var(--bs-primary-rgb), 0.55),
+    rgba(var(--bs-info-rgb), 0.45),
+    rgba(var(--bs-danger-rgb), 0.4),
+    transparent
+  );
+  opacity: 0.55;
+  transform: translateX(-50%);
+}
+
 .section-action {
   display: flex;
   justify-content: center;
@@ -26,6 +66,20 @@
 
 .section-link:hover i {
   transform: translateX(4px);
+}
+
+@media (max-width: 767px) {
+  .section:not(.section-introduction)::before {
+    top: 1.5rem;
+    right: 1rem;
+    font-size: 4.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .section-link i {
+    transition: none;
+  }
 }
 
 .section-introduction::after {
