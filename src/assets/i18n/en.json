@@ -170,6 +170,14 @@
       "description": "Technologies I have used to build interfaces, enterprise systems, AI-powered products, and production-ready infrastructure.",
       "summary": "technologies and tools",
       "descriptionbottom": "My stack continues to evolve with each product's needs—from frontend architecture and data to automation, artificial intelligence, and deployment.",
+      "search": {
+        "label": "Search skills and tools",
+        "placeholder": "Search Angular, Supabase, AWS...",
+        "results": "results",
+        "clear": "Clear search",
+        "emptyTitle": "That technology was not found",
+        "emptyDescription": "Try another name or clear the search to display the complete stack again."
+      },
       "groups": {
         "frontend": {
           "title": "Frontend and applications",

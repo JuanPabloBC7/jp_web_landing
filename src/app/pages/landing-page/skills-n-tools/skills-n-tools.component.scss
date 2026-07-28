@@ -63,6 +63,71 @@
   line-height: 1.2;
 }
 
+.skills-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  width: min(100%, 520px);
+  padding: 0 0.9rem;
+  border: 1px solid var(--bs-border-color);
+  border-radius: 14px;
+  background: var(--bs-body-bg);
+  transition: border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.search-box:focus-within {
+  border-color: var(--bs-primary);
+  box-shadow: 0 0 0 3px rgba(var(--bs-primary-rgb), 0.12);
+}
+
+.search-box > i {
+  color: var(--bs-secondary-color);
+}
+
+.search-box input {
+  width: 100%;
+  min-height: 48px;
+  border: 0;
+  outline: 0;
+  color: var(--bs-body-color);
+  background: transparent;
+}
+
+.search-box input::placeholder {
+  color: var(--bs-secondary-color);
+}
+
+.clear-search {
+  display: grid;
+  flex: 0 0 30px;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border: 0;
+  border-radius: 50%;
+  color: var(--bs-secondary-color);
+  background: var(--bs-tertiary-bg);
+}
+
+.clear-search:hover {
+  color: var(--bs-primary);
+}
+
+.results-count {
+  color: var(--bs-secondary-color);
+  font-size: 0.75rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
 .skill-groups {
   position: relative;
   display: grid;
@@ -191,6 +256,31 @@
   line-height: 1.65;
 }
 
+.empty-state {
+  padding: 3rem 1rem;
+  border: 1px dashed var(--bs-border-color);
+  border-radius: 20px;
+  color: var(--bs-secondary-color);
+  text-align: center;
+}
+
+.empty-state > i {
+  margin-bottom: 1rem;
+  color: var(--bs-primary);
+  font-size: 2rem;
+}
+
+.empty-state h3 {
+  color: var(--bs-body-color);
+  font-size: 1.2rem;
+  font-weight: 750;
+}
+
+.empty-state p {
+  margin-bottom: 1.25rem;
+  font-size: 0.88rem;
+}
+
 .bg-html { color: #e34f26; }
 .bg-css3 { color: #1572b6; }
 .bg-sass { color: #cc6699; }
@@ -253,5 +343,10 @@
 
   .skills-footer {
     text-align: left;
+  }
+
+  .skills-toolbar {
+    align-items: flex-start;
+    flex-direction: column;
   }
 }
