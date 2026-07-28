@@ -908,10 +908,52 @@
       },
       "columnOne": [
         {
+          "title": "Building products with artificial intelligence",
+          "date": "20/07/2026",
+          "note": "Building with <code>AI</code> involves more than connecting a model. I learned to define instructions, gather context, validate responses, and keep final decisions in the user's hands. Its real value appears when AI reduces steps and turns conversations into useful information. 🤖",
+          "tags": ["AI", "ChatGPT", "architecture", "products"]
+        },
+        {
+          "title": "Process automation with n8n",
+          "date": "05/07/2026",
+          "note": "I used <code>n8n</code> to connect services and automate request workflows. Separating each integration into small steps made it easier to observe errors, retry operations, and change the process without rebuilding the entire application.",
+          "tags": ["n8n", "automation", "integrations", "APIs"]
+        },
+        {
           "title": "Vulnerabilities",
           "date": "27/06/2026",
           "note": "On the frontend side, I have mitigated security vulnerabilities in the application by implementing measures such as input validation, using <code>Content Security Policy (CSP)</code>, and protecting against <code>Cross-Site Scripting (XSS)</code> attacks. These measures help safeguard both the application and user data. 🔒",
           "tags": ["angular", "micro-frontend", "APIs"]
+        },
+        {
+          "title": "Voice integration with ElevenLabs",
+          "date": "22/06/2026",
+          "note": "I explored <code>ElevenLabs</code> to add voice capabilities to virtual assistants. Beyond generating audio, it was important to control the submitted text, response times, and how voice output fits into a conversational experience.",
+          "tags": ["ElevenLabs", "AI", "voice", "integrations"]
+        },
+        {
+          "title": "Private NAS cloud with Raspberry Pi",
+          "date": "10/05/2026",
+          "note": "I turned a <code>Raspberry Pi</code> and several drives connected through a hub into a private cloud. I configured shared storage with <code>Samba</code>, users, folder permissions, and secure remote access through <code>Tailscale</code> without directly exposing the server to the Internet. ☁️",
+          "tags": ["Raspberry Pi", "NAS", "Samba", "Tailscale", "Linux"]
+        },
+        {
+          "title": "APIs with Python and Pydantic",
+          "date": "18/03/2026",
+          "note": "While developing APIs with <code>Python</code>, I used <code>Pydantic</code> to define models, validate input data, and maintain clear contracts. This helps detect invalid information before it reaches the main logic or database.",
+          "tags": ["Python", "Pydantic", "APIs", "validation"]
+        },
+        {
+          "title": "Persistence and authentication with Firebase",
+          "date": "05/11/2025",
+          "note": "I integrated <code>Firebase</code> to manage users, Google authentication, and product persistence. Centralizing these services accelerated development, while also requiring carefully designed access rules and a properly separated data layer.",
+          "tags": ["Firebase", "authentication", "Google", "database"]
+        },
+        {
+          "title": "Business application with Flutter",
+          "date": "14/10/2025",
+          "note": "I developed a business application with <code>Flutter</code> to manage products and users on Android and iOS. I organized the code with <code>Clean Architecture</code> to separate presentation, domain, and data access, although app store publishing remained outside the scope.",
+          "tags": ["Flutter", "Dart", "Clean-Architecture", "mobile"]
         },
         {
           "title": "Lazy loading",
@@ -950,10 +992,100 @@
           "tags": ["angular", "ngx-translate", "dependencies"]
         },
         {
+          "title": "GitFlow and trunk-based development",
+          "date": "10/02/2025",
+          "note": "I have worked with strategies such as <code>GitFlow</code> and <code>trunk-based development</code>. GitFlow provides formal version separation, while trunk-based favors small, frequent integrations; the right choice depends on release cadence and team maturity.",
+          "tags": ["Git", "GitFlow", "trunk-based", "releases"]
+        },
+        {
+          "title": "Deploying systems to AWS and Azure",
+          "date": "18/11/2024",
+          "note": "Taking an application to <code>AWS</code> or <code>Azure</code> requires more than compiling it: per-environment configuration, secure variables, pipelines, monitoring, and a rollback strategy are all part of reliable delivery.",
+          "tags": ["AWS", "Azure", "cloud", "pipelines"]
+        },
+        {
+          "title": "Application analysis and development",
+          "date": "12/09/2023",
+          "note": "Before programming a solution, I learned to understand the current process, identify users, data, and exceptions, and turn that information into small modules. Good analysis reduces late changes and helps the system reflect the real process.",
+          "tags": ["analysis", "architecture", "requirements", "development"]
+        },
+        {
+          "title": "Building systems from the ground up",
+          "date": "21/06/2023",
+          "note": "Building an application from scratch allowed me to participate throughout the lifecycle: requirements, database design, development, testing, environment configuration, and release. Every early decision affects future maintenance.",
+          "tags": ["full-stack", "architecture", "production", "IIS"]
+        },
+        {
+          "title": "Storing and retrieving PDF files",
+          "date": "08/02/2023",
+          "note": "I worked on storing, querying, and downloading <code>PDF</code> documents. This required protecting file integrity, relationships with records, indexes, and retrieval methods to prevent corruption and slow queries.",
+          "tags": ["PDF", "C#", "SQL-Server", "performance"]
+        },
+        {
+          "title": "Web server for C# services",
+          "date": "19/08/2022",
+          "note": "I implemented web services with <code>C#</code> to centralize operations and expose information to other applications. Clear contracts, input validation, and error logging were essential for diagnosing integrations.",
+          "tags": ["C#", "web-server", "APIs", "integrations"]
+        },
+        {
+          "title": "Report management with C#",
+          "date": "11/03/2022",
+          "note": "I worked with reports generated from <code>C#</code>, preparing data, parameters, and formats so information was useful to operational users. The query feeding a report is as important as its presentation.",
+          "tags": ["C#", "reports", "SQL-Server", "data"]
+        },
+        {
+          "title": "Database audit for payroll issues",
+          "date": "18/11/2021",
+          "note": "I performed a database audit to trace issues in payroll processes. I reviewed relationships, queries, procedures, and intermediate data until identifying where the result became inconsistent.",
+          "tags": ["audit", "payroll", "SQL-Server", "analysis"]
+        },
+        {
+          "title": "Analyzing complex stored procedures",
+          "date": "23/04/2021",
+          "note": "To understand extensive <code>stored procedures</code>, I learned to separate each block, identify temporary tables, parameters, and side effects, and execute controlled sections. This approach made it easier to find errors without changing the entire process.",
+          "tags": ["stored-procedures", "SQL-Server", "debugging", "performance"]
+        },
+        {
+          "title": "Creating and managing triggers",
+          "date": "09/12/2020",
+          "note": "Working with <code>triggers</code> taught me that they automate important rules but can also hide side effects. Documenting when they run, which data they modify, and how they affect a transaction is essential.",
+          "tags": ["triggers", "SQL-Server", "transactions", "audit"]
+        },
+        {
+          "title": "Learning PowerBuilder for enterprise systems",
+          "date": "14/07/2020",
+          "note": "I learned <code>PowerBuilder</code> to maintain and implement features in existing financial and administrative systems. Understanding events, DataWindows, and their database relationships was key to working safely in legacy applications.",
+          "tags": ["PowerBuilder", "legacy", "SQL-Server", "ERP"]
+        },
+        {
           "title": "Session and local storage",
           "date": "17/05/2020",
           "note": "Manage variables in <code>session storage</code> and <code>local storage</code>, to keep information into the browser or during user session. 💻",
           "tags": ["session-storage", "local-storage", "variables"]
+        },
+        {
+          "title": "Major database challenges",
+          "date": "28/02/2020",
+          "note": "The hardest database problems were rarely contained in a single query. I had to understand relationships, business rules, automated processes, and historical data before proposing a correction.",
+          "tags": ["database", "analysis", "SQL-Server", "business"]
+        },
+        {
+          "title": "Templates for administrative systems",
+          "date": "20/08/2019",
+          "note": "I implemented templates in administrative systems to keep navigation, forms, and visual components consistent. Adapting a template requires understanding its structure and preventing the design from limiting real system workflows.",
+          "tags": ["templates", "ASP.NET", "administrative-systems", "frontend"]
+        },
+        {
+          "title": "DataTables with jQuery",
+          "date": "17/01/2019",
+          "note": "I used <code>DataTables</code> with <code>jQuery</code> to present large lists with search, sorting, and pagination. The real improvement came from combining the interface with efficient queries and server-side pagination.",
+          "tags": ["jQuery", "DataTables", "JavaScript", "performance"]
+        },
+        {
+          "title": "Visual improvements with CSS",
+          "date": "06/06/2018",
+          "note": "I learned to improve administrative interfaces with <code>CSS</code>, working with hierarchy, spacing, states, and different screen sizes. A clear interface reduces errors and helps users understand complex processes.",
+          "tags": ["CSS", "responsive", "UX", "frontend"]
         }
       ]
     }
