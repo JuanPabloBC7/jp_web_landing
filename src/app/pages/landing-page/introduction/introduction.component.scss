@@ -181,26 +181,22 @@
   color: #d60330;
 }
 
-.chip-typescript {
-  top: 42%;
+.chip-react {
+  top: 34%;
   right: -10%;
+  color: #087ea4;
 }
 
-.chip-typescript > span {
-  display: grid;
-  place-items: center;
-  width: 22px;
-  height: 22px;
-  border-radius: 5px;
-  color: #fff;
-  background: #3178c6;
-  font-size: 0.62rem;
-}
-
-.chip-ai {
+.chip-python {
   right: 2%;
-  bottom: 24%;
-  color: var(--bs-primary);
+  bottom: 30%;
+  color: #3776ab;
+}
+
+.chip-aws {
+  bottom: 16%;
+  left: -5%;
+  color: #ff9900;
 }
 
 .portrait-caption {
@@ -279,7 +275,15 @@
     left: -4%;
   }
 
-  .chip-typescript {
+  .chip-react {
     right: -4%;
+  }
+
+  .chip-python {
+    right: -2%;
+  }
+
+  .chip-aws {
+    left: -2%;
   }
 }
