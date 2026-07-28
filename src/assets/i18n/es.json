@@ -882,6 +882,29 @@
       }
     },
     "notes": {
+      "eyebrow": "Bitácora técnica",
+      "title": "Notas desde el trabajo real",
+      "description": "Decisiones, aprendizajes y soluciones breves que he documentado mientras construyo, modernizo y mantengo aplicaciones.",
+      "authorLabel": "Escrito por",
+      "latest": "Nota más reciente",
+      "order": "Más recientes primero",
+      "results": "notas encontradas",
+      "stats": {
+        "label": "Resumen de notas",
+        "notes": "notas publicadas",
+        "topics": "temas"
+      },
+      "filters": {
+        "label": "Filtros de notas",
+        "search": "Buscar notas",
+        "placeholder": "Buscar por tecnología o aprendizaje...",
+        "all": "Todas"
+      },
+      "empty": {
+        "title": "No encontré notas con esos filtros",
+        "description": "Prueba con otro término o vuelve a mostrar todas las notas.",
+        "action": "Limpiar filtros"
+      },
       "columnOne": [
         {
           "title": "Mitigación de vulnerabilidades",

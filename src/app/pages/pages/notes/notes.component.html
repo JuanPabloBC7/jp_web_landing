@@ -1,27 +1,96 @@
-<div class="mt-5 row">
-  <section class="col-12 col-sm-12 col-md-12 col-lg-12">
-    <div class="row">
-      <ng-container *ngFor="let item of columnOne">
-        <div class="col-12 col-sm-6 col-md-4 col-lg-4 px-1">
-          <div class="card rounded-5 mb-2">
-            <div class="card-header d-flex align-items-center rounded-bottom rounded-5">
-              <span class="text-dark-emphasis">
-                <img class="rounded-circle figure-img img-fluid me-2 mt-0 mb-0" src="../../../../../../assets/img/me/jpbalan_square.jpg" alt="JP Balan" width="35" height="345"/>
-                {{ item.title }}
-              </span>
-              <span class="text-warning-emphasis ms-auto" style="font-size: 10px;">{{ item.date }}</span>
-            </div>
-            <div class="card-body">
-              <p class="card-text mb-3" [innerHTML]="item.note"></p>
-              <ng-container *ngFor="let t of item.tags">
-                  <span class="badge border rounded-pill ms-2" [ngClass]="t.badgeClass">
-                    <small>{{ t.value }}</small>
-                  </span>
-                </ng-container>
-            </div>
-          </div>
-        </div>
-      </ng-container>
+<main class="notes-page">
+  <section class="notes-hero">
+    <div>
+      <span class="eyebrow">
+        <i class="fa-solid fa-terminal" aria-hidden="true"></i>
+        {{ 'pages.notes.eyebrow' | translate }}
+      </span>
+      <h1>{{ 'pages.notes.title' | translate }}</h1>
+      <p>{{ 'pages.notes.description' | translate }}</p>
+    </div>
+
+    <div class="notes-count" [attr.aria-label]="'pages.notes.stats.label' | translate">
+      <strong>{{ notes.length }}</strong>
+      <span>{{ 'pages.notes.stats.notes' | translate }}</span>
+      <small>{{ availableTags.length }} {{ 'pages.notes.stats.topics' | translate }}</small>
     </div>
   </section>
-</div>
+
+  <section class="notes-toolbar" [attr.aria-label]="'pages.notes.filters.label' | translate">
+    <label class="search-box">
+      <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+      <span class="visually-hidden">{{ 'pages.notes.filters.search' | translate }}</span>
+      <input
+        type="search"
+        [(ngModel)]="searchTerm"
+        [placeholder]="'pages.notes.filters.placeholder' | translate" />
+    </label>
+
+    <div class="tag-filters">
+      <button
+        type="button"
+        class="tag-filter"
+        [class.active]="activeTag === ''"
+        (click)="activeTag = ''">
+        {{ 'pages.notes.filters.all' | translate }}
+      </button>
+      <button
+        type="button"
+        class="tag-filter"
+        *ngFor="let tag of availableTags"
+        [class.active]="activeTag === tag"
+        (click)="selectTag(tag)">
+        {{ tag }}
+      </button>
+    </div>
+  </section>
+
+  <section class="notes-results" aria-live="polite">
+    <div class="results-heading">
+      <span>
+        {{ filteredNotes.length }}
+        {{ 'pages.notes.results' | translate }}
+      </span>
+      <span>{{ 'pages.notes.order' | translate }}</span>
+    </div>
+
+    <div class="notes-grid" *ngIf="filteredNotes.length; else emptyState">
+      <article class="note-card" *ngFor="let item of filteredNotes; let index = index" [class.note-featured]="index === 0 && !searchTerm && !activeTag">
+        <header class="note-header">
+          <div class="author">
+            <span class="author-mark">JP</span>
+            <span>
+              <small>{{ 'pages.notes.authorLabel' | translate }}</small>
+              <strong>Juan Pablo Balan</strong>
+            </span>
+          </div>
+          <time [attr.datetime]="item.date">{{ item.date }}</time>
+        </header>
+
+        <div class="note-body">
+          <span class="latest-badge" *ngIf="index === 0 && !searchTerm && !activeTag">
+            <i class="fa-solid fa-sparkles" aria-hidden="true"></i>
+            {{ 'pages.notes.latest' | translate }}
+          </span>
+          <h2>{{ item.title }}</h2>
+          <p [innerHTML]="item.note"></p>
+        </div>
+
+        <footer class="note-tags" [attr.aria-label]="'pages.notes.filters.label' | translate">
+          <button type="button" *ngFor="let tag of item.tags" (click)="selectTag(tag)">#{{ tag }}</button>
+        </footer>
+      </article>
+    </div>
+
+    <ng-template #emptyState>
+      <div class="empty-state">
+        <i class="fa-regular fa-folder-open" aria-hidden="true"></i>
+        <h2>{{ 'pages.notes.empty.title' | translate }}</h2>
+        <p>{{ 'pages.notes.empty.description' | translate }}</p>
+        <button type="button" class="btn btn-outline-primary rounded-pill" (click)="resetFilters()">
+          {{ 'pages.notes.empty.action' | translate }}
+        </button>
+      </div>
+    </ng-template>
+  </section>
+</main>

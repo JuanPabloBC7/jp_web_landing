@@ -883,6 +883,29 @@
       }
     },
     "notes": {
+      "eyebrow": "Technical log",
+      "title": "Notes from real-world work",
+      "description": "Short decisions, lessons, and solutions I have documented while building, modernizing, and maintaining applications.",
+      "authorLabel": "Written by",
+      "latest": "Latest note",
+      "order": "Newest first",
+      "results": "notes found",
+      "stats": {
+        "label": "Notes summary",
+        "notes": "published notes",
+        "topics": "topics"
+      },
+      "filters": {
+        "label": "Note filters",
+        "search": "Search notes",
+        "placeholder": "Search by technology or lesson...",
+        "all": "All"
+      },
+      "empty": {
+        "title": "No notes match those filters",
+        "description": "Try a different term or display all notes again.",
+        "action": "Clear filters"
+      },
       "columnOne": [
         {
           "title": "Vulnerabilities",
