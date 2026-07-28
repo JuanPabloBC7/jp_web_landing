@@ -126,6 +126,7 @@
         { "id":"python", "name": "Python", "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" },
         { "id":"php", "name": "PHP", "icon": "devicon-php-plain bg-php" },
         { "id":"java", "name": "Java", "icon": "devicon-java-plain bg-java" },
+        { "id":"flutter", "name": "Flutter", "icon": "devicon-flutter-plain bg-flutter" },
         { "id":"csharp", "name": "C#", "icon": "devicon-csharp-plain bg-csharp" },
         { "id":"visualbasic", "name": "Visual Basic", "icon": "devicon-visualbasic-plain bg-visualbasic" },
         { "id":"sqlserver", "name": "SQL Server", "prefix": "Microsoft", "icon": "devicon-microsoftsqlserver-plain bg-sqlserver" },
@@ -264,7 +265,7 @@
           "subtitle": "",
           "description": "",
           "skills": [
-            "<strong>Semantic layout:</strong> I use HTML5 tags like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code> and <code>&lt;footer&gt;</code> to create accessible web structures optimized for Search Engine Optimization (SEO).",
+            "<strong>Semantic layout:</strong> I use HTML5 tags like <code>&lt;header&gt;</code>, <code>&lt;body&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;footer&gt;</code>, etc. to create accessible web structures optimized for Search Engine Optimization (SEO).",
             "<strong>Professional styling:</strong> I have used <code>CSS3</code>, <code>sass</code> and the framework <code>Bootstrap</code> to create modern, responsive and attractive interfaces."
           ],
           "tools": [ ],
@@ -378,7 +379,7 @@
           ]
         },
         "python": {
-          "title": "JavaScript",
+          "title": "Python",
           "subtitle": "Tools and dependencies used:",
           "description": "I have little experience in <code>pyton</code>, however, I have been able to learn and develop different methods for solving different challenges. I would like to be able to learn more things such as managing data volumes in a more perfect way and learning how to manipulate them in different ways.",
           "skills": [
@@ -424,6 +425,34 @@
             { "name": "SqlClient", "link": "https://learn.microsoft.com/es-es/dotnet/api/system.data.sqlclient.sqlconnection?view=netframework-4.8.1" },
             { "name": "JSON", "link": "https://learn.microsoft.com/es-es/dotnet/standard/serialization/system-text-json/how-to" }
           ]
+        },
+        "typescript": {
+          "title": "TypeScript",
+          "subtitle": "Tools and dependencies used:",
+          "description": "I have extensive experience in this language developing functions and methods since 2022. I have learned different things throughout my professional career, however, I know that I still have much more to learn and perfect.",
+          "skills": [
+            "<strong>Development of dynamic web applications:</strong> Experience developing interactive applications using pure <code>JavaScript</code> (vanilla JS), manipulating the <code>DOM</code> directly to create reusable and functional components.",
+            "<strong>Event-oriented programming:</strong> Using native browser events to handle user interactions, forms, validations and dynamic navigation without reloading the page.",
+            "<strong>APIs:</strong> Integration with <code>APIs REST</code> using <code>fetch</code> and <code>XMLHttpRequest</code>, Promise handling and <code>JSON</code> response processing to update the <code>UI</code> in real time.",
+            "<strong>Modularization and good practices:</strong> Code organization with pure functions, <code>ES6 modules</code> (<code>import/export</code>), and separation of logic to improve code maintainability."
+          ],
+          "tools": [
+            { "name": "JavaScript", "class": "devicon-javascript-plain bg-javascript mx-2" },
+            { "name": "NodeJs", "class": "devicon-nodejs-plain bg-node mx-2" },
+            { "name": "npm", "class": "devicon-npm-original-wordmark bg-npm mx-2" },
+            { "name": "MySQL", "class": "devicon-mysql-original bg-mysql mx-2" },
+            { "name": "MongoDB", "class": "devicon-mongodb-plain bg-mongodb mx-2" },
+            { "name": "PostgreSQL", "class": "devicon-postgresql-plain bg-postgresql mx-2" }
+          ],
+          "dependencies": [
+            { "name": "nodemon", "link": "https://www.npmjs.com/package/nodemon" },
+            { "name": "typescript", "link": "https://www.typescriptlang.org" },
+            { "name": "mysql", "link": "https://dev.mysql.com/doc/dev/connector-nodejs/latest/" },
+            { "name": "express", "link": "https://expressjs-com.translate.goog/?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc" },
+            { "name": "body-parser", "link": "https://www.npmjs.com/package/body-parser" },
+            { "name": "promise-mysql", "link": "https://www.npmjs.com/package/promise-mysql" },
+            { "name": "cors", "link": "https://www.npmjs.com/package/cors" }
+          ]
         }
       },
       "database": {
@@ -434,10 +463,22 @@
     "notes": {
       "columnOne": [
         {
+          "title": "Lazy loading",
+          "date": "17/08/2024",
+          "note": "I was implement <code>lazy loading</code> on forntend, this is a technique that allows you to load modules or components only when they are needed, rather than loading everything at once when the application starts. This can significantly improve the performance of your application, especially if it has a large number of routes and components. By using lazy loading, you can reduce the initial load time and improve the user experience by loading only the necessary resources when they are required. 🛠️",
+          "tags": ["angular", "micro-frontend", "APIs"]
+        },
+        {
           "title": "Single SPA",
           "date": "07/08/2024",
           "note": "I had a requirement with this library, what happened is that when I click on an option for the first time in the menu (<code>root</code>) it shows the contents of the micro, but the second click on the second option that belongs to the same micro, fails, I had to read the documentation to understand the problem and it is a bad initial configuration. 😩",
           "tags": ["angular", "micro-frontend", "single-spa", "dependencies"]
+        },
+        {
+          "title": "Angular 18 migration",
+          "date": "15/05/2024",
+          "note": "I was migrating projects from Angular 11 to Angular 18, which has been a challenging but rewarding process 🚀. I had to update dependencies, review the code to ensure compatibility, and take advantage of the new features offered by this version. There are performance improvements and new functionalities that I can implement now.",
+          "tags": ["angular", "micro-frontend", "dependencias"]
         }
       ],
       "columnTwo": [

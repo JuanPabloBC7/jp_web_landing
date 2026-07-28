@@ -3,6 +3,7 @@ import { JavascriptComponent } from "./javascript/javascript.component";
 import { CSharpComponent } from './c-sharp/c-sharp.component';
 import { PythonComponent } from "./python/python.component";
 import { TranslateModule } from '@ngx-translate/core';
+import { TypescriptComponent } from './typescript/typescript.component';
 
 @Component({
   selector: 'app-backend',
@@ -12,6 +13,7 @@ import { TranslateModule } from '@ngx-translate/core';
     JavascriptComponent,
     PythonComponent,
     CSharpComponent,
+    TypescriptComponent,
 ],
   templateUrl: './backend.component.html',
   styleUrl: './backend.component.scss'
