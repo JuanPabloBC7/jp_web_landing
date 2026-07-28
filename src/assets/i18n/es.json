@@ -6,7 +6,7 @@
   "configuration": {
     "icon": "Jp",
     "name": "Jpbalan",
-    "description": "Desarrollador web y móvil con experiencia en Angular, React y Node.js.",
+    "description": "Desarrollador de software especializado en aplicaciones empresariales, Angular, React, .NET, datos e integración de inteligencia artificial.",
     "country": "Guatemala",
     "city": "Ciudad de Guatemala",
     "appearance": {
@@ -58,7 +58,7 @@
         "copyright": "© 2025 - 2026 | Diseñado y codificado por Juan Pablo Balan."
       },
       "informativeFooter": {
-        "description": "Creador de productos excepcionales que combinan innovación, diseño y funcionalidad para mejorar tu vida diaria.",
+        "description": "Diseño, desarrollo y modernizo productos digitales respaldados por más de 10 años de experiencia.",
         "quickLinks": "Enlaces rápidos",
         "other": "Otros"
       }
@@ -123,7 +123,7 @@
     "aboutUs": {
       "eyebrow": "Perfil profesional",
       "title": "Sobre mí",
-      "description": "Soy una persona apasionada por la tecnología y la innovación. Con más de 10 años de experiencia en el desarrollo web, me especializo en crear soluciones digitales que ayudan a las personas y empresas a crecer y alcanzar sus objetivos.",
+      "description": "Soy desarrollador de software con más de 10 años de experiencia creando y modernizando aplicaciones empresariales. Combino análisis, desarrollo frontend y backend, bases de datos y entrega a producción para resolver problemas reales.",
       "skills": [
         {
           "title": "Trabajo en equipo",
@@ -672,7 +672,7 @@
     "contact": {
       "eyebrow": "Trabajemos juntos",
       "title": "Contáctame",
-      "description": "Si deseas contactarme, puedes hacerlo a través de mis redes sociales o enviándome un correo electrónico.",
+      "description": "Si tienes un proyecto, una oportunidad profesional o un problema técnico que podamos resolver juntos, envíame un mensaje.",
       "panel": {
         "title": "Conversemos sobre tu próximo proyecto",
         "description": "Cuéntame el problema que necesitas resolver, la idea que quieres validar o el producto que deseas mejorar.",
@@ -689,7 +689,7 @@
         },
         "message": {
           "title": "Mensaje",
-          "placeholder": "¿En qué podemos ayudarte?"
+          "placeholder": "¿En qué puedo ayudarte?"
         },
         "required": "Este campo es obligatorio.",
         "invalid": "Este campo no es válido.",
@@ -704,8 +704,8 @@
     },
     "experience": {
       "frontend": {
-        "title": "Bienvenidos a mi experiencia como desarrollador frontend",
-        "description": "Aquí encontrarás algunas de las cosas que yo puedo hacer y he aprendido, de mis diferentes habilidades para el desarrollo frontend.",
+        "title": "Experiencia en desarrollo frontend",
+        "description": "Interfaces empresariales, arquitectura de microfrontends, rendimiento, seguridad y modernización de aplicaciones web.",
         "html": {
           "title": "HTML",
           "subtitle": "",
@@ -720,9 +720,9 @@
         "angular": {
           "title": "Angular",
           "subtitle": "Herramientas y dependencias utilizadas:",
-          "description": "Tengo una experiencia media-alta utilizando <code>angular</code> desde hace unos años (2021 - a la actualidad), he tenido la oportunidad de crear aplicaciones desde cero y darles mantenimiento. Con diferentes tecnologias y dependencias que me ayudan a otorgar soluciones hechas a la medida para los diferentes clientes y compañías para las que he trabajado.",
+          "description": "Trabajo con <code>Angular</code> desde 2021 en aplicaciones empresariales nuevas y existentes. He creado microfrontends, actualizado proyectos de Angular 11 a Angular 21, integrado APIs y mantenido soluciones orientadas a seguridad, rendimiento y escalabilidad.",
           "skills": [
-            "<strong>Desarrollo de aplicaciones:</strong> Tengo experiencia creando aplicaciones de una sola página y micro-servicios utilizando Angular, he tenido la oportunidad de utilizar el sistema de componentes (<code>NgModule</code> y <code>Standalone</code>), servicios y enrutamiento.",
+            "<strong>Desarrollo de aplicaciones:</strong> Creación de aplicaciones de una sola página y microfrontends con Angular, utilizando componentes basados en <code>NgModule</code> y <code>Standalone</code>, servicios y enrutamiento.",
             "<strong>Enlace de datos y directivas:</strong> Uso eficiente de enlaces de datos bidireccional, directivas estructurales (<code>*ngIf</code>, <code>*ngFor</code>) y directivas personalizadas para crear interfaces dinámicas y reutilizables.",
             "<strong>Consumo de APIs y servicios:</strong> Integración de servicios HTTP para consumir <code>APIs REST</code>, manejo de Observables y gestión de estados con RxJS."
           ],
@@ -760,7 +760,7 @@
         "aspnet": {
           "title": "ASP.NET",
           "subtitle": "Herramientas y dependencias utilizadas:",
-          "description": "Tengo una gran experiencia en <code>ASP.NET</code> desde 2017 creando aplicaciones web, utilizando diferentes tecnologias y dependencias que me facilitan el trabajo para ofrecer aplicaciones de alta calidad. He tenido una gran cantidad de retos a lo largo de mi carrera profecional.",
+          "description": "Desarrollo aplicaciones con <code>ASP.NET</code> desde 2017, desde sistemas administrativos y servicios web hasta soluciones institucionales publicadas en IIS. He trabajado con C#, Visual Basic, SQL Server e integración de interfaces empresariales.",
           "skills": [
             "<strong>Desarrollo con ASP.NET C# y Visual Basic:</strong> Creación de aplicaciones web modernas utilizando <code>ASP.NET</code> con <code>C#</code> y <code>Visual Basic</code>, aplicando el patrón MVC para separar responsabilidades y facilitar el mantenimiento.",
             "<strong>WebServer:</strong> Implementación de servicios WebServer, incluyendo controladores, rutas, respuestas en formato <code>JSON</code> y <code>XML</code>, y validaciones de entrada.",
@@ -794,12 +794,12 @@
         }
       },
       "backend": {
-        "title": "Bienvenidos a mi experiencia como desarrollador backend",
-        "description": "Aquí encontrarás algunas de las cosas que yo puedo hacer y he aprendido, de mis diferentes habilidades para el desarrollo backend.",
+        "title": "Experiencia en desarrollo backend",
+        "description": "Servicios, APIs, reglas de negocio e integraciones construidas con tecnologías JavaScript, TypeScript, Python y .NET.",
         "javascript": {
           "title": "JavaScript",
           "subtitle": "Herramientas y dependencias utilizadas:",
-          "description": "Tengo una experiencia amplia en este lenguaje desarrollando funciones y metodos desde el 2022 he aprendido diferentes cosas a lo largo de mi carrera profecional, sin embargo, se que aun me queda mucho mas que aprender y perfeccionar.",
+          "description": "He utilizado <code>JavaScript</code> para desarrollar interfaces, validaciones, integraciones con APIs y lógica de servidor, tanto en sistemas empresariales existentes como en aplicaciones creadas desde cero.",
           "skills": [
             "<strong>Desarrollo de aplicaciones web dinámicas:</strong> Experiencia desarrollando aplicaciones interactivas utilizando <code>JavaScript</code> puro (vanilla JS), manipulando el <code>DOM</code> directamente para crear componentes reutilizables y funcionales.",
             "<strong>Programación orientada a eventos:</strong> Uso de eventos nativos del navegador para gestionar interacciones del usuario, formularios, validaciones y navegación dinámica sin recargar la página.",
@@ -827,7 +827,7 @@
         "python": {
           "title": "Python",
           "subtitle": "Herramientas y dependencias utilizadas:",
-          "description": "Tengo poca experiencia en <code>pyton</code>, sin embargo, he podido aprender y desarrollar diferentes metodos de solución a diferentes retos, me gustaría poder aprender más cosas como el manejo de volumenes de datos de una manera más perfecta y aprender a manipularlos de distintas formas.",
+          "description": "Utilizo <code>Python</code> para crear APIs, automatizaciones y procesos de datos. He trabajado con FastAPI, Pydantic, SQLAlchemy, autenticación y conexión con bases de datos relacionales.",
           "skills": [
             "<strong>Desarrollo de scripts y automatización:</strong> Experiencia escribiendo scripts en <code>python</code> para automatizar tareas, procesar archivos, transformar datos y ejecutar tareas programadas.",
             "<strong>Consumo de APIs y manejo de solicitudes HTTP:</strong> Integración con servicios externos mediante la librería <code>requests</code>, manejo de peticiones <code>GET/POST/UPDATE/DELETE/PATCH</code>, autenticaciones y procesamiento de respuestas en formato <code>JSON</code> mediante <code>JWT</code> o <code>XML</code>.",
@@ -875,7 +875,7 @@
         "typescript": {
           "title": "TypeScript",
           "subtitle": "Herramientas y dependencias utilizadas:",
-          "description": "Tengo una experiencia media en este lenguaje desarrollando funciones y metodos desde el 2024 he aprendido diferentes cosas a lo largo de mi carrera profecional, sin embargo, se que aun me queda mucho mas que aprender y perfeccionar.",
+          "description": "Utilizo <code>TypeScript</code> como base para aplicaciones Angular y servicios tipados, aprovechando interfaces, clases, genéricos y contratos claros para facilitar mantenimiento y refactorización.",
           "skills": [
             "<strong>Desarrollo de aplicaciones web dinámicas:</strong> Experiencia desarrollando aplicaciones interactivas utilizando <code>JavaScript</code> puro (vanilla JS), manipulando el <code>DOM</code> directamente para crear componentes reutilizables y funcionales.",
             "<strong>Programación orientada a eventos:</strong> Uso de eventos nativos del navegador para gestionar interacciones del usuario, formularios, validaciones y navegación dinámica sin recargar la página.",
@@ -902,8 +902,8 @@
         }
       },
       "database": {
-        "title": "Bienvenidos a mi experiencia como desarrollador base de datos",
-        "description": "Aquí encontrarás algunas de las cosas que yo puedo hacer y he aprendido, de mis diferentes habilidades para el desarrollo base de datos."
+        "title": "Experiencia en bases de datos",
+        "description": "Diseño, consultas, procedimientos almacenados, triggers, índices, auditorías y análisis de datos para sistemas empresariales."
       }
     },
     "notes": {
@@ -988,31 +988,31 @@
         {
           "title": "Single SPA",
           "date": "07/08/2024",
-          "note": "He tenido un requerimiento con esta librería, la cual probocaba que cuando le doy un click a una opción por primera vez en el menu (<code>root</code>) muestra el contenido del micro, pero el segundo click de la segunda opción que pertenece al mismo micro, falla, he tenido que leer la documentación para entender el problema y es una mala configuración inicial. 😩",
+          "note": "Investigué un problema de navegación con <code>Single-SPA</code>: la primera opción cargaba correctamente el microfrontend, pero una segunda ruta del mismo proyecto fallaba. Al revisar la documentación y la configuración de la aplicación <code>root</code>, identifiqué y corregí el origen del problema. 😩",
           "tags": ["angular", "micro-frontend", "single-spa", "dependencias"]
         },
         {
           "title": "Migración a Angular 18",
           "date": "15/05/2024",
-          "note": "He migrado los proyecto de Angular 11 a Angular 18, lo cual ha sido un proceso desafiante pero gratificante 🚀. He tenido que actualizar dependencias, revisar el código para asegurar la compatibilidad y aprovechar las nuevas características que ofrece esta versión. Hay mejoras en rendimiento y las nuevas funcionalidades que puedo implementar ahora.",
+          "note": "Migré proyectos de Angular 11 a Angular 18, actualizando dependencias, resolviendo incompatibilidades y revisando el código después de cada cambio. El proceso permitió aprovechar mejoras de rendimiento y nuevas capacidades del framework. 🚀",
           "tags": ["angular", "micro-frontend", "dependencias"]
         },
         {
           "title": "Nuevo proyecto",
           "date": "02/07/2025",
-          "note": "He creado un nuevo proyecto, como <code>micro-frontend</code> en <code>angular</code> y he realizado las configuraciones iniciales para poder integrarlo a repositorio principal <code>root</code>. 💪",
+          "note": "Creé un nuevo <code>microfrontend</code> con <code>Angular</code> y configuré su integración con la aplicación principal <code>root</code>, incluyendo estructura inicial, dependencias y ejecución dentro de Single-SPA. 💪",
           "tags": ["angular", "micro-frontend", "single-spa", "new-project"]
         },
         {
           "title": "🍪 Cookies",
           "date": "13/10/2022",
-          "note": "Utilice <code>cookies</code> para el manejo de sesión entre sitios empresariales, para que el usuario no tenga que volver a identificarse en cada página. 🍪",
+          "note": "Utilicé <code>cookies</code> para compartir información de sesión entre sitios empresariales y evitar que el usuario tuviera que autenticarse nuevamente en cada aplicación. 🍪",
           "tags": ["ASP.NET", "cookies", "login", "project-integration"]
         },
         {
           "title": "Integración de ngx-translate",
           "date": "16/06/2025",
-          "note": "Integre <code>ngx-translate</code> para traducción de idiomas en aplicaciones de <code>angular</code>, de hecho la estoy utilizando en esta. 😅",
+          "note": "Integré <code>ngx-translate</code> para administrar traducciones en aplicaciones Angular. Este mismo portafolio utiliza la biblioteca para ofrecer contenido en español e inglés. 😅",
           "tags": ["angular", "ngx-translate", "dependencias"]
         },
         {
@@ -1084,7 +1084,7 @@
         {
           "title": "Session y local storage",
           "date": "17/05/2020",
-          "note": "Manejo de variables con <code>session storage</code> y <code>local storage</code>, para mantener dentro del navegador o durante la sesion del usuario, según sea necesario. 💻",
+          "note": "Utilicé <code>sessionStorage</code> y <code>localStorage</code> según la duración requerida para cada dato: únicamente durante la sesión o persistente en el navegador. 💻",
           "tags": ["session-storage", "local-storage", "variables"]
         },
         {
@@ -1152,7 +1152,7 @@
           "events": { "click": "null" }
         }
       ],
-      "newLabel": "imp",
+      "newLabel": "clave",
       "newStyle": "text-danger-emphasis bg-danger-subtle border border-danger-subtle"
     },
     {
@@ -1169,7 +1169,7 @@
       "label": "Notas",
       "type": "link",
       "icon": "fa-solid fa-book",
-      "newLabel": "yo",
+      "newLabel": "bitácora",
       "newStyle": "text-primary-emphasis bg-primary-subtle border border-primary-subtle",
       "events": { "click": "null" }
     },

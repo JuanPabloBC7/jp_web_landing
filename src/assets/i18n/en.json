@@ -6,7 +6,7 @@
   "configuration": {
     "icon": "Jp",
     "name": "Jpbalan",
-    "description": "Web and mobile developer with experience in Angular, React, and Node.js.",
+    "description": "Software developer specializing in enterprise applications, Angular, React, .NET, data, and artificial intelligence integration.",
     "country": "Guatemala",
     "city": "Guatemala City",
     "appearance": {
@@ -55,10 +55,10 @@
     },
     "footer": {
       "simpleFooter": {
-        "copyright": "© 2025 -2026 | Designed and coded by Juan Pablo Balan."
+        "copyright": "© 2025 - 2026 | Designed and coded by Juan Pablo Balan."
       },
       "informativeFooter": {
-        "description": "Creator of exceptional products that combine innovation, design, and functionality to enhance your daily life.",
+        "description": "I design, build, and modernize digital products backed by more than 10 years of experience.",
         "quickLinks": "Quick Links",
         "other": "Other"
       }
@@ -123,7 +123,7 @@
     "aboutUs": {
       "eyebrow": "Professional profile",
       "title": "About me",
-      "description": "I am a person passionate about technology and innovation. With more than 10 years of experience in web development, I specialize in creating digital solutions that help people and businesses grow and achieve their goals.",
+      "description": "I am a software developer with more than 10 years of experience building and modernizing enterprise applications. I combine analysis, frontend and backend development, databases, and production delivery to solve real problems.",
       "skills": [
         {
           "title": "Teamwork",
@@ -673,7 +673,7 @@
     "contact": {
       "eyebrow": "Let's work together",
       "title": "Contact me",
-      "description": "If you have any questions or want to work together, feel free to contact me. I will be happy to help you.",
+      "description": "If you have a project, a professional opportunity, or a technical problem we can solve together, send me a message.",
       "panel": {
         "title": "Let's discuss your next project",
         "description": "Tell me about the problem you need to solve, the idea you want to validate, or the product you want to improve.",
@@ -705,8 +705,8 @@
     },
     "experience": {
       "frontend": {
-        "title": "Welcome to my experience as a frontend developer",
-        "description": "Here you'll find some of the things I can do and have learned from my various front-end development skills.",
+        "title": "Frontend development experience",
+        "description": "Enterprise interfaces, microfrontend architecture, performance, security, and web application modernization.",
         "html": {
           "title": "HTML",
           "subtitle": "",
@@ -721,9 +721,9 @@
         "angular": {
           "title": "Angular",
           "subtitle": "Tools and dependencies used:",
-          "description": "I have a medium-high experience using <code>angular</code> for a few years (2021 - present), I have had the opportunity to build applications from scratch and maintain them. With different technologies and dependencies that help me provide tailored solutions for the different clients and companies I've worked for.",
+          "description": "I have worked with <code>Angular</code> since 2021 on new and existing enterprise applications. I have built microfrontends, upgraded projects from Angular 11 to Angular 21, integrated APIs, and maintained solutions focused on security, performance, and scalability.",
           "skills": [
-            "<strong>Application development:</strong> I have experience building single-page applications and microservices using Angular, I have had the opportunity to use the component system (<code>NgModule</code> and <code>Standalone</code>), services and routing.",
+            "<strong>Application development:</strong> Building single-page applications and microfrontends with Angular using <code>NgModule</code> and <code>Standalone</code> components, services, and routing.",
             "<strong>Data linking and directives:</strong> Efficient use of bidirectional data links, structural directives (<code>*ngIf</code>, <code>*ngFor</code>) and custom directives to create dynamic and reusable interfaces.",
             "<strong>APIs and services:</strong> Integration of HTTP services to use <code>APIs REST</code>, using observables and state management with RxJS."
           ],
@@ -761,7 +761,7 @@
         "aspnet": {
           "title": "ASP.NET",
           "subtitle": "Tools and dependencies used:",
-          "description": "I have a high experience in <code>ASP.NET</code> creating web applications since 2017, Using different technologies and dependencies that make my job easier to offer high-quality applications. I have had a lot of challenges throughout my professional career.",
+          "description": "I have developed applications with <code>ASP.NET</code> since 2017, from administrative systems and web services to institutional solutions deployed through IIS. My experience includes C#, Visual Basic, SQL Server, and enterprise interfaces.",
           "skills": [
             "<strong>Development with ASP.NET C# and Visual Basic:</strong> Building modern web applications using <code>ASP.NET</code> with <code>C#</code> and <code>Visual Basic</code>, applying the MVC pattern to separate responsibilities and facilitate maintenance.",
             "<strong>WebServer:</strong> WebServer implementation, including controllers, routes, responses in <code>JSON</code> and <code>XML</code> format, and input validations.",
@@ -795,12 +795,12 @@
         }
       },
       "backend": {
-        "title": "Welcome to my experience as a backend developer",
-        "description": "Here you'll find some of the things I can do and have learned from my various back-end development skills.",
+        "title": "Backend development experience",
+        "description": "Services, APIs, business rules, and integrations built with JavaScript, TypeScript, Python, and .NET technologies.",
         "javascript": {
           "title": "JavaScript",
           "subtitle": "Tools and dependencies used:",
-          "description": "I have extensive experience in this language developing functions and methods since 2022. I have learned different things throughout my professional career, however, I know that I still have much more to learn and perfect.",
+          "description": "I have used <code>JavaScript</code> to build interfaces, validations, API integrations, and server logic in both existing enterprise systems and applications created from scratch.",
           "skills": [
             "<strong>Development of dynamic web applications:</strong> Experience developing interactive applications using pure <code>JavaScript</code> (vanilla JS), manipulating the <code>DOM</code> directly to create reusable and functional components.",
             "<strong>Event-oriented programming:</strong> Using native browser events to handle user interactions, forms, validations and dynamic navigation without reloading the page.",
@@ -828,7 +828,7 @@
         "python": {
           "title": "Python",
           "subtitle": "Tools and dependencies used:",
-          "description": "I have little experience in <code>pyton</code>, however, I have been able to learn and develop different methods for solving different challenges. I would like to be able to learn more things such as managing data volumes in a more perfect way and learning how to manipulate them in different ways.",
+          "description": "I use <code>Python</code> to build APIs, automations, and data processes. My work includes FastAPI, Pydantic, SQLAlchemy, authentication, and relational database integration.",
           "skills": [
             "<strong>Script development and automation:</strong> Experience writing scripts in <code>python</code> to automate tasks, process files, transform data and run scheduled tasks.",
             "<strong>Consuming APIs and handling HTTP requests:</strong> Integration with external services through the <code>requests</code> library, handling of <code>GET/POST/UPDATE/DELETE/PATCH</code> requests, authentications, and processing of responses in <code>JSON</code> format using <code>JWT</code> or <code>XML</code>.",
@@ -876,7 +876,7 @@
         "typescript": {
           "title": "TypeScript",
           "subtitle": "Tools and dependencies used:",
-          "description": "I have extensive experience in this language developing functions and methods since 2022. I have learned different things throughout my professional career, however, I know that I still have much more to learn and perfect.",
+          "description": "I use <code>TypeScript</code> as the foundation for Angular applications and typed services, applying interfaces, classes, generics, and explicit contracts to improve maintenance and refactoring.",
           "skills": [
             "<strong>Development of dynamic web applications:</strong> Experience developing interactive applications using pure <code>JavaScript</code> (vanilla JS), manipulating the <code>DOM</code> directly to create reusable and functional components.",
             "<strong>Event-oriented programming:</strong> Using native browser events to handle user interactions, forms, validations and dynamic navigation without reloading the page.",
@@ -903,8 +903,8 @@
         }
       },
       "database": {
-        "title": "Welcome to my experience as a database developer",
-        "description": "Here you'll find some of the things I can do and have learned from my various database development skills."
+        "title": "Database experience",
+        "description": "Database design, queries, stored procedures, triggers, indexes, audits, and data analysis for enterprise systems."
       }
     },
     "notes": {
@@ -983,37 +983,37 @@
         {
           "title": "Lazy loading",
           "date": "17/08/2024",
-          "note": "I was implement <code>lazy loading</code> on forntend, this is a technique that allows you to load modules or components only when they are needed, rather than loading everything at once when the application starts. This can significantly improve the performance of your application, especially if it has a large number of routes and components. By using lazy loading, you can reduce the initial load time and improve the user experience by loading only the necessary resources when they are required. 🛠️",
+          "note": "I implemented <code>lazy loading</code> so modules and components are loaded only when required. In applications with many routes, this reduces the initial bundle and improves startup performance. 🛠️",
           "tags": ["angular", "micro-frontend", "APIs"]
         },
         {
           "title": "Single SPA",
           "date": "07/08/2024",
-          "note": "I had a requirement with this library, what happened is that when I click on an option for the first time in the menu (<code>root</code>) it shows the contents of the micro, but the second click on the second option that belongs to the same micro, fails, I had to read the documentation to understand the problem and it is a bad initial configuration. 😩",
+          "note": "I investigated a navigation issue with <code>Single-SPA</code>: the first option loaded the microfrontend correctly, but a second route from the same project failed. Reviewing the documentation and <code>root</code> application configuration helped me identify and correct the source of the problem. 😩",
           "tags": ["angular", "micro-frontend", "single-spa", "dependencies"]
         },
         {
           "title": "Angular 18 migration",
           "date": "15/05/2024",
-          "note": "I was migrating projects from Angular 11 to Angular 18, which has been a challenging but rewarding process 🚀. I had to update dependencies, review the code to ensure compatibility, and take advantage of the new features offered by this version. There are performance improvements and new functionalities that I can implement now.",
-          "tags": ["angular", "micro-frontend", "dependencias"]
+          "note": "I migrated projects from Angular 11 to Angular 18 by upgrading dependencies, resolving incompatibilities, and reviewing the code after each change. The process enabled performance improvements and newer framework capabilities. 🚀",
+          "tags": ["angular", "micro-frontend", "dependencies"]
         },
         {
           "title": "New project",
           "date": "02/07/2025",
-          "note": "I have created a new project, as a <code>micro-frontend</code> in <code>Angular</code> and I have configured to be able to integrate it into the main <code>root</code> repository. 💪",
+          "note": "I created a new <code>microfrontend</code> with <code>Angular</code> and configured its integration with the main <code>root</code> application, including its initial structure, dependencies, and Single-SPA runtime. 💪",
           "tags": ["angular", "micro-frontend", "single-spa", "new-project"]
         },
         {
           "title": "🍪 Cookies",
           "date": "13/10/2022",
-          "note": "I used <code>cookies</code> to session managment between company's sites, for didn't need to login again in the diferent web pages. 🍪",
+          "note": "I used <code>cookies</code> to share session information between enterprise sites so users did not need to authenticate again in each application. 🍪",
           "tags": ["ASP.NET", "cookies", "login", "project-integration"]
         },
         {
           "title": "Ngx-translate integration",
           "date": "16/06/2025",
-          "note": "I integrated <code>ngx-translate</code> for language translation in <code>Angular</code> applications, a fact I'm using it in this one. 😅",
+          "note": "I integrated <code>ngx-translate</code> to manage translations in Angular applications. This portfolio uses the same library to provide content in English and Spanish. 😅",
           "tags": ["angular", "ngx-translate", "dependencies"]
         },
         {
@@ -1085,7 +1085,7 @@
         {
           "title": "Session and local storage",
           "date": "17/05/2020",
-          "note": "Manage variables in <code>session storage</code> and <code>local storage</code>, to keep information into the browser or during user session. 💻",
+          "note": "I used <code>sessionStorage</code> and <code>localStorage</code> according to the required data lifetime: only during the active session or persistently in the browser. 💻",
           "tags": ["session-storage", "local-storage", "variables"]
         },
         {
@@ -1152,7 +1152,7 @@
           "events": { "click": "null" }
         }
       ],
-      "newLabel": "imp",
+      "newLabel": "core",
       "newStyle": "text-danger-emphasis bg-danger-subtle border border-danger-subtle"
     },
     {
@@ -1169,7 +1169,7 @@
       "label": "Notes",
       "type": "link",
       "icon": "fa-solid fa-book",
-      "newLabel": "me",
+      "newLabel": "journal",
       "newStyle": "text-primary-emphasis bg-primary-subtle border border-primary-subtle",
       "events": { "click": "null" }
     },
