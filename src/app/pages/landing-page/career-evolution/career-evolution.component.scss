@@ -1,5 +1,8 @@
 .career-evolution {
   --track-position: 34px;
+  position: relative;
+  isolation: isolate;
+  z-index: 0;
 }
 
 .section-heading {
