@@ -36,7 +36,7 @@ export class SkillsNToolsComponent implements OnInit {
     private translateServices: TranslateService,
   ) { 
     this.translateServices.stream('pages.skillsNTools.skills').subscribe(res => {
-      this.translateSkills = res;
+      this.translateSkills = Array.isArray(res) ? res : [];
     });
   }
 
@@ -44,6 +44,10 @@ export class SkillsNToolsComponent implements OnInit {
   }
 
   skillsFor(skillIds: string[]): any[] {
+    if (!Array.isArray(this.translateSkills)) {
+      return [];
+    }
+
     return skillIds
       .map(id => this.translateSkills.find((skill: any) => skill.id === id))
       .filter(Boolean);

@@ -36,6 +36,11 @@ export class LandingNavbarTopComponent implements OnInit {
       this.translateNavbar = res['configuration.navbar'];
       this.translateAppearance = res['configuration.appearance'];
       this.navigation = [];
+
+      if (!this.translateNavbar?.links || !this.translateNavbar?.others || !this.translateAppearance?.options) {
+        return;
+      }
+
       for (const key in this.translateNavbar.links) {
         if (key === 'home') {
           this.navigation.push({

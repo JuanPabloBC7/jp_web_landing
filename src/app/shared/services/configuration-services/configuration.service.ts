@@ -11,16 +11,21 @@ export class ConfigurationService {
   ) { }
 
   configureLanguage() {
+    this.translate.addLangs(['es', 'en']);
+    this.translate.setDefaultLang('es');
+
     if (typeof window !== 'undefined' && window.localStorage) {
       if (!localStorage.getItem("lang")) {
-        this.translate.addLangs(['es', 'en']);
-        this.translate.setDefaultLang('en');
-        this.translate.use(this.translate.getBrowserLang() || "en");
-        localStorage.setItem("lang", this.translate.getBrowserLang() || "en");
+        const browserLanguage = this.translate.getBrowserLang();
+        const language = browserLanguage === 'es' ? 'es' : 'en';
+        this.translate.use(language);
+        localStorage.setItem("lang", language);
       } else {
         this.translate.use(localStorage.getItem("lang") || "en");
       }
       this.updateDocumentLanguage(localStorage.getItem("lang") || "en");
+    } else {
+      this.translate.use('es');
     }
   }
 

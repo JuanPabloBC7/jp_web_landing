@@ -40,6 +40,12 @@ export class NavbarTopComponent {
       this.translateNavbar = res['configuration.navbar'];
       this.translateAppearance = res['configuration.appearance'];
       this.navigation = [];
+
+      if (!Array.isArray(this.menu) || !this.translateNavbar?.links || !this.translateAppearance?.options) {
+        this.menu = [];
+        return;
+      }
+
       for (const key in this.translateNavbar.links) {
         if (key === 'home') {
           this.navigation.push({name: key, value: this.translateNavbar.links[key], href: `/`});

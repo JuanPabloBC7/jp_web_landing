@@ -229,8 +229,7 @@ export class NavbarVerticalComponent {
     private translateServices: TranslateService,
   ) { 
     this.translateServices.stream('menu').subscribe(res => {
-      this.menu = [];
-      this.menu = res;
+      this.menu = Array.isArray(res) ? res : [];
     });
   }
 }

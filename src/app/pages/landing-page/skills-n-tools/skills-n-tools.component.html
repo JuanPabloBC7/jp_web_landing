@@ -28,7 +28,7 @@
         <div class="skill-card" *ngFor="let item of skillsFor(group.skillIds)">
           <span class="skill-icon">
             <i *ngIf="item.icon" [class]="item.icon" aria-hidden="true"></i>
-            <img *ngIf="item.img" [src]="item.img" alt="" />
+            <img *ngIf="item.img" [src]="item.img" width="30" height="30" loading="lazy" decoding="async" alt="" />
             <span *ngIf="item.mark" [class]="item.markClass">{{ item.mark }}</span>
           </span>
           <span class="skill-copy">

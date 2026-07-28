@@ -33,6 +33,10 @@ export class InformativeFooterComponent implements OnInit {
       this.otherNavigation = [];
       this.socialMedia = [];
 
+      if (!this.translateNavbar?.links || !this.translateNavbar?.others || !this.translateSocial?.links) {
+        return;
+      }
+
       for (const key in this.translateNavbar.links) {
         if (key === 'home') {
           this.navigation.push({name: key, value: this.translateNavbar.links[key], href: `/`});

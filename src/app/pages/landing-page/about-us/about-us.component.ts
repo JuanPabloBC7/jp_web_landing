@@ -19,7 +19,8 @@ export class AboutUsComponent implements OnInit {
     private translateServices: TranslateService,
   ) { 
     this.translateServices.stream(['pages.aboutUs.skills']).subscribe(res => {
-      this.translateAboutUs = res['pages.aboutUs.skills'];
+      const skills = res['pages.aboutUs.skills'];
+      this.translateAboutUs = Array.isArray(skills) ? skills : [];
     });
   }
 

@@ -19,7 +19,7 @@ export class CarouselComponent {
     private translateServices: TranslateService,
   ) { 
     this.translateServices.stream('pages.work.experiences').subscribe(res => {
-      this.translateWork = res;
+      this.translateWork = Array.isArray(res) ? res : [];
     });
   }
 }

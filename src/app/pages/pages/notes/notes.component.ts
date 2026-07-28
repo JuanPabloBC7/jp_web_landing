@@ -21,7 +21,9 @@ export class NotesComponent {
 
   constructor(private translateServices: TranslateService) {
     this.translateServices.stream('pages.notes.columnOne').subscribe((notes: any[]) => {
-      this.notes = [...notes].sort((a, b) => this.dateValue(b.date) - this.dateValue(a.date));
+      this.notes = Array.isArray(notes)
+        ? [...notes].sort((a, b) => this.dateValue(b.date) - this.dateValue(a.date))
+        : [];
     });
   }
 

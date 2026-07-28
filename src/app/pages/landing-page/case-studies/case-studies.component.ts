@@ -22,7 +22,7 @@ export class CaseStudiesComponent {
 
   constructor(private translateService: TranslateService) {
     this.translateService.stream('pages.caseStudies.items').subscribe((items: CaseStudy[]) => {
-      this.caseStudies = items;
+      this.caseStudies = Array.isArray(items) ? items : [];
     });
   }
 }

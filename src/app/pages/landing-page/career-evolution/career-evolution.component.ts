@@ -20,7 +20,7 @@ export class CareerEvolutionComponent {
 
   constructor(private translateService: TranslateService) {
     this.translateService.stream('pages.careerEvolution.stages').subscribe((stages: CareerStage[]) => {
-      this.stages = stages;
+      this.stages = Array.isArray(stages) ? stages : [];
     });
   }
 }
