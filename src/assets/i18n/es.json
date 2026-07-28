@@ -147,49 +147,86 @@
     },
     "work": {
       "timeline": {
-        "title": "Línea de trabajo"
+        "title": "Mi trayectoria profesional",
+        "eyebrow": "Experiencia en acción",
+        "description": "Una mirada a los retos, responsabilidades y resultados que han marcado mi crecimiento profesional.",
+        "responsibilities": "Responsabilidades",
+        "achievements": "Logros y evidencia",
+        "technologies": "Tecnologías"
       },
       "carousel": {
-        "title": "Trabajo destacado"
+        "title": "Experiencia destacada",
+        "eyebrow": "Resumen profesional",
+        "description": "Los principales aportes de cada etapa de mi carrera.",
+        "achievement": "Logro destacado"
       },
       "experiences": [
         {
           "id": "bam",
-          "title": "Banco Agromercantil (Bam)",
-          "subtitleOne": {
-            "name": "Desarrollador Frontend",
-            "icon": "fa fa-certificate"
-          },
-          "subtitleTwo": {
-            "name": "Junio 2024 - Presente",
-            "icon": "fa fa-calendar-o"
-          },
-          "duration": "",
-          "description": "Desarrollo de soluciones web para banca empresas",
-          "skills": [
+          "company": "Banco Agromercantil (Bam)",
+          "position": "Desarrollador Frontend",
+          "period": "Junio 2024 - Presente",
+          "summary": "Desarrollo, modernización y fortalecimiento de soluciones de banca empresarial, con enfoque en Angular, microfrontends, seguridad de la información y automatización de entregas.",
+          "responsibilities": [
+            "Desarrollar nuevas funcionalidades y mantener interfaces para soluciones de banca empresarial.",
+            "Resolver errores complejos y de alta prioridad en frontend para mejorar continuamente la estabilidad y experiencia del usuario.",
+            "Optimizar funciones y flujos de consulta y descarga de documentos en formato PDF.",
+            "Identificar y mitigar vulnerabilidades, incorporando cifrado de extremo a extremo para proteger información sensible.",
+            "Fortalecer la validación de contraseñas mediante reglas que evitan credenciales débiles o fácilmente vulnerables.",
+            "Crear e integrar microfrontends con Single-SPA dentro de una aplicación principal.",
+            "Mejorar tareas de releases y pipelines para hacer más confiable la entrega de nuevas versiones."
+          ],
+          "achievements": [
+            {
+              "title": "Modernización continua de Angular",
+              "description": "Migración de aplicaciones de Angular 11 a Angular 18 y posteriormente de Angular 18 a Angular 21, actualizando dependencias y resolviendo incompatibilidades."
+            },
+            {
+              "title": "Microfrontends desde cero",
+              "description": "Creación y configuración de nuevos proyectos con Single-SPA para integrarlos de forma consistente con la aplicación principal."
+            },
+            {
+              "title": "Seguridad y entregas confiables",
+              "description": "Mitigación de vulnerabilidades, protección de información sensible mediante cifrado de extremo a extremo, fortalecimiento de contraseñas y mejora de releases y pipelines."
+            }
+          ],
+          "technologies": [
             { "name": "HTML5", "color": "bg-html" },
             { "name": "CSS3", "color": "bg-css3" },
             { "name": "Angular", "color": "bg-angular" },
             { "name": "TypeScript", "color": "bg-typescript" },
-            { "name": "Lambdas", "color": "" },
-            { "name": "aws", "color": "bg-aws" },
-            { "name": "Azure", "color": "bg-azure" }
+            { "name": "Single-SPA", "color": "bg-javascript" },
+            { "name": "PostgreSQL", "color": "bg-postgresql" },
+            { "name": "Lambda", "color": "" },
+            { "name": "AWS", "color": "bg-aws" },
+            { "name": "Azure DevOps", "color": "bg-azure" }
           ]
         },
         {
           "id": "mides",
-          "title": "Ministerio de Desarrollo Social (MIDES)",
-          "subtitleOne": {
-            "name": "Desarrollador Fullstack",
-            "icon": "fa fa-certificate"
-          },
-          "subtitleTwo": {
-            "name": "",
-            "icon": ""
-          },
-          "duration": "Jun 15, 2021 - Ene 31, 2024",
-          "description": "• Creación de proyectos. • Mantenimiento de bugs. • Creación de scripts para base de datos. • Publicación de aplicaciones IIS.",
-          "skills": [
+          "company": "Ministerio de Desarrollo Social (MIDES)",
+          "position": "Desarrollador Full Stack",
+          "period": "Junio 2021 - Enero 2024",
+          "summary": "Diseño, desarrollo y publicación de aplicaciones institucionales a la medida, desde el análisis inicial hasta su puesta en producción y mejora continua.",
+          "responsibilities": [
+            "Crear aplicaciones desde cero con ASP.NET, C# y JavaScript, y llevarlas hasta producción mediante IIS.",
+            "Desarrollar una aplicación para almacenar, consultar y descargar documentos virtualizados en formato PDF.",
+            "Mejorar la integridad y persistencia de los archivos para evitar documentos corruptos y optimizar su consulta.",
+            "Desarrollar una aplicación a la medida para administrar y dar seguimiento a procesos institucionales.",
+            "Diseñar consultas y mejorar índices en bases de datos SQL Server y PostgreSQL.",
+            "Participar en reuniones para analizar necesidades y apoyar decisiones operativas y estratégicas del negocio."
+          ],
+          "achievements": [
+            {
+              "title": "Tecnología orientada al negocio",
+              "description": "Participación en la toma de decisiones operativas y estratégicas, transformando necesidades institucionales en aplicaciones que hicieron más eficientes los procesos."
+            },
+            {
+              "title": "Gestión eficiente de documentos PDF",
+              "description": "Mejora del almacenamiento y la relación de datos, junto con la optimización de índices y consultas para guardar, localizar y descargar documentos de forma confiable."
+            }
+          ],
+          "technologies": [
             { "name": "HTML5", "color": "bg-html" },
             { "name": "CSS3", "color": "bg-css3" },
             { "name": "ASP.NET", "color": "bg-aspnet" },
@@ -203,21 +240,31 @@
         },
         {
           "id": "url",
-          "title": "Universidad Rafael Landívar (URL)",
-          "subtitleOne": {
-            "name": "Desarrollador Fullstack",
-            "icon": "fa fa-certificate"
-          },
-          "subtitleTwo": {
-            "name": "",
-            "icon": ""
-          },
-          "duration": "May 15, 2019 - Jun 03, 2021",
-          "description": "• Creación de proyectos. • Mantenimiento de bugs. • Creación de scripts para base de datos. • Manejo de sistemas financieros y administrativos.",
-          "skills": [
+          "company": "Universidad Rafael Landívar (URL)",
+          "position": "Desarrollador Full Stack",
+          "period": "Mayo 2019 - Junio 2021",
+          "summary": "Desarrollo y soporte de sistemas financieros (ERP) y administrativos, combinando aplicaciones web, soluciones heredadas y bases de datos relacionales.",
+          "responsibilities": [
+            "Desarrollar nuevas funcionalidades y mantener sistemas financieros y administrativos, principalmente con ASP.NET Framework y PowerBuilder.",
+            "Analizar aplicaciones existentes y corregir errores funcionales y técnicos.",
+            "Crear y modificar procedimientos almacenados, triggers, consultas y operaciones CRUD en SQL Server.",
+            "Realizar análisis e ingeniería inversa de bases de datos para identificar el origen de problemas en sistemas heredados.",
+            "Auditar y optimizar procedimientos almacenados complejos para mejorar su funcionamiento y mantenibilidad."
+          ],
+          "achievements": [
+            {
+              "title": "Experiencia en sistemas críticos",
+              "description": "Implementación de nuevas funcionalidades y resolución de problemas en procesos vinculados con operaciones financieras y administrativas."
+            },
+            {
+              "title": "Análisis y mejora de bases de datos",
+              "description": "Ingeniería inversa, auditoría y optimización de procedimientos almacenados, triggers y consultas en bases de datos SQL Server."
+            }
+          ],
+          "technologies": [
             { "name": "HTML5", "color": "bg-html" },
             { "name": "CSS3", "color": "bg-css3" },
-            { "name": "ASP.NET", "color": "bg-aspnet" },
+            { "name": "ASP.NET Framework", "color": "bg-aspnet" },
             { "name": "C#", "color": "bg-typescript" },
             { "name": "JavaScript", "color": "bg-javascript" },
             { "name": "Power Builder", "color": "bg-typescript" },

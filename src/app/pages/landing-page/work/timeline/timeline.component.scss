@@ -4,6 +4,23 @@ html, body {
   box-sizing: border-box;
 }
 
+.section-heading {
+  max-width: 680px;
+}
+
+.eyebrow {
+  display: inline-flex;
+  padding: 0.35rem 0.8rem;
+  border: 1px solid var(--bs-primary-border-subtle);
+  border-radius: 999px;
+  color: var(--bs-primary);
+  background: var(--bs-primary-bg-subtle);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .cd-container {
   width: 100%;
   max-width: 1080px;
@@ -67,7 +84,7 @@ html, body {
   align-items: center;
   justify-content: center;
   z-index: 2;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: var(--bs-primary, #7E57C2);
 }
 
@@ -82,7 +99,7 @@ html, body {
 .cd-timeline-content {
   position: relative;
   background: var(--bs-secondary-bg, #333C42);
-  border-radius: 8px;
+  border-radius: 18px;
   padding: 1.5em 2em;
   margin-left: 72px;
   margin-right: 16px;
@@ -93,13 +110,14 @@ html, body {
 }
 
 .cd-timeline-content:hover {
+  transform: translateY(-2px);
   box-shadow: 0 4px 32px rgba(126,87,194,0.18);
 }
 
-.cd-timeline-content h2 {
+.cd-timeline-content h3 {
   color: var(--bs-body-color, #fff);
-  font-size: 1.3rem;
-  margin-bottom: 0.5em;
+  font-size: 1.35rem;
+  margin: 0.25rem 0 0;
   font-weight: 700;
 }
 
@@ -129,20 +147,20 @@ html, body {
 
 @media (min-width: 1170px) {
   .cd-timeline-content {
-    width: 40%;
+    width: 44%;
     margin-left: 0;
     margin-right: 0;
   }
   .cd-timeline-block:nth-child(odd) .cd-timeline-content {
     float: left;
     margin-left: 0;
-    margin-right: 56%;
-    text-align: right;
+    margin-right: 53%;
+    text-align: left;
   }
   .cd-timeline-block:nth-child(even) .cd-timeline-content {
     float: right;
     margin-right: 0;
-    margin-left: 56%;
+    margin-left: 53%;
     text-align: left;
   }
   .cd-timeline-block:nth-child(odd) .cd-timeline-content::before {
@@ -155,6 +173,110 @@ html, body {
     left: auto;
     border-color: transparent var(--bs-secondary-bg, #333C42) transparent transparent;
   }
+}
+
+.experience-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 0rem;
+  border-bottom: 1px solid var(--bs-border-color);
+}
+
+.experience-position {
+  color: var(--bs-primary);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.experience-period {
+  flex: 0 0 auto;
+  padding: 0.4rem 0.7rem;
+  border-radius: 999px;
+  color: var(--bs-secondary-color);
+  background: var(--bs-tertiary-bg);
+  font-size: 0.78rem;
+  white-space: nowrap;
+}
+
+.experience-summary {
+  margin: 0.5rem 0 !important;
+  color: var(--bs-body-color) !important;
+  line-height: 1.65;
+}
+
+.evidence-section {
+  margin-top: 0.8rem;
+}
+
+.evidence-section h4,
+.technology-title {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin-bottom: 0.8rem;
+  color: var(--bs-body-color);
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.evidence-section h4 i,
+.technology-title i {
+  color: var(--bs-primary);
+}
+
+.responsibility-list {
+  display: grid;
+  gap: 0.55rem;
+  margin: 0;
+  padding-left: 1.15rem;
+  color: var(--bs-secondary-color);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.achievement-list {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.achievement {
+  display: flex;
+  gap: 0.75rem;
+  padding: 0.85rem;
+  border: 1px solid var(--bs-border-color);
+  border-radius: 12px;
+  background: var(--bs-tertiary-bg);
+}
+
+.achievement-marker {
+  flex: 0 0 auto;
+  width: 8px;
+  height: 8px;
+  margin-top: 0.4rem;
+  border-radius: 50%;
+  background: var(--bs-success);
+  box-shadow: 0 0 0 4px rgba(var(--bs-success-rgb), 0.12);
+}
+
+.achievement h5 {
+  margin: 0 0 0.25rem;
+  color: var(--bs-body-color);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.achievement p {
+  margin: 0;
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.technology-title {
+  margin-top: 0.8rem;
 }
 
 @media (max-width: 1169px) {
@@ -201,7 +323,19 @@ html, body {
   padding: 2px 10px;
   color: var(--bs-secondary-color, #bdbdbd);
   text-align: center;
-  flex-grow: 1;
+  flex-grow: 0;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+@media (max-width: 575px) {
+  .experience-header {
+    flex-direction: column;
+  }
+
+  .experience-period {
+    white-space: normal;
+  }
 }
 
 .bg-angular {
@@ -253,6 +387,10 @@ html, body {
 .bg-sqlserver {
   color: rgb(255, 255, 255) !important;
   background-color: rgba(178, 27, 27, 1) !important;
+}
+.bg-postgresql {
+  color: rgb(255, 255, 255) !important;
+  background-color: #336791 !important;
 }
 .bg-javascript {
   color: rgb(0, 0, 0) !important;

@@ -147,49 +147,86 @@
     },
     "work": {
       "timeline": {
-        "title": "Timeline Work"
+        "title": "My professional journey",
+        "eyebrow": "Experience in action",
+        "description": "A look at the challenges, responsibilities, and outcomes that have shaped my professional growth.",
+        "responsibilities": "Responsibilities",
+        "achievements": "Achievements and evidence",
+        "technologies": "Technologies"
       },
       "carousel": {
-        "title": "Featured Work"
+        "title": "Featured experience",
+        "eyebrow": "Professional overview",
+        "description": "The main contributions from each stage of my career.",
+        "achievement": "Featured achievement"
       },
       "experiences": [
         {
           "id": "bam",
-          "title": "Banco Agromercantil (Bam)",
-          "subtitleOne": {
-            "name": "Frontend Developer",
-            "icon": "fa fa-certificate"
-          },
-          "subtitleTwo": {
-            "name": "June 2024 - Present",
-            "icon": "fa fa-calendar-o"
-          },
-          "duration": "",
-          "description": "Development of web solutions for corporate banking.",
-          "skills": [
+          "company": "Banco Agromercantil (Bam)",
+          "position": "Frontend Developer",
+          "period": "June 2024 - Present",
+          "summary": "Development, modernization, and security hardening of corporate banking solutions, focused on Angular, microfrontends, information security, and delivery automation.",
+          "responsibilities": [
+            "Develop new features and maintain user interfaces for corporate banking solutions.",
+            "Resolve complex and high-priority frontend defects to continuously improve application stability and user experience.",
+            "Optimize features and workflows for searching and downloading documents in PDF format.",
+            "Identify and mitigate vulnerabilities, incorporating end-to-end encryption to protect sensitive information.",
+            "Strengthen password validation through rules that prevent weak or easily compromised credentials.",
+            "Create and integrate microfrontends with Single-SPA into a main application.",
+            "Improve release tasks and pipelines to make the delivery of new versions more reliable."
+          ],
+          "achievements": [
+            {
+              "title": "Continuous Angular modernization",
+              "description": "Migrated applications from Angular 11 to Angular 18 and subsequently from Angular 18 to Angular 21, updating dependencies and resolving compatibility issues."
+            },
+            {
+              "title": "Microfrontends built from the ground up",
+              "description": "Created and configured new projects with Single-SPA for consistent integration with the main application."
+            },
+            {
+              "title": "Security and reliable delivery",
+              "description": "Mitigated vulnerabilities, protected sensitive information through end-to-end encryption, strengthened password policies, and improved releases and pipelines."
+            }
+          ],
+          "technologies": [
             { "name": "HTML5", "color": "bg-html" },
             { "name": "CSS3", "color": "bg-css3" },
             { "name": "Angular", "color": "bg-angular" },
             { "name": "TypeScript", "color": "bg-typescript" },
-            { "name": "Lambdas", "color": "" },
-            { "name": "aws", "color": "bg-aws" },
-            { "name": "Azure", "color": "bg-azure" }
+            { "name": "Single-SPA", "color": "bg-javascript" },
+            { "name": "PostgreSQL", "color": "bg-postgresql" },
+            { "name": "Lambda", "color": "" },
+            { "name": "AWS", "color": "bg-aws" },
+            { "name": "Azure DevOps", "color": "bg-azure" }
           ]
         },
         {
           "id": "mides",
-          "title": "Ministerio de Desarrollo Social (MIDES)",
-          "subtitleOne": {
-            "name": "Fullstack Developer",
-            "icon": "fa fa-certificate"
-          },
-          "subtitleTwo": {
-            "name": "",
-            "icon": ""
-          },
-          "duration": "Jun 15, 2021 - Jan 31, 2024",
-          "description": "• Project Creation. • Bug maintenance. • Database script creation. • IIS application publishing.",
-          "skills": [
+          "company": "Ministerio de Desarrollo Social (MIDES)",
+          "position": "Full Stack Developer",
+          "period": "June 2021 - January 2024",
+          "summary": "Design, development, and deployment of custom institutional applications, from initial analysis through production release and continuous improvement.",
+          "responsibilities": [
+            "Build applications from the ground up with ASP.NET, C#, and JavaScript, and take them through production deployment on IIS.",
+            "Develop an application to store, search, and download virtualized documents in PDF format.",
+            "Improve file integrity and persistence to prevent document corruption and optimize retrieval.",
+            "Develop a custom application to manage and track institutional processes.",
+            "Design queries and improve database indexes in SQL Server and PostgreSQL.",
+            "Participate in meetings to analyze requirements and support operational and strategic business decisions."
+          ],
+          "achievements": [
+            {
+              "title": "Technology aligned with the business",
+              "description": "Contributed to operational and strategic decision-making, translating institutional needs into applications that made processes more efficient."
+            },
+            {
+              "title": "Efficient PDF document management",
+              "description": "Improved file storage and data relationships while optimizing indexes and queries to reliably save, locate, and download documents."
+            }
+          ],
+          "technologies": [
             { "name": "HTML5", "color": "bg-html" },
             { "name": "CSS3", "color": "bg-css3" },
             { "name": "ASP.NET", "color": "bg-aspnet" },
@@ -197,27 +234,38 @@
             { "name": "JavaScript", "color": "bg-javascript" },
             { "name": "jQuery", "color": "bg-jquery" },
             { "name": "SQL Server", "color": "bg-sqlserver" },
+            { "name": "PostgreSQL", "color": "bg-postgresql" },
             { "name": "Git", "color": "bg-git" },
             { "name": "Reports", "color": "" }
           ]
         },
         {
           "id": "url",
-          "title": "Universidad Rafael Landívar (URL)",
-          "subtitleOne": {
-            "name": "Fullstack Developer",
-            "icon": "fa fa-certificate"
-          },
-          "subtitleTwo": {
-            "name": "",
-            "icon": ""
-          },
-          "duration": "May 15, 2019 - Jun 03, 2021",
-          "description": "• Project Creation. • Bug maintenance. • Database script creation. • Management of financial and administrative systems.",
-          "skills": [
+          "company": "Universidad Rafael Landívar (URL)",
+          "position": "Full Stack Developer",
+          "period": "May 2019 - June 2021",
+          "summary": "Development and support of financial (ERP) and administrative systems across web applications, legacy solutions, and relational databases.",
+          "responsibilities": [
+            "Develop new features and maintain financial and administrative systems, primarily using ASP.NET Framework and PowerBuilder.",
+            "Analyze existing applications and resolve functional and technical defects.",
+            "Create and modify stored procedures, triggers, queries, and CRUD operations in SQL Server.",
+            "Perform database analysis and reverse engineering to identify the root cause of issues in legacy systems.",
+            "Audit and optimize complex stored procedures to improve their operation and maintainability."
+          ],
+          "achievements": [
+            {
+              "title": "Experience with critical systems",
+              "description": "Implemented new features and resolved issues in processes supporting financial and administrative operations."
+            },
+            {
+              "title": "Database analysis and improvement",
+              "description": "Performed reverse engineering, auditing, and optimization of stored procedures, triggers, and queries in SQL Server databases."
+            }
+          ],
+          "technologies": [
             { "name": "HTML5", "color": "bg-html" },
             { "name": "CSS3", "color": "bg-css3" },
-            { "name": "ASP.NET", "color": "bg-aspnet" },
+            { "name": "ASP.NET Framework", "color": "bg-aspnet" },
             { "name": "C#", "color": "bg-typescript" },
             { "name": "JavaScript", "color": "bg-javascript" },
             { "name": "Power Builder", "color": "bg-typescript" },
