@@ -1,12 +1,13 @@
+<a class="skip-link" href="#main-content">{{ 'general.skipToContent' | translate }}</a>
 <app-navbar-top></app-navbar-top>
 
 <div class="d-flex flex-row min-vh-100">
   <app-navbar-vertical></app-navbar-vertical>
 
   <div class="d-flex flex-column flex-grow-1">
-    <div class="flex-fill mt-5 container-fluid">
+    <main id="main-content" class="flex-fill mt-5 container-fluid" tabindex="-1">
       <router-outlet></router-outlet>
-    </div>
+    </main>
     <app-simple-footer class="footer mt-auto"></app-simple-footer>
   </div>
 </div>

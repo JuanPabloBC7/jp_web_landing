@@ -58,10 +58,12 @@ export class LandingNavbarTopComponent implements OnInit {
         }
       }
 
-      localStorage.getItem('theme') === 'dark' ? this.appearance = this.translateAppearance.options.light : this.appearance = this.translateAppearance.options.dark;
+      this.appearance = this.getStoredTheme() === 'dark'
+        ? this.translateAppearance.options.light
+        : this.translateAppearance.options.dark;
     });
 
-    localStorage.getItem('theme') === 'dark' ? this.isDark = false : this.isDark = true;
+    this.isDark = this.getStoredTheme() !== 'dark';
   }
 
   ngOnInit(): void {
@@ -80,11 +82,19 @@ export class LandingNavbarTopComponent implements OnInit {
   }
 
   toggleTheme() {
+    if (typeof document === 'undefined' || typeof localStorage === 'undefined') {
+      return;
+    }
+
     const current = localStorage.getItem('theme') || document.body.getAttribute('data-bs-theme') || 'light';
     document.body.setAttribute('data-bs-theme', current === 'dark' ? 'light' : 'dark');
     localStorage.setItem('theme', current === 'dark' ? 'light' : 'dark');
 
     current === 'dark' ? this.isDark = true : this.isDark = false;
     current === 'dark' ? this.appearance = this.translateAppearance.options.dark : this.appearance = this.translateAppearance.options.light;
+  }
+
+  private getStoredTheme(): string {
+    return typeof localStorage !== 'undefined' ? localStorage.getItem('theme') || 'light' : 'light';
   }
 }

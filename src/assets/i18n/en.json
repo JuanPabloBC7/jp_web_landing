@@ -1,7 +1,9 @@
 {
   "general": {
     "readMore": "Read more",
-    "seeMyExperience": "See my experience"
+    "seeMyExperience": "See my experience",
+    "skipToContent": "Skip to main content",
+    "goHome": "Go to homepage"
   },
   "configuration": {
     "icon": "Jp",

@@ -20,11 +20,19 @@ export class ConfigurationService {
       } else {
         this.translate.use(localStorage.getItem("lang") || "en");
       }
+      this.updateDocumentLanguage(localStorage.getItem("lang") || "en");
     }
   }
 
   setLanguage(language: string) {
     this.translate.use(language);
     localStorage.setItem("lang", language);
+    this.updateDocumentLanguage(language);
+  }
+
+  private updateDocumentLanguage(language: string): void {
+    if (typeof document !== 'undefined') {
+      document.documentElement.lang = language;
+    }
   }
 }

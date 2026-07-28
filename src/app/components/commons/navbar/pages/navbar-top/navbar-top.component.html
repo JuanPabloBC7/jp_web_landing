@@ -1,15 +1,15 @@
 <header class="shadow-sm border-bottom position-fixed w-100 z-3">
   <div class="container-fluid">
     <div class="d-flex justify-content-between align-items-center h-100 py-2">
-      <a routerLink="/" class="d-flex align-items-center text-decoration-none">
+      <a routerLink="/" class="d-flex align-items-center text-decoration-none" [attr.aria-label]="'general.goHome' | translate">
         <div class="bg-danger p-2 rounded">
           <i class="text-white fs-4">{{ 'configuration.icon' | translate }}</i>
         </div>
         <span class="text-danger fs-4 fw-bold d-none d-md-flex ms-2">{{ 'configuration.name' | translate }}</span>
       </a>
       <!-- Botón hamburguesa para móviles -->
-      <button type="button" class="btn d-flex align-items-center d-lg-none me-auto" (click)="isOpen = !isOpen" aria-label="Toggle navigation">
-        <i class="fa-solid" [ngClass]="isOpen ? 'fa-bars-staggered' : 'fa-bars'" [ngbTooltip]="'configuration.navbar.title' | translate"></i>
+      <button type="button" class="btn d-flex align-items-center d-lg-none me-auto" (click)="isOpen = !isOpen" [attr.aria-label]="'configuration.navbar.title' | translate" [attr.aria-expanded]="isOpen" aria-controls="pagesNavigation">
+        <i class="fa-solid" [ngClass]="isOpen ? 'fa-bars-staggered' : 'fa-bars'" aria-hidden="true"></i>
       </button>
 
       <!-- Menú de navegación para pantallas grandes -->
@@ -23,7 +23,7 @@
           </a>
         </ng-container>
         <label class="switch">
-          <input type="checkbox" id="checkbox" [checked]="!isDark" (click)="toggleTheme()" />
+          <input type="checkbox" id="page-theme-desktop" [checked]="!isDark" (click)="toggleTheme()" [attr.aria-label]="appearance" />
           <span class="slider" [ngbTooltip]="appearance">
             <div class="star star_1"></div>
             <div class="star star_2"></div>
@@ -37,8 +37,8 @@
           <i class="fa-solid fs-5" [ngClass]="isDark ? 'fa-moon' : 'fa-sun'" [ngbTooltip]="appearance"></i>
         </button> -->
         <div ngbDropdown class="d-inline-block">
-          <button class="btn w-100 dropdown-toggle" id="languageDropdown" ngbDropdownToggle><i class="fa-solid fa-language" [ngbTooltip]="'configuration.language.title' | translate"></i></button>
-          <div ngbDropdownMenu aria-labelledby="languageDropdown">
+          <button class="btn w-100 dropdown-toggle" id="pageLanguageDesktop" ngbDropdownToggle [attr.aria-label]="'configuration.language.title' | translate"><i class="fa-solid fa-language" aria-hidden="true"></i></button>
+          <div ngbDropdownMenu aria-labelledby="pageLanguageDesktop">
             <button class="dropdown-item" (click)="setLanguage('es')" ngbDropdownItem>{{ 'configuration.language.options.spanish' | translate }}</button>
             <button class="dropdown-item" (click)="setLanguage('en')" ngbDropdownItem>{{ 'configuration.language.options.english' | translate }}</button>
           </div>
@@ -48,11 +48,11 @@
 
       <!-- Menú de navegación para pantallas móviles -->
       <div class="d-lg-none align-items-center gap-4">
-        <a [routerLink]="'/'" class="btn d-inline-block ms-auto">
-          <i class="fa-solid fa-house fs-5" [ngbTooltip]="'configuration.navbar.links.home' | translate"></i>
+        <a [routerLink]="'/'" class="btn d-inline-block ms-auto" [attr.aria-label]="'general.goHome' | translate">
+          <i class="fa-solid fa-house fs-5" aria-hidden="true"></i>
         </a>
         <label class="btn switch">
-          <input type="checkbox" id="checkbox" [checked]="!isDark" (click)="toggleTheme()" />
+          <input type="checkbox" id="page-theme-mobile" [checked]="!isDark" (click)="toggleTheme()" [attr.aria-label]="appearance" />
           <span class="slider" [ngbTooltip]="appearance">
             <div class="star star_1"></div>
             <div class="star star_2"></div>
@@ -66,8 +66,8 @@
           <i class="fa-solid fs-5" [ngClass]="isDark ? 'fa-moon' : 'fa-sun'" [ngbTooltip]="appearance"></i>
         </button> -->
         <div ngbDropdown class="d-inline-block">
-          <button class="btn w-100 dropdown-toggle" id="languageDropdown" ngbDropdownToggle><i class="fa-solid fa-language" [ngbTooltip]="'configuration.language.title' | translate"></i></button>
-          <div ngbDropdownMenu aria-labelledby="languageDropdown">
+          <button class="btn w-100 dropdown-toggle" id="pageLanguageMobile" ngbDropdownToggle [attr.aria-label]="'configuration.language.title' | translate"><i class="fa-solid fa-language" aria-hidden="true"></i></button>
+          <div ngbDropdownMenu aria-labelledby="pageLanguageMobile">
             <button class="dropdown-item" (click)="setLanguage('es')" ngbDropdownItem>{{ 'configuration.language.options.spanish' | translate }}</button>
             <button class="dropdown-item" (click)="setLanguage('en')" ngbDropdownItem>{{ 'configuration.language.options.english' | translate }}</button>
           </div>
@@ -76,7 +76,7 @@
     </div>
 
     <!-- Menú colapsable para móviles -->
-    <div *ngIf="isOpen" class="d-lg-none" style="flex-grow:1; overflow-y:auto; max-height: calc(100vh - 120px);">
+    <div *ngIf="isOpen" id="pagesNavigation" class="d-lg-none" style="flex-grow:1; overflow-y:auto; max-height: calc(100vh - 120px);">
       <div class="border-top px-3 py-2">
         <ul class="nav nav-pills flex-column mb-auto">
           <li class="nav-item" *ngFor="let m of menu">

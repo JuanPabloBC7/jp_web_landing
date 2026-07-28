@@ -1,7 +1,7 @@
 <header class="shadow-sm border-bottom position-fixed w-100 z-3">
   <div class="container position-relative">
     <div class="d-flex justify-content-between align-items-center h-100 py-2">
-      <a routerLink="/" class="d-flex align-items-center text-decoration-none">
+      <a routerLink="/" class="d-flex align-items-center text-decoration-none" [attr.aria-label]="'general.goHome' | translate">
         <div class="bg-danger p-2 rounded">
           <i class="text-white fs-4">{{ 'configuration.icon' | translate }}</i>
         </div>
@@ -11,7 +11,7 @@
       <!-- Controles de navegación para todos los tamaños -->
       <div class="d-flex align-items-center gap-2 gap-sm-3">
         <label class="btn switch">
-          <input type="checkbox" id="checkbox" [checked]="!isDark" (click)="toggleTheme()" />
+          <input type="checkbox" id="landing-theme" [checked]="!isDark" (click)="toggleTheme()" [attr.aria-label]="appearance" />
           <span class="slider" [ngbTooltip]="appearance">
             <div class="star star_1"></div>
             <div class="star star_2"></div>
@@ -25,8 +25,8 @@
           <i class="fa-solid fs-5" [ngClass]="isDark ? 'fa-moon' : 'fa-sun'" [ngbTooltip]="appearance"></i>
         </button> -->
         <div ngbDropdown class="d-inline-block me">
-          <button class="btn w-100 dropdown-toggle" id="languageDropdown" ngbDropdownToggle><i class="fa-solid fa-language" [ngbTooltip]="'configuration.language.title' | translate"></i></button>
-          <div ngbDropdownMenu aria-labelledby="languageDropdown">
+          <button class="btn w-100 dropdown-toggle" id="landingLanguageDropdown" ngbDropdownToggle [attr.aria-label]="'configuration.language.title' | translate"><i class="fa-solid fa-language" aria-hidden="true"></i></button>
+          <div ngbDropdownMenu aria-labelledby="landingLanguageDropdown">
             <button class="dropdown-item" (click)="setLanguage('es')" ngbDropdownItem>{{ 'configuration.language.options.spanish' | translate }}</button>
             <button class="dropdown-item" (click)="setLanguage('en')" ngbDropdownItem>{{ 'configuration.language.options.english' | translate }}</button>
           </div>
@@ -38,7 +38,7 @@
           [attr.aria-expanded]="isOpen"
           aria-controls="landingNavigation"
           [attr.aria-label]="'configuration.navbar.title' | translate">
-          <i class="fa-solid" [ngClass]="isOpen ? 'fa-bars-staggered' : 'fa-bars'" [ngbTooltip]="'configuration.navbar.title' | translate"></i>
+          <i class="fa-solid" [ngClass]="isOpen ? 'fa-bars-staggered' : 'fa-bars'" aria-hidden="true"></i>
         </button>
       </div>
     </div>
@@ -56,6 +56,7 @@
               'text-primary bg-primary bg-opacity-10 fw-bold': isActive(item),
               'text-secondary': !isActive(item)
             }"
+            [attr.aria-current]="isActive(item) ? 'page' : null"
             (click)="isOpen = false">
             {{ item.value }}
           </a>

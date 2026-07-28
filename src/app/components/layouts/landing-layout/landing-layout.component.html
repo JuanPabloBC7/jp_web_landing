@@ -1,9 +1,10 @@
-<main class="d-flex flex-column min-vh-100">
+<div class="d-flex flex-column min-vh-100">
+  <a class="skip-link" href="#main-content">{{ 'general.skipToContent' | translate }}</a>
   <app-landing-navbar-top></app-landing-navbar-top>
 
-  <div class="flex-fill mt-5">
+  <main id="main-content" class="flex-fill mt-5" tabindex="-1">
     <router-outlet></router-outlet>
-  </div>
+  </main>
 
   <app-informative-footer class="footer"></app-informative-footer>
-</main>
+</div>

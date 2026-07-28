@@ -24,11 +24,14 @@
             type="text" 
             id="name" 
             formControlName="name" 
-            class="form-control" 
+            class="form-control"
+            autocomplete="name"
+            aria-describedby="name-error"
+            [attr.aria-invalid]="contactForm.get('name')?.invalid && (submitted || contactForm.get('name')?.touched) ? 'true' : null"
             [ngClass]="{ 'is-invalid': contactForm.get('name')?.invalid && (submitted || contactForm.get('name')?.touched || contactForm.get('name')?.dirty), 
               'is-valid': contactForm.get('name')?.valid && (submitted || contactForm.get('name')?.touched || contactForm.get('name')?.dirty) }" 
             placeholder="{{ 'pages.contact.form.name.placeholder' | translate }}" />
-          <div class="invalid-feedback" *ngIf="contactForm.get('name')?.invalid && (submitted || contactForm.get('name')?.touched || contactForm.get('name')?.dirty)">{{ 'pages.contact.form.required' | translate }}</div>
+          <div id="name-error" class="invalid-feedback" *ngIf="contactForm.get('name')?.invalid && (submitted || contactForm.get('name')?.touched || contactForm.get('name')?.dirty)">{{ 'pages.contact.form.required' | translate }}</div>
         </div>
         <div class="mb-3">
           <label for="email" class="form-label">{{ 'pages.contact.form.email.title' | translate }}</label>
@@ -36,11 +39,16 @@
             type="email" 
             id="email" 
             formControlName="email" 
-            class="form-control" 
+            class="form-control"
+            autocomplete="email"
+            aria-describedby="email-error"
+            [attr.aria-invalid]="contactForm.get('email')?.invalid && (submitted || contactForm.get('email')?.touched) ? 'true' : null"
             [ngClass]="{ 'is-invalid': contactForm.get('email')?.invalid && (submitted || contactForm.get('email')?.touched || contactForm.get('email')?.dirty), 
               'is-valid': contactForm.get('email')?.valid && (submitted || contactForm.get('email')?.touched || contactForm.get('email')?.dirty) }" 
             placeholder="{{ 'pages.contact.form.email.placeholder' | translate }}" />
-          <div class="invalid-feedback" *ngIf="contactForm.get('email')?.invalid && (submitted || contactForm.get('email')?.touched || contactForm.get('email')?.dirty)">{{ 'pages.contact.form.required' | translate }}</div>
+          <div id="email-error" class="invalid-feedback" *ngIf="contactForm.get('email')?.invalid && (submitted || contactForm.get('email')?.touched || contactForm.get('email')?.dirty)">
+            {{ contactForm.get('email')?.hasError('required') ? ('pages.contact.form.required' | translate) : ('pages.contact.form.invalid' | translate) }}
+          </div>
         </div>
         <div class="mb-3">
           <label for="message" class="form-label">{{ 'pages.contact.form.message.title' | translate }}</label>
@@ -48,17 +56,19 @@
             id="message" 
             formControlName="message" 
             class="form-control" 
-            rows="5" 
+            rows="5"
+            aria-describedby="message-error"
+            [attr.aria-invalid]="contactForm.get('message')?.invalid && (submitted || contactForm.get('message')?.touched) ? 'true' : null"
             [ngClass]="{ 'is-invalid': contactForm.get('message')?.invalid && (submitted || contactForm.get('message')?.touched || contactForm.get('message')?.dirty), 
               'is-valid': contactForm.get('message')?.valid && (submitted || contactForm.get('message')?.touched || contactForm.get('message')?.dirty) }" 
             placeholder="{{ 'pages.contact.form.message.placeholder' | translate }}"></textarea>
-          <div class="invalid-feedback" *ngIf="contactForm.get('message')?.invalid && (submitted || contactForm.get('message')?.touched || contactForm.get('message')?.dirty)">{{ 'pages.contact.form.required' | translate }}</div>
+          <div id="message-error" class="invalid-feedback" *ngIf="contactForm.get('message')?.invalid && (submitted || contactForm.get('message')?.touched || contactForm.get('message')?.dirty)">{{ 'pages.contact.form.required' | translate }}</div>
         </div>
         <button type="submit" class="btn btn-primary btn-lg rounded-pill w-100" [disabled]="loading">
           <span *ngIf="loading" class="spinner-border spinner-border-sm me-2"></span>{{ 'pages.contact.form.submit' | translate }}
           <i *ngIf="!loading" class="fa-solid fa-arrow-right ms-2" aria-hidden="true"></i>
         </button>
-        <div *ngIf="showMessage" [class]="success ? 'alert alert-success mt-3' : 'alert alert-danger mt-3'">{{ success ? notification.successMessage : notification.errorMessage }}</div>
+        <div *ngIf="showMessage" role="status" aria-live="polite" [class]="success ? 'alert alert-success mt-3' : 'alert alert-danger mt-3'">{{ success ? notification.successMessage : notification.errorMessage }}</div>
       </form>
     </div>
   </div>

@@ -18,7 +18,7 @@
 </a>
 
 <!-- Submenu -->
-<a *ngIf="item.children?.length" class="nav-link dropdown-indicator" role="button" data-bs-toggle="collapse" [attr.aria-expanded]="item.expanded" (click)="item.expanded = !item.expanded;">
+<button *ngIf="item.children?.length" type="button" class="nav-link dropdown-indicator w-100 border-0 bg-transparent text-start" [attr.aria-expanded]="item.expanded" (click)="item.expanded = !item.expanded;">
   <div class="d-flex align-items-center text-secondary-emphasis">
     <span *ngIf="item.icon" class="nav-link-icon">
       <span [class]="'me-2 ' + item.icon"></span>
@@ -27,7 +27,7 @@
     <span *ngIf="item.newLabel" [class]="'badge rounded-pill ms-2 ms-auto ' + item.newStyle"><small>{{ item.newLabel }}</small></span>
     <span [class]="item.expanded ? 'ms-1 fa-solid float-end fa-chevron-up' : 'ms-1 fa-solid float-end fa-chevron-down'"></span>
   </div>
-</a>
+</button>
 
 <!-- Renders the children -->
 <ul [class]="item.expanded ? 'nav collapse flex-column ms-3 show' : 'nav collapse flex-column ms-3'">
