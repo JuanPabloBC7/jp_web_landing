@@ -44,11 +44,11 @@
       "title": "Menu",
       "links": {
         "home": "Home",
-        "about-us": "About Me",
-        "skills-&-tools": "Skills & Tools",
+        "case-studies": "Case studies",
         "career-evolution": "Evolution",
         "work": "Work",
-        "case-studies": "Case studies",
+        "skills-&-tools": "Skills & Tools",
+        "about-us": "About Me",
         "contact-us": "Contact"
       },
       "others": {

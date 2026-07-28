@@ -6,34 +6,24 @@
     </div>
   </div>
 </div>
-<div class="section section-about-us" data-section="02">
-  <div id="about-us" class="bg-dark-subtle">
-    <div class="container">
-      <app-about-us></app-about-us>
-    </div>
-  </div>
-</div>
-<div class="section section-skills-n-tools" data-section="03">
-  <div id="skills-&-tools" class="bg-secondary-subtle">
+
+<div class="section section-case-studies" data-section="02">
+  <div id="case-studies" class="bg-secondary-subtle">
     <div class="container pb-5">
-      <app-skills-n-tools></app-skills-n-tools>
-      <div class="section-action pb-5 pt-3">
-        <a class="section-link" [routerLink]="'projects/experience/frontend'">
-          {{ 'general.seeMyExperience' | translate }}
-          <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-        </a>
-      </div>
+      <app-case-studies [compact]="true"></app-case-studies>
     </div>
   </div>
 </div>
-<div class="section section-career-evolution" data-section="04">
+
+<div class="section section-career-evolution" data-section="03">
   <div id="career-evolution" class="bg-body">
     <div class="container pb-5">
       <app-career-evolution></app-career-evolution>
     </div>
   </div>
 </div>
-<div class="section section-work" data-section="05">
+
+<div class="section section-work" data-section="04">
   <div id="work" class="pt-5 bg-body-tertiary">
     <div class="container pb-5">
       <app-work></app-work>
@@ -46,13 +36,29 @@
     </div>
   </div>
 </div>
-<div class="section section-case-studies" data-section="06">
-  <div id="case-studies" class="bg-secondary-subtle">
+
+<div class="section section-skills-n-tools" data-section="05">
+  <div id="skills-&-tools" class="bg-secondary-subtle">
     <div class="container pb-5">
-      <app-case-studies [compact]="true"></app-case-studies>
+      <app-skills-n-tools></app-skills-n-tools>
+      <div class="section-action pb-5 pt-3">
+        <a class="section-link" [routerLink]="'projects/experience/frontend'">
+          {{ 'general.seeMyExperience' | translate }}
+          <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
     </div>
   </div>
 </div>
+
+<div class="section section-about-us" data-section="06">
+  <div id="about-us" class="bg-dark-subtle">
+    <div class="container">
+      <app-about-us></app-about-us>
+    </div>
+  </div>
+</div>
+
 <div class="section section-contac-us" data-section="07">
   <div id="contact-us" class="bg-body">
     <div class="container">
