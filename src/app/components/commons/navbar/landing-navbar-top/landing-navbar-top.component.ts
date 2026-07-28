@@ -38,9 +38,18 @@ export class LandingNavbarTopComponent implements OnInit {
       this.navigation = [];
       for (const key in this.translateNavbar.links) {
         if (key === 'home') {
-          this.navigation.push({name: key, value: this.translateNavbar.links[key], href: `/`});
+          this.navigation.push({
+            name: key,
+            value: this.translateNavbar.links[key],
+            routerLink: '/',
+          });
         } else {
-          this.navigation.push({name: key, value: this.translateNavbar.links[key], href: `/#${key}`});
+          this.navigation.push({
+            name: key,
+            value: this.translateNavbar.links[key],
+            routerLink: '/',
+            fragment: key,
+          });
         }
       }
       for (const key in this.translateNavbar.others) {
@@ -58,8 +67,12 @@ export class LandingNavbarTopComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  isActive(href: string): boolean {
-    return this.router.url === href;
+  isActive(item: any): boolean {
+    if (item.fragment) {
+      return this.router.url === `/#${item.fragment}`;
+    }
+
+    return this.router.url === item.routerLink;
   }
 
   setLanguage(language: string) {

@@ -95,3 +95,39 @@
 .switch input:checked ~ .slider .cloud {
   opacity: 1;
 }
+
+.menu-toggle {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--bs-border-color);
+  border-radius: 12px;
+  background: transparent;
+}
+
+.navigation-panel {
+  border-top: 1px solid var(--bs-border-color);
+  background: rgba(240, 239, 239, 0.6);
+  backdrop-filter: blur(3px);
+  transition: background 0.3s;
+  -webkit-backdrop-filter: blur(3px);
+}
+
+:host-context(body[data-bs-theme="dark"]) .navigation-panel {
+  color: #fff;
+  background: rgba(30, 30, 30, 0.7);
+}
+
+@media (min-width: 992px) {
+  .navigation-panel {
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    right: 0;
+    width: min(340px, calc(100vw - 2rem));
+    overflow: hidden;
+    border: 1px solid var(--bs-border-color);
+    border-radius: 16px;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.18);
+  }
+}

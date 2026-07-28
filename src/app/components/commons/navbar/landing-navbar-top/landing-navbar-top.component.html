@@ -1,5 +1,5 @@
 <header class="shadow-sm border-bottom position-fixed w-100 z-3">
-  <div class="container">
+  <div class="container position-relative">
     <div class="d-flex justify-content-between align-items-center h-100 py-2">
       <a routerLink="/" class="d-flex align-items-center text-decoration-none">
         <div class="bg-danger p-2 rounded">
@@ -8,42 +8,8 @@
         <span class="text-danger fs-4 fw-bold ms-2">{{ 'configuration.name' | translate }}</span>
       </a>
 
-      <!-- Menú de navegación para pantallas grandes -->
-      <div class="d-none d-lg-flex align-items-center gap-4">
-        <ng-container *ngFor="let item of navigation">
-          <a *ngIf="item.href" [attr.href]="item.href" class="text-secondary-emphasis text-decoration-none fw-medium" [ngClass]="{'text-primary fw-bold': isActive(item.href)}">
-            {{ item.value }}
-          </a>
-          <a *ngIf="item.routerLink" [routerLink]="item.routerLink" class="text-secondary-emphasis text-decoration-none fw-medium" [ngClass]="{'text-primary fw-bold': isActive(item.href)}">
-            {{ item.value }}
-          </a>
-        </ng-container>
-        <label class="switch">
-          <input type="checkbox" id="checkbox" [checked]="!isDark" (click)="toggleTheme()" />
-          <span class="slider" [ngbTooltip]="appearance">
-            <div class="star star_1"></div>
-            <div class="star star_2"></div>
-            <div class="star star_3"></div>
-            <svg viewBox="0 0 16 16" class="cloud_1 cloud">
-              <path transform="matrix(.77976 0 0 .78395-299.99-418.63)" fill="#fff" d="m391.84 540.91c-.421-.329-.949-.524-1.523-.524-1.351 0-2.451 1.084-2.485 2.435-1.395.526-2.388 1.88-2.388 3.466 0 1.874 1.385 3.423 3.182 3.667v.034h12.73v-.006c1.775-.104 3.182-1.584 3.182-3.395 0-1.747-1.309-3.186-2.994-3.379.007-.106.011-.214.011-.322 0-2.707-2.271-4.901-5.072-4.901-2.073 0-3.856 1.202-4.643 2.925"></path>
-            </svg>
-          </span>
-        </label>
-        <!-- <button (click)="toggleTheme()" class="btn">
-          <i class="fa-solid fs-5" [ngClass]="isDark ? 'fa-moon' : 'fa-sun'" [ngbTooltip]="appearance"></i>
-        </button> -->
-        <div ngbDropdown class="d-inline-block">
-          <button class="btn w-100 dropdown-toggle" id="languageDropdown" ngbDropdownToggle><i class="fa-solid fa-language" [ngbTooltip]="'configuration.language.title' | translate"></i></button>
-          <div ngbDropdownMenu aria-labelledby="languageDropdown">
-            <button class="dropdown-item" (click)="setLanguage('es')" ngbDropdownItem>{{ 'configuration.language.options.spanish' | translate }}</button>
-            <button class="dropdown-item" (click)="setLanguage('en')" ngbDropdownItem>{{ 'configuration.language.options.english' | translate }}</button>
-          </div>
-        </div>
-        <!-- <a routerLink="/contact" class="btn btn-primary w-100" (click)="isOpen = false">Get Started</a> -->
-      </div>
-
-      <!-- Menú de navegación para pantallas móviles -->
-      <div class="d-lg-none align-items-center gap-4">
+      <!-- Controles de navegación para todos los tamaños -->
+      <div class="d-flex align-items-center gap-2 gap-sm-3">
         <label class="btn switch">
           <input type="checkbox" id="checkbox" [checked]="!isDark" (click)="toggleTheme()" />
           <span class="slider" [ngbTooltip]="appearance">
@@ -65,21 +31,32 @@
             <button class="dropdown-item" (click)="setLanguage('en')" ngbDropdownItem>{{ 'configuration.language.options.english' | translate }}</button>
           </div>
         </div>
-        <!-- Botón hamburguesa para móviles -->
-        <button type="button" class="btn" (click)="isOpen = !isOpen" aria-label="Toggle navigation">
+        <button
+          type="button"
+          class="btn menu-toggle"
+          (click)="isOpen = !isOpen"
+          [attr.aria-expanded]="isOpen"
+          aria-controls="landingNavigation"
+          [attr.aria-label]="'configuration.navbar.title' | translate">
           <i class="fa-solid" [ngClass]="isOpen ? 'fa-bars-staggered' : 'fa-bars'" [ngbTooltip]="'configuration.navbar.title' | translate"></i>
         </button>
       </div>
     </div>
 
-    <!-- Menú colapsable para móviles -->
-    <div *ngIf="isOpen" class="d-lg-none">
-      <div class="border-top px-3 py-2">
+    <!-- Menú desplegable -->
+    <div *ngIf="isOpen" id="landingNavigation" class="navigation-panel">
+      <div class="px-3 py-2">
         <ng-container *ngFor="let item of navigation">
-          <a *ngIf="item.href" [attr.href]="item.href" class="d-block px-2 py-2 rounded text-decoration-none fw-medium mb-1" [ngClass]="{'text-primary bg-primary bg-opacity-10 fw-bold': isActive(item.href), 'text-secondary': !isActive(item.href)}" (click)="isOpen = false">
-            {{ item.value }}
-          </a>
-          <a *ngIf="item.routerLink" [routerLink]="item.routerLink" class="d-block px-2 py-2 rounded text-decoration-none fw-medium mb-1" [ngClass]="{'text-primary bg-primary bg-opacity-10 fw-bold': isActive(item.href), 'text-secondary': !isActive(item.href)}" (click)="isOpen = false">
+          <a
+            *ngIf="item.routerLink"
+            [routerLink]="item.routerLink"
+            [fragment]="item.fragment"
+            class="d-block px-2 py-2 rounded text-decoration-none fw-medium mb-1"
+            [ngClass]="{
+              'text-primary bg-primary bg-opacity-10 fw-bold': isActive(item),
+              'text-secondary': !isActive(item)
+            }"
+            (click)="isOpen = false">
             {{ item.value }}
           </a>
         </ng-container>
