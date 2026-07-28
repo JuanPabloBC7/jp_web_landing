@@ -5,6 +5,8 @@ export interface CaseStudy {
   context: string;
   icon: string;
   accentClass: string;
+  featured?: boolean;
+  status?: string;
   tags: string[];
   challenge: string;
   constraints: string[];

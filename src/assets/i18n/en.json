@@ -279,10 +279,10 @@
       ]
     },
     "caseStudies": {
-      "eyebrow": "Problems I have solved",
-      "title": "Case studies",
-      "description": "The decisions, implementations, and lessons behind some of the most relevant challenges in my career.",
-      "viewAll": "Explore all case studies",
+      "eyebrow": "Products and solutions",
+      "title": "Featured projects",
+      "description": "Products built from the ground up and professional cases that show how I turn real needs into functional solutions.",
+      "viewAll": "Explore projects and case studies",
       "labels": {
         "challenge": "The challenge",
         "constraints": "Constraints",
@@ -291,12 +291,118 @@
         "implementation": "Implementation",
         "results": "Results",
         "lessons": "Key lesson",
-        "technologies": "Technologies used"
+        "technologies": "Technologies used",
+        "featured": "Featured"
       },
       "items": [
         {
-          "id": "angular-modernization",
+          "id": "ai-business-assistant",
           "number": "01",
+          "title": "AI virtual assistant for business requests",
+          "context": "Artificial intelligence product",
+          "icon": "fa-solid fa-robot",
+          "accentClass": "accent-primary",
+          "featured": true,
+          "status": "Developed project",
+          "tags": ["AI", "ChatGPT", "WhatsApp", "Instagram", "Web"],
+          "challenge": "Make it easier to receive product orders, appointments, and service requests without forcing customers through rigid processes or lengthy forms.",
+          "constraints": [
+            "Customers may write freely and omit required information.",
+            "Requests can arrive through different communication channels.",
+            "The business needs clear information before fulfilling the order, appointment, or service."
+          ],
+          "role": "I designed and developed the virtual assistant, the web experience, and the workflow that transforms a conversation into a request the business owner can understand.",
+          "decisions": [
+            "Use conversational AI to collect missing information through natural questions.",
+            "Keep final approval and execution in the hands of the responsible user.",
+            "Prepare the workflow for WhatsApp, Instagram, social networks, and a dedicated website."
+          ],
+          "implementation": [
+            "Integrated AI models such as ChatGPT to interpret conversations.",
+            "Created workflows for orders, appointments, and service requests.",
+            "Structured the collected data so the business can review each request.",
+            "Developed a website with direct access to the virtual assistant."
+          ],
+          "results": [
+            "A conversational experience capable of guiding customers and collecting the required details.",
+            "Organized requests that the responsible user can review and fulfill.",
+            "A reusable foundation for different businesses and customer service channels."
+          ],
+          "lessons": "AI works best as an assistant when it reduces customer friction, structures information, and keeps the final decision in human hands."
+        },
+        {
+          "id": "private-nas-cloud",
+          "number": "02",
+          "title": "Private NAS cloud with Raspberry Pi",
+          "context": "Personal infrastructure",
+          "icon": "fa-solid fa-cloud-arrow-up",
+          "accentClass": "accent-success",
+          "featured": true,
+          "status": "Functional project",
+          "tags": ["Raspberry Pi", "NAS", "Tailscale", "Linux", "Storage"],
+          "challenge": "Build a low-cost private cloud for storing and accessing files from anywhere without relying on a traditional cloud provider.",
+          "constraints": [
+            "Use of a Raspberry Pi and multiple drives connected through a hub.",
+            "Remote access without directly exposing storage to the Internet.",
+            "Need to separate folders and permissions for different users."
+          ],
+          "role": "I designed the solution and configured storage, remote access, users, and permissions for shared folders.",
+          "decisions": [
+            "Use Tailscale to establish private remote access between devices.",
+            "Centralize external drives in a NAS managed by the Raspberry Pi.",
+            "Define users and permissions according to the folders each person can read or modify."
+          ],
+          "implementation": [
+            "Configured a Raspberry Pi as a NAS server.",
+            "Mounted and managed drives connected through a hub.",
+            "Configured shared folder services, users, and permissions.",
+            "Integrated Tailscale to access the private cloud from any location."
+          ],
+          "results": [
+            "A functional private cloud available remotely through a secure connection.",
+            "Centralized storage using personally owned hardware.",
+            "Access control by user and folder."
+          ],
+          "lessons": "A home-built solution can provide control and privacy, but remote access, permissions, availability, and drive protection must be carefully designed."
+        },
+        {
+          "id": "flutter-business-app",
+          "number": "03",
+          "title": "Cross-platform business application with Flutter",
+          "context": "Business mobile application",
+          "icon": "fa-solid fa-mobile-screen-button",
+          "accentClass": "accent-info",
+          "featured": true,
+          "status": "Developed, not released to app stores",
+          "tags": ["Flutter", "Dart", "Firebase", "Clean Architecture", "Google Sign-In"],
+          "challenge": "Build a cross-platform business application for managing products and users, with authentication and cloud persistence.",
+          "constraints": [
+            "The same codebase had to support Android and iOS.",
+            "The application needed a clear separation between UI, business logic, and data access.",
+            "Development was completed, but publishing to Google Play and the App Store was outside the project scope."
+          ],
+          "role": "I designed and developed the full application, defined its architecture, and integrated Firebase services and Google Sign-In.",
+          "decisions": [
+            "Use Flutter to share most of the code across platforms.",
+            "Apply Clean Architecture to decouple presentation, domain, and data layers.",
+            "Use Firebase for authentication, user management, and data persistence."
+          ],
+          "implementation": [
+            "Developed modules for product and user management.",
+            "Integrated Firebase database and services.",
+            "Implemented authentication and Google Sign-In.",
+            "Organized the project into layers using Flutter ecosystem dependencies."
+          ],
+          "results": [
+            "A functional application developed for Android and iOS environments.",
+            "Source code retained and organized according to Clean Architecture.",
+            "Centralized product, user, and authentication management through Firebase."
+          ],
+          "lessons": "Completing a functional application and publishing it are separate stages; its architecture and code were developed, while distribution, signing, and store review remained outside the scope."
+        },
+        {
+          "id": "angular-modernization",
+          "number": "04",
           "title": "Angular modernization and microfrontend architecture",
           "context": "Corporate banking",
           "icon": "fa-brands fa-angular",
@@ -329,7 +435,7 @@
         },
         {
           "id": "document-management",
-          "number": "02",
+          "number": "05",
           "title": "Reliable PDF document management",
           "context": "Institutional processes",
           "icon": "fa-regular fa-file-pdf",
@@ -362,7 +468,7 @@
         },
         {
           "id": "database-reverse-engineering",
-          "number": "03",
+          "number": "06",
           "title": "Reverse engineering and improvement of legacy databases",
           "context": "Financial ERP systems",
           "icon": "fa-solid fa-database",
@@ -395,7 +501,7 @@
         },
         {
           "id": "frontend-security-delivery",
-          "number": "04",
+          "number": "07",
           "title": "Frontend security and more reliable delivery",
           "context": "Corporate banking",
           "icon": "fa-solid fa-shield-halved",

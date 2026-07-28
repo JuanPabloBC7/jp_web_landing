@@ -278,10 +278,10 @@
       ]
     },
     "caseStudies": {
-      "eyebrow": "Problemas que he resuelto",
-      "title": "Casos de estudio",
-      "description": "Decisiones, implementaciones y aprendizajes detrás de algunos de los retos más relevantes de mi trayectoria.",
-      "viewAll": "Explorar todos los casos",
+      "eyebrow": "Productos y soluciones",
+      "title": "Proyectos destacados",
+      "description": "Productos creados de principio a fin y casos profesionales que muestran cómo convierto necesidades reales en soluciones funcionales.",
+      "viewAll": "Explorar proyectos y casos",
       "labels": {
         "challenge": "El reto",
         "constraints": "Restricciones",
@@ -290,12 +290,118 @@
         "implementation": "Implementación",
         "results": "Resultados",
         "lessons": "Aprendizaje",
-        "technologies": "Tecnologías utilizadas"
+        "technologies": "Tecnologías utilizadas",
+        "featured": "Principal"
       },
       "items": [
         {
-          "id": "angular-modernization",
+          "id": "ai-business-assistant",
           "number": "01",
+          "title": "Asistente virtual con IA para solicitudes de negocio",
+          "context": "Producto con inteligencia artificial",
+          "icon": "fa-solid fa-robot",
+          "accentClass": "accent-primary",
+          "featured": true,
+          "status": "Proyecto desarrollado",
+          "tags": ["IA", "ChatGPT", "WhatsApp", "Instagram", "Web"],
+          "challenge": "Facilitar la recepción de pedidos de productos, citas y solicitudes de servicios sin obligar al cliente a completar procesos rígidos o formularios extensos.",
+          "constraints": [
+            "Los clientes pueden escribir de manera libre y omitir información necesaria.",
+            "Las solicitudes pueden llegar desde distintos canales de comunicación.",
+            "El negocio necesita recibir información clara antes de ejecutar el pedido, la cita o el servicio."
+          ],
+          "role": "Diseñé y desarrollé el asistente virtual, la experiencia web y el flujo que transforma una conversación en una solicitud comprensible para el responsable del negocio.",
+          "decisions": [
+            "Utilizar IA conversacional para recopilar la información faltante mediante preguntas naturales.",
+            "Mantener la aprobación y ejecución final en manos del usuario responsable.",
+            "Preparar el flujo para canales como WhatsApp, Instagram, redes sociales y una página web propia."
+          ],
+          "implementation": [
+            "Integración de modelos de IA como ChatGPT para interpretar conversaciones.",
+            "Creación de flujos para pedidos, citas y solicitudes de servicios.",
+            "Organización de los datos recopilados para que el negocio pueda revisar lo solicitado.",
+            "Desarrollo de una página web con acceso directo al asistente virtual."
+          ],
+          "results": [
+            "Una experiencia conversacional capaz de guiar al cliente y recopilar los datos necesarios.",
+            "Solicitudes organizadas para que el responsable pueda revisarlas y ejecutarlas.",
+            "Una base reutilizable para diferentes tipos de negocio y canales de atención."
+          ],
+          "lessons": "La IA funciona mejor como asistente cuando reduce la fricción para el cliente, estructura la información y conserva la decisión final en manos de una persona."
+        },
+        {
+          "id": "private-nas-cloud",
+          "number": "02",
+          "title": "Nube privada NAS con Raspberry Pi",
+          "context": "Infraestructura personal",
+          "icon": "fa-solid fa-cloud-arrow-up",
+          "accentClass": "accent-success",
+          "featured": true,
+          "status": "Proyecto funcional",
+          "tags": ["Raspberry Pi", "NAS", "Tailscale", "Linux", "Almacenamiento"],
+          "challenge": "Crear una nube privada de bajo costo que permitiera almacenar y consultar archivos desde cualquier lugar sin depender de un proveedor de nube tradicional.",
+          "constraints": [
+            "Uso de una Raspberry Pi y varios discos conectados mediante un hub.",
+            "Acceso remoto sin exponer directamente el almacenamiento a Internet.",
+            "Necesidad de separar carpetas y permisos para diferentes usuarios."
+          ],
+          "role": "Diseñé la solución, configuré el almacenamiento, el acceso remoto, los usuarios y los permisos de las carpetas compartidas.",
+          "decisions": [
+            "Utilizar Tailscale para establecer acceso remoto privado entre dispositivos.",
+            "Centralizar los discos externos en un NAS administrado por la Raspberry Pi.",
+            "Definir usuarios y permisos según las carpetas que cada persona puede consultar o modificar."
+          ],
+          "implementation": [
+            "Configuración de Raspberry Pi como servidor NAS.",
+            "Montaje y administración de discos conectados mediante un hub.",
+            "Configuración del servicio de carpetas compartidas, usuarios y permisos.",
+            "Integración de Tailscale para acceder a la nube privada desde cualquier ubicación."
+          ],
+          "results": [
+            "Nube privada funcional y accesible remotamente mediante una conexión segura.",
+            "Almacenamiento centralizado utilizando hardware propio.",
+            "Control de acceso por usuario y carpeta."
+          ],
+          "lessons": "Una solución doméstica puede ofrecer control y privacidad, pero requiere diseñar cuidadosamente acceso remoto, permisos, disponibilidad y protección de los discos."
+        },
+        {
+          "id": "flutter-business-app",
+          "number": "03",
+          "title": "Aplicación empresarial multiplataforma con Flutter",
+          "context": "Aplicación móvil empresarial",
+          "icon": "fa-solid fa-mobile-screen-button",
+          "accentClass": "accent-info",
+          "featured": true,
+          "status": "Desarrollada, no publicada en tiendas",
+          "tags": ["Flutter", "Dart", "Firebase", "Clean Architecture", "Google Sign-In"],
+          "challenge": "Construir una aplicación empresarial multiplataforma para administrar productos y usuarios, con autenticación y persistencia en la nube.",
+          "constraints": [
+            "La misma base de código debía funcionar para Android y iOS.",
+            "La aplicación necesitaba separar interfaz, lógica de negocio y acceso a datos.",
+            "El desarrollo se completó, pero no se realizó el proceso de publicación en Google Play ni App Store."
+          ],
+          "role": "Diseñé y desarrollé la aplicación completa, definí su arquitectura e integré los servicios de Firebase y el acceso con Google.",
+          "decisions": [
+            "Utilizar Flutter para compartir la mayor parte del código entre plataformas.",
+            "Aplicar Clean Architecture para desacoplar presentación, dominio y datos.",
+            "Usar Firebase para autenticación, administración de usuarios y persistencia de información."
+          ],
+          "implementation": [
+            "Desarrollo de módulos para manejo de productos y usuarios.",
+            "Integración de base de datos y servicios de Firebase.",
+            "Implementación de autenticación y acceso mediante Google.",
+            "Organización del proyecto mediante capas y dependencias del ecosistema Flutter."
+          ],
+          "results": [
+            "Aplicación funcional desarrollada para entornos Android y iOS.",
+            "Código fuente conservado y organizado mediante Clean Architecture.",
+            "Gestión centralizada de productos, usuarios y autenticación mediante Firebase."
+          ],
+          "lessons": "Completar una aplicación funcional y publicarla son etapas diferentes; la arquitectura y el código están desarrollados, mientras que distribución, firma y revisión de tiendas quedaron fuera del alcance."
+        },
+        {
+          "id": "angular-modernization",
+          "number": "04",
           "title": "Modernización de Angular y arquitectura de microfrontends",
           "context": "Banca empresarial",
           "icon": "fa-brands fa-angular",
@@ -328,7 +434,7 @@
         },
         {
           "id": "document-management",
-          "number": "02",
+          "number": "05",
           "title": "Gestión confiable de documentos PDF",
           "context": "Procesos institucionales",
           "icon": "fa-regular fa-file-pdf",
@@ -361,7 +467,7 @@
         },
         {
           "id": "database-reverse-engineering",
-          "number": "03",
+          "number": "06",
           "title": "Ingeniería inversa y mejora de bases de datos heredadas",
           "context": "Sistemas financieros ERP",
           "icon": "fa-solid fa-database",
@@ -394,7 +500,7 @@
         },
         {
           "id": "frontend-security-delivery",
-          "number": "04",
+          "number": "07",
           "title": "Seguridad frontend y entregas más confiables",
           "context": "Banca empresarial",
           "icon": "fa-solid fa-shield-halved",
