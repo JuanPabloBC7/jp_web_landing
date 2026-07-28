@@ -44,6 +44,7 @@
         "home": "Inicio",
         "about-us": "Sobre mí",
         "skills-&-tools": "Habilidades y herramientas",
+        "career-evolution": "Evolución",
         "work": "Trabajo",
         "case-studies": "Casos de estudio",
         "contact-us": "Contacto"
@@ -144,6 +145,65 @@
         { "id":"aws", "name": "AWS", "icon": "devicon-amazonwebservices-plain-wordmark bg-aws" },
         { "id":"azure", "name": "Azure", "icon": "devicon-azure-plain bg-azure" },
         { "id":"devops", "name": "DevOps", "icon": "devicon-azuredevops-plain bg-devops" }
+      ]
+    },
+    "careerEvolution": {
+      "eyebrow": "Crecimiento profesional",
+      "title": "Mi evolución a través del tiempo",
+      "description": "Una trayectoria que comenzó con fundamentos empresariales y evolucionó hacia arquitectura frontend, seguridad y creación de productos completos.",
+      "labels": {
+        "focus": "Enfoque de la etapa",
+        "milestone": "Hito principal",
+        "viewCase": "Ver caso relacionado"
+      },
+      "stages": [
+        {
+          "id": "foundations",
+          "period": "2014 - 2018",
+          "stage": "Fundamentos y formación",
+          "title": "Primeras soluciones con tecnologías Microsoft",
+          "description": "Etapa de aprendizaje autodidacta y formación académica en la que construí las bases de programación, aplicaciones web y bases de datos relacionales.",
+          "focus": ["C#", "Visual Basic", "ASP.NET", "SQL Server", "Programación orientada a objetos"],
+          "milestone": "Pasé de aprender los lenguajes a comprender cómo estructurar aplicaciones conectadas con bases de datos.",
+          "icon": "fa-solid fa-seedling",
+          "accentClass": "accent-foundation"
+        },
+        {
+          "id": "enterprise-systems",
+          "period": "2019 - 2021",
+          "stage": "Desarrollo empresarial",
+          "title": "Sistemas financieros, administrativos y bases de datos heredadas",
+          "description": "Mi primera etapa profesional consolidó el desarrollo full stack en sistemas ERP y aplicaciones que combinaban ASP.NET Framework, PowerBuilder y SQL Server.",
+          "focus": ["ASP.NET Framework", "PowerBuilder", "Stored Procedures", "Triggers", "Ingeniería inversa"],
+          "milestone": "Aprendí a analizar sistemas existentes, rastrear problemas entre aplicación y base de datos e implementar funcionalidades sin romper procesos críticos.",
+          "icon": "fa-solid fa-building-columns",
+          "accentClass": "accent-enterprise",
+          "relatedCase": "database-reverse-engineering"
+        },
+        {
+          "id": "custom-applications",
+          "period": "2021 - 2024",
+          "stage": "Soluciones de extremo a extremo",
+          "title": "De la necesidad operativa a una aplicación en producción",
+          "description": "Amplié mi responsabilidad hacia el ciclo completo: análisis, desarrollo, bases de datos, publicación en IIS y mejora continua de aplicaciones institucionales.",
+          "focus": ["ASP.NET", "C#", "JavaScript", "SQL Server", "PostgreSQL", "IIS"],
+          "milestone": "Creé aplicaciones desde cero para gestión documental y procesos a la medida, participando también en decisiones operativas del negocio.",
+          "icon": "fa-solid fa-layer-group",
+          "accentClass": "accent-fullstack",
+          "relatedCase": "document-management"
+        },
+        {
+          "id": "frontend-specialization",
+          "period": "2024 - Presente",
+          "stage": "Especialización y arquitectura",
+          "title": "Frontend moderno, microfrontends y seguridad",
+          "description": "Mi enfoque evolucionó hacia Angular a escala empresarial, arquitectura de microfrontends, modernización de aplicaciones, seguridad frontend y automatización de entregas.",
+          "focus": ["Angular 11–21", "TypeScript", "Single-SPA", "Seguridad", "Pipelines", "IA y productos propios"],
+          "milestone": "Migré aplicaciones entre versiones mayores de Angular, creé microfrontends desde cero y desarrollé productos propios con IA, Flutter e infraestructura NAS.",
+          "icon": "fa-solid fa-rocket",
+          "accentClass": "accent-specialist",
+          "relatedCase": "angular-modernization"
+        }
       ]
     },
     "work": {
@@ -897,6 +957,13 @@
       "label": "Trabajos",
       "type": "link",
       "icon": "fa-solid fa-clock-rotate-left",
+      "events": { "click": "null" }
+    },
+    {
+      "path": "career-evolution",
+      "label": "Evolución profesional",
+      "type": "link",
+      "icon": "fa-solid fa-arrow-trend-up",
       "events": { "click": "null" }
     },
     {

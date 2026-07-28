@@ -44,6 +44,7 @@
         "home": "Home",
         "about-us": "About Me",
         "skills-&-tools": "Skills & Tools",
+        "career-evolution": "Evolution",
         "work": "Work",
         "case-studies": "Case studies",
         "contact-us": "Contact"
@@ -144,6 +145,65 @@
         { "id":"aws", "name": "AWS", "icon": "devicon-amazonwebservices-plain-wordmark bg-aws" },
         { "id":"azure", "name": "Azure", "icon": "devicon-azure-plain bg-azure" },
         { "id":"devops", "name": "DevOps", "icon": "devicon-azuredevops-plain bg-devops" }
+      ]
+    },
+    "careerEvolution": {
+      "eyebrow": "Professional growth",
+      "title": "My evolution over time",
+      "description": "A journey that started with enterprise foundations and evolved toward frontend architecture, security, and complete product development.",
+      "labels": {
+        "focus": "Stage focus",
+        "milestone": "Key milestone",
+        "viewCase": "View related case"
+      },
+      "stages": [
+        {
+          "id": "foundations",
+          "period": "2014 - 2018",
+          "stage": "Foundations and education",
+          "title": "First solutions with Microsoft technologies",
+          "description": "A period of self-directed learning and formal education in which I built my foundations in programming, web applications, and relational databases.",
+          "focus": ["C#", "Visual Basic", "ASP.NET", "SQL Server", "Object-oriented programming"],
+          "milestone": "I progressed from learning programming languages to understanding how to structure applications connected to databases.",
+          "icon": "fa-solid fa-seedling",
+          "accentClass": "accent-foundation"
+        },
+        {
+          "id": "enterprise-systems",
+          "period": "2019 - 2021",
+          "stage": "Enterprise development",
+          "title": "Financial, administrative, and legacy database systems",
+          "description": "My first professional stage consolidated full stack development across ERP systems and applications combining ASP.NET Framework, PowerBuilder, and SQL Server.",
+          "focus": ["ASP.NET Framework", "PowerBuilder", "Stored Procedures", "Triggers", "Reverse engineering"],
+          "milestone": "I learned to analyze existing systems, trace issues across application and database layers, and add features without disrupting critical processes.",
+          "icon": "fa-solid fa-building-columns",
+          "accentClass": "accent-enterprise",
+          "relatedCase": "database-reverse-engineering"
+        },
+        {
+          "id": "custom-applications",
+          "period": "2021 - 2024",
+          "stage": "End-to-end solutions",
+          "title": "From an operational need to a production application",
+          "description": "My responsibility expanded across the full lifecycle: analysis, development, databases, IIS deployment, and continuous improvement of institutional applications.",
+          "focus": ["ASP.NET", "C#", "JavaScript", "SQL Server", "PostgreSQL", "IIS"],
+          "milestone": "I built document management and custom process applications from the ground up while also contributing to operational business decisions.",
+          "icon": "fa-solid fa-layer-group",
+          "accentClass": "accent-fullstack",
+          "relatedCase": "document-management"
+        },
+        {
+          "id": "frontend-specialization",
+          "period": "2024 - Present",
+          "stage": "Specialization and architecture",
+          "title": "Modern frontend, microfrontends, and security",
+          "description": "My focus evolved toward enterprise-scale Angular, microfrontend architecture, application modernization, frontend security, and delivery automation.",
+          "focus": ["Angular 11–21", "TypeScript", "Single-SPA", "Security", "Pipelines", "AI and personal products"],
+          "milestone": "I migrated applications across major Angular versions, built microfrontends from the ground up, and developed products involving AI, Flutter, and NAS infrastructure.",
+          "icon": "fa-solid fa-rocket",
+          "accentClass": "accent-specialist",
+          "relatedCase": "angular-modernization"
+        }
       ]
     },
     "work": {
@@ -897,6 +957,13 @@
       "label": "Linetime works",
       "type": "link",
       "icon": "fa-solid fa-clock-rotate-left",
+      "events": { "click": "null" }
+    },
+    {
+      "path": "career-evolution",
+      "label": "Professional evolution",
+      "type": "link",
+      "icon": "fa-solid fa-arrow-trend-up",
       "events": { "click": "null" }
     },
     {

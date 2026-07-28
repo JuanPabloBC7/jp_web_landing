@@ -6,6 +6,7 @@ import { IntroductionComponent } from './introduction/introduction.component';
 import { SkillsNToolsComponent } from './skills-n-tools/skills-n-tools.component';
 import { WorkComponent } from './work/work.component';
 import { CaseStudiesComponent } from './case-studies/case-studies.component';
+import { CareerEvolutionComponent } from './career-evolution/career-evolution.component';
 import { RouterLink } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 
@@ -19,6 +20,7 @@ import { TranslateModule } from '@ngx-translate/core';
     IntroductionComponent,
     AboutUsComponent,
     SkillsNToolsComponent,
+    CareerEvolutionComponent,
     WorkComponent,
     CaseStudiesComponent,
     ContactUsComponent

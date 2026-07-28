@@ -1,0 +1,60 @@
+<section class="career-evolution py-5">
+  <div class="section-heading text-center mx-auto mb-5">
+    <span class="eyebrow">{{ 'pages.careerEvolution.eyebrow' | translate }}</span>
+    <h2 class="fw-bold mt-2 mb-3">{{ 'pages.careerEvolution.title' | translate }}</h2>
+    <p class="text-secondary mb-0">{{ 'pages.careerEvolution.description' | translate }}</p>
+  </div>
+
+  <div class="evolution-track">
+    <article
+      class="evolution-stage"
+      *ngFor="let item of stages; let index = index"
+      [attr.id]="item.id">
+      <div class="stage-marker">
+        <span class="stage-index">{{ (index + 1).toString().padStart(2, '0') }}</span>
+        <span [class]="'stage-icon ' + item.accentClass">
+          <i [class]="item.icon" aria-hidden="true"></i>
+        </span>
+      </div>
+
+      <div class="stage-card">
+        <header class="stage-header">
+          <div>
+            <span class="stage-period">{{ item.period }}</span>
+            <span class="stage-label">{{ item.stage }}</span>
+          </div>
+          <span class="growth-line" aria-hidden="true">
+            <i class="fa-solid fa-arrow-trend-up"></i>
+          </span>
+        </header>
+
+        <h3>{{ item.title }}</h3>
+        <p class="stage-description">{{ item.description }}</p>
+
+        <div class="stage-focus">
+          <h4>{{ 'pages.careerEvolution.labels.focus' | translate }}</h4>
+          <ul>
+            <li *ngFor="let focus of item.focus">{{ focus }}</li>
+          </ul>
+        </div>
+
+        <div class="stage-milestone">
+          <i class="fa-solid fa-flag-checkered" aria-hidden="true"></i>
+          <div>
+            <strong>{{ 'pages.careerEvolution.labels.milestone' | translate }}</strong>
+            <p>{{ item.milestone }}</p>
+          </div>
+        </div>
+
+        <a
+          *ngIf="item.relatedCase"
+          [routerLink]="['/projects/case-studies']"
+          [fragment]="item.relatedCase"
+          class="case-link">
+          {{ 'pages.careerEvolution.labels.viewCase' | translate }}
+          <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+    </article>
+  </div>
+</section>

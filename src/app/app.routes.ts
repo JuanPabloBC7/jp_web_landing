@@ -12,6 +12,7 @@ import { FrontendComponent } from './pages/pages/experience/frontend/frontend.co
 import { BackendComponent } from './pages/pages/experience/backend/backend.component';
 import { DatabaseComponent } from './pages/pages/experience/database/database.component';
 import { CaseStudiesComponent } from './pages/landing-page/case-studies/case-studies.component';
+import { CareerEvolutionComponent } from './pages/landing-page/career-evolution/career-evolution.component';
 
 export const routes: Routes = [
   {
@@ -39,6 +40,10 @@ export const routes: Routes = [
       {
         path: 'works',
         component: WorkComponent
+      },
+      {
+        path: 'career-evolution',
+        component: CareerEvolutionComponent
       },
       {
         path: 'case-studies',
