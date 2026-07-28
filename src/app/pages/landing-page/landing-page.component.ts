@@ -5,6 +5,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { IntroductionComponent } from './introduction/introduction.component';
 import { SkillsNToolsComponent } from './skills-n-tools/skills-n-tools.component';
 import { WorkComponent } from './work/work.component';
+import { CaseStudiesComponent } from './case-studies/case-studies.component';
 import { RouterLink } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 
@@ -19,6 +20,7 @@ import { TranslateModule } from '@ngx-translate/core';
     AboutUsComponent,
     SkillsNToolsComponent,
     WorkComponent,
+    CaseStudiesComponent,
     ContactUsComponent
 ],
   templateUrl: './landing-page.component.html',

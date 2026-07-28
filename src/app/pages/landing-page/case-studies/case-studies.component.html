@@ -1,0 +1,128 @@
+<section class="case-studies py-5" [class.case-studies-compact]="compact">
+  <div class="section-heading text-center mx-auto mb-5">
+    <span class="eyebrow">{{ 'pages.caseStudies.eyebrow' | translate }}</span>
+    <h2 class="fw-bold mt-2 mb-3">{{ 'pages.caseStudies.title' | translate }}</h2>
+    <p class="text-secondary mb-0">{{ 'pages.caseStudies.description' | translate }}</p>
+  </div>
+
+  <div class="case-grid" *ngIf="compact; else detailedCases">
+    <article class="case-card" *ngFor="let item of caseStudies | slice:0:3">
+      <div class="case-card-top">
+        <span class="case-number">{{ item.number }}</span>
+        <span [class]="'case-icon ' + item.accentClass">
+          <i [class]="item.icon" aria-hidden="true"></i>
+        </span>
+      </div>
+      <p class="case-context">{{ item.context }}</p>
+      <h3>{{ item.title }}</h3>
+      <p class="case-challenge">{{ item.challenge }}</p>
+      <div class="result-preview">
+        <i class="fa-solid fa-arrow-trend-up" aria-hidden="true"></i>
+        <span>{{ item.results[0] }}</span>
+      </div>
+      <ul class="tag-list" [attr.aria-label]="'pages.caseStudies.labels.technologies' | translate">
+        <li *ngFor="let tag of item.tags">{{ tag }}</li>
+      </ul>
+    </article>
+  </div>
+
+  <div class="text-center mt-5" *ngIf="compact">
+    <a routerLink="/projects/case-studies" class="btn btn-primary btn-lg rounded-pill px-4">
+      {{ 'pages.caseStudies.viewAll' | translate }}
+      <i class="fa-solid fa-arrow-right ms-2" aria-hidden="true"></i>
+    </a>
+  </div>
+
+  <ng-template #detailedCases>
+    <div class="detailed-cases">
+      <article class="case-detail" *ngFor="let item of caseStudies">
+        <header class="case-detail-header">
+          <div>
+            <div class="d-flex align-items-center gap-3 mb-2">
+              <span class="case-number">{{ item.number }}</span>
+              <span class="case-context mb-0">{{ item.context }}</span>
+            </div>
+            <h2>{{ item.title }}</h2>
+          </div>
+          <span [class]="'case-icon case-icon-large ' + item.accentClass">
+            <i [class]="item.icon" aria-hidden="true"></i>
+          </span>
+        </header>
+
+        <div class="case-detail-body">
+          <section class="story-block story-challenge">
+            <h3>
+              <i class="fa-solid fa-bullseye" aria-hidden="true"></i>
+              {{ 'pages.caseStudies.labels.challenge' | translate }}
+            </h3>
+            <p>{{ item.challenge }}</p>
+          </section>
+
+          <div class="story-columns">
+            <section class="story-block">
+              <h3>
+                <i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i>
+                {{ 'pages.caseStudies.labels.constraints' | translate }}
+              </h3>
+              <ul>
+                <li *ngFor="let constraint of item.constraints">{{ constraint }}</li>
+              </ul>
+            </section>
+
+            <section class="story-block">
+              <h3>
+                <i class="fa-solid fa-user-gear" aria-hidden="true"></i>
+                {{ 'pages.caseStudies.labels.role' | translate }}
+              </h3>
+              <p>{{ item.role }}</p>
+            </section>
+          </div>
+
+          <div class="story-columns">
+            <section class="story-block">
+              <h3>
+                <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
+                {{ 'pages.caseStudies.labels.decisions' | translate }}
+              </h3>
+              <ul>
+                <li *ngFor="let decision of item.decisions">{{ decision }}</li>
+              </ul>
+            </section>
+
+            <section class="story-block">
+              <h3>
+                <i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i>
+                {{ 'pages.caseStudies.labels.implementation' | translate }}
+              </h3>
+              <ul>
+                <li *ngFor="let step of item.implementation">{{ step }}</li>
+              </ul>
+            </section>
+          </div>
+
+          <section class="story-block result-block">
+            <h3>
+              <i class="fa-solid fa-arrow-trend-up" aria-hidden="true"></i>
+              {{ 'pages.caseStudies.labels.results' | translate }}
+            </h3>
+            <ul>
+              <li *ngFor="let result of item.results">{{ result }}</li>
+            </ul>
+          </section>
+
+          <section class="lesson-block">
+            <span class="lesson-icon"><i class="fa-regular fa-lightbulb" aria-hidden="true"></i></span>
+            <div>
+              <h3>{{ 'pages.caseStudies.labels.lessons' | translate }}</h3>
+              <p>{{ item.lessons }}</p>
+            </div>
+          </section>
+
+          <ul class="tag-list" [attr.aria-label]="'pages.caseStudies.labels.technologies' | translate">
+            <li *ngFor="let tag of item.tags">{{ tag }}</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </ng-template>
+</section>

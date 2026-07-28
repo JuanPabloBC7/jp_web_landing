@@ -31,8 +31,16 @@
   content: "";
   position: absolute;
   left: 0; right: 0; bottom: -1px; height: 60px;
-  background: var(--bs-body-bg);
+  background: var(--bs-secondary-bg-subtle);
   clip-path: polygon(0 0, 100% 100%, 0 100%);
+  z-index: 0;
+}
+.section-case-studies::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: -1px; height: 60px;
+  background: var(--bs-body-bg);
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
   z-index: 0;
 }
 .section-contac-us::after {

@@ -11,6 +11,7 @@ import { PluginsNToolsComponent } from './pages/pages/plugins-n-tools/plugins-n-
 import { FrontendComponent } from './pages/pages/experience/frontend/frontend.component';
 import { BackendComponent } from './pages/pages/experience/backend/backend.component';
 import { DatabaseComponent } from './pages/pages/experience/database/database.component';
+import { CaseStudiesComponent } from './pages/landing-page/case-studies/case-studies.component';
 
 export const routes: Routes = [
   {
@@ -38,6 +39,10 @@ export const routes: Routes = [
       {
         path: 'works',
         component: WorkComponent
+      },
+      {
+        path: 'case-studies',
+        component: CaseStudiesComponent
       },
       {
         path: 'contact-us',

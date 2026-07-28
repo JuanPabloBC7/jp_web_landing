@@ -45,6 +45,7 @@
         "about-us": "Sobre mí",
         "skills-&-tools": "Habilidades y herramientas",
         "work": "Trabajo",
+        "case-studies": "Casos de estudio",
         "contact-us": "Contacto"
       },
       "others": {
@@ -273,6 +274,156 @@
             { "name": "Git", "color": "bg-git" },
             { "name": "Azure", "color": "bg-azure" }
           ]
+        }
+      ]
+    },
+    "caseStudies": {
+      "eyebrow": "Problemas que he resuelto",
+      "title": "Casos de estudio",
+      "description": "Decisiones, implementaciones y aprendizajes detrás de algunos de los retos más relevantes de mi trayectoria.",
+      "viewAll": "Explorar todos los casos",
+      "labels": {
+        "challenge": "El reto",
+        "constraints": "Restricciones",
+        "role": "Mi responsabilidad",
+        "decisions": "Decisiones técnicas",
+        "implementation": "Implementación",
+        "results": "Resultados",
+        "lessons": "Aprendizaje",
+        "technologies": "Tecnologías utilizadas"
+      },
+      "items": [
+        {
+          "id": "angular-modernization",
+          "number": "01",
+          "title": "Modernización de Angular y arquitectura de microfrontends",
+          "context": "Banca empresarial",
+          "icon": "fa-brands fa-angular",
+          "accentClass": "accent-primary",
+          "tags": ["Angular 11–21", "TypeScript", "Single-SPA", "Azure DevOps"],
+          "challenge": "Modernizar aplicaciones Angular integradas en una arquitectura de microfrontends sin detener el crecimiento funcional de la plataforma.",
+          "constraints": [
+            "Proyectos existentes con versiones y dependencias diferentes.",
+            "Integración obligatoria con una aplicación raíz y otros microfrontends.",
+            "Necesidad de continuar atendiendo funcionalidades e incidencias durante la modernización."
+          ],
+          "role": "Participé en las migraciones, resolví incompatibilidades, actualicé dependencias y creé nuevos microfrontends desde su configuración inicial.",
+          "decisions": [
+            "Alinear cada proyecto con las versiones compatibles de Angular y sus dependencias.",
+            "Mantener una configuración consistente de Single-SPA para facilitar la integración.",
+            "Validar el comportamiento de las aplicaciones después de cada actualización."
+          ],
+          "implementation": [
+            "Migración de aplicaciones de Angular 11 a Angular 18.",
+            "Actualización posterior de Angular 18 a Angular 21.",
+            "Creación de proyectos desde cero y configuración de Single-SPA.",
+            "Resolución de incompatibilidades y errores complejos de frontend."
+          ],
+          "results": [
+            "Aplicaciones actualizadas y preparadas para continuar evolucionando sobre versiones modernas de Angular.",
+            "Nuevos microfrontends integrados de forma consistente con la aplicación principal.",
+            "Mejor estabilidad y experiencia del usuario mediante la corrección continua de incidencias."
+          ],
+          "lessons": "Una migración no termina al compilar: debe conservar la integración, el comportamiento funcional y la capacidad del equipo para seguir entregando valor."
+        },
+        {
+          "id": "document-management",
+          "number": "02",
+          "title": "Gestión confiable de documentos PDF",
+          "context": "Procesos institucionales",
+          "icon": "fa-regular fa-file-pdf",
+          "accentClass": "accent-success",
+          "tags": ["ASP.NET", "C#", "SQL Server", "PostgreSQL", "IIS"],
+          "challenge": "Crear desde cero una aplicación para almacenar, consultar y descargar documentos virtualizados, evitando archivos corruptos y consultas ineficientes.",
+          "constraints": [
+            "Los documentos debían conservar su integridad durante el almacenamiento y la descarga.",
+            "La búsqueda tenía que seguir siendo eficiente al crecer el volumen de información.",
+            "La solución debía cubrir todo el ciclo, desde el análisis hasta la publicación en IIS."
+          ],
+          "role": "Diseñé y desarrollé la aplicación, trabajé en el modelo de persistencia, optimicé consultas e índices y acompañé su publicación y mejora en producción.",
+          "decisions": [
+            "Separar la información descriptiva de los documentos de su mecanismo de almacenamiento.",
+            "Fortalecer las validaciones durante los flujos de carga y descarga.",
+            "Revisar relaciones, consultas e índices a partir de los patrones reales de búsqueda."
+          ],
+          "implementation": [
+            "Desarrollo de la aplicación con ASP.NET, C# y JavaScript.",
+            "Implementación de flujos para guardar, localizar y descargar archivos PDF.",
+            "Corrección de problemas que producían documentos corruptos.",
+            "Optimización de índices y consultas en bases de datos relacionales."
+          ],
+          "results": [
+            "Gestión más confiable de documentos durante su almacenamiento y recuperación.",
+            "Consultas y descargas más eficientes mediante mejoras en relaciones e índices.",
+            "Proceso institucional centralizado en una aplicación creada a la medida."
+          ],
+          "lessons": "En una solución documental, la integridad del archivo y el diseño de los datos deben resolverse como un mismo problema, no como capas aisladas."
+        },
+        {
+          "id": "database-reverse-engineering",
+          "number": "03",
+          "title": "Ingeniería inversa y mejora de bases de datos heredadas",
+          "context": "Sistemas financieros ERP",
+          "icon": "fa-solid fa-database",
+          "accentClass": "accent-warning",
+          "tags": ["SQL Server", "Stored Procedures", "Triggers", "ASP.NET Framework", "PowerBuilder"],
+          "challenge": "Identificar el origen de errores en sistemas financieros y administrativos cuyo comportamiento dependía de lógica distribuida entre aplicaciones y bases de datos heredadas.",
+          "constraints": [
+            "Conocimiento técnico incompleto sobre algunos procesos existentes.",
+            "Procedimientos almacenados complejos y lógica implementada mediante triggers.",
+            "Convivencia de aplicaciones ASP.NET Framework y PowerBuilder."
+          ],
+          "role": "Analicé el flujo de datos, realicé ingeniería inversa, corregí errores e implementé nuevas funcionalidades en aplicaciones y objetos de base de datos.",
+          "decisions": [
+            "Rastrear cada proceso desde la interfaz hasta las consultas y objetos ejecutados en SQL Server.",
+            "Auditar procedimientos almacenados antes de modificar su comportamiento.",
+            "Mantener compatibilidad con las aplicaciones existentes mientras se mejoraba la lógica."
+          ],
+          "implementation": [
+            "Análisis de tablas, relaciones y dependencias entre objetos.",
+            "Creación y modificación de procedimientos almacenados y triggers.",
+            "Desarrollo de consultas y operaciones CRUD.",
+            "Auditoría y optimización de procedimientos almacenados complejos."
+          ],
+          "results": [
+            "Identificación y corrección de problemas difíciles de localizar desde la aplicación.",
+            "Nuevas funcionalidades incorporadas sin perder compatibilidad con sistemas heredados.",
+            "Procesos de base de datos más claros y mantenibles después de su análisis."
+          ],
+          "lessons": "La ingeniería inversa efectiva exige comprender primero el proceso de negocio; optimizar una consulta sin conocer su propósito puede trasladar el problema a otra parte del sistema."
+        },
+        {
+          "id": "frontend-security-delivery",
+          "number": "04",
+          "title": "Seguridad frontend y entregas más confiables",
+          "context": "Banca empresarial",
+          "icon": "fa-solid fa-shield-halved",
+          "accentClass": "accent-info",
+          "tags": ["Angular", "Cifrado", "Seguridad", "Pipelines", "Releases"],
+          "challenge": "Reducir riesgos de seguridad en una aplicación bancaria sin afectar la experiencia del usuario ni detener la entrega de nuevas funcionalidades.",
+          "constraints": [
+            "Manejo de información sensible desde el frontend.",
+            "Necesidad de mitigar vulnerabilidades dentro de una aplicación en evolución constante.",
+            "Procesos de release y pipelines vinculados con múltiples proyectos."
+          ],
+          "role": "Mitigué vulnerabilidades, reforcé flujos de contraseña y cifrado, resolví incidencias complejas y participé en mejoras de releases y pipelines.",
+          "decisions": [
+            "Aplicar reglas de validación que eviten contraseñas débiles o fácilmente vulnerables.",
+            "Proteger información sensible mediante cifrado de extremo a extremo.",
+            "Incorporar las correcciones de seguridad al flujo habitual de entrega."
+          ],
+          "implementation": [
+            "Fortalecimiento del manejo y validación de contraseñas.",
+            "Incorporación de cifrado en el intercambio de información sensible.",
+            "Corrección de vulnerabilidades y bugs complejos del lado frontend.",
+            "Mejora de tareas relacionadas con releases y pipelines."
+          ],
+          "results": [
+            "Mayor protección de la información procesada por la aplicación.",
+            "Flujos de contraseña más resistentes ante credenciales débiles.",
+            "Entregas más confiables y mejoras funcionales incorporadas de manera continua."
+          ],
+          "lessons": "La seguridad frontend aporta más valor cuando forma parte del diseño y del proceso de entrega, en lugar de tratarse como una corrección aislada al final."
         }
       ]
     },
@@ -640,6 +791,15 @@
       "label": "Trabajos",
       "type": "link",
       "icon": "fa-solid fa-clock-rotate-left",
+      "events": { "click": "null" }
+    },
+    {
+      "path": "case-studies",
+      "label": "Casos de estudio",
+      "type": "link",
+      "icon": "fa-solid fa-magnifying-glass-chart",
+      "newLabel": "nuevo",
+      "newStyle": "text-info-emphasis bg-info-subtle border border-info-subtle",
       "events": { "click": "null" }
     }
   ]

@@ -45,6 +45,7 @@
         "about-us": "About Me",
         "skills-&-tools": "Skills & Tools",
         "work": "Work",
+        "case-studies": "Case studies",
         "contact-us": "Contact"
       },
       "others": {
@@ -274,6 +275,156 @@
             { "name": "Git", "color": "bg-git" },
             { "name": "Azure", "color": "bg-azure" }
           ]
+        }
+      ]
+    },
+    "caseStudies": {
+      "eyebrow": "Problems I have solved",
+      "title": "Case studies",
+      "description": "The decisions, implementations, and lessons behind some of the most relevant challenges in my career.",
+      "viewAll": "Explore all case studies",
+      "labels": {
+        "challenge": "The challenge",
+        "constraints": "Constraints",
+        "role": "My responsibility",
+        "decisions": "Technical decisions",
+        "implementation": "Implementation",
+        "results": "Results",
+        "lessons": "Key lesson",
+        "technologies": "Technologies used"
+      },
+      "items": [
+        {
+          "id": "angular-modernization",
+          "number": "01",
+          "title": "Angular modernization and microfrontend architecture",
+          "context": "Corporate banking",
+          "icon": "fa-brands fa-angular",
+          "accentClass": "accent-primary",
+          "tags": ["Angular 11–21", "TypeScript", "Single-SPA", "Azure DevOps"],
+          "challenge": "Modernize Angular applications integrated into a microfrontend architecture without stopping the platform's functional growth.",
+          "constraints": [
+            "Existing projects with different versions and dependencies.",
+            "Required integration with a root application and other microfrontends.",
+            "Need to continue delivering features and resolving incidents during modernization."
+          ],
+          "role": "I contributed to the migrations, resolved incompatibilities, upgraded dependencies, and created new microfrontends from their initial configuration.",
+          "decisions": [
+            "Align each project with compatible Angular and dependency versions.",
+            "Keep a consistent Single-SPA configuration to simplify integration.",
+            "Validate application behavior after every upgrade."
+          ],
+          "implementation": [
+            "Migrated applications from Angular 11 to Angular 18.",
+            "Subsequently upgraded Angular 18 applications to Angular 21.",
+            "Created projects from the ground up and configured Single-SPA.",
+            "Resolved compatibility issues and complex frontend defects."
+          ],
+          "results": [
+            "Applications upgraded and prepared to keep evolving on modern Angular versions.",
+            "New microfrontends consistently integrated with the main application.",
+            "Improved stability and user experience through continuous incident resolution."
+          ],
+          "lessons": "A migration does not end when the application compiles: it must preserve integration, functional behavior, and the team's ability to continue delivering value."
+        },
+        {
+          "id": "document-management",
+          "number": "02",
+          "title": "Reliable PDF document management",
+          "context": "Institutional processes",
+          "icon": "fa-regular fa-file-pdf",
+          "accentClass": "accent-success",
+          "tags": ["ASP.NET", "C#", "SQL Server", "PostgreSQL", "IIS"],
+          "challenge": "Build an application from the ground up to store, search, and download virtualized documents while preventing file corruption and inefficient retrieval.",
+          "constraints": [
+            "Documents had to preserve their integrity during storage and download.",
+            "Searches had to remain efficient as the volume of information grew.",
+            "The solution had to cover the full lifecycle, from analysis to IIS deployment."
+          ],
+          "role": "I designed and developed the application, worked on its persistence model, optimized queries and indexes, and supported its deployment and continuous improvement in production.",
+          "decisions": [
+            "Separate document metadata from its storage mechanism.",
+            "Strengthen validations across upload and download workflows.",
+            "Review relationships, queries, and indexes based on actual search patterns."
+          ],
+          "implementation": [
+            "Developed the application with ASP.NET, C#, and JavaScript.",
+            "Implemented workflows to store, locate, and download PDF files.",
+            "Resolved issues that caused document corruption.",
+            "Optimized indexes and queries in relational databases."
+          ],
+          "results": [
+            "More reliable document management during storage and retrieval.",
+            "More efficient searches and downloads through relationship and index improvements.",
+            "Institutional processes centralized in a custom-built application."
+          ],
+          "lessons": "In a document solution, file integrity and data design must be solved as one problem rather than as isolated layers."
+        },
+        {
+          "id": "database-reverse-engineering",
+          "number": "03",
+          "title": "Reverse engineering and improvement of legacy databases",
+          "context": "Financial ERP systems",
+          "icon": "fa-solid fa-database",
+          "accentClass": "accent-warning",
+          "tags": ["SQL Server", "Stored Procedures", "Triggers", "ASP.NET Framework", "PowerBuilder"],
+          "challenge": "Identify the root cause of issues in financial and administrative systems whose behavior depended on logic distributed across applications and legacy databases.",
+          "constraints": [
+            "Incomplete technical knowledge about some existing processes.",
+            "Complex stored procedures and logic implemented through triggers.",
+            "Coexistence of ASP.NET Framework and PowerBuilder applications."
+          ],
+          "role": "I analyzed data flows, performed reverse engineering, resolved defects, and implemented new features across applications and database objects.",
+          "decisions": [
+            "Trace each process from the user interface to the queries and objects executed in SQL Server.",
+            "Audit stored procedures before changing their behavior.",
+            "Preserve compatibility with existing applications while improving the underlying logic."
+          ],
+          "implementation": [
+            "Analyzed tables, relationships, and dependencies between objects.",
+            "Created and modified stored procedures and triggers.",
+            "Developed queries and CRUD operations.",
+            "Audited and optimized complex stored procedures."
+          ],
+          "results": [
+            "Identified and resolved issues that were difficult to locate from the application layer.",
+            "Added new features without breaking compatibility with legacy systems.",
+            "Produced clearer and more maintainable database processes after analysis."
+          ],
+          "lessons": "Effective reverse engineering requires understanding the business process first; optimizing a query without knowing its purpose can move the problem elsewhere in the system."
+        },
+        {
+          "id": "frontend-security-delivery",
+          "number": "04",
+          "title": "Frontend security and more reliable delivery",
+          "context": "Corporate banking",
+          "icon": "fa-solid fa-shield-halved",
+          "accentClass": "accent-info",
+          "tags": ["Angular", "Encryption", "Security", "Pipelines", "Releases"],
+          "challenge": "Reduce security risks in a banking application without affecting user experience or stopping the delivery of new features.",
+          "constraints": [
+            "Sensitive information handled through the frontend.",
+            "Need to mitigate vulnerabilities in an application under continuous development.",
+            "Release processes and pipelines connected to multiple projects."
+          ],
+          "role": "I mitigated vulnerabilities, strengthened password and encryption workflows, resolved complex incidents, and contributed to release and pipeline improvements.",
+          "decisions": [
+            "Apply validation rules that prevent weak or easily compromised passwords.",
+            "Protect sensitive information through end-to-end encryption.",
+            "Include security corrections in the regular delivery workflow."
+          ],
+          "implementation": [
+            "Strengthened password handling and validation.",
+            "Added encryption to sensitive information exchanges.",
+            "Resolved vulnerabilities and complex frontend defects.",
+            "Improved tasks related to releases and pipelines."
+          ],
+          "results": [
+            "Greater protection for information processed by the application.",
+            "Password workflows made more resistant to weak credentials.",
+            "More reliable delivery with continuous functional improvements."
+          ],
+          "lessons": "Frontend security delivers more value when it is part of design and delivery rather than treated as an isolated correction at the end."
         }
       ]
     },
@@ -640,6 +791,15 @@
       "label": "Linetime works",
       "type": "link",
       "icon": "fa-solid fa-clock-rotate-left",
+      "events": { "click": "null" }
+    },
+    {
+      "path": "case-studies",
+      "label": "Case studies",
+      "type": "link",
+      "icon": "fa-solid fa-magnifying-glass-chart",
+      "newLabel": "new",
+      "newStyle": "text-info-emphasis bg-info-subtle border border-info-subtle",
       "events": { "click": "null" }
     }
   ]
