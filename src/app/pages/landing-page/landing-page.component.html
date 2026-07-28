@@ -16,12 +16,11 @@
   <div id="skills-&-tools" class="bg-secondary-subtle">
     <div class="container pb-5">
       <app-skills-n-tools></app-skills-n-tools>
-      <div class="row pb-5 pt-3">
-        <div class="col-12 text-center">
-          <h5 tabindex="0" (mouseenter)="focusIn = true" (mouseleave)="focusIn = false" [ngClass]="{ 'fa-beat': focusIn }">
-            <a [routerLink]="'projects/experience/frontend'">{{ 'general.seeMyExperience' | translate }}<i class="fa-solid fa-arrow-right ms-2"></i></a>
-          </h5>
-        </div>
+      <div class="section-action pb-5 pt-3">
+        <a class="section-link" [routerLink]="'projects/experience/frontend'">
+          {{ 'general.seeMyExperience' | translate }}
+          <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+        </a>
       </div>
     </div>
   </div>
@@ -37,12 +36,11 @@
   <div id="work" class="pt-5 bg-body-tertiary">
     <div class="container pb-5">
       <app-work></app-work>
-      <div class="row pb-5 pt-3">
-        <div class="col-12 text-center">
-          <h5 tabindex="0" (mouseenter)="focusIn = true" (mouseleave)="focusIn = false" [ngClass]="{ 'fa-beat': focusIn }">
-            <a [routerLink]="'projects/experience/frontend'">{{ 'general.seeMyExperience' | translate }}<i class="fa-solid fa-arrow-right ms-2"></i></a>
-          </h5>
-        </div>
+      <div class="section-action pb-5 pt-3">
+        <a class="section-link" [routerLink]="'projects/experience/frontend'">
+          {{ 'general.seeMyExperience' | translate }}
+          <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+        </a>
       </div>
     </div>
   </div>

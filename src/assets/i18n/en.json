@@ -96,6 +96,7 @@
       }
     },
     "aboutUs": {
+      "eyebrow": "Professional profile",
       "title": "About me",
       "description": "I am a person passionate about technology and innovation. With more than 10 years of experience in web development, I specialize in creating digital solutions that help people and businesses grow and achieve their goals.",
       "skills": [
@@ -645,8 +646,14 @@
       ]
     },
     "contact": {
+      "eyebrow": "Let's work together",
       "title": "Contact me",
       "description": "If you have any questions or want to work together, feel free to contact me. I will be happy to help you.",
+      "panel": {
+        "title": "Let's discuss your next project",
+        "description": "Tell me about the problem you need to solve, the idea you want to validate, or the product you want to improve.",
+        "promise": "I will personally respond to your message."
+      },
       "form": {
         "name": {
           "title": "Name",

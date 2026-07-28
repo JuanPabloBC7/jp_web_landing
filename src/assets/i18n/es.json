@@ -96,6 +96,7 @@
       }
     },
     "aboutUs": {
+      "eyebrow": "Perfil profesional",
       "title": "Sobre mí",
       "description": "Soy una persona apasionada por la tecnología y la innovación. Con más de 10 años de experiencia en el desarrollo web, me especializo en crear soluciones digitales que ayudan a las personas y empresas a crecer y alcanzar sus objetivos.",
       "skills": [
@@ -644,8 +645,14 @@
       ]
     },
     "contact": {
+      "eyebrow": "Trabajemos juntos",
       "title": "Contáctame",
       "description": "Si deseas contactarme, puedes hacerlo a través de mis redes sociales o enviándome un correo electrónico.",
+      "panel": {
+        "title": "Conversemos sobre tu próximo proyecto",
+        "description": "Cuéntame el problema que necesitas resolver, la idea que quieres validar o el producto que deseas mejorar.",
+        "promise": "Responderé personalmente a tu mensaje."
+      },
       "form": {
         "name": {
           "title": "Nombre",

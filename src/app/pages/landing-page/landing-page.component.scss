@@ -3,6 +3,31 @@
   overflow: hidden;
 }
 
+.section-action {
+  display: flex;
+  justify-content: center;
+}
+
+.section-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid currentColor;
+  color: var(--bs-primary);
+  font-size: 0.9rem;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.section-link i {
+  transition: transform 180ms ease;
+}
+
+.section-link:hover i {
+  transform: translateX(4px);
+}
+
 .section-introduction::after {
   content: "";
   position: absolute;

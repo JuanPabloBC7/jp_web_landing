@@ -1,7 +1,22 @@
-<section class="py-5">
-  <div class="row justify-content-center mb-3">
-    <div class="col-12 col-sm-12 col-md-10 col-lg-8">
-      <h2 class="mb-4 text-center">{{ 'pages.contact.title' | translate }}</h2>
+<section class="contact-section py-5">
+  <div class="section-heading text-center mx-auto mb-5">
+    <span class="eyebrow">{{ 'pages.contact.eyebrow' | translate }}</span>
+    <h2>{{ 'pages.contact.title' | translate }}</h2>
+    <p>{{ 'pages.contact.description' | translate }}</p>
+  </div>
+
+  <div class="contact-layout">
+    <aside class="contact-copy">
+      <span class="contact-icon"><i class="fa-regular fa-paper-plane" aria-hidden="true"></i></span>
+      <h3>{{ 'pages.contact.panel.title' | translate }}</h3>
+      <p>{{ 'pages.contact.panel.description' | translate }}</p>
+      <div class="contact-promise">
+        <i class="fa-solid fa-check" aria-hidden="true"></i>
+        {{ 'pages.contact.panel.promise' | translate }}
+      </div>
+    </aside>
+
+    <div class="contact-form-card">
       <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" novalidate>
         <div class="mb-3">
           <label for="name" class="form-label">{{ 'pages.contact.form.name.title' | translate }}</label>
@@ -39,8 +54,9 @@
             placeholder="{{ 'pages.contact.form.message.placeholder' | translate }}"></textarea>
           <div class="invalid-feedback" *ngIf="contactForm.get('message')?.invalid && (submitted || contactForm.get('message')?.touched || contactForm.get('message')?.dirty)">{{ 'pages.contact.form.required' | translate }}</div>
         </div>
-        <button type="submit" class="btn btn-primary w-100" [disabled]="loading">
+        <button type="submit" class="btn btn-primary btn-lg rounded-pill w-100" [disabled]="loading">
           <span *ngIf="loading" class="spinner-border spinner-border-sm me-2"></span>{{ 'pages.contact.form.submit' | translate }}
+          <i *ngIf="!loading" class="fa-solid fa-arrow-right ms-2" aria-hidden="true"></i>
         </button>
         <div *ngIf="showMessage" [class]="success ? 'alert alert-success mt-3' : 'alert alert-danger mt-3'">{{ success ? notification.successMessage : notification.errorMessage }}</div>
       </form>

@@ -1,19 +1,19 @@
-<section class="py-5">
-  <div class="row text-center mb-5">
-    <div class="col-12">
-      <h2 class="fw-bold mb-3">{{ 'pages.aboutUs.title' | translate }}</h2>
-      <p class="lead text-secondary">{{ 'pages.aboutUs.description' | translate }}</p>
-    </div>
+<section class="about-section py-5">
+  <div class="section-heading text-center mx-auto mb-5">
+    <span class="eyebrow">{{ 'pages.aboutUs.eyebrow' | translate }}</span>
+    <h2>{{ 'pages.aboutUs.title' | translate }}</h2>
+    <p>{{ 'pages.aboutUs.description' | translate }}</p>
   </div>
 
-  <div class="row text-center">
-    <div class="col-md-4 mb-4" [ngClass]="item?.show == 'true' ? 'd-block' : 'd-none'" *ngFor="let item of translateAboutUs">
-      <div class="card border-0 shadow-sm h-100" [ngClass]="item?.bgClass">
-        <div class="card-body">
-          <i [class]="'fs-1 mb-3 ' + item?.icon"></i>
-          <h5 class="card-title fw-bold">{{ item?.title }}</h5>
+  <div class="about-grid">
+    <ng-container *ngFor="let item of translateAboutUs">
+      <article class="value-card" *ngIf="item?.show == 'true'">
+        <div class="value-icon" [ngClass]="item?.bgClass">
+          <i [class]="item?.icon" aria-hidden="true"></i>
         </div>
-      </div>
-    </div>
+        <h3>{{ item?.title }}</h3>
+        <p>{{ item?.description }}</p>
+      </article>
+    </ng-container>
   </div>
 </section>

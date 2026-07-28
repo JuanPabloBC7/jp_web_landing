@@ -1,7 +1,12 @@
-<div class="row mt-5">
-  <div class="col-12 text-end d-flex justify-content-end pe-5">
-    <a><i [class]="'fa-solid fs-5'" [ngClass]="showCarousel ? 'fa-timeline' : 'fa-grip'" [ngbTooltip]="showCarousel ? ('pages.work.timeline.title' | translate) : ('pages.work.carousel.title' | translate)" [placement]="'left'" (click)="showCarousel = !showCarousel" [style]="'cursor: pointer;'"></i></a>
-  </div>
+<div class="view-switch">
+  <button
+    type="button"
+    class="view-switch-button"
+    (click)="showCarousel = !showCarousel"
+    [attr.aria-label]="showCarousel ? ('pages.work.timeline.title' | translate) : ('pages.work.carousel.title' | translate)">
+    <i class="fa-solid" [ngClass]="showCarousel ? 'fa-timeline' : 'fa-grip'" aria-hidden="true"></i>
+    {{ showCarousel ? ('pages.work.timeline.title' | translate) : ('pages.work.carousel.title' | translate) }}
+  </button>
 </div>
 <app-timeline *ngIf="!showCarousel"></app-timeline>
 <app-carousel *ngIf="showCarousel"></app-carousel>
