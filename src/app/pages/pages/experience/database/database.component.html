@@ -6,4 +6,51 @@
     </p>
   </div>
 </section>
-<app-sql-server></app-sql-server>
+
+<section *ngFor="let item of items" class="database-experience mx-auto px-3 px-md-4" [attr.id]="item.id">
+  <article class="database-spotlight">
+    <header class="database-spotlight__header">
+      <p class="experience-eyebrow">{{ item.eyebrow }}</p>
+      <h2>{{ item.title }}</h2>
+      <p class="database-spotlight__intro">{{ item.description }}</p>
+    </header>
+
+    <section class="experience-block">
+      <h3>{{ item.evidenceTitle }}</h3>
+      <ul class="evidence-list">
+        <li *ngFor="let evidence of item.evidence">
+          <span class="evidence-list__check" aria-hidden="true">✓</span>
+          <span>{{ evidence }}</span>
+        </li>
+      </ul>
+    </section>
+
+    <div class="experience-columns">
+      <section class="stack-card">
+        <h3>{{ item.toolsTitle }}</h3>
+        <ul class="tool-list">
+          <li *ngFor="let tool of item.tools"><i [class]="tool.class" aria-hidden="true"></i><span>{{ tool.name }}</span></li>
+        </ul>
+        <ng-container *ngIf="item.otherTools?.length">
+          <h4 class="other-tools-title">{{ item.otherToolsTitle }}</h4>
+          <ul class="tool-list tool-list--secondary">
+            <li *ngFor="let tool of item.otherTools"><i [class]="tool.class" aria-hidden="true"></i><span>{{ tool.name }}</span></li>
+          </ul>
+        </ng-container>
+      </section>
+      <aside class="stack-card" *ngIf="item.capabilities?.length">
+        <div class="capability-list">
+          <span *ngFor="let capability of item.capabilities">{{ capability }}</span>
+        </div>
+      </aside>
+    </div>
+
+    <footer class="database-spotlight__footer" *ngIf="item.relatedPath">
+      <a class="database-case-link" [href]="item.relatedPath">
+        <span class="database-case-link__icon" aria-hidden="true"><i class="fa-solid fa-database"></i></span>
+        <span class="database-case-link__content"><small>{{ item.relatedLabel }}</small><strong>{{ item.relatedTitle }}</strong></span>
+        <span class="database-case-link__arrow" aria-hidden="true">→</span>
+      </a>
+    </footer>
+  </article>
+</section>

@@ -731,6 +731,112 @@
       "frontend": {
         "title": "Frontend development experience",
         "description": "Enterprise interfaces with HTML, JavaScript, TypeScript, Angular, and React, focused on architecture, performance, security, and modernization.",
+        "items": [
+          {
+            "id": "html", "title": "HTML", "context": "Frontend and interfaces",
+            "description": "I use <code>HTML</code> as the foundation of accessible, responsive, and maintainable enterprise interfaces.",
+            "iconClass": "devicon-html5-plain", "accentClass": "technology-evidence--html",
+            "evidenceTitle": "Applied evidence",
+            "evidence": [
+              "<strong>Semantic structures:</strong> I organized portals and applications to improve navigation, accessibility, SEO, and maintenance.",
+              "<strong>Responsive interfaces:</strong> I adapted templates and components for desktop and mobile devices.",
+              "<strong>Existing systems:</strong> I corrected hierarchies, forms, and components to make workflows clearer."
+            ],
+            "toolsTitle": "Ecosystem used",
+            "tools": [
+              { "name": "HTML5", "class": "devicon-html5-plain bg-html" },
+              { "name": "CSS3", "class": "devicon-css3-plain bg-css3" },
+              { "name": "Sass", "class": "devicon-sass-original bg-sass" },
+              { "name": "Bootstrap", "class": "devicon-bootstrap-plain bg-bootstrap" },
+              { "name": "Tailwind", "class": "devicon-tailwindcss-original bg-react" }
+            ],
+            "relatedLabel": "View technical notes", "relatedPath": "/projects/notes"
+          },
+          {
+            "id": "javascript", "title": "JavaScript", "context": "Frontend and interfaces",
+            "description": "I have used <code>JavaScript</code> to build interfaces, validations, and API integrations in enterprise systems and new products.",
+            "iconClass": "devicon-javascript-plain", "accentClass": "technology-evidence--javascript",
+            "evidenceTitle": "Applied evidence",
+            "evidence": [
+              "<strong>Modernization:</strong> I implemented forms and dynamic behavior with JavaScript and jQuery.",
+              "<strong>Integrations:</strong> I connected interfaces to REST APIs and handled authentication, errors, and loading states.",
+              "<strong>Enterprise workflows:</strong> I improved tables, reports, and document downloads.",
+              "<strong>Maintenance:</strong> I organized legacy code and resolved hard-to-reproduce defects."
+            ],
+            "toolsTitle": "Ecosystem used",
+            "tools": [
+              { "name": "JavaScript", "class": "devicon-javascript-plain bg-javascript" },
+              { "name": "jQuery", "class": "devicon-jquery-plain bg-jquery" },
+              { "name": "npm", "class": "devicon-npm-original-wordmark bg-npm" }
+            ],
+            "relatedLabel": "View technical notes", "relatedPath": "/projects/notes"
+          },
+          {
+            "id": "typescript", "title": "TypeScript", "context": "Frontend and interfaces",
+            "description": "I use <code>TypeScript</code> as the foundation of Angular applications and typed services to simplify maintenance and refactoring.",
+            "iconClass": "devicon-typescript-plain", "accentClass": "technology-evidence--typescript",
+            "evidenceTitle": "Applied evidence",
+            "evidence": [
+              "<strong>Maintainable contracts:</strong> I defined interfaces and models for APIs, forms, and business rules.",
+              "<strong>Safe modernization:</strong> I detected incompatibilities during Angular migrations.",
+              "<strong>Modular architecture:</strong> I organized libraries, services, and microfrontends.",
+              "<strong>Problem solving:</strong> I corrected asynchronous workflows and complex state defects."
+            ],
+            "toolsTitle": "Ecosystem used",
+            "tools": [
+              { "name": "TypeScript", "class": "devicon-typescript-plain bg-typescript" },
+              { "name": "Angular", "class": "devicon-angularjs-plain bg-angular" },
+              { "name": "Node.js", "class": "devicon-nodejs-plain bg-node" }
+            ],
+            "relatedLabel": "View case study", "relatedPath": "/projects/case-studies#angular-modernization"
+          },
+          {
+            "id": "angular", "title": "Angular", "context": "Frontend and interfaces",
+            "description": "I have worked with <code>Angular</code> since 2021 on enterprise applications, microfrontends, and secure, scalable solutions.",
+            "iconClass": "devicon-angularjs-plain", "accentClass": "technology-evidence--angular",
+            "evidenceTitle": "Applied evidence",
+            "evidence": [
+              "<strong>Modernization:</strong> I migrated applications from Angular 11 to 18 and later Angular 21.",
+              "<strong>Microfrontends:</strong> I created projects from scratch and configured Single-SPA.",
+              "<strong>Security:</strong> I mitigated vulnerabilities, strengthened passwords, and added encryption.",
+              "<strong>Delivery:</strong> I improved PDF workflows, releases, and pipelines."
+            ],
+            "toolsTitle": "Ecosystem used",
+            "tools": [
+              { "name": "Angular", "class": "devicon-angularjs-plain bg-angular" },
+              { "name": "TypeScript", "class": "devicon-typescript-plain bg-typescript" },
+              { "name": "PrimeNG", "class": "fa-solid fa-p bg-angular" },
+              { "name": "RxJS", "class": "devicon-rxjs-plain bg-angular" }
+            ],
+            "dependencies": [
+              { "name": "Single-SPA", "link": "https://single-spa.js.org" },
+              { "name": "Angular Material", "link": "https://material.angular.dev" },
+              { "name": "PrimeNG", "link": "https://primeng.org" },
+              { "name": "PDF.js", "link": "https://mozilla.github.io/pdf.js/" }
+            ],
+            "relatedLabel": "View case study", "relatedPath": "/projects/case-studies#angular-modernization"
+          },
+          {
+            "id": "react", "title": "React", "context": "Frontend and interfaces",
+            "description": "I have used <code>React</code> to build component-based interfaces and broaden my modern architecture experience.",
+            "iconClass": "devicon-react-original", "accentClass": "technology-evidence--react",
+            "evidenceTitle": "Applied evidence",
+            "evidence": [
+              "I built reusable components by managing props, state, and events.",
+              "I integrated services and APIs into modular views.",
+              "I applied modern styling with Tailwind and ReactBits.",
+              "I separated presentation, logic, and service integrations."
+            ],
+            "toolsTitle": "Ecosystem used",
+            "tools": [
+              { "name": "React", "class": "devicon-react-original bg-react" },
+              { "name": "TypeScript", "class": "devicon-typescript-plain bg-typescript" },
+              { "name": "Tailwind", "class": "devicon-tailwindcss-original bg-react" },
+              { "name": "Vite", "class": "devicon-vitejs-plain bg-angular" }
+            ],
+            "relatedLabel": "View technical notes", "relatedPath": "/projects/notes"
+          }
+        ],
         "html": {
           "title": "HTML",
           "subtitle": "Ecosystem used",
@@ -843,6 +949,71 @@
       "backend": {
         "title": "Backend development experience",
         "description": "Services, APIs, business rules, institutional applications, and integrations built with Python, C#, and ASP.NET.",
+        "items": [
+          {
+            "id": "python", "title": "Python", "context": "Backend and services",
+            "description": "I use <code>Python</code> to build APIs, automations, data processes, and artificial intelligence products.",
+            "iconClass": "devicon-python-plain", "accentClass": "technology-evidence--python",
+            "evidenceTitle": "Applied evidence",
+            "evidence": [
+              "<strong>Typed APIs:</strong> I built services with FastAPI and Pydantic.",
+              "<strong>Persistence:</strong> I integrated SQLAlchemy, JWT, and password hashing.",
+              "<strong>Automation:</strong> I connected services and reduced manual tasks.",
+              "<strong>AI:</strong> I developed assistants for orders, appointments, and service requests."
+            ],
+            "toolsTitle": "Ecosystem used",
+            "tools": [
+              { "name": "Python", "class": "devicon-python-plain bg-python" },
+              { "name": "FastAPI", "class": "devicon-fastapi-plain bg-node" },
+              { "name": "PostgreSQL", "class": "devicon-postgresql-plain bg-postgresql" }
+            ],
+            "dependencies": [
+              { "name": "Pydantic", "link": "https://docs.pydantic.dev" },
+              { "name": "SQLAlchemy", "link": "https://www.sqlalchemy.org" },
+              { "name": "PyJWT", "link": "https://pyjwt.readthedocs.io" }
+            ],
+            "relatedLabel": "View case study", "relatedPath": "/projects/case-studies#ai-business-assistant"
+          },
+          {
+            "id": "csharp", "title": "C#", "context": "Backend and services",
+            "description": "I have worked with <code>C#</code> since 2014 on administrative systems, web services, document management, and reporting.",
+            "iconClass": "devicon-csharp-plain", "accentClass": "technology-evidence--csharp",
+            "evidenceTitle": "Applied evidence",
+            "evidence": [
+              "<strong>Enterprise applications:</strong> I developed systems with Web Forms and MVC.",
+              "<strong>Services:</strong> I implemented ASMX, WCF, and JSON or XML endpoints.",
+              "<strong>Data:</strong> I integrated ADO.NET, DataSet, SqlClient, and stored procedures.",
+              "<strong>Production:</strong> I fixed defects and supported IIS releases."
+            ],
+            "toolsTitle": "Ecosystem used",
+            "tools": [
+              { "name": "C#", "class": "devicon-csharp-plain bg-csharp" },
+              { "name": ".NET", "class": "devicon-dot-net-plain bg-aspnet" },
+              { "name": "SQL Server", "class": "devicon-microsoftsqlserver-plain bg-sqlserver" }
+            ],
+            "relatedLabel": "View case study", "relatedPath": "/projects/case-studies#document-management"
+          },
+          {
+            "id": "aspnet", "title": "ASP.NET", "context": "Backend and services",
+            "description": "I have built applications with <code>ASP.NET Framework</code> since 2017, from administrative systems to institutional production solutions.",
+            "iconClass": "devicon-dot-net-plain", "accentClass": "technology-evidence--dotnet",
+            "evidenceTitle": "Applied evidence",
+            "evidence": [
+              "<strong>Complete products:</strong> I created applications from scratch and released them through IIS.",
+              "<strong>Document management:</strong> I built a solution to virtualize and retrieve PDF files.",
+              "<strong>Custom processes:</strong> I implemented specific administrative workflows.",
+              "<strong>Maintenance:</strong> I diagnosed defects and improved existing systems."
+            ],
+            "toolsTitle": "Ecosystem used",
+            "tools": [
+              { "name": "ASP.NET", "class": "devicon-dot-net-plain bg-aspnet" },
+              { "name": "C#", "class": "devicon-csharp-plain bg-csharp" },
+              { "name": "IIS", "class": "devicon-windows8-original bg-azure" },
+              { "name": "SQL Server", "class": "devicon-microsoftsqlserver-plain bg-sqlserver" }
+            ],
+            "relatedLabel": "View case study", "relatedPath": "/projects/case-studies#document-management"
+          }
+        ],
         "javascript": {
           "title": "JavaScript",
           "subtitle": "Ecosystem used",
@@ -956,6 +1127,40 @@
       "database": {
         "title": "Database experience",
         "description": "Database design, queries, stored procedures, triggers, indexes, audits, and data analysis for enterprise systems.",
+        "items": [
+          {
+            "id": "relational-databases",
+            "eyebrow": "Data and performance",
+            "title": "SQL Server and PostgreSQL",
+            "description": "I have worked with databases supporting financial, administrative, and document-management systems.",
+            "evidenceTitle": "Demonstrable outcomes",
+            "evidence": [
+              "I created and modified stored procedures, triggers, CRUD queries, and scripts.",
+              "I analyzed execution plans, relationships, and indexes to improve performance.",
+              "I performed reverse engineering and audits to locate defects and understand business rules.",
+              "I improved structures for storing, retrieving, and downloading PDF documents.",
+              "I analyzed payroll processes and inconsistencies between data and stored procedures."
+            ],
+            "toolsTitle": "Primary experience",
+            "tools": [
+              { "name": "SQL Server", "class": "devicon-microsoftsqlserver-plain bg-sqlserver" },
+              { "name": "PostgreSQL", "class": "devicon-postgresql-plain bg-postgresql" }
+            ],
+            "otherToolsTitle": "Other platforms used",
+            "otherTools": [
+              { "name": "MySQL", "class": "devicon-mysql-original bg-mysql" },
+              { "name": "MariaDB", "class": "devicon-mariadb-original bg-mariadb" },
+              { "name": "MongoDB", "class": "devicon-mongodb-plain bg-mongodb" },
+              { "name": "Firebase", "class": "devicon-firebase-plain bg-firebase" },
+              { "name": "Supabase", "class": "devicon-supabase-plain bg-supabase" },
+              { "name": "Oracle", "class": "devicon-oracle-original bg-oracle" }
+            ],
+            "capabilities": ["Stored procedures", "Triggers", "CRUD", "Indexes", "Execution plans", "Audits", "Reverse engineering", "Relational modeling"],
+            "relatedLabel": "View case study",
+            "relatedTitle": "Reverse engineering and improvement of legacy databases",
+            "relatedPath": "/projects/case-studies#database-reverse-engineering"
+          }
+        ],
         "sqlServer": {
           "eyebrow": "Data and performance",
           "title": "SQL Server and PostgreSQL",

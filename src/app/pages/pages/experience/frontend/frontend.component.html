@@ -6,8 +6,55 @@
     </p>
   </div>
 </section>
-<app-html></app-html>
-<app-javascript></app-javascript>
-<app-typescript></app-typescript>
-<app-angular></app-angular>
-<app-react></app-react>
+
+<section
+  *ngFor="let item of items"
+  class="technology-evidence"
+  [ngClass]="item.accentClass"
+  [attr.id]="item.id"
+>
+  <article class="technology-evidence__card">
+    <header class="technology-evidence__header">
+      <span class="technology-evidence__identity">
+        <i [class]="item.iconClass" aria-hidden="true"></i>
+      </span>
+      <div>
+        <span class="technology-evidence__context">{{ item.context }}</span>
+        <h2>{{ item.title }}</h2>
+        <p [innerHTML]="item.description"></p>
+      </div>
+    </header>
+
+    <h3>{{ item.evidenceTitle }}</h3>
+    <ul class="evidence-grid">
+      <li *ngFor="let evidence of item.evidence">
+        <span aria-hidden="true">✓</span>
+        <div [innerHTML]="evidence"></div>
+      </li>
+    </ul>
+
+    <ng-container *ngIf="item.tools?.length">
+      <h3>{{ item.toolsTitle }}</h3>
+      <div class="technology-tools">
+        <span *ngFor="let tool of item.tools" class="technology-tool">
+          <i *ngIf="tool.class" [class]="tool.class" aria-hidden="true"></i>
+          <img *ngIf="tool.link" [src]="tool.link" width="32" height="32" loading="lazy" [alt]="tool.name">
+          <span>{{ tool.name }}</span>
+        </span>
+      </div>
+    </ng-container>
+
+    <div class="dependency-chips" *ngIf="item.dependencies?.length">
+      <a *ngFor="let dependency of item.dependencies" [href]="dependency.link">
+        {{ dependency.name }}
+      </a>
+    </div>
+
+    <footer class="technology-evidence__footer" *ngIf="item.relatedPath">
+      <a [href]="item.relatedPath">
+        {{ item.relatedLabel }}
+        <span aria-hidden="true">→</span>
+      </a>
+    </footer>
+  </article>
+</section>

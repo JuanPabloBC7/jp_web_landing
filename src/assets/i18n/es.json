@@ -730,282 +730,251 @@
       "frontend": {
         "title": "Experiencia en desarrollo frontend",
         "description": "Interfaces empresariales con HTML, JavaScript, TypeScript, Angular y React, con enfoque en arquitectura, rendimiento, seguridad y modernización.",
-        "html": {
-          "title": "HTML",
-          "subtitle": "Ecosistema utilizado",
-          "evidenceTitle": "Evidencia aplicada",
-          "description": "Utilizo HTML como base de interfaces empresariales accesibles, responsivas y mantenibles, integradas tanto en aplicaciones modernas como en sistemas administrativos existentes.",
-          "skills": [
-            "<strong>Estructuras semánticas:</strong> Organicé portales y aplicaciones con HTML5 semántico para mejorar navegación, accesibilidad, SEO y mantenimiento.",
-            "<strong>Interfaces responsivas:</strong> Adapté templates administrativos y componentes para escritorio y dispositivos móviles utilizando CSS, Sass, Bootstrap y Tailwind.",
-            "<strong>Mejora de sistemas existentes:</strong> Corregí jerarquías, formularios y componentes empresariales para hacer sus flujos más claros y consistentes."
-          ],
-          "tools": [ ],
-          "dependencies": [ ]
-        },
-        "angular": {
-          "title": "Angular",
-          "subtitle": "Ecosistema utilizado",
-          "evidenceTitle": "Evidencia aplicada",
-          "description": "Trabajo con <code>Angular</code> desde 2021 en aplicaciones empresariales nuevas y existentes. He creado microfrontends, actualizado proyectos de Angular 11 a Angular 21, integrado APIs y mantenido soluciones orientadas a seguridad, rendimiento y escalabilidad.",
-          "skills": [
-            "<strong>Modernización progresiva:</strong> Ejecuté migraciones de Angular 11 a 18 y posteriormente a Angular 21, resolviendo incompatibilidades y actualizando dependencias.",
-            "<strong>Arquitectura de microfrontends:</strong> Creé proyectos desde cero y configuré Single-SPA para integrar módulos independientes en una aplicación bancaria principal.",
-            "<strong>Seguridad y estabilidad:</strong> Mitigué vulnerabilidades, reforcé reglas de contraseñas, incorporé cifrado para información sensible y resolví bugs complejos del frontend.",
-            "<strong>Experiencia y entrega:</strong> Mejoré flujos, generación y descarga de documentos PDF, además de tareas relacionadas con releases y pipelines."
-          ],
-          "tools": [
-            { "name": "Angular", "class": "devicon-angularjs-plain bg-angular mx-2" },
-            { "name": "HTML5", "class": "devicon-html5-plain bg-html mx-2" },
-            { "name": "CSS3", "class": "devicon-css3-plain bg-css3 mx-2" },
-            { "name": "Sass", "class": "devicon-sass-original bg-sass" },
-            { "name": "TypeScript", "class": "devicon-typescript-plain bg-typescript mx-2" },
-            { "name": "JavaScript", "class": "devicon-javascript-plain bg-javascript mx-2" },
-            { "name": "NodeJs", "class": "devicon-nodejs-plain bg-node mx-2" },
-            { "name": "MySQL", "class": "devicon-mysql-original bg-mysql mx-2" },
-            { "name": "MongoDB", "class": "devicon-mongodb-plain bg-mongodb mx-2" },
-            { "name": "PostgreSQL", "class": "devicon-postgresql-plain bg-postgresql mx-2" }
-          ],
-          "dependencies": [
-            { "name": "JQuery", "link": "https://jquery.com/" },
-            { "name": "Angular Material", "link": "https://material.angular.dev" },
-            { "name": "FontAwesome Icon", "link": "https://fontawesome.com/v5/search?o=r&m=free" },
-            { "name": "Single-SPA", "link": "https://single-spa.js.org/docs/getting-started-overview" },
-            { "name": "PrimeNG", "link": "https://primeng.org" },
-            { "name": "Devicon", "link": "https://devicon.dev" },
-            { "name": "Ngx Translate", "link": "https://ngx-translate.org" },
-            { "name": "Bootstrap", "link": "https://getbootstrap.com" },
-            { "name": "DataTables", "link": "https://datatables.net/" },
-            { "name": "LocalStorage", "link": "https://developer.mozilla.org/es/docs/Web/API/Window/localStorage" },
-            { "name": "Ng Bootstrap", "link": "https://ng-bootstrap.github.io/#/getting-started" },
-            { "name": "pdfMake", "link": "https://pdfmake.github.io/docs/0.1/" },
-            { "name": "SessionStorage", "link": "https://developer.mozilla.org/es/docs/Web/API/Window/sessionStorage" },
-            { "name": "SweetAlert2", "link": "https://sweetalert2.github.io/" },
-            { "name": "PDF.js", "link": "https://mozilla.github.io/pdf.js/getting_started/" },
-            { "name": "Cookies", "link": "https://learn.microsoft.com/es-es/aspnet/web-api/overview/advanced/http-cookies" }
-          ]
-        },
-        "aspnet": {
-          "title": "ASP.NET",
-          "subtitle": "Ecosistema utilizado",
-          "evidenceTitle": "Evidencia aplicada",
-          "description": "Desarrollo aplicaciones con <code>ASP.NET</code> desde 2017, desde sistemas administrativos y servicios web hasta soluciones institucionales publicadas en IIS. He trabajado con C#, Visual Basic, SQL Server e integración de interfaces empresariales.",
-          "skills": [
-            "<strong>Productos de principio a fin:</strong> Creé aplicaciones institucionales desde cero, desarrollé sus módulos y las publiqué en producción mediante IIS.",
-            "<strong>Gestión documental:</strong> Construí una solución para virtualizar archivos PDF, preservar su integridad y hacer eficiente su almacenamiento, consulta y descarga.",
-            "<strong>Procesos a la medida:</strong> Implementé aplicaciones administrativas y flujos específicos con ASP.NET Framework, C#, JavaScript y SQL Server.",
-            "<strong>Operación y mantenimiento:</strong> Diagnostiqué errores, integré templates empresariales y participé en decisiones para mejorar procesos."
-          ],
-          "tools": [
-            { "name": "HTML5", "class": "devicon-html5-plain bg-html mx-2" },
-            { "name": "CSS3", "class": "devicon-css3-plain bg-css3 mx-2" },
-            { "name": "JavaScript", "class": "devicon-javascript-plain bg-javascript mx-2" },
-            { "name": "ASP.NET", "class": "devicon-visualstudio-plain bg-aspnet mx-2" },
-            { "name": "C#", "class": "devicon-csharp-plain bg-csharp mx-2" },
-            { "name": "SQL Server", "class": "devicon-microsoftsqlserver-plain bg-sqlserver mx-2" }
-          ],
-          "dependencies": [
-            { "name": "JQuery", "link": "https://jquery.com/" },
-            { "name": "Bootstrap", "link": "https://getbootstrap.com" },
-            { "name": "DataTables", "link": "https://datatables.net/" },
-            { "name": "JavaScript", "link": "https://developer.mozilla.org/es/docs/Web/JavaScript" },
-            { "name": "Bootstrap Themes", "link": "https://themes.getbootstrap.com" },
-            { "name": "InputMask", "link": "https://plugins.jquery.com/jquery.inputmask/" },
-            { "name": "LocalStorage", "link": "https://developer.mozilla.org/es/docs/Web/API/Window/localStorage" },
-            { "name": "SweetAlert2", "link": "https://sweetalert2.github.io/" },
-            { "name": "MaxLength", "link": "http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" },
-            { "name": "SessionStorage", "link": "https://developer.mozilla.org/es/docs/Web/API/Window/sessionStorage" },
-            { "name": "FontAwesome", "link": "https://fontawesome.com/v5/search?o=r&m=free" },
-            { "name": "MaxLength2", "link": "https://htmldom.dev/count-the-number-of-characters-of-a-textarea/" },
-            { "name": "Cookies", "link": "https://learn.microsoft.com/es-es/aspnet/web-api/overview/advanced/http-cookies" }
-          ]
-        },
-        "react": {
-          "title": "React",
-          "description": "He utilizado React para construir interfaces basadas en componentes y ampliar mi experiencia en arquitecturas frontend modernas.",
-          "evidenceTitle": "Evidencia aplicada",
-          "evidence": [
-            "Construí componentes reutilizables y flujos de interfaz administrando propiedades, estado y eventos.",
-            "Integré servicios y APIs dentro de vistas orientadas a una experiencia rápida y modular.",
-            "Apliqué estilos modernos y componentes visuales con Tailwind y ReactBits.",
-            "Organicé proyectos para separar presentación, lógica e integración con servicios."
-          ],
-          "toolsTitle": "Ecosistema utilizado",
-          "tools": [
-            { "name": "React", "class": "devicon-react-original bg-react" },
-            { "name": "TypeScript", "class": "devicon-typescript-plain bg-typescript" },
-            { "name": "Tailwind", "class": "devicon-tailwindcss-original bg-react" },
-            { "name": "Vite", "class": "devicon-vitejs-plain bg-angular" }
-          ]
-        }
+        "items": [
+          {
+            "id": "html",
+            "title": "HTML",
+            "context": "Frontend e interfaces",
+            "description": "Utilizo <code>HTML</code> como base de interfaces empresariales accesibles, responsivas y mantenibles.",
+            "iconClass": "devicon-html5-plain",
+            "accentClass": "technology-evidence--html",
+            "evidenceTitle": "Evidencia aplicada",
+            "evidence": [
+              "<strong>Estructuras semánticas:</strong> Organicé portales y aplicaciones para mejorar navegación, accesibilidad, SEO y mantenimiento.",
+              "<strong>Interfaces responsivas:</strong> Adapté templates y componentes para escritorio y dispositivos móviles.",
+              "<strong>Sistemas existentes:</strong> Corregí jerarquías, formularios y componentes para hacer sus flujos más claros."
+            ],
+            "toolsTitle": "Ecosistema utilizado",
+            "tools": [
+              { "name": "HTML5", "class": "devicon-html5-plain bg-html" },
+              { "name": "CSS3", "class": "devicon-css3-plain bg-css3" },
+              { "name": "Sass", "class": "devicon-sass-original bg-sass" },
+              { "name": "Bootstrap", "class": "devicon-bootstrap-plain bg-bootstrap" },
+              { "name": "Tailwind", "class": "devicon-tailwindcss-original bg-react" }
+            ],
+            "relatedLabel": "Ver notas técnicas",
+            "relatedPath": "/projects/notes"
+          },
+          {
+            "id": "javascript",
+            "title": "JavaScript",
+            "context": "Frontend e interfaces",
+            "description": "He utilizado <code>JavaScript</code> para desarrollar interfaces, validaciones e integraciones con APIs en sistemas empresariales y productos nuevos.",
+            "iconClass": "devicon-javascript-plain",
+            "accentClass": "technology-evidence--javascript",
+            "evidenceTitle": "Evidencia aplicada",
+            "evidence": [
+              "<strong>Modernización:</strong> Implementé formularios y comportamiento dinámico con JavaScript y jQuery.",
+              "<strong>Integraciones:</strong> Conecté interfaces con APIs REST gestionando autenticación, errores y estados de carga.",
+              "<strong>Flujos empresariales:</strong> Mejoré tablas, reportes y descargas de documentos.",
+              "<strong>Mantenimiento:</strong> Organicé código heredado y resolví errores difíciles de reproducir."
+            ],
+            "toolsTitle": "Ecosistema utilizado",
+            "tools": [
+              { "name": "JavaScript", "class": "devicon-javascript-plain bg-javascript" },
+              { "name": "jQuery", "class": "devicon-jquery-plain bg-jquery" },
+              { "name": "npm", "class": "devicon-npm-original-wordmark bg-npm" }
+            ],
+            "relatedLabel": "Ver notas técnicas",
+            "relatedPath": "/projects/notes"
+          },
+          {
+            "id": "typescript",
+            "title": "TypeScript",
+            "context": "Frontend e interfaces",
+            "description": "Utilizo <code>TypeScript</code> como base de aplicaciones Angular y servicios tipados para facilitar mantenimiento y refactorización.",
+            "iconClass": "devicon-typescript-plain",
+            "accentClass": "technology-evidence--typescript",
+            "evidenceTitle": "Evidencia aplicada",
+            "evidence": [
+              "<strong>Contratos mantenibles:</strong> Definí interfaces y modelos para APIs, formularios y reglas de negocio.",
+              "<strong>Modernización segura:</strong> Detecté incompatibilidades durante migraciones de Angular.",
+              "<strong>Arquitectura modular:</strong> Organicé librerías, servicios y microfrontends.",
+              "<strong>Resolución de problemas:</strong> Corregí flujos asíncronos y errores complejos de estado."
+            ],
+            "toolsTitle": "Ecosistema utilizado",
+            "tools": [
+              { "name": "TypeScript", "class": "devicon-typescript-plain bg-typescript" },
+              { "name": "Angular", "class": "devicon-angularjs-plain bg-angular" },
+              { "name": "Node.js", "class": "devicon-nodejs-plain bg-node" }
+            ],
+            "relatedLabel": "Ver caso de estudio",
+            "relatedPath": "/projects/case-studies#angular-modernization"
+          },
+          {
+            "id": "angular",
+            "title": "Angular",
+            "context": "Frontend e interfaces",
+            "description": "Trabajo con <code>Angular</code> desde 2021 en aplicaciones empresariales, microfrontends y soluciones orientadas a seguridad y escalabilidad.",
+            "iconClass": "devicon-angularjs-plain",
+            "accentClass": "technology-evidence--angular",
+            "evidenceTitle": "Evidencia aplicada",
+            "evidence": [
+              "<strong>Modernización:</strong> Migré aplicaciones de Angular 11 a 18 y posteriormente a Angular 21.",
+              "<strong>Microfrontends:</strong> Creé proyectos desde cero y configuré Single-SPA.",
+              "<strong>Seguridad:</strong> Mitigué vulnerabilidades, reforcé contraseñas e incorporé cifrado.",
+              "<strong>Entrega:</strong> Mejoré flujos PDF, releases y pipelines."
+            ],
+            "toolsTitle": "Ecosistema utilizado",
+            "tools": [
+              { "name": "Angular", "class": "devicon-angularjs-plain bg-angular" },
+              { "name": "TypeScript", "class": "devicon-typescript-plain bg-typescript" },
+              { "name": "PrimeNG", "class": "fa-solid fa-p bg-angular" },
+              { "name": "RxJS", "class": "devicon-rxjs-plain bg-angular" }
+            ],
+            "dependencies": [
+              { "name": "Single-SPA", "link": "https://single-spa.js.org" },
+              { "name": "Angular Material", "link": "https://material.angular.dev" },
+              { "name": "PrimeNG", "link": "https://primeng.org" },
+              { "name": "PDF.js", "link": "https://mozilla.github.io/pdf.js/" }
+            ],
+            "relatedLabel": "Ver caso de estudio",
+            "relatedPath": "/projects/case-studies#angular-modernization"
+          },
+          {
+            "id": "react",
+            "title": "React",
+            "context": "Frontend e interfaces",
+            "description": "He utilizado <code>React</code> para construir interfaces basadas en componentes y ampliar mi experiencia en arquitecturas modernas.",
+            "iconClass": "devicon-react-original",
+            "accentClass": "technology-evidence--react",
+            "evidenceTitle": "Evidencia aplicada",
+            "evidence": [
+              "Construí componentes reutilizables administrando propiedades, estado y eventos.",
+              "Integré servicios y APIs dentro de vistas modulares.",
+              "Apliqué estilos modernos con Tailwind y ReactBits.",
+              "Separé presentación, lógica e integración con servicios."
+            ],
+            "toolsTitle": "Ecosistema utilizado",
+            "tools": [
+              { "name": "React", "class": "devicon-react-original bg-react" },
+              { "name": "TypeScript", "class": "devicon-typescript-plain bg-typescript" },
+              { "name": "Tailwind", "class": "devicon-tailwindcss-original bg-react" },
+              { "name": "Vite", "class": "devicon-vitejs-plain bg-angular" }
+            ],
+            "relatedLabel": "Ver notas técnicas",
+            "relatedPath": "/projects/notes"
+          }
+        ]
       },
       "backend": {
         "title": "Experiencia en desarrollo backend",
         "description": "Servicios, APIs, reglas de negocio, aplicaciones institucionales e integraciones construidas con Python, C# y ASP.NET.",
-        "javascript": {
-          "title": "JavaScript",
-          "subtitle": "Ecosistema utilizado",
-          "evidenceTitle": "Evidencia aplicada",
-          "description": "He utilizado <code>JavaScript</code> para desarrollar interfaces, validaciones, integraciones con APIs y lógica de servidor, tanto en sistemas empresariales existentes como en aplicaciones creadas desde cero.",
-          "skills": [
-            "<strong>Modernización de interfaces:</strong> Implementé validaciones, formularios y comportamiento dinámico en sistemas administrativos con JavaScript y jQuery.",
-            "<strong>Integraciones:</strong> Conecté interfaces con APIs REST y servicios externos, gestionando autenticación, respuestas JSON, errores y estados de carga.",
-            "<strong>Flujos empresariales:</strong> Mejoré tablas, reportes, descargas de documentos y procesos interactivos sin recargar la aplicación.",
-            "<strong>Mantenimiento:</strong> Organicé código heredado y resolví errores de difícil reproducción que afectaban la experiencia del usuario."
-          ],
-          "tools": [
-            { "name": "JavaScript", "class": "devicon-javascript-plain bg-javascript mx-2" },
-            { "name": "NodeJs", "class": "devicon-nodejs-plain bg-node mx-2" },
-            { "name": "npm", "class": "devicon-npm-original-wordmark bg-npm mx-2" },
-            { "name": "MySQL", "class": "devicon-mysql-original bg-mysql mx-2" },
-            { "name": "MongoDB", "class": "devicon-mongodb-plain bg-mongodb mx-2" },
-            { "name": "PostgreSQL", "class": "devicon-postgresql-plain bg-postgresql mx-2" }
-          ],
-          "dependencies": [
-            { "name": "nodemon", "link": "https://www.npmjs.com/package/nodemon" },
-            { "name": "typescript", "link": "https://www.typescriptlang.org" },
-            { "name": "mysql", "link": "https://dev.mysql.com/doc/dev/connector-nodejs/latest/" },
-            { "name": "express", "link": "https://expressjs-com.translate.goog/?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc" },
-            { "name": "body-parser", "link": "https://www.npmjs.com/package/body-parser" },
-            { "name": "promise-mysql", "link": "https://www.npmjs.com/package/promise-mysql" },
-            { "name": "cors", "link": "https://www.npmjs.com/package/cors" }
-          ]
-        },
-        "python": {
-          "title": "Python",
-          "subtitle": "Ecosistema utilizado",
-          "evidenceTitle": "Evidencia aplicada",
-          "description": "Utilizo <code>Python</code> para crear APIs, automatizaciones y procesos de datos. He trabajado con FastAPI, Pydantic, SQLAlchemy, autenticación y conexión con bases de datos relacionales.",
-          "skills": [
-            "<strong>APIs tipadas:</strong> Construí servicios con FastAPI y Pydantic para validar solicitudes, respuestas y reglas de negocio mediante contratos claros.",
-            "<strong>Persistencia e integración:</strong> Conecté APIs con bases relacionales usando SQLAlchemy y controlé autenticación con JWT y cifrado de contraseñas.",
-            "<strong>Automatización:</strong> Desarrollé procesos para integrar servicios, transformar información y reducir tareas manuales.",
-            "<strong>Productos con IA:</strong> Utilicé Python en asistentes que recopilan solicitudes de pedidos, citas y servicios desde distintos canales."
-          ],
-          "tools": [
-            { "name": "Python", "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" },
-            { "name": "MySQL", "class": "devicon-mysql-original bg-mysql mx-2" },
-            { "name": "MongoDB", "class": "devicon-mongodb-plain bg-mongodb mx-2" },
-            { "name": "PostgreSQL", "class": "devicon-postgresql-plain bg-postgresql mx-2" }
-          ],
-          "dependencies": [
-            { "name": "fastapi", "link": "https://fastapi.tiangolo.com" },
-            { "name": "uvicorn", "link": "https://www.uvicorn.org" },
-            { "name": "pydantic", "link": "https://docs.pydantic.dev/latest/" },
-            { "name": "psycopg2-binary", "link": "https://pypi.org/project/psycopg2-binary/" },
-            { "name": "SQLAlchemy", "link": "https://entrenamiento-frameworks-web-python.readthedocs.io/es/latest/leccion2/sqlalchemy.html" },
-            { "name": "PyJWT", "link": "https://pyjwt.readthedocs.io/en/stable/" },
-            { "name": "passlib", "link": "https://pypi.org/project/passlib/" },
-            { "name": "bcrypt", "link": "https://pypi.org/project/bcrypt/" }
-          ]
-        },
-        "csharp": {
-          "title": "C#",
-          "subtitle": "Ecosistema utilizado",
-          "evidenceTitle": "Evidencia aplicada",
-          "description": "Trabajo con <code>C#</code> desde 2014 y lo he aplicado profesionalmente en sistemas administrativos, servicios web, gestión documental, reportes e integraciones con SQL Server.",
-          "skills": [
-            "<strong>Aplicaciones empresariales:</strong> Desarrollé sistemas con Web Forms y MVC, separando presentación, reglas de negocio y acceso a datos.",
-            "<strong>Servicios e integraciones:</strong> Implementé servicios ASMX, WCF y endpoints para comunicar sistemas mediante JSON o XML.",
-            "<strong>Datos y reportes:</strong> Integré ADO.NET, DataSet, SqlClient, procedimientos almacenados y reportes para procesos operativos.",
-            "<strong>Producción y soporte:</strong> Corregí errores, implementé funcionalidades y acompañé la publicación y mantenimiento en IIS."
-          ],
-          "tools": [
-            { "name": "ASP.NET", "class": "devicon-visualstudio-plain bg-aspnet mx-2" },
-            { "name": "C#", "class": "devicon-csharp-plain bg-csharp mx-2" },
-            { "name": "Visual Basic", "class": "devicon-visualbasic-plain bg-visualbasic mx-2" },
-            { "name": "SQL Server", "class": "devicon-microsoftsqlserver-plain bg-sqlserver mx-2" }
-          ],
-          "dependencies": [
-            { "name": "DataSet", "link": "https://learn.microsoft.com/es-es/dotnet/api/system.data.dataset?view=net-8.0" },
-            { "name": "SqlClient", "link": "https://learn.microsoft.com/es-es/dotnet/api/system.data.sqlclient.sqlconnection?view=netframework-4.8.1" },
-            { "name": "JSON", "link": "https://learn.microsoft.com/es-es/dotnet/standard/serialization/system-text-json/how-to" }
-          ]
-        },
-        "typescript": {
-          "title": "TypeScript",
-          "subtitle": "Ecosistema utilizado",
-          "evidenceTitle": "Evidencia aplicada",
-          "description": "Utilizo <code>TypeScript</code> como base para aplicaciones Angular y servicios tipados, aprovechando interfaces, clases, genéricos y contratos claros para facilitar mantenimiento y refactorización.",
-          "skills": [
-            "<strong>Contratos mantenibles:</strong> Definí interfaces y modelos para representar respuestas de APIs, formularios y reglas de negocio en Angular.",
-            "<strong>Modernización segura:</strong> Utilicé el tipado para detectar incompatibilidades durante migraciones de Angular y dependencias.",
-            "<strong>Arquitectura modular:</strong> Organicé librerías, servicios y microfrontends para facilitar mantenimiento y despliegues independientes.",
-            "<strong>Resolución de problemas:</strong> Corregí flujos asíncronos y errores complejos de estado, documentos y comunicación entre módulos."
-          ],
-          "tools": [
-            { "name": "JavaScript", "class": "devicon-javascript-plain bg-javascript mx-2" },
-            { "name": "NodeJs", "class": "devicon-nodejs-plain bg-node mx-2" },
-            { "name": "npm", "class": "devicon-npm-original-wordmark bg-npm mx-2" },
-            { "name": "MySQL", "class": "devicon-mysql-original bg-mysql mx-2" },
-            { "name": "MongoDB", "class": "devicon-mongodb-plain bg-mongodb mx-2" },
-            { "name": "PostgreSQL", "class": "devicon-postgresql-plain bg-postgresql mx-2" }
-          ],
-          "dependencies": [
-            { "name": "nodemon", "link": "https://www.npmjs.com/package/nodemon" },
-            { "name": "typescript", "link": "https://www.typescriptlang.org" },
-            { "name": "mysql", "link": "https://dev.mysql.com/doc/dev/connector-nodejs/latest/" },
-            { "name": "express", "link": "https://expressjs-com.translate.goog/?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc" },
-            { "name": "body-parser", "link": "https://www.npmjs.com/package/body-parser" },
-            { "name": "promise-mysql", "link": "https://www.npmjs.com/package/promise-mysql" },
-            { "name": "cors", "link": "https://www.npmjs.com/package/cors" }
-          ]
-        }
+        "items": [
+          {
+            "id": "python",
+            "title": "Python",
+            "context": "Backend y servicios",
+            "description": "Utilizo <code>Python</code> para crear APIs, automatizaciones, procesos de datos y productos con inteligencia artificial.",
+            "iconClass": "devicon-python-plain",
+            "accentClass": "technology-evidence--python",
+            "evidenceTitle": "Evidencia aplicada",
+            "evidence": [
+              "<strong>APIs tipadas:</strong> Construí servicios con FastAPI y Pydantic.",
+              "<strong>Persistencia:</strong> Integré SQLAlchemy, JWT y cifrado de contraseñas.",
+              "<strong>Automatización:</strong> Conecté servicios y reduje tareas manuales.",
+              "<strong>IA:</strong> Desarrollé asistentes para solicitudes de pedidos, citas y servicios."
+            ],
+            "toolsTitle": "Ecosistema utilizado",
+            "tools": [
+              { "name": "Python", "class": "devicon-python-plain bg-python" },
+              { "name": "FastAPI", "class": "devicon-fastapi-plain bg-node" },
+              { "name": "PostgreSQL", "class": "devicon-postgresql-plain bg-postgresql" }
+            ],
+            "dependencies": [
+              { "name": "Pydantic", "link": "https://docs.pydantic.dev" },
+              { "name": "SQLAlchemy", "link": "https://www.sqlalchemy.org" },
+              { "name": "PyJWT", "link": "https://pyjwt.readthedocs.io" }
+            ],
+            "relatedLabel": "Ver caso de estudio",
+            "relatedPath": "/projects/case-studies#ai-business-assistant"
+          },
+          {
+            "id": "csharp",
+            "title": "C#",
+            "context": "Backend y servicios",
+            "description": "Trabajo con <code>C#</code> desde 2014 en sistemas administrativos, servicios web, gestión documental y reportes.",
+            "iconClass": "devicon-csharp-plain",
+            "accentClass": "technology-evidence--csharp",
+            "evidenceTitle": "Evidencia aplicada",
+            "evidence": [
+              "<strong>Aplicaciones empresariales:</strong> Desarrollé sistemas con Web Forms y MVC.",
+              "<strong>Servicios:</strong> Implementé ASMX, WCF y endpoints JSON o XML.",
+              "<strong>Datos:</strong> Integré ADO.NET, DataSet, SqlClient y procedimientos almacenados.",
+              "<strong>Producción:</strong> Corregí errores y acompañé publicaciones en IIS."
+            ],
+            "toolsTitle": "Ecosistema utilizado",
+            "tools": [
+              { "name": "C#", "class": "devicon-csharp-plain bg-csharp" },
+              { "name": ".NET", "class": "devicon-dot-net-plain bg-aspnet" },
+              { "name": "SQL Server", "class": "devicon-microsoftsqlserver-plain bg-sqlserver" }
+            ],
+            "relatedLabel": "Ver caso de estudio",
+            "relatedPath": "/projects/case-studies#document-management"
+          },
+          {
+            "id": "aspnet",
+            "title": "ASP.NET",
+            "context": "Backend y servicios",
+            "description": "Desarrollo aplicaciones con <code>ASP.NET Framework</code> desde 2017, desde sistemas administrativos hasta soluciones institucionales en producción.",
+            "iconClass": "devicon-dot-net-plain",
+            "accentClass": "technology-evidence--dotnet",
+            "evidenceTitle": "Evidencia aplicada",
+            "evidence": [
+              "<strong>Productos completos:</strong> Creé aplicaciones desde cero y las publiqué mediante IIS.",
+              "<strong>Gestión documental:</strong> Construí una solución para virtualizar y consultar archivos PDF.",
+              "<strong>Procesos a la medida:</strong> Implementé flujos administrativos específicos.",
+              "<strong>Mantenimiento:</strong> Diagnostiqué errores y mejoré sistemas existentes."
+            ],
+            "toolsTitle": "Ecosistema utilizado",
+            "tools": [
+              { "name": "ASP.NET", "class": "devicon-dot-net-plain bg-aspnet" },
+              { "name": "C#", "class": "devicon-csharp-plain bg-csharp" },
+              { "name": "IIS", "class": "devicon-windows8-original bg-azure" },
+              { "name": "SQL Server", "class": "devicon-microsoftsqlserver-plain bg-sqlserver" }
+            ],
+            "relatedLabel": "Ver caso de estudio",
+            "relatedPath": "/projects/case-studies#document-management"
+          }
+        ]
       },
       "database": {
         "title": "Experiencia en bases de datos",
         "description": "Diseño, consultas, procedimientos almacenados, triggers, índices, auditorías y análisis de datos para sistemas empresariales.",
-        "sqlServer": {
-          "eyebrow": "Datos y rendimiento",
-          "title": "SQL Server y PostgreSQL",
-          "description": "He trabajado con bases de datos que sostienen sistemas financieros, administrativos y documentales, desde el diagnóstico de estructuras existentes hasta la implementación y optimización de procesos críticos.",
-          "impactTitle": "Experiencia aplicada",
-          "impact": [
-            {
-              "icon": "01",
-              "title": "Lógica y procesos",
-              "description": "Modificación y creación de procedimientos almacenados, triggers, consultas CRUD, scripts y procesos para nuevas funcionalidades empresariales."
-            },
-            {
-              "icon": "02",
-              "title": "Rendimiento",
-              "description": "Análisis de planes de ejecución, relaciones e índices para hacer más eficientes las consultas, descargas de documentos y operaciones complejas."
-            },
-            {
-              "icon": "03",
-              "title": "Diagnóstico y auditoría",
-              "description": "Ingeniería inversa y auditorías sobre bases de datos existentes para localizar errores, comprender reglas de negocio y mejorar procedimientos almacenados complejos."
-            },
-            {
-              "icon": "04",
-              "title": "Gestión documental",
-              "description": "Diseño y mejora de estructuras para almacenar, relacionar, consultar y descargar archivos PDF de forma íntegra y eficiente."
-            }
-          ],
-          "evidenceTitle": "Resultados que puedo demostrar",
-          "relatedCaseTitle": "Ingeniería inversa y mejora de bases de datos heredadas",
-          "evidence": [
-            "Optimicé índices y consultas en sistemas operativos para reducir trabajo innecesario sobre la base de datos.",
-            "Analicé procesos de nómina y sistemas administrativos para identificar inconsistencias entre datos, reglas de negocio y procedimientos almacenados.",
-            "Implementé cambios de base de datos que acompañaron funcionalidades nuevas, correcciones y mejoras de procesos existentes.",
-            "Mejoré la relación y consulta de documentos virtualizados, protegiendo la integridad de los archivos y facilitando su recuperación."
-          ],
-          "toolsTitle": "Tecnologías utilizadas",
-          "tools": [
-            { "name": "SQL Server", "class": "devicon-microsoftsqlserver-plain bg-sqlserver" },
-            { "name": "PostgreSQL", "class": "devicon-postgresql-plain bg-postgresql" }
-          ],
-          "otherToolsTitle": "Otras plataformas utilizadas",
-          "otherTools": [
-            { "name": "MySQL", "class": "devicon-mysql-original bg-mysql" },
-            { "name": "MongoDB", "class": "devicon-mongodb-plain bg-mongodb" },
-            { "name": "MariaDB", "class": "devicon-mariadb-original bg-mariadb" },
-            { "name": "Firebase", "class": "devicon-firebase-plain bg-firebase" },
-            { "name": "Supabase", "class": "devicon-supabase-plain bg-supabase" },
-            { "name": "Oracle", "class": "devicon-oracle-original bg-oracle" }
-          ],
-          "capabilities": ["Procedimientos almacenados", "Triggers", "Consultas CRUD", "Índices", "Planes de ejecución", "Auditorías", "Ingeniería inversa", "Modelado relacional"]
-        }
+        "items": [
+          {
+            "id": "relational-databases",
+            "eyebrow": "Datos y rendimiento",
+            "title": "SQL Server y PostgreSQL",
+            "description": "He trabajado con bases de datos que sostienen sistemas financieros, administrativos y documentales.",
+            "evidenceTitle": "Resultados que puedo demostrar",
+            "evidence": [
+              "Creé y modifiqué procedimientos almacenados, triggers, consultas CRUD y scripts.",
+              "Analicé planes de ejecución, relaciones e índices para mejorar el rendimiento.",
+              "Realicé ingeniería inversa y auditorías para localizar errores y comprender reglas de negocio.",
+              "Mejoré estructuras para almacenar, consultar y descargar documentos PDF.",
+              "Analicé procesos de nómina e inconsistencias entre datos y procedimientos almacenados."
+            ],
+            "toolsTitle": "Experiencia principal",
+            "tools": [
+              { "name": "SQL Server", "class": "devicon-microsoftsqlserver-plain bg-sqlserver" },
+              { "name": "PostgreSQL", "class": "devicon-postgresql-plain bg-postgresql" }
+            ],
+            "otherToolsTitle": "Otras plataformas utilizadas",
+            "otherTools": [
+              { "name": "MySQL", "class": "devicon-mysql-original bg-mysql" },
+              { "name": "MariaDB", "class": "devicon-mariadb-original bg-mariadb" },
+              { "name": "MongoDB", "class": "devicon-mongodb-plain bg-mongodb" },
+              { "name": "Firebase", "class": "devicon-firebase-plain bg-firebase" },
+              { "name": "Supabase", "class": "devicon-supabase-plain bg-supabase" },
+              { "name": "Oracle", "class": "devicon-oracle-original bg-oracle" }
+            ],
+            "capabilities": ["Procedimientos almacenados", "Triggers", "CRUD", "Índices", "Planes de ejecución", "Auditorías", "Ingeniería inversa", "Modelado relacional"],
+            "relatedLabel": "Ver caso de estudio",
+            "relatedTitle": "Ingeniería inversa y mejora de bases de datos heredadas",
+            "relatedPath": "/projects/case-studies#database-reverse-engineering"
+          }
+        ]
       },
       "applications": {
         "title": "Aplicaciones empresariales y multiplataforma",
