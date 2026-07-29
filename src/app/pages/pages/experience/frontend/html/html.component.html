@@ -1,10 +1,12 @@
-<section class="my-3 mx-md-5">
-  <div class="row">
-    <div class="col-12">
-      <h3 class="mb-3">{{ 'pages.experience.frontend.html.title' | translate }}</h3>
-      <ul>
-        <li *ngFor="let s of skills" [innerHTML]="s"></li>
-      </ul>
-    </div>
-  </div>
+<section class="technology-evidence mx-md-5">
+  <article class="technology-evidence__card">
+    <header>
+      <h3>{{ 'pages.experience.frontend.html.title' | translate }}</h3>
+      <p [innerHTML]="'pages.experience.frontend.html.description' | translate"></p>
+    </header>
+    <h4>{{ 'pages.experience.frontend.html.evidenceTitle' | translate }}</h4>
+    <ul class="evidence-grid">
+      <li *ngFor="let s of skills"><span aria-hidden="true">✓</span><div [innerHTML]="s"></div></li>
+    </ul>
+  </article>
 </section>

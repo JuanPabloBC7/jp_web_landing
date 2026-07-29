@@ -161,6 +161,23 @@
   font-size: 1.5rem;
 }
 
+.other-tools-title {
+  margin: 1.5rem 0 0.9rem;
+  color: var(--bs-secondary-color);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.tool-list--secondary li {
+  font-size: 0.82rem;
+}
+
+.tool-list--secondary i {
+  font-size: 1.2rem;
+}
+
 .capability-list {
   display: flex;
   flex-wrap: wrap;

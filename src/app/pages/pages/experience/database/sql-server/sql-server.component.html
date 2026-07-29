@@ -50,6 +50,15 @@
             <span>{{ tool.name }}</span>
           </li>
         </ul>
+        <h4 class="other-tools-title">
+          {{ 'pages.experience.database.sqlServer.otherToolsTitle' | translate }}
+        </h4>
+        <ul class="tool-list tool-list--secondary">
+          <li *ngFor="let tool of otherTools">
+            <i [class]="tool.class" aria-hidden="true"></i>
+            <span>{{ tool.name }}</span>
+          </li>
+        </ul>
         <div
           class="capability-list"
           [attr.aria-label]="'pages.experience.database.sqlServer.toolsTitle' | translate"

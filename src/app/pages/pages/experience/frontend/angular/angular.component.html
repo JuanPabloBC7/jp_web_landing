@@ -1,31 +1,21 @@
-<section class="my-3 mx-md-5">
-  <div class="row">
-    <div class="col-12">
-      <h3 class="text-decoration-underline mb-3">{{ 'pages.experience.frontend.angular.title' | translate }}</h3>
-    </div>
-    <div class="col-12">
-      <ul><li *ngFor="let s of skills" [innerHTML]="s"></li></ul>
-    </div>
-    <div class="col-12">
+<section class="technology-evidence mx-md-5">
+  <article class="technology-evidence__card">
+    <header>
+      <h3>{{ 'pages.experience.frontend.angular.title' | translate }}</h3>
       <p [innerHTML]="'pages.experience.frontend.angular.description' | translate"></p>
-    </div>
-    <div class="col-12">
-      <h5 class="mb-3">{{ 'pages.experience.frontend.angular.subtitle' | translate }}</h5>
-    </div>
-    <div class="col-12">
-      <div class="row d-flex justify-content-center text-center mb-3">
-        <span *ngFor="let t of tools" class="col-3 col-sm-2 col-md-1 col-lg-1 mb-3">
-          <i *ngIf="t.class" [ngbTooltip]="t.name" [class]="t.class" style="font-size: 2em;"></i>
+    </header>
+    <h4>{{ 'pages.experience.frontend.angular.evidenceTitle' | translate }}</h4>
+    <ul class="evidence-grid">
+      <li *ngFor="let s of skills"><span aria-hidden="true">✓</span><div [innerHTML]="s"></div></li>
+    </ul>
+    <h4>{{ 'pages.experience.frontend.angular.subtitle' | translate }}</h4>
+    <div class="technology-tools">
+        <span *ngFor="let t of tools" class="technology-tool">
+          <i *ngIf="t.class" [class]="t.class" aria-hidden="true"></i>
           <img *ngIf="t.link" [ngbTooltip]="t.name" class="align-top mx-2" [src]="t.link" width="32" height="32" loading="lazy" decoding="async" [alt]="t.name"/>
+          <span>{{ t.name }}</span>
         </span>
-      </div>
     </div>
-    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-      <ul class="row">
-        <li *ngFor="let d of dependencies" class="col-6 col-sm-4 col-md-4 col-lg-4">
-          <a [href]="d.link">{{ d.name }}</a>
-        </li>
-      </ul>
-    </div>
-  </div>
+    <div class="dependency-chips"><a *ngFor="let d of dependencies" [href]="d.link">{{ d.name }}</a></div>
+  </article>
 </section>

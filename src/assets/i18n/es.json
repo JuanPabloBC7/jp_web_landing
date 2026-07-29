@@ -723,23 +723,27 @@
         "description": "Interfaces empresariales, arquitectura de microfrontends, rendimiento, seguridad y modernización de aplicaciones web.",
         "html": {
           "title": "HTML",
-          "subtitle": "",
-          "description": "",
+          "subtitle": "Ecosistema utilizado",
+          "evidenceTitle": "Evidencia aplicada",
+          "description": "Utilizo HTML como base de interfaces empresariales accesibles, responsivas y mantenibles, integradas tanto en aplicaciones modernas como en sistemas administrativos existentes.",
           "skills": [
-            "<strong>Maquetación semántica:</strong> Utilizo etiquetas HTML5 como <code>&lt;header&gt;</code>, <code>&lt;body&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;footer&gt;</code>, etc. para crear estructuras web accesibles y optimizadas para Optimización para Motores de Búsqueda (SEO).",
-            "<strong>Estilizado profesional:</strong> He utilizado <code>CSS3</code>, <code>sass</code> y el framework <code>Bootstrap</code> para crear interfaces modernas, responsivas y visualmente atractivas."
+            "<strong>Estructuras semánticas:</strong> Organicé portales y aplicaciones con HTML5 semántico para mejorar navegación, accesibilidad, SEO y mantenimiento.",
+            "<strong>Interfaces responsivas:</strong> Adapté templates administrativos y componentes para escritorio y dispositivos móviles utilizando CSS, Sass, Bootstrap y Tailwind.",
+            "<strong>Mejora de sistemas existentes:</strong> Corregí jerarquías, formularios y componentes empresariales para hacer sus flujos más claros y consistentes."
           ],
           "tools": [ ],
           "dependencies": [ ]
         },
         "angular": {
           "title": "Angular",
-          "subtitle": "Herramientas y dependencias utilizadas:",
+          "subtitle": "Ecosistema utilizado",
+          "evidenceTitle": "Evidencia aplicada",
           "description": "Trabajo con <code>Angular</code> desde 2021 en aplicaciones empresariales nuevas y existentes. He creado microfrontends, actualizado proyectos de Angular 11 a Angular 21, integrado APIs y mantenido soluciones orientadas a seguridad, rendimiento y escalabilidad.",
           "skills": [
-            "<strong>Desarrollo de aplicaciones:</strong> Creación de aplicaciones de una sola página y microfrontends con Angular, utilizando componentes basados en <code>NgModule</code> y <code>Standalone</code>, servicios y enrutamiento.",
-            "<strong>Enlace de datos y directivas:</strong> Uso eficiente de enlaces de datos bidireccional, directivas estructurales (<code>*ngIf</code>, <code>*ngFor</code>) y directivas personalizadas para crear interfaces dinámicas y reutilizables.",
-            "<strong>Consumo de APIs y servicios:</strong> Integración de servicios HTTP para consumir <code>APIs REST</code>, manejo de Observables y gestión de estados con RxJS."
+            "<strong>Modernización progresiva:</strong> Ejecuté migraciones de Angular 11 a 18 y posteriormente a Angular 21, resolviendo incompatibilidades y actualizando dependencias.",
+            "<strong>Arquitectura de microfrontends:</strong> Creé proyectos desde cero y configuré Single-SPA para integrar módulos independientes en una aplicación bancaria principal.",
+            "<strong>Seguridad y estabilidad:</strong> Mitigué vulnerabilidades, reforcé reglas de contraseñas, incorporé cifrado para información sensible y resolví bugs complejos del frontend.",
+            "<strong>Experiencia y entrega:</strong> Mejoré flujos, generación y descarga de documentos PDF, además de tareas relacionadas con releases y pipelines."
           ],
           "tools": [
             { "name": "Angular", "class": "devicon-angularjs-plain bg-angular mx-2" },
@@ -774,14 +778,14 @@
         },
         "aspnet": {
           "title": "ASP.NET",
-          "subtitle": "Herramientas y dependencias utilizadas:",
+          "subtitle": "Ecosistema utilizado",
+          "evidenceTitle": "Evidencia aplicada",
           "description": "Desarrollo aplicaciones con <code>ASP.NET</code> desde 2017, desde sistemas administrativos y servicios web hasta soluciones institucionales publicadas en IIS. He trabajado con C#, Visual Basic, SQL Server e integración de interfaces empresariales.",
           "skills": [
-            "<strong>Desarrollo con ASP.NET C# y Visual Basic:</strong> Creación de aplicaciones web modernas utilizando <code>ASP.NET</code> con <code>C#</code> y <code>Visual Basic</code>, aplicando el patrón MVC para separar responsabilidades y facilitar el mantenimiento.",
-            "<strong>WebServer:</strong> Implementación de servicios WebServer, incluyendo controladores, rutas, respuestas en formato <code>JSON</code> y <code>XML</code>, y validaciones de entrada.",
-            "<strong>Autenticación y autorización:</strong> Integración de Identity para gestionar usuarios, roles y políticas de acceso en aplicaciones seguras.",
-            "<strong>Despliegue y configuración:</strong> Publicación de aplicaciones en IIS, utilizando archivos, inyección de dependencias y entorno de configuración.",
-            "<strong>Implementación de templates:</strong> Integración de templates para facilitar el uso del diseño, y manejo de framework <code>Bootstrap</code>."
+            "<strong>Productos de principio a fin:</strong> Creé aplicaciones institucionales desde cero, desarrollé sus módulos y las publiqué en producción mediante IIS.",
+            "<strong>Gestión documental:</strong> Construí una solución para virtualizar archivos PDF, preservar su integridad y hacer eficiente su almacenamiento, consulta y descarga.",
+            "<strong>Procesos a la medida:</strong> Implementé aplicaciones administrativas y flujos específicos con ASP.NET Framework, C#, JavaScript y SQL Server.",
+            "<strong>Operación y mantenimiento:</strong> Diagnostiqué errores, integré templates empresariales y participé en decisiones para mejorar procesos."
           ],
           "tools": [
             { "name": "HTML5", "class": "devicon-html5-plain bg-html mx-2" },
@@ -813,13 +817,14 @@
         "description": "Servicios, APIs, reglas de negocio e integraciones construidas con tecnologías JavaScript, TypeScript, Python y .NET.",
         "javascript": {
           "title": "JavaScript",
-          "subtitle": "Herramientas y dependencias utilizadas:",
+          "subtitle": "Ecosistema utilizado",
+          "evidenceTitle": "Evidencia aplicada",
           "description": "He utilizado <code>JavaScript</code> para desarrollar interfaces, validaciones, integraciones con APIs y lógica de servidor, tanto en sistemas empresariales existentes como en aplicaciones creadas desde cero.",
           "skills": [
-            "<strong>Desarrollo de aplicaciones web dinámicas:</strong> Experiencia desarrollando aplicaciones interactivas utilizando <code>JavaScript</code> puro (vanilla JS), manipulando el <code>DOM</code> directamente para crear componentes reutilizables y funcionales.",
-            "<strong>Programación orientada a eventos:</strong> Uso de eventos nativos del navegador para gestionar interacciones del usuario, formularios, validaciones y navegación dinámica sin recargar la página.",
-            "<strong>Consumo de APIs:</strong> Integración con <code>APIs REST</code> utilizando <code>fetch</code> y <code>XMLHttpRequest</code>, manejo de promesas y procesamiento de respuestas <code>JSON</code> para actualizar la interfaz de usuario en tiempo real.",
-            "<strong>Modularización y buenas prácticas:</strong> Organización del código con funciones puras, <code>módulos ES6</code> (<code>import/export</code>), y separación de lógica para mejorar la mantenibilidad del código."
+            "<strong>Modernización de interfaces:</strong> Implementé validaciones, formularios y comportamiento dinámico en sistemas administrativos con JavaScript y jQuery.",
+            "<strong>Integraciones:</strong> Conecté interfaces con APIs REST y servicios externos, gestionando autenticación, respuestas JSON, errores y estados de carga.",
+            "<strong>Flujos empresariales:</strong> Mejoré tablas, reportes, descargas de documentos y procesos interactivos sin recargar la aplicación.",
+            "<strong>Mantenimiento:</strong> Organicé código heredado y resolví errores de difícil reproducción que afectaban la experiencia del usuario."
           ],
           "tools": [
             { "name": "JavaScript", "class": "devicon-javascript-plain bg-javascript mx-2" },
@@ -841,12 +846,14 @@
         },
         "python": {
           "title": "Python",
-          "subtitle": "Herramientas y dependencias utilizadas:",
+          "subtitle": "Ecosistema utilizado",
+          "evidenceTitle": "Evidencia aplicada",
           "description": "Utilizo <code>Python</code> para crear APIs, automatizaciones y procesos de datos. He trabajado con FastAPI, Pydantic, SQLAlchemy, autenticación y conexión con bases de datos relacionales.",
           "skills": [
-            "<strong>Desarrollo de scripts y automatización:</strong> Experiencia escribiendo scripts en <code>python</code> para automatizar tareas, procesar archivos, transformar datos y ejecutar tareas programadas.",
-            "<strong>Consumo de APIs y manejo de solicitudes HTTP:</strong> Integración con servicios externos mediante la librería <code>requests</code>, manejo de peticiones <code>GET/POST/UPDATE/DELETE/PATCH</code>, autenticaciones y procesamiento de respuestas en formato <code>JSON</code> mediante <code>JWT</code> o <code>XML</code>.",
-            "<strong>Buenas prácticas y legibilidad:</strong> Aplicación de principios como <code>PEP8</code>, uso de estructuras de datos eficientes y programación modular orientada a funciones y clases para mejorar la claridad del código."
+            "<strong>APIs tipadas:</strong> Construí servicios con FastAPI y Pydantic para validar solicitudes, respuestas y reglas de negocio mediante contratos claros.",
+            "<strong>Persistencia e integración:</strong> Conecté APIs con bases relacionales usando SQLAlchemy y controlé autenticación con JWT y cifrado de contraseñas.",
+            "<strong>Automatización:</strong> Desarrollé procesos para integrar servicios, transformar información y reducir tareas manuales.",
+            "<strong>Productos con IA:</strong> Utilicé Python en asistentes que recopilan solicitudes de pedidos, citas y servicios desde distintos canales."
           ],
           "tools": [
             { "name": "Python", "link": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" },
@@ -867,13 +874,14 @@
         },
         "csharp": {
           "title": "C#",
-          "subtitle": "Herramientas y dependencias utilizadas:",
-          "description": "Tengo una alta experiencia en desarrollo con <code>C#</code> y he creado aplicaiciones desde 2014 porque he sido autodidacta desde la escuela en donde estudie. He tenido retos que he podido sobrepasar con ciertas dificultades pero la Universidad en donde lleve durante mi carrera el desarrollo de este lenguaje me ayudo a aprender bastante.",
+          "subtitle": "Ecosistema utilizado",
+          "evidenceTitle": "Evidencia aplicada",
+          "description": "Trabajo con <code>C#</code> desde 2014 y lo he aplicado profesionalmente en sistemas administrativos, servicios web, gestión documental, reportes e integraciones con SQL Server.",
           "skills": [
-            "<strong>Desarrollo de aplicaciones web:</strong> Experiencia creando aplicaciones web empresariales utilizando <code>C#</code> y <code>ASP.NET</code> (<code>Web Forms</code> y <code>MVC</code>) como servicios web, estructurando proyectos con separación lógica entre presentación, lógica de negocio y acceso a datos.",
-            "<strong>Manejo del ciclo de vida y controles de servidor:</strong> Uso eficiente del ciclo de vida de páginas <code>ASP.NET</code>, así como controles de servidor, eventos, y validaciones del lado cliente y servidor para crear interfaces interactivas.",
-            "<strong>Integración con bases de datos:</strong> Conexión y manipulación de datos mediante <code>ADO.NET</code> y <code>Entity Framework</code>, realizando consultas <code>SQL</code>, procedimientos almacenados y operaciones <code>CRUD</code> en entornos relacionales como <code>SQL Server</code>.",
-            "<strong>Servicios y comunicación entre capas:</strong> Implementación de servicios web (<code>ASMX</code> o <code>WCF</code>), manejo de sesiones, cookies y arquitectura en capas para asegurar modularidad y mantenibilidad del sistema."
+            "<strong>Aplicaciones empresariales:</strong> Desarrollé sistemas con Web Forms y MVC, separando presentación, reglas de negocio y acceso a datos.",
+            "<strong>Servicios e integraciones:</strong> Implementé servicios ASMX, WCF y endpoints para comunicar sistemas mediante JSON o XML.",
+            "<strong>Datos y reportes:</strong> Integré ADO.NET, DataSet, SqlClient, procedimientos almacenados y reportes para procesos operativos.",
+            "<strong>Producción y soporte:</strong> Corregí errores, implementé funcionalidades y acompañé la publicación y mantenimiento en IIS."
           ],
           "tools": [
             { "name": "ASP.NET", "class": "devicon-visualstudio-plain bg-aspnet mx-2" },
@@ -889,13 +897,14 @@
         },
         "typescript": {
           "title": "TypeScript",
-          "subtitle": "Herramientas y dependencias utilizadas:",
+          "subtitle": "Ecosistema utilizado",
+          "evidenceTitle": "Evidencia aplicada",
           "description": "Utilizo <code>TypeScript</code> como base para aplicaciones Angular y servicios tipados, aprovechando interfaces, clases, genéricos y contratos claros para facilitar mantenimiento y refactorización.",
           "skills": [
-            "<strong>Desarrollo de aplicaciones web dinámicas:</strong> Experiencia desarrollando aplicaciones interactivas utilizando <code>JavaScript</code> puro (vanilla JS), manipulando el <code>DOM</code> directamente para crear componentes reutilizables y funcionales.",
-            "<strong>Programación orientada a eventos:</strong> Uso de eventos nativos del navegador para gestionar interacciones del usuario, formularios, validaciones y navegación dinámica sin recargar la página.",
-            "<strong>Consumo de APIs:</strong> Integración con <code>APIs REST</code> utilizando <code>fetch</code> y <code>XMLHttpRequest</code>, manejo de promesas y procesamiento de respuestas <code>JSON</code> para actualizar la interfaz de usuario en tiempo real.",
-            "<strong>Modularización y buenas prácticas:</strong> Organización del código con funciones puras, <code>módulos ES6</code> (<code>import/export</code>), y separación de lógica para mejorar la mantenibilidad del código."
+            "<strong>Contratos mantenibles:</strong> Definí interfaces y modelos para representar respuestas de APIs, formularios y reglas de negocio en Angular.",
+            "<strong>Modernización segura:</strong> Utilicé el tipado para detectar incompatibilidades durante migraciones de Angular y dependencias.",
+            "<strong>Arquitectura modular:</strong> Organicé librerías, servicios y microfrontends para facilitar mantenimiento y despliegues independientes.",
+            "<strong>Resolución de problemas:</strong> Corregí flujos asíncronos y errores complejos de estado, documentos y comunicación entre módulos."
           ],
           "tools": [
             { "name": "JavaScript", "class": "devicon-javascript-plain bg-javascript mx-2" },
@@ -956,7 +965,10 @@
           "toolsTitle": "Tecnologías utilizadas",
           "tools": [
             { "name": "SQL Server", "class": "devicon-microsoftsqlserver-plain bg-sqlserver" },
-            { "name": "PostgreSQL", "class": "devicon-postgresql-plain bg-postgresql" },
+            { "name": "PostgreSQL", "class": "devicon-postgresql-plain bg-postgresql" }
+          ],
+          "otherToolsTitle": "Otras plataformas utilizadas",
+          "otherTools": [
             { "name": "MySQL", "class": "devicon-mysql-original bg-mysql" },
             { "name": "MongoDB", "class": "devicon-mongodb-plain bg-mongodb" },
             { "name": "MariaDB", "class": "devicon-mariadb-original bg-mariadb" },

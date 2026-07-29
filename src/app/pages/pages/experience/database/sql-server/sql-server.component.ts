@@ -27,6 +27,7 @@ export class SqlServerComponent {
   impact: DatabaseImpact[] = [];
   evidence: string[] = [];
   tools: DatabaseTool[] = [];
+  otherTools: DatabaseTool[] = [];
   capabilities: string[] = [];
 
   constructor(private readonly translateService: TranslateService) {
@@ -37,6 +38,7 @@ export class SqlServerComponent {
         this.impact = Array.isArray(content?.impact) ? content.impact : [];
         this.evidence = Array.isArray(content?.evidence) ? content.evidence : [];
         this.tools = Array.isArray(content?.tools) ? content.tools : [];
+        this.otherTools = Array.isArray(content?.otherTools) ? content.otherTools : [];
         this.capabilities = Array.isArray(content?.capabilities) ? content.capabilities : [];
       });
   }
