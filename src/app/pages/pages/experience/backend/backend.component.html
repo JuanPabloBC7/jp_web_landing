@@ -31,9 +31,21 @@
         </span>
       </div>
     </ng-container>
-    <div class="dependency-chips" *ngIf="item.dependencies?.length">
-      <a *ngFor="let dependency of item.dependencies" [href]="dependency.link">{{ dependency.name }}</a>
-    </div>
+    <ng-container *ngIf="item.dependencies?.length">
+      <h3>{{ item.dependenciesTitle }}</h3>
+      <div class="key-dependencies">
+        <a
+          *ngFor="let dependency of item.dependencies"
+          [href]="dependency.link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <strong>{{ dependency.name }}</strong>
+          <span>{{ dependency.purpose }}</span>
+          <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+        </a>
+      </div>
+    </ng-container>
     <footer class="technology-evidence__footer" *ngIf="item.relatedPath">
       <a [href]="item.relatedPath">{{ item.relatedLabel }} <span aria-hidden="true">→</span></a>
     </footer>

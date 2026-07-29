@@ -14,7 +14,8 @@ interface ExperienceItem {
   evidence: string[];
   toolsTitle: string;
   tools: { name: string; class?: string; link?: string }[];
-  dependencies?: { name: string; link: string }[];
+  dependenciesTitle?: string;
+  dependencies?: { name: string; purpose: string; link: string }[];
   relatedLabel?: string;
   relatedPath?: string;
 }

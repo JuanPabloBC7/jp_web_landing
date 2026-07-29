@@ -809,11 +809,11 @@
               { "name": "RxJS", "class": "devicon-rxjs-plain bg-angular" }
             ],
             "dependencies": [
-              { "name": "Single-SPA", "link": "https://single-spa.js.org" },
-              { "name": "Angular Material", "link": "https://material.angular.dev" },
-              { "name": "PrimeNG", "link": "https://primeng.org" },
-              { "name": "PDF.js", "link": "https://mozilla.github.io/pdf.js/" }
+              { "name": "Single-SPA", "purpose": "Microfrontend integration and lifecycle.", "link": "https://single-spa.js.org" },
+              { "name": "PrimeNG", "purpose": "Components for enterprise interfaces.", "link": "https://primeng.org" },
+              { "name": "PDF.js", "purpose": "PDF document visualization and handling.", "link": "https://mozilla.github.io/pdf.js/" }
             ],
+            "dependenciesTitle": "Key dependencies",
             "relatedLabel": "View case study", "relatedPath": "/projects/case-studies#angular-modernization"
           },
           {
@@ -968,10 +968,11 @@
               { "name": "PostgreSQL", "class": "devicon-postgresql-plain bg-postgresql" }
             ],
             "dependencies": [
-              { "name": "Pydantic", "link": "https://docs.pydantic.dev" },
-              { "name": "SQLAlchemy", "link": "https://www.sqlalchemy.org" },
-              { "name": "PyJWT", "link": "https://pyjwt.readthedocs.io" }
+              { "name": "Pydantic", "purpose": "Data validation and API contracts.", "link": "https://docs.pydantic.dev" },
+              { "name": "SQLAlchemy", "purpose": "Persistence and database access.", "link": "https://www.sqlalchemy.org" },
+              { "name": "PyJWT", "purpose": "Token-based authentication.", "link": "https://pyjwt.readthedocs.io" }
             ],
+            "dependenciesTitle": "Key dependencies",
             "relatedLabel": "View case study", "relatedPath": "/projects/case-studies#ai-business-assistant"
           },
           {

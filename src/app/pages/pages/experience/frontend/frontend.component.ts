@@ -12,6 +12,7 @@ interface ExperienceTool {
 
 interface ExperienceDependency {
   name: string;
+  purpose: string;
   link: string;
 }
 
@@ -26,6 +27,7 @@ interface ExperienceItem {
   evidence: string[];
   toolsTitle: string;
   tools: ExperienceTool[];
+  dependenciesTitle?: string;
   dependencies?: ExperienceDependency[];
   relatedLabel?: string;
   relatedPath?: string;

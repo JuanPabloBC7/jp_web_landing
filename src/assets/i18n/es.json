@@ -823,11 +823,11 @@
               { "name": "RxJS", "class": "devicon-rxjs-plain bg-angular" }
             ],
             "dependencies": [
-              { "name": "Single-SPA", "link": "https://single-spa.js.org" },
-              { "name": "Angular Material", "link": "https://material.angular.dev" },
-              { "name": "PrimeNG", "link": "https://primeng.org" },
-              { "name": "PDF.js", "link": "https://mozilla.github.io/pdf.js/" }
+              { "name": "Single-SPA", "purpose": "Integración y ciclo de vida de microfrontends.", "link": "https://single-spa.js.org" },
+              { "name": "PrimeNG", "purpose": "Componentes para interfaces empresariales.", "link": "https://primeng.org" },
+              { "name": "PDF.js", "purpose": "Visualización y manejo de documentos PDF.", "link": "https://mozilla.github.io/pdf.js/" }
             ],
+            "dependenciesTitle": "Dependencias clave",
             "relatedLabel": "Ver caso de estudio",
             "relatedPath": "/projects/case-studies#angular-modernization"
           },
@@ -882,10 +882,11 @@
               { "name": "PostgreSQL", "class": "devicon-postgresql-plain bg-postgresql" }
             ],
             "dependencies": [
-              { "name": "Pydantic", "link": "https://docs.pydantic.dev" },
-              { "name": "SQLAlchemy", "link": "https://www.sqlalchemy.org" },
-              { "name": "PyJWT", "link": "https://pyjwt.readthedocs.io" }
+              { "name": "Pydantic", "purpose": "Validación de datos y contratos de APIs.", "link": "https://docs.pydantic.dev" },
+              { "name": "SQLAlchemy", "purpose": "Persistencia y acceso a bases de datos.", "link": "https://www.sqlalchemy.org" },
+              { "name": "PyJWT", "purpose": "Autenticación basada en tokens.", "link": "https://pyjwt.readthedocs.io" }
             ],
+            "dependenciesTitle": "Dependencias clave",
             "relatedLabel": "Ver caso de estudio",
             "relatedPath": "/projects/case-studies#ai-business-assistant"
           },
