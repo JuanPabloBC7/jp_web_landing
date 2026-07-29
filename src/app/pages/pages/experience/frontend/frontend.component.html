@@ -12,6 +12,7 @@
   class="technology-evidence"
   [ngClass]="item.accentClass"
   [attr.id]="item.id"
+  [attr.aria-labelledby]="'frontend-' + item.id + '-title'"
 >
   <article class="technology-evidence__card">
     <header class="technology-evidence__header">
@@ -20,7 +21,7 @@
       </span>
       <div>
         <span class="technology-evidence__context">{{ item.context }}</span>
-        <h2>{{ item.title }}</h2>
+        <h2 [id]="'frontend-' + item.id + '-title'">{{ item.title }}</h2>
         <p [innerHTML]="item.description"></p>
       </div>
     </header>
@@ -35,13 +36,13 @@
 
     <ng-container *ngIf="item.tools.length">
       <h3>{{ item.toolsTitle }}</h3>
-      <div class="technology-tools">
-        <span *ngFor="let tool of item.tools" class="technology-tool">
+      <ul class="technology-tools" [attr.aria-label]="item.toolsTitle">
+        <li *ngFor="let tool of item.tools" class="technology-tool">
           <i *ngIf="tool.class" [class]="tool.class" aria-hidden="true"></i>
-          <img *ngIf="tool.link" [src]="tool.link" width="32" height="32" loading="lazy" [alt]="tool.name">
+          <img *ngIf="tool.link" [src]="tool.link" width="32" height="32" loading="lazy" alt="" aria-hidden="true">
           <span>{{ tool.name }}</span>
-        </span>
-      </div>
+        </li>
+      </ul>
     </ng-container>
 
     <ng-container *ngIf="item.dependencies?.length">
@@ -56,6 +57,7 @@
           <strong>{{ dependency.name }}</strong>
           <span>{{ dependency.purpose }}</span>
           <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+          <span class="visually-hidden">{{ 'pages.experience.accessibility.opensNewTab' | translate }}</span>
         </a>
       </div>
     </ng-container>

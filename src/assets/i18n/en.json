@@ -719,6 +719,9 @@
       }
     },
     "experience": {
+      "accessibility": {
+        "opensNewTab": "Opens in a new tab"
+      },
       "context": {
         "frontend": "Frontend and interfaces",
         "backend": "Backend and services"
@@ -1156,6 +1159,7 @@
               { "name": "Supabase", "class": "devicon-supabase-plain bg-supabase" },
               { "name": "Oracle", "class": "devicon-oracle-original bg-oracle" }
             ],
+            "capabilitiesTitle": "Technical capabilities",
             "capabilities": ["Stored procedures", "Triggers", "CRUD", "Indexes", "Execution plans", "Audits", "Reverse engineering", "Relational modeling"],
             "relatedLabel": "View case study",
             "relatedTitle": "Reverse engineering and improvement of legacy databases",

@@ -14,6 +14,7 @@ interface DatabaseItem {
   tools: { name: string; class: string }[];
   otherToolsTitle?: string;
   otherTools?: { name: string; class: string }[];
+  capabilitiesTitle?: string;
   capabilities?: string[];
   relatedLabel?: string;
   relatedTitle?: string;

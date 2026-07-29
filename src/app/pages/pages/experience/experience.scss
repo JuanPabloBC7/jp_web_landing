@@ -223,7 +223,7 @@ img {
 }
 
 .technology-evidence--javascript {
-  --technology-accent: #d6b800;
+  --technology-accent: #806600;
 }
 
 .technology-evidence--typescript {
@@ -355,6 +355,9 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 0.6rem;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
 }
 
 .technology-tool,
@@ -503,4 +506,8 @@ img {
     justify-content: space-between;
     width: 100%;
   }
+}
+
+:host-context(body[data-bs-theme="dark"]) .technology-evidence--javascript {
+  --technology-accent: #f0d330;
 }

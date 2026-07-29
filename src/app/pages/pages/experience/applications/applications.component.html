@@ -10,12 +10,13 @@
 <section
   *ngFor="let item of items"
   class="technology-evidence"
+  [attr.aria-labelledby]="'application-' + item.relatedCase + '-title'"
 >
   <article class="technology-evidence__card">
     <header class="application-heading">
       <i [class]="item.iconClass" aria-hidden="true"></i>
       <div>
-        <h3>{{ item.title }}</h3>
+        <h3 [id]="'application-' + item.relatedCase + '-title'">{{ item.title }}</h3>
         <p>{{ item.description }}</p>
       </div>
     </header>
@@ -27,9 +28,9 @@
       </li>
     </ul>
     <h4>{{ 'pages.experience.applications.toolsTitle' | translate }}</h4>
-    <div class="dependency-chips">
-      <span *ngFor="let tool of item.tools">{{ tool }}</span>
-    </div>
+    <ul class="dependency-chips" [attr.aria-label]="'pages.experience.applications.toolsTitle' | translate">
+      <li *ngFor="let tool of item.tools">{{ tool }}</li>
+    </ul>
     <footer class="technology-evidence__footer">
       <span>{{ 'pages.experience.actions.continue' | translate }}</span>
       <a [href]="'/projects/case-studies#' + item.relatedCase">

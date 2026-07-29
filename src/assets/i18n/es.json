@@ -718,6 +718,9 @@
       }
     },
     "experience": {
+      "accessibility": {
+        "opensNewTab": "Abre en una pestaña nueva"
+      },
       "context": {
         "frontend": "Frontend e interfaces",
         "backend": "Backend y servicios"
@@ -970,6 +973,7 @@
               { "name": "Supabase", "class": "devicon-supabase-plain bg-supabase" },
               { "name": "Oracle", "class": "devicon-oracle-original bg-oracle" }
             ],
+            "capabilitiesTitle": "Capacidades técnicas",
             "capabilities": ["Procedimientos almacenados", "Triggers", "CRUD", "Índices", "Planes de ejecución", "Auditorías", "Ingeniería inversa", "Modelado relacional"],
             "relatedLabel": "Ver caso de estudio",
             "relatedTitle": "Ingeniería inversa y mejora de bases de datos heredadas",

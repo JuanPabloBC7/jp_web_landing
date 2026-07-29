@@ -195,7 +195,7 @@
   margin-top: 1.5rem;
 }
 
-.capability-list span {
+.capability-list li {
   padding: 0.4rem 0.65rem;
   border: 1px solid var(--bs-border-color);
   border-radius: 999px;
@@ -203,6 +203,11 @@
   background: var(--bs-tertiary-bg);
   font-size: 0.78rem;
   font-weight: 650;
+  list-style: none;
+}
+
+.capability-list {
+  padding-left: 0;
 }
 
 .database-spotlight__footer {

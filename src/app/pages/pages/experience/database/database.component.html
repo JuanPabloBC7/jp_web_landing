@@ -7,11 +7,16 @@
   </div>
 </section>
 
-<section *ngFor="let item of items" class="database-experience mx-auto px-3 px-md-4" [attr.id]="item.id">
+<section
+  *ngFor="let item of items"
+  class="database-experience mx-auto px-3 px-md-4"
+  [attr.id]="item.id"
+  [attr.aria-labelledby]="'database-' + item.id + '-title'"
+>
   <article class="database-spotlight">
     <header class="database-spotlight__header">
       <p class="experience-eyebrow">{{ item.eyebrow }}</p>
-      <h2>{{ item.title }}</h2>
+      <h2 [id]="'database-' + item.id + '-title'">{{ item.title }}</h2>
       <p class="database-spotlight__intro">{{ item.description }}</p>
     </header>
 
@@ -39,9 +44,10 @@
         </ng-container>
       </section>
       <aside class="stack-card" *ngIf="item.capabilities?.length">
-        <div class="capability-list">
-          <span *ngFor="let capability of item.capabilities">{{ capability }}</span>
-        </div>
+        <h3>{{ item.capabilitiesTitle }}</h3>
+        <ul class="capability-list" [attr.aria-label]="item.capabilitiesTitle">
+          <li *ngFor="let capability of item.capabilities">{{ capability }}</li>
+        </ul>
       </aside>
     </div>
 
