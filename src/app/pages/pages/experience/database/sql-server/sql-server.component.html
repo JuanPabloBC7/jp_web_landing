@@ -68,10 +68,15 @@
       </aside>
     </div>
     <footer class="database-spotlight__footer">
-      <span>{{ 'pages.experience.actions.continue' | translate }}</span>
-      <a href="/projects/case-studies#database-reverse-engineering">
-        {{ 'pages.experience.actions.caseStudy' | translate }}
-        <span aria-hidden="true">→</span>
+      <a class="database-case-link" href="/projects/case-studies#database-reverse-engineering">
+        <span class="database-case-link__icon" aria-hidden="true">
+          <i class="fa-solid fa-database"></i>
+        </span>
+        <span class="database-case-link__content">
+          <small>{{ 'pages.experience.actions.caseStudy' | translate }}</small>
+          <strong>{{ 'pages.experience.database.sqlServer.relatedCaseTitle' | translate }}</strong>
+        </span>
+        <span class="database-case-link__arrow" aria-hidden="true">→</span>
       </a>
     </footer>
   </article>

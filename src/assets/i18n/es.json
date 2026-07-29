@@ -983,6 +983,7 @@
             }
           ],
           "evidenceTitle": "Resultados que puedo demostrar",
+          "relatedCaseTitle": "Ingeniería inversa y mejora de bases de datos heredadas",
           "evidence": [
             "Optimicé índices y consultas en sistemas operativos para reducir trabajo innecesario sobre la base de datos.",
             "Analicé procesos de nómina y sistemas administrativos para identificar inconsistencias entre datos, reglas de negocio y procedimientos almacenados.",

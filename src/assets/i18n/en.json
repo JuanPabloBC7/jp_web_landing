@@ -984,6 +984,7 @@
             }
           ],
           "evidenceTitle": "Demonstrable outcomes",
+          "relatedCaseTitle": "Reverse engineering and improvement of legacy databases",
           "evidence": [
             "Optimized indexes and queries in operational systems to reduce unnecessary database workload.",
             "Analyzed payroll processes and administrative systems to identify inconsistencies across data, business rules, and stored procedures.",

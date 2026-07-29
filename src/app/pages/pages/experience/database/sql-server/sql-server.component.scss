@@ -206,31 +206,74 @@
 }
 
 .database-spotlight__footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
   margin-top: 1.75rem;
   padding-top: 1.25rem;
   border-top: 1px solid var(--bs-border-color);
 }
 
-.database-spotlight__footer > span {
-  color: var(--bs-secondary-color);
-  font-size: 0.8rem;
-  font-weight: 650;
-}
-
-.database-spotlight__footer a {
-  color: var(--bs-primary);
-  font-size: 0.86rem;
-  font-weight: 800;
+.database-case-link {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid rgba(var(--bs-primary-rgb), 0.3);
+  border-radius: 18px;
+  color: var(--bs-body-color);
+  background: linear-gradient(
+    110deg,
+    rgba(var(--bs-primary-rgb), 0.13),
+    rgba(var(--bs-info-rgb), 0.08)
+  );
   text-decoration: none;
+  transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
 }
 
-.database-spotlight__footer a:hover {
-  text-decoration: underline;
-  text-underline-offset: 0.25rem;
+.database-case-link:hover {
+  border-color: rgba(var(--bs-primary-rgb), 0.65);
+  box-shadow: 0 14px 32px rgba(var(--bs-primary-rgb), 0.12);
+  transform: translateY(-2px);
+}
+
+.database-case-link__icon,
+.database-case-link__arrow {
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+}
+
+.database-case-link__icon {
+  width: 2.75rem;
+  height: 2.75rem;
+  color: var(--bs-primary);
+  background: var(--bs-body-bg);
+  font-size: 1.1rem;
+}
+
+.database-case-link__content {
+  display: grid;
+  gap: 0.15rem;
+}
+
+.database-case-link__content small {
+  color: var(--bs-primary);
+  font-size: 0.68rem;
+  font-weight: 850;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.database-case-link__content strong {
+  font-size: 0.95rem;
+}
+
+.database-case-link__arrow {
+  width: 2rem;
+  height: 2rem;
+  color: #fff;
+  background: var(--bs-primary);
+  font-weight: 800;
 }
 
 @media (max-width: 767.98px) {
@@ -244,8 +287,15 @@
   }
 
   .database-spotlight__footer {
-    align-items: flex-start;
-    flex-direction: column;
+    margin-top: 1.25rem;
+  }
+
+  .database-case-link {
+    grid-template-columns: auto 1fr;
+  }
+
+  .database-case-link__arrow {
+    display: none;
   }
 }
 
