@@ -30,5 +30,12 @@
     <div class="dependency-chips">
       <span *ngFor="let tool of item.tools">{{ tool }}</span>
     </div>
+    <footer class="technology-evidence__footer">
+      <span>{{ 'pages.experience.actions.continue' | translate }}</span>
+      <a [href]="'/projects/case-studies#' + item.relatedCase">
+        {{ 'pages.experience.actions.caseStudy' | translate }}
+        <span aria-hidden="true">→</span>
+      </a>
+    </footer>
   </article>
 </section>

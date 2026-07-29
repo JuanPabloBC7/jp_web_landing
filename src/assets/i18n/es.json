@@ -718,6 +718,15 @@
       }
     },
     "experience": {
+      "context": {
+        "frontend": "Frontend e interfaces",
+        "backend": "Backend y servicios"
+      },
+      "actions": {
+        "continue": "Explorar evidencia relacionada",
+        "caseStudy": "Ver caso de estudio",
+        "notes": "Ver notas técnicas"
+      },
       "frontend": {
         "title": "Experiencia en desarrollo frontend",
         "description": "Interfaces empresariales con HTML, JavaScript, TypeScript, Angular y React, con enfoque en arquitectura, rendimiento, seguridad y modernización.",
@@ -1007,6 +1016,7 @@
             "title": "Aplicación empresarial con Flutter",
             "description": "Aplicación multiplataforma para gestionar productos, usuarios y datos empresariales, desarrollada con una arquitectura preparada para crecer.",
             "iconClass": "devicon-flutter-plain bg-react",
+            "relatedCase": "flutter-business-app",
             "evidence": [
               "Desarrollé la aplicación y sus flujos principales desde cero conservando el código fuente funcional.",
               "Apliqué Clean Architecture para separar dominio, datos, presentación y servicios externos.",
@@ -1019,6 +1029,7 @@
             "title": "Sistemas financieros con PowerBuilder",
             "description": "Mantenimiento y evolución de aplicaciones financieras y administrativas conectadas con bases de datos empresariales.",
             "iconClass": "fa-solid fa-building-columns",
+            "relatedCase": "database-reverse-engineering",
             "evidence": [
               "Implementé nuevas funcionalidades y corregí errores en sistemas existentes.",
               "Analicé DataWindows, eventos y relaciones con SQL Server para comprender reglas heredadas.",

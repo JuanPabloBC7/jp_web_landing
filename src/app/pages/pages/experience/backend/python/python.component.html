@@ -1,6 +1,9 @@
-<section class="technology-evidence mx-md-5"><article class="technology-evidence__card">
-    <header><h3>{{ 'pages.experience.backend.python.title' | translate }}</h3>
+<section class="technology-evidence technology-evidence--python mx-md-5"><article class="technology-evidence__card">
+    <header class="technology-evidence__header"><span class="technology-evidence__identity"><i class="devicon-python-plain" aria-hidden="true"></i></span><div>
+      <span class="technology-evidence__context">{{ 'pages.experience.context.backend' | translate }}</span>
+      <h3>{{ 'pages.experience.backend.python.title' | translate }}</h3>
       <p [innerHTML]="'pages.experience.backend.python.description' | translate"></p>
+      </div>
     </header>
     <h4>{{ 'pages.experience.backend.python.evidenceTitle' | translate }}</h4>
     <ul class="evidence-grid"><li *ngFor="let s of skills"><span aria-hidden="true">✓</span><div [innerHTML]="s"></div></li></ul>
@@ -13,4 +16,7 @@
         </span>
     </div>
     <div class="dependency-chips"><a *ngFor="let d of dependencies" [href]="d.link">{{ d.name }}</a></div>
+    <footer class="technology-evidence__footer"><span>{{ 'pages.experience.actions.continue' | translate }}</span>
+      <a href="/projects/case-studies#ai-business-assistant">{{ 'pages.experience.actions.caseStudy' | translate }} <span aria-hidden="true">→</span></a>
+    </footer>
 </article></section>

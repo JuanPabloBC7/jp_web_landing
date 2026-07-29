@@ -7,6 +7,7 @@ interface ApplicationExperience {
   title: string;
   description: string;
   iconClass: string;
+  relatedCase: string;
   evidence: string[];
   tools: string[];
 }

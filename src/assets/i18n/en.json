@@ -719,6 +719,15 @@
       }
     },
     "experience": {
+      "context": {
+        "frontend": "Frontend and interfaces",
+        "backend": "Backend and services"
+      },
+      "actions": {
+        "continue": "Explore related evidence",
+        "caseStudy": "View case study",
+        "notes": "View technical notes"
+      },
       "frontend": {
         "title": "Frontend development experience",
         "description": "Enterprise interfaces with HTML, JavaScript, TypeScript, Angular, and React, focused on architecture, performance, security, and modernization.",
@@ -1008,6 +1017,7 @@
             "title": "Enterprise application with Flutter",
             "description": "A cross-platform application for managing products, users, and business data, built with an architecture designed to grow.",
             "iconClass": "devicon-flutter-plain bg-react",
+            "relatedCase": "flutter-business-app",
             "evidence": [
               "I developed the application and its main workflows from scratch and retained the functional source code.",
               "I applied Clean Architecture to separate domain, data, presentation, and external services.",
@@ -1020,6 +1030,7 @@
             "title": "Financial systems with PowerBuilder",
             "description": "Maintenance and evolution of financial and administrative applications connected to enterprise databases.",
             "iconClass": "fa-solid fa-building-columns",
+            "relatedCase": "database-reverse-engineering",
             "evidence": [
               "I implemented new functionality and fixed defects in existing systems.",
               "I analyzed DataWindows, events, and SQL Server relationships to understand inherited business rules.",
