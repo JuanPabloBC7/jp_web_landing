@@ -1,0 +1,62 @@
+<section class="database-experience mx-auto px-3 px-md-4">
+  <article class="database-spotlight">
+    <header class="database-spotlight__header">
+      <p class="experience-eyebrow">
+        {{ 'pages.experience.database.sqlServer.eyebrow' | translate }}
+      </p>
+      <h2>{{ 'pages.experience.database.sqlServer.title' | translate }}</h2>
+      <p class="database-spotlight__intro">
+        {{ 'pages.experience.database.sqlServer.description' | translate }}
+      </p>
+    </header>
+
+    <section class="experience-block" aria-labelledby="database-impact-title">
+      <h3 id="database-impact-title">
+        {{ 'pages.experience.database.sqlServer.impactTitle' | translate }}
+      </h3>
+      <div class="impact-grid">
+        <article class="impact-card" *ngFor="let item of impact">
+          <span class="impact-card__icon" aria-hidden="true">
+            {{ item.icon }}
+          </span>
+          <div>
+            <h4>{{ item.title }}</h4>
+            <p>{{ item.description }}</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <div class="experience-columns">
+      <section class="experience-block evidence-card" aria-labelledby="database-evidence-title">
+        <h3 id="database-evidence-title">
+          {{ 'pages.experience.database.sqlServer.evidenceTitle' | translate }}
+        </h3>
+        <ul class="evidence-list">
+          <li *ngFor="let item of evidence">
+            <span class="evidence-list__check" aria-hidden="true">✓</span>
+            <span>{{ item }}</span>
+          </li>
+        </ul>
+      </section>
+
+      <aside class="stack-card" aria-labelledby="database-tools-title">
+        <h3 id="database-tools-title">
+          {{ 'pages.experience.database.sqlServer.toolsTitle' | translate }}
+        </h3>
+        <ul class="tool-list">
+          <li *ngFor="let tool of tools">
+            <i [class]="tool.class" aria-hidden="true"></i>
+            <span>{{ tool.name }}</span>
+          </li>
+        </ul>
+        <div
+          class="capability-list"
+          [attr.aria-label]="'pages.experience.database.sqlServer.toolsTitle' | translate"
+        >
+          <span *ngFor="let capability of capabilities">{{ capability }}</span>
+        </div>
+      </aside>
+    </div>
+  </article>
+</section>

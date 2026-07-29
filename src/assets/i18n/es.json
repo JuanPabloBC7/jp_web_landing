@@ -918,7 +918,54 @@
       },
       "database": {
         "title": "Experiencia en bases de datos",
-        "description": "Diseño, consultas, procedimientos almacenados, triggers, índices, auditorías y análisis de datos para sistemas empresariales."
+        "description": "Diseño, consultas, procedimientos almacenados, triggers, índices, auditorías y análisis de datos para sistemas empresariales.",
+        "sqlServer": {
+          "eyebrow": "Datos y rendimiento",
+          "title": "SQL Server y PostgreSQL",
+          "description": "He trabajado con bases de datos que sostienen sistemas financieros, administrativos y documentales, desde el diagnóstico de estructuras existentes hasta la implementación y optimización de procesos críticos.",
+          "impactTitle": "Experiencia aplicada",
+          "impact": [
+            {
+              "icon": "01",
+              "title": "Lógica y procesos",
+              "description": "Modificación y creación de procedimientos almacenados, triggers, consultas CRUD, scripts y procesos para nuevas funcionalidades empresariales."
+            },
+            {
+              "icon": "02",
+              "title": "Rendimiento",
+              "description": "Análisis de planes de ejecución, relaciones e índices para hacer más eficientes las consultas, descargas de documentos y operaciones complejas."
+            },
+            {
+              "icon": "03",
+              "title": "Diagnóstico y auditoría",
+              "description": "Ingeniería inversa y auditorías sobre bases de datos existentes para localizar errores, comprender reglas de negocio y mejorar procedimientos almacenados complejos."
+            },
+            {
+              "icon": "04",
+              "title": "Gestión documental",
+              "description": "Diseño y mejora de estructuras para almacenar, relacionar, consultar y descargar archivos PDF de forma íntegra y eficiente."
+            }
+          ],
+          "evidenceTitle": "Resultados que puedo demostrar",
+          "evidence": [
+            "Optimicé índices y consultas en sistemas operativos para reducir trabajo innecesario sobre la base de datos.",
+            "Analicé procesos de nómina y sistemas administrativos para identificar inconsistencias entre datos, reglas de negocio y procedimientos almacenados.",
+            "Implementé cambios de base de datos que acompañaron funcionalidades nuevas, correcciones y mejoras de procesos existentes.",
+            "Mejoré la relación y consulta de documentos virtualizados, protegiendo la integridad de los archivos y facilitando su recuperación."
+          ],
+          "toolsTitle": "Tecnologías utilizadas",
+          "tools": [
+            { "name": "SQL Server", "class": "devicon-microsoftsqlserver-plain bg-sqlserver" },
+            { "name": "PostgreSQL", "class": "devicon-postgresql-plain bg-postgresql" },
+            { "name": "MySQL", "class": "devicon-mysql-original bg-mysql" },
+            { "name": "MongoDB", "class": "devicon-mongodb-plain bg-mongodb" },
+            { "name": "MariaDB", "class": "devicon-mariadb-original bg-mariadb" },
+            { "name": "Firebase", "class": "devicon-firebase-plain bg-firebase" },
+            { "name": "Supabase", "class": "devicon-supabase-plain bg-supabase" },
+            { "name": "Oracle", "class": "devicon-oracle-original bg-oracle" }
+          ],
+          "capabilities": ["Procedimientos almacenados", "Triggers", "Consultas CRUD", "Índices", "Planes de ejecución", "Auditorías", "Ingeniería inversa", "Modelado relacional"]
+        }
       }
     },
     "notes": {

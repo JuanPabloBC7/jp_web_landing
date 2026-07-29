@@ -919,7 +919,54 @@
       },
       "database": {
         "title": "Database experience",
-        "description": "Database design, queries, stored procedures, triggers, indexes, audits, and data analysis for enterprise systems."
+        "description": "Database design, queries, stored procedures, triggers, indexes, audits, and data analysis for enterprise systems.",
+        "sqlServer": {
+          "eyebrow": "Data and performance",
+          "title": "SQL Server and PostgreSQL",
+          "description": "I have worked with databases supporting financial, administrative, and document-management systems, from diagnosing existing structures to implementing and optimizing critical processes.",
+          "impactTitle": "Applied experience",
+          "impact": [
+            {
+              "icon": "01",
+              "title": "Logic and processes",
+              "description": "Modified and created stored procedures, triggers, CRUD queries, scripts, and processes supporting new enterprise functionality."
+            },
+            {
+              "icon": "02",
+              "title": "Performance",
+              "description": "Analyzed execution plans, relationships, and indexes to improve queries, document downloads, and complex operations."
+            },
+            {
+              "icon": "03",
+              "title": "Diagnosis and auditing",
+              "description": "Applied reverse engineering and audits to existing databases to locate defects, understand business rules, and improve complex stored procedures."
+            },
+            {
+              "icon": "04",
+              "title": "Document management",
+              "description": "Designed and improved structures for storing, relating, querying, and downloading PDF files efficiently while preserving their integrity."
+            }
+          ],
+          "evidenceTitle": "Demonstrable outcomes",
+          "evidence": [
+            "Optimized indexes and queries in operational systems to reduce unnecessary database workload.",
+            "Analyzed payroll processes and administrative systems to identify inconsistencies across data, business rules, and stored procedures.",
+            "Implemented database changes supporting new features, defect fixes, and improvements to existing processes.",
+            "Improved the relationships and retrieval of virtualized documents, protecting file integrity and making them easier to recover."
+          ],
+          "toolsTitle": "Technologies used",
+          "tools": [
+            { "name": "SQL Server", "class": "devicon-microsoftsqlserver-plain bg-sqlserver" },
+            { "name": "PostgreSQL", "class": "devicon-postgresql-plain bg-postgresql" },
+            { "name": "MySQL", "class": "devicon-mysql-original bg-mysql" },
+            { "name": "MongoDB", "class": "devicon-mongodb-plain bg-mongodb" },
+            { "name": "MariaDB", "class": "devicon-mariadb-original bg-mariadb" },
+            { "name": "Firebase", "class": "devicon-firebase-plain bg-firebase" },
+            { "name": "Supabase", "class": "devicon-supabase-plain bg-supabase" },
+            { "name": "Oracle", "class": "devicon-oracle-original bg-oracle" }
+          ],
+          "capabilities": ["Stored procedures", "Triggers", "CRUD queries", "Indexes", "Execution plans", "Audits", "Reverse engineering", "Relational modeling"]
+        }
       }
     },
     "notes": {
