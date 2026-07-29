@@ -12,6 +12,7 @@ import { BackendComponent } from './pages/pages/experience/backend/backend.compo
 import { DatabaseComponent } from './pages/pages/experience/database/database.component';
 import { CaseStudiesComponent } from './pages/landing-page/case-studies/case-studies.component';
 import { CareerEvolutionComponent } from './pages/landing-page/career-evolution/career-evolution.component';
+import { ApplicationsComponent } from './pages/pages/experience/applications/applications.component';
 
 export const routes: Routes = [
   {
@@ -67,6 +68,10 @@ export const routes: Routes = [
       {
         path: 'experience/database',
         component: DatabaseComponent
+      },
+      {
+        path: 'experience/applications',
+        component: ApplicationsComponent
       },
       {
         path: '**',

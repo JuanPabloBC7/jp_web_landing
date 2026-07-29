@@ -721,7 +721,7 @@
     "experience": {
       "frontend": {
         "title": "Frontend development experience",
-        "description": "Enterprise interfaces, microfrontend architecture, performance, security, and web application modernization.",
+        "description": "Enterprise interfaces with HTML, JavaScript, TypeScript, Angular, and React, focused on architecture, performance, security, and modernization.",
         "html": {
           "title": "HTML",
           "subtitle": "Ecosystem used",
@@ -811,11 +811,29 @@
             { "name": "MaxLength2", "link": "https://htmldom.dev/count-the-number-of-characters-of-a-textarea/" },
             { "name": "Cookies", "link": "https://learn.microsoft.com/es-es/aspnet/web-api/overview/advanced/http-cookies" }
           ]
+        },
+        "react": {
+          "title": "React",
+          "description": "I have used React to build component-based interfaces and broaden my experience with modern frontend architectures.",
+          "evidenceTitle": "Applied evidence",
+          "evidence": [
+            "I built reusable components and interface workflows by managing props, state, and events.",
+            "I integrated services and APIs into views designed for a fast and modular experience.",
+            "I applied modern styling and visual components with Tailwind and ReactBits.",
+            "I organized projects to separate presentation, logic, and service integrations."
+          ],
+          "toolsTitle": "Ecosystem used",
+          "tools": [
+            { "name": "React", "class": "devicon-react-original bg-react" },
+            { "name": "TypeScript", "class": "devicon-typescript-plain bg-typescript" },
+            { "name": "Tailwind", "class": "devicon-tailwindcss-original bg-react" },
+            { "name": "Vite", "class": "devicon-vitejs-plain bg-angular" }
+          ]
         }
       },
       "backend": {
         "title": "Backend development experience",
-        "description": "Services, APIs, business rules, and integrations built with JavaScript, TypeScript, Python, and .NET technologies.",
+        "description": "Services, APIs, business rules, institutional applications, and integrations built with Python, C#, and ASP.NET.",
         "javascript": {
           "title": "JavaScript",
           "subtitle": "Ecosystem used",
@@ -979,6 +997,38 @@
           ],
           "capabilities": ["Stored procedures", "Triggers", "CRUD queries", "Indexes", "Execution plans", "Audits", "Reverse engineering", "Relational modeling"]
         }
+      },
+      "applications": {
+        "title": "Enterprise and cross-platform applications",
+        "description": "Mobile products and enterprise systems built to solve complete processes beyond a single technology layer.",
+        "evidenceTitle": "Applied evidence",
+        "toolsTitle": "Related technologies",
+        "items": [
+          {
+            "title": "Enterprise application with Flutter",
+            "description": "A cross-platform application for managing products, users, and business data, built with an architecture designed to grow.",
+            "iconClass": "devicon-flutter-plain bg-react",
+            "evidence": [
+              "I developed the application and its main workflows from scratch and retained the functional source code.",
+              "I applied Clean Architecture to separate domain, data, presentation, and external services.",
+              "I implemented Google authentication and user management through Firebase.",
+              "I built product management and data persistence with Firebase."
+            ],
+            "tools": ["Flutter", "Dart", "Firebase", "Google Auth", "Clean Architecture"]
+          },
+          {
+            "title": "Financial systems with PowerBuilder",
+            "description": "Maintenance and evolution of financial and administrative applications connected to enterprise databases.",
+            "iconClass": "fa-solid fa-building-columns",
+            "evidence": [
+              "I implemented new functionality and fixed defects in existing systems.",
+              "I analyzed DataWindows, events, and SQL Server relationships to understand inherited business rules.",
+              "I supported application changes with stored procedures, triggers, and CRUD queries.",
+              "I performed reverse engineering to locate issues without affecting critical financial processes."
+            ],
+            "tools": ["PowerBuilder", "DataWindow", "SQL Server", "Stored Procedures", "Triggers"]
+          }
+        ]
       }
     },
     "notes": {
@@ -1222,6 +1272,12 @@
         {
           "path": "experience/database",
           "label": "Database",
+          "type": "link",
+          "events": { "click": "null" }
+        },
+        {
+          "path": "experience/applications",
+          "label": "Enterprise applications",
           "type": "link",
           "events": { "click": "null" }
         }

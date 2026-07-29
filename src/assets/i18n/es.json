@@ -720,7 +720,7 @@
     "experience": {
       "frontend": {
         "title": "Experiencia en desarrollo frontend",
-        "description": "Interfaces empresariales, arquitectura de microfrontends, rendimiento, seguridad y modernización de aplicaciones web.",
+        "description": "Interfaces empresariales con HTML, JavaScript, TypeScript, Angular y React, con enfoque en arquitectura, rendimiento, seguridad y modernización.",
         "html": {
           "title": "HTML",
           "subtitle": "Ecosistema utilizado",
@@ -810,11 +810,29 @@
             { "name": "MaxLength2", "link": "https://htmldom.dev/count-the-number-of-characters-of-a-textarea/" },
             { "name": "Cookies", "link": "https://learn.microsoft.com/es-es/aspnet/web-api/overview/advanced/http-cookies" }
           ]
+        },
+        "react": {
+          "title": "React",
+          "description": "He utilizado React para construir interfaces basadas en componentes y ampliar mi experiencia en arquitecturas frontend modernas.",
+          "evidenceTitle": "Evidencia aplicada",
+          "evidence": [
+            "Construí componentes reutilizables y flujos de interfaz administrando propiedades, estado y eventos.",
+            "Integré servicios y APIs dentro de vistas orientadas a una experiencia rápida y modular.",
+            "Apliqué estilos modernos y componentes visuales con Tailwind y ReactBits.",
+            "Organicé proyectos para separar presentación, lógica e integración con servicios."
+          ],
+          "toolsTitle": "Ecosistema utilizado",
+          "tools": [
+            { "name": "React", "class": "devicon-react-original bg-react" },
+            { "name": "TypeScript", "class": "devicon-typescript-plain bg-typescript" },
+            { "name": "Tailwind", "class": "devicon-tailwindcss-original bg-react" },
+            { "name": "Vite", "class": "devicon-vitejs-plain bg-angular" }
+          ]
         }
       },
       "backend": {
         "title": "Experiencia en desarrollo backend",
-        "description": "Servicios, APIs, reglas de negocio e integraciones construidas con tecnologías JavaScript, TypeScript, Python y .NET.",
+        "description": "Servicios, APIs, reglas de negocio, aplicaciones institucionales e integraciones construidas con Python, C# y ASP.NET.",
         "javascript": {
           "title": "JavaScript",
           "subtitle": "Ecosistema utilizado",
@@ -978,6 +996,38 @@
           ],
           "capabilities": ["Procedimientos almacenados", "Triggers", "Consultas CRUD", "Índices", "Planes de ejecución", "Auditorías", "Ingeniería inversa", "Modelado relacional"]
         }
+      },
+      "applications": {
+        "title": "Aplicaciones empresariales y multiplataforma",
+        "description": "Productos móviles y sistemas empresariales desarrollados para resolver procesos completos más allá de una sola capa tecnológica.",
+        "evidenceTitle": "Evidencia aplicada",
+        "toolsTitle": "Tecnologías relacionadas",
+        "items": [
+          {
+            "title": "Aplicación empresarial con Flutter",
+            "description": "Aplicación multiplataforma para gestionar productos, usuarios y datos empresariales, desarrollada con una arquitectura preparada para crecer.",
+            "iconClass": "devicon-flutter-plain bg-react",
+            "evidence": [
+              "Desarrollé la aplicación y sus flujos principales desde cero conservando el código fuente funcional.",
+              "Apliqué Clean Architecture para separar dominio, datos, presentación y servicios externos.",
+              "Implementé autenticación con Google y administración de usuarios mediante Firebase.",
+              "Construí el manejo de productos y persistencia de información en Firebase."
+            ],
+            "tools": ["Flutter", "Dart", "Firebase", "Google Auth", "Clean Architecture"]
+          },
+          {
+            "title": "Sistemas financieros con PowerBuilder",
+            "description": "Mantenimiento y evolución de aplicaciones financieras y administrativas conectadas con bases de datos empresariales.",
+            "iconClass": "fa-solid fa-building-columns",
+            "evidence": [
+              "Implementé nuevas funcionalidades y corregí errores en sistemas existentes.",
+              "Analicé DataWindows, eventos y relaciones con SQL Server para comprender reglas heredadas.",
+              "Acompañé cambios de aplicación con procedimientos almacenados, triggers y consultas CRUD.",
+              "Realicé ingeniería inversa para localizar problemas sin afectar procesos financieros críticos."
+            ],
+            "tools": ["PowerBuilder", "DataWindow", "SQL Server", "Stored Procedures", "Triggers"]
+          }
+        ]
       }
     },
     "notes": {
@@ -1222,6 +1272,12 @@
         {
           "path": "experience/database",
           "label": "Base de datos",
+          "type": "link",
+          "events": { "click": "null" }
+        },
+        {
+          "path": "experience/applications",
+          "label": "Aplicaciones empresariales",
           "type": "link",
           "events": { "click": "null" }
         }

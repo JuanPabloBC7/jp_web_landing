@@ -1,0 +1,22 @@
+<section class="technology-evidence">
+  <article class="technology-evidence__card">
+    <header>
+      <h3>{{ 'pages.experience.frontend.react.title' | translate }}</h3>
+      <p>{{ 'pages.experience.frontend.react.description' | translate }}</p>
+    </header>
+    <h4>{{ 'pages.experience.frontend.react.evidenceTitle' | translate }}</h4>
+    <ul class="evidence-grid">
+      <li *ngFor="let item of evidence">
+        <span aria-hidden="true">✓</span>
+        <div>{{ item }}</div>
+      </li>
+    </ul>
+    <h4>{{ 'pages.experience.frontend.react.toolsTitle' | translate }}</h4>
+    <div class="technology-tools">
+      <span *ngFor="let tool of tools" class="technology-tool">
+        <i [class]="tool.class" aria-hidden="true"></i>
+        <span>{{ tool.name }}</span>
+      </span>
+    </div>
+  </article>
+</section>

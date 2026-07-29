@@ -1,0 +1,27 @@
+.application-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.application-heading > i {
+  display: grid;
+  flex: 0 0 3rem;
+  width: 3rem;
+  height: 3rem;
+  place-items: center;
+  border-radius: 14px;
+  color: var(--bs-primary);
+  background: rgba(var(--bs-primary-rgb), 0.12);
+  font-size: 1.6rem;
+}
+
+.dependency-chips span {
+  padding: 0.4rem 0.7rem;
+  border: 1px solid var(--bs-border-color);
+  border-radius: 999px;
+  color: var(--bs-secondary-color);
+  background: var(--bs-body-bg);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
