@@ -21,7 +21,7 @@
     <ul class="evidence-grid">
       <li *ngFor="let evidence of item.evidence"><span aria-hidden="true">✓</span><div [innerHTML]="evidence"></div></li>
     </ul>
-    <ng-container *ngIf="item.tools?.length">
+    <ng-container *ngIf="item.tools.length">
       <h3>{{ item.toolsTitle }}</h3>
       <div class="technology-tools">
         <span *ngFor="let tool of item.tools" class="technology-tool">
