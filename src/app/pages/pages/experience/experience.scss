@@ -179,17 +179,52 @@ img {
   color: #0976d7;
 }
 
-.technology-evidence {
+.experience-page-header {
   max-width: 1120px;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  padding-top: clamp(3.5rem, 8vw, 6rem);
+  padding-bottom: 1rem;
+}
+
+.experience-page-header h1 {
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+.experience-page-header__description {
+  max-width: 760px;
+  margin-top: 1.5rem;
+  color: var(--bs-secondary-color);
+  font-size: clamp(1rem, 2vw, 1.15rem);
+  line-height: 1.75;
+}
+
+.technology-evidence {
+  width: calc(100% - 2rem);
+  max-width: 1120px;
+  margin: 1rem auto !important;
 }
 
 .technology-evidence__card {
+  position: relative;
+  overflow: hidden;
   padding: clamp(1.35rem, 3vw, 2.25rem);
   border: 1px solid var(--bs-border-color);
-  border-radius: 24px;
-  background: var(--bs-tertiary-bg);
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at 100% 0, rgba(var(--bs-primary-rgb), 0.12), transparent 34%),
+    var(--bs-tertiary-bg);
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.08);
+}
+
+.technology-evidence__card::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 4px;
+  background: var(--portfolio-gradient);
+  content: "";
 }
 
 .technology-evidence__card header {
@@ -294,7 +329,7 @@ img {
 
 @media (max-width: 767.98px) {
   .technology-evidence__card {
-    border-radius: 20px;
+    border-radius: 22px;
   }
 
   .evidence-grid {

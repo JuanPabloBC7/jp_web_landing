@@ -16,6 +16,16 @@
   box-shadow: 0 24px 60px rgba(15, 23, 42, 0.08);
 }
 
+.database-spotlight::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 4px;
+  background: var(--portfolio-gradient);
+  content: "";
+}
+
 .database-spotlight__header {
   max-width: 780px;
 }

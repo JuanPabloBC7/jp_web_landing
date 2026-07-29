@@ -14,7 +14,7 @@ import { TranslateModule } from '@ngx-translate/core';
     AspNetComponent,
 ],
   templateUrl: './frontend.component.html',
-  styleUrl: './frontend.component.scss'
+  styleUrls: ['./frontend.component.scss', './../experience.scss']
 })
 export class FrontendComponent {
 

@@ -16,7 +16,7 @@ import { TypescriptComponent } from './typescript/typescript.component';
     TypescriptComponent,
 ],
   templateUrl: './backend.component.html',
-  styleUrl: './backend.component.scss'
+  styleUrls: ['./backend.component.scss', './../experience.scss']
 })
 export class BackendComponent {
 

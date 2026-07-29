@@ -10,7 +10,7 @@ import { TranslateModule } from '@ngx-translate/core';
     SqlServerComponent,
   ],
   templateUrl: './database.component.html',
-  styleUrl: './database.component.scss'
+  styleUrls: ['./database.component.scss', './../experience.scss']
 })
 export class DatabaseComponent {
 
