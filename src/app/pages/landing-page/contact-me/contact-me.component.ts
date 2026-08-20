@@ -2,7 +2,7 @@ import { CommonModule, NgClass } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 
 @Component({
   selector: 'app-contact-me',
@@ -68,7 +68,7 @@ export class ContactMeComponent {
       message: this.contactForm.value.message
     };
 
-    emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY).then(() => {
+    emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, { publicKey: PUBLIC_KEY }).then(() => {
       this.loading = false;
       this.showMessage = true;
       this.success = true;

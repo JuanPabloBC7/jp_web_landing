@@ -1,6 +1,14 @@
 # JpWebLanding
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.7.
+This project uses [Angular CLI](https://github.com/angular/angular-cli) version 22.1.3.
+
+## Prerequisites
+
+Angular 22 requires Node.js 22.22.3 or newer in the Node 22 line, or Node.js 24.15.0 or newer. Verify the active version before running the application:
+
+```bash
+node --version
+```
 
 ## Development server
 
